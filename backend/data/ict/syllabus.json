@@ -1,0 +1,34 @@
+{
+  "topics": [
+    {
+      "id": "unit_1",
+      "title": "Types and Components of Computer Systems",
+      "description": "Hardware and software, analogue and digital data, the CPU and internal memory, RAM and ROM, operating systems and interfaces, and the impact of emerging technologies."
+    },
+    {
+      "id": "unit_2",
+      "title": "Input, Output, and Storage Devices",
+      "description": "Input devices, direct data entry devices, output devices, and the characteristics, uses, advantages, and disadvantages of magnetic, optical, and solid-state storage."
+    },
+    {
+      "id": "unit_3",
+      "title": "Networks and Applications of ICT",
+      "description": "Network devices and types (LAN, WLAN, WAN), data-transfer security, health issues from IT use, and applications such as banking, medicine, retail, expert systems, and recognition systems."
+    },
+    {
+      "id": "unit_4",
+      "title": "System Development and Security",
+      "description": "The systems development life cycle, testing and implementation, documentation, physical safety, eSafety, data protection, threats to data, and copyright."
+    },
+    {
+      "id": "unit_5",
+      "title": "Document Management, Processing and Productivity Tools",
+      "description": "File management and formats, editing images, creating and formatting documents and tables, applying styles and a house style, proofing, and creating charts (Paper 2 practical)."
+    },
+    {
+      "id": "unit_6",
+      "title": "Advanced Data Handling and Web Development Techniques",
+      "description": "Databases and relationships, presentations with master slides, spreadsheet models and functions, and the three web development layers with HTML and CSS (Paper 2 practical)."
+    }
+  ]
+}

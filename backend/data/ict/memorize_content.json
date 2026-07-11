@@ -1,0 +1,175 @@
+{
+  "cards": [
+    {
+      "id": "ict_hardware_software",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "systems",
+      "group_id": "computer_systems",
+      "group_label": "Computer Systems and Software",
+      "title": "Hardware, Software and Data",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Hardware is the physical parts of a computer that you can touch.",
+        "Software is the set of programs that tell the hardware what to do.",
+        "System software runs the computer, such as the operating system.",
+        "Applications software helps the user carry out tasks, such as a word processor.",
+        "Analogue data is continuous, while digital data uses discrete values of 0 and 1.",
+        "A computer must convert analogue signals to digital before it can process them."
+      ]
+    },
+    {
+      "id": "ict_memory",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "systems",
+      "group_id": "computer_systems",
+      "group_label": "Computer Systems and Software",
+      "title": "CPU, RAM and ROM",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "The CPU processes instructions and data to run programs.",
+        "RAM is volatile and temporarily stores data and programs currently in use.",
+        "ROM is non-volatile and stores the start-up instructions for the computer.",
+        "RAM can be read from and written to, but ROM is normally read only.",
+        "An operating system controls the hardware and provides an interface for the user.",
+        "A GUI uses windows, icons, and menus, while a CLI uses typed text commands."
+      ]
+    },
+    {
+      "id": "ict_input_output",
+      "section": "Unit 2",
+      "category": "topic",
+      "display_category": "devices",
+      "group_id": "devices",
+      "group_label": "Input, Output and Storage Devices",
+      "title": "Input and Output Devices",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "An input device sends data into a computer, such as a keyboard, mouse, or scanner.",
+        "An output device receives data from a computer, such as a monitor, printer, or speaker.",
+        "Direct data entry devices read data automatically, such as barcode readers.",
+        "A magnetic stripe reader reads data stored on the back of a card.",
+        "Direct data entry is fast and reduces errors from manual typing.",
+        "The wrong choice of device can slow down a task or cause more mistakes."
+      ]
+    },
+    {
+      "id": "ict_storage",
+      "section": "Unit 2",
+      "category": "topic",
+      "display_category": "devices",
+      "group_id": "devices",
+      "group_label": "Input, Output and Storage Devices",
+      "title": "Storage Devices and Media",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "Magnetic storage such as a hard disk stores data on spinning magnetic platters.",
+        "Optical storage such as a CD or DVD is read and written using a laser.",
+        "Solid state storage such as an SSD or memory card uses flash memory with no moving parts.",
+        "Solid state storage is fast and durable but can cost more per gigabyte.",
+        "Optical media are cheap and portable but store less than a hard disk.",
+        "The best storage depends on the capacity, speed, portability, and cost required."
+      ]
+    },
+    {
+      "id": "ict_networks",
+      "section": "Unit 3",
+      "category": "topic",
+      "display_category": "networks",
+      "group_id": "networks",
+      "group_label": "Networks and Communication",
+      "title": "Networks and Network Devices",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "A LAN connects devices over a small area such as one building.",
+        "A WLAN is a wireless LAN that connects devices without cables.",
+        "A WAN connects devices over a large area, such as the internet.",
+        "A router directs data between networks and connects a network to the internet.",
+        "An intranet is a private network for use within one organisation.",
+        "An extranet lets trusted outside users access part of an organisation's network."
+      ]
+    },
+    {
+      "id": "ict_applications",
+      "section": "Unit 3",
+      "category": "topic",
+      "display_category": "networks",
+      "group_id": "networks",
+      "group_label": "Networks and Communication",
+      "title": "Applications of ICT",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "ATMs and internet banking let customers manage money without visiting a branch.",
+        "Expert systems store knowledge to help diagnose problems, for example in medicine.",
+        "POS terminals in shops read barcodes and update stock automatically.",
+        "Online booking systems let customers reserve travel and events over the internet.",
+        "Recognition systems include OMR, OCR, RFID, and biometric recognition.",
+        "GPS uses satellites to find the location of a device on Earth."
+      ]
+    },
+    {
+      "id": "ict_safety_security",
+      "section": "Unit 4",
+      "category": "topic",
+      "display_category": "security",
+      "group_id": "security_safety",
+      "group_label": "Safety, Security and Data Protection",
+      "title": "Data Threats and Protection",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "Hacking is gaining access to a computer system without permission.",
+        "Phishing uses fake emails or websites to steal personal details.",
+        "A virus is a program that can damage files or disrupt a computer.",
+        "Encryption scrambles data so it cannot be read without the correct key.",
+        "Two-factor authentication adds a second check beyond a password.",
+        "Biometrics use physical features such as fingerprints to verify identity."
+      ]
+    },
+    {
+      "id": "ict_health_esafety",
+      "section": "Unit 4",
+      "category": "topic",
+      "display_category": "security",
+      "group_id": "security_safety",
+      "group_label": "Safety, Security and Data Protection",
+      "title": "Health, Safety and eSafety",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "Repetitive strain injury can be caused by long periods of typing or using a mouse.",
+        "Eye strain can be caused by staring at a screen for too long.",
+        "Taking regular breaks and using good posture helps prevent health problems.",
+        "eSafety means staying safe when using the internet, email, and social media.",
+        "You should not share personal information with people you do not know online.",
+        "Physical safety includes avoiding trailing cables and not overloading sockets."
+      ]
+    },
+    {
+      "id": "ict_web_layers",
+      "section": "Unit 6",
+      "category": "topic",
+      "display_category": "productivity",
+      "group_id": "web_data",
+      "group_label": "Databases and Web Development",
+      "title": "Databases and Web Development Layers",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "A database stores data in tables made of records and fields.",
+        "A primary key is a field that uniquely identifies each record in a table.",
+        "A relationship links tables together using a primary key and a foreign key.",
+        "The content layer of a web page is built with HTML.",
+        "The presentation layer controls the look of a page and is built with CSS.",
+        "The behaviour layer controls how a page responds to the user."
+      ]
+    }
+  ]
+}

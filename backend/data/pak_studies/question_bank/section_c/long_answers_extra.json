@@ -1,0 +1,22 @@
+{
+  "questions": [
+    {
+      "section": "C",
+      "type": "extended",
+      "topic_number": 5,
+      "topic_title": "Foreign Policy",
+      "question": "How does Pakistan try to maintain friendly relations with its neighbouring countries, and why are these relations important for peace and development in the region? [8]",
+      "model_answer": "Pakistan seeks friendly relations with its neighbours through diplomacy, trade and regional cooperation. With China, it has built a deep strategic and economic partnership, most notably the China-Pakistan Economic Corridor (CPEC), which brings investment in infrastructure and energy. With Afghanistan, Pakistan promotes trade, hosts millions of refugees, and supports dialogue for stability along a long shared border. With Iran, it develops trade, energy links (such as gas pipeline proposals) and border cooperation. Even with India, Pakistan has at times pursued talks, confidence-building measures and trade despite the Kashmir dispute. Pakistan also works through regional and international forums such as SAARC, the OIC and the UN to resolve disputes peacefully. These relations matter because regional peace allows resources to be spent on development rather than defence; it encourages cross-border trade, investment and energy cooperation that boost the economy; it helps manage shared challenges such as water, terrorism and refugees; and it improves connectivity and security for the whole region. In conclusion, good-neighbourly relations are essential for Pakistan's economic growth, security and long-term stability.",
+      "marks": 8
+    },
+    {
+      "section": "C",
+      "type": "extended",
+      "topic_number": 6,
+      "topic_title": "Current Perspectives",
+      "question": "What environmental and climate problems does Pakistan face today, and what steps can be taken to protect the country from these challenges? [7]",
+      "model_answer": "Pakistan faces serious environmental and climate problems. It is highly vulnerable to climate change despite contributing little to global emissions: it suffers extreme heatwaves, erratic monsoons and devastating floods (such as the 2022 floods), as well as the rapid melting of Himalayan glaciers that threatens long-term water supplies. Other problems include water scarcity, air pollution and smog in major cities, deforestation, soil erosion, waterlogging and salinity of farmland, and inadequate waste management. These issues damage agriculture, health, and the economy and displace communities. Steps to protect the country include: large-scale tree planting and reforestation (for example the Billion Tree Tsunami); building water storage and improving irrigation efficiency to cope with scarcity; investing in clean and renewable energy such as solar, wind and hydropower to cut pollution; strengthening disaster preparedness and early-warning systems for floods; enforcing environmental laws and reducing industrial and vehicle emissions; promoting public awareness and climate education; and cooperating internationally to secure climate finance. In conclusion, tackling these challenges requires both government action and public participation to build a more resilient and sustainable Pakistan.",
+      "marks": 7
+    }
+  ]
+}

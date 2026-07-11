@@ -1,0 +1,92 @@
+{
+  "title": "CS Paper 2: Problem-solving & Programming Guide",
+  "subtitle": "LRN International GCSE Computer Science 7925 - Paper 2 (75 marks, 1 hour 45 minutes)",
+  "intro": "Paper 2 is a written examination set and marked by LRN - not coursework and not a multiple-choice paper. You are given a real-world problem definition (e.g. a library borrowing system) and a set of programming tasks that build on each other. You design and write the program logic, then answer structured questions about identifiers, data structures, validation, testing and security. It is weighted heavily towards AO3 (application: designing, writing and refining solutions).",
+  "overview": [
+    { "label": "Format", "value": "Written exam booklet, set and marked by LRN. You write answers in the spaces provided." },
+    { "label": "Total marks", "value": "75 marks." },
+    { "label": "Duration", "value": "1 hour 45 minutes." },
+    { "label": "Weighting", "value": "Equal to Paper 1 - both papers carry 75 marks (half the qualification each)." },
+    { "label": "Assessment focus", "value": "AO3 problem-solving 50%, AO1 knowledge 30%, AO2 application 20% - so most marks reward writing and refining a working solution." },
+    { "label": "Structure", "value": "A problem definition, then Tasks that build up a program (setup, extend, secure), followed by structured questions about your solution." }
+  ],
+  "components": [
+    {
+      "name": "Task 1 - Set up the core program",
+      "summary": "Get input, store it in suitable data structures, and confirm.",
+      "criteria": [
+        { "criterion": "Prompt for and read the required inputs (IDs, names, values)" },
+        { "criterion": "Choose suitable variables, constants and arrays to store the data" },
+        { "criterion": "Display a clear confirmation message once data is saved" }
+      ]
+    },
+    {
+      "name": "Task 2 - Extend the functionality",
+      "summary": "Add calculations, formatted output and conditional logic.",
+      "criteria": [
+        { "criterion": "Perform a calculation (e.g. a due date, total or count)" },
+        { "criterion": "Display results in a clear, formatted table" },
+        { "criterion": "Use selection to identify and flag special cases (e.g. overdue items)" }
+      ]
+    },
+    {
+      "name": "Task 3 - Validation and security",
+      "summary": "Make the program robust and protect the data.",
+      "criteria": [
+        { "criterion": "Validate input (uniqueness, range, presence, valid format)" },
+        { "criterion": "Protect sensitive data (e.g. encrypt a stored field)" },
+        { "criterion": "Give appropriate error messages and guard against invalid input" }
+      ]
+    },
+    {
+      "name": "Structured questions",
+      "summary": "Explain and justify the design choices in your program.",
+      "criteria": [
+        { "criterion": "Identify constants, variables and arrays and explain their use" },
+        { "criterion": "Give suitable test data (normal, boundary and erroneous)" },
+        { "criterion": "Complete or interpret trace tables and describe test results" }
+      ]
+    }
+  ],
+  "tools": [
+    "Pseudocode - LRN accepts clear, well-structured pseudocode; learn the standard constructs.",
+    "A high-level language (Python is the common choice) - practise writing real, running programs.",
+    "Flowcharts - useful for planning logic before you write code."
+  ],
+  "steps": [
+    {
+      "title": "1. Master the core building blocks",
+      "detail": "Input/output, variables and constants, selection (IF/ELSE), iteration (FOR/WHILE), and arrays/lists. Almost every task is a combination of these - fluency here is where most marks are won."
+    },
+    {
+      "title": "2. Practise the recurring task shape",
+      "detail": "Papers follow a pattern: Task 1 sets up inputs and storage, Task 2 adds calculation and formatted output, Task 3 adds validation and security. Rehearse writing all three for a fresh scenario."
+    },
+    {
+      "title": "3. Get comfortable choosing data structures",
+      "detail": "Decide when a single variable, a constant, or an array is the right choice, and be ready to justify it in words - the structured questions ask for this directly."
+    },
+    {
+      "title": "4. Drill validation and test data",
+      "detail": "For any input, state a validation check (range, length, presence, uniqueness, format) and give normal, boundary and erroneous test data. This is repeatedly examined."
+    },
+    {
+      "title": "5. Learn to trace code by hand",
+      "detail": "Practise completing trace tables: step through a loop or algorithm line by line, tracking each variable. Being able to read code, not just write it, is essential."
+    },
+    {
+      "title": "6. Write meaningful identifiers and comments",
+      "detail": "Use descriptive names (dueDate, not d) and brief comments. The paper explicitly credits meaningful identifiers, and clear code is easier for the examiner to award marks to."
+    },
+    {
+      "title": "7. Rehearse under timed conditions",
+      "detail": "1 hour 45 minutes for 75 marks is roughly a mark a minute. Practise past scenarios to a clock so you can plan, write and check without running out of time."
+    }
+  ],
+  "tips": [
+    "Read the whole problem definition before you start - later tasks reuse the data structures from Task 1, so plan them well.",
+    "Show your working: partially correct logic still earns method marks, so never leave a task blank.",
+    "The Practice Exam covers Paper 1 theory; use it to keep the underlying concepts (data types, logic, algorithms) sharp for Paper 2.",
+    "Handwrite your code neatly and keep indentation clear - it must be readable to be marked."
+  ]
+}

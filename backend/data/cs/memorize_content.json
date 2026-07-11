@@ -1,0 +1,218 @@
+{
+  "cards": [
+    {
+      "id": "cs_cpu_vonneumann",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "architecture",
+      "group_id": "cpu_architecture",
+      "group_label": "CPU and Von Neumann Architecture",
+      "title": "The CPU and Von Neumann Architecture",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "The CPU (Central Processing Unit) processes instructions and data to run programs.",
+        "In the Von Neumann model, instructions and data share the same memory.",
+        "The MAR (Memory Address Register) holds the address of the location to read or write.",
+        "The MDR (Memory Data Register) holds the data or instruction being transferred.",
+        "The Program Counter (PC) holds the address of the next instruction to fetch.",
+        "The Accumulator stores the result of calculations from the ALU.",
+        "The ALU (Arithmetic Logic Unit) performs calculations and logic operations.",
+        "The CU (Control Unit) directs the fetch-decode-execute cycle and coordinates components."
+      ]
+    },
+    {
+      "id": "cs_fetch_execute",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "architecture",
+      "group_id": "cpu_architecture",
+      "group_label": "CPU and Von Neumann Architecture",
+      "title": "CPU Performance Factors",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "The CPU repeatedly fetches, decodes, and executes instructions stored in memory.",
+        "Clock speed is measured in hertz and sets how many cycles run each second.",
+        "A higher clock speed means more instructions can be processed per second.",
+        "A larger cache stores frequently used data close to the CPU to reduce delays.",
+        "More cores allow the CPU to process several instructions at the same time.",
+        "An embedded system is a computer built into a larger device to do one dedicated task."
+      ]
+    },
+    {
+      "id": "cs_number_units",
+      "section": "Unit 3",
+      "category": "topic",
+      "display_category": "data",
+      "group_id": "data_units",
+      "group_label": "Units and Number Systems",
+      "title": "Units of Data",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "A bit is a single binary digit, either 0 or 1.",
+        "A nibble is 4 bits and a byte is 8 bits.",
+        "1 kilobyte is 1000 bytes and 1 megabyte is 1000 kilobytes.",
+        "1 gigabyte is 1000 megabytes and 1 terabyte is 1000 gigabytes.",
+        "A kibibyte (KiB) is 1024 bytes, using powers of two rather than ten.",
+        "Denary is base 10, binary is base 2, and hexadecimal is base 16."
+      ]
+    },
+    {
+      "id": "cs_binary_hex",
+      "section": "Unit 3",
+      "category": "topic",
+      "display_category": "data",
+      "group_id": "data_units",
+      "group_label": "Units and Number Systems",
+      "title": "Binary, Hexadecimal and Two's Complement",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Each binary place value doubles: 128, 64, 32, 16, 8, 4, 2, 1.",
+        "Hexadecimal uses digits 0 to 9 and letters A to F, where A is 10 and F is 15.",
+        "One hexadecimal digit represents exactly four binary bits.",
+        "Overflow happens when a binary addition result is too large for the available bits.",
+        "A logical shift left multiplies a binary number by two for each place moved.",
+        "Two's complement represents negative numbers by flipping the bits and adding one."
+      ]
+    },
+    {
+      "id": "cs_constructs",
+      "section": "Unit 2",
+      "category": "topic",
+      "display_category": "programming",
+      "group_id": "programming_constructs",
+      "group_label": "Programming Constructs and Data Types",
+      "title": "The Three Programming Constructs",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Sequence means instructions are carried out one after another in order.",
+        "Selection chooses between actions using IF, ELSE, and CASE statements.",
+        "Iteration repeats instructions using count-controlled or condition-controlled loops.",
+        "A count-controlled loop repeats a set number of times, such as a FOR loop.",
+        "A condition-controlled loop repeats while or until a condition is met.",
+        "Basic data types include integer, real, Boolean, character, and string.",
+        "Casting converts a value from one data type to another."
+      ]
+    },
+    {
+      "id": "cs_memory_storage",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "architecture",
+      "group_id": "memory_storage",
+      "group_label": "Memory and Storage",
+      "title": "RAM, ROM and Storage Types",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "RAM is volatile and temporarily holds programs and data currently in use.",
+        "ROM is non-volatile and stores the start-up instructions needed to boot the computer.",
+        "Virtual memory uses part of secondary storage when RAM becomes full.",
+        "Magnetic storage such as a hard disk drive uses spinning platters and read/write heads.",
+        "Optical storage such as a CD or DVD is read using a laser.",
+        "Solid state storage uses flash memory with no moving parts, making it fast and durable."
+      ]
+    },
+    {
+      "id": "cs_networks",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "networks",
+      "group_id": "networks_protocols",
+      "group_label": "Networks and Protocols",
+      "title": "Networks, Topologies and Protocols",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "A LAN connects devices over a small area such as one building.",
+        "A WAN connects devices over a large geographical area, such as the internet.",
+        "In a client-server network, a central server manages resources for client devices.",
+        "In a peer-to-peer network, devices share resources directly with no central server.",
+        "In a star topology, every device connects to a central switch or hub.",
+        "TCP/IP controls how data is packaged and addressed for transfer across networks.",
+        "HTTPS uses encryption to send web data securely."
+      ]
+    },
+    {
+      "id": "cs_algorithms",
+      "section": "Unit 2",
+      "category": "topic",
+      "display_category": "programming",
+      "group_id": "algorithms",
+      "group_label": "Searching and Sorting Algorithms",
+      "title": "Searching and Sorting Algorithms",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "A linear search checks each item in turn until the target is found.",
+        "A binary search repeatedly halves a sorted list to find the target quickly.",
+        "A binary search only works if the list is already sorted.",
+        "A bubble sort compares neighbouring items and swaps them until the list is ordered.",
+        "A merge sort splits the list in half repeatedly, then merges the parts in order.",
+        "An insertion sort builds a sorted list by inserting each item into its correct place."
+      ]
+    },
+    {
+      "id": "cs_security",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "security",
+      "group_id": "cyber_security",
+      "group_label": "Cyber Security",
+      "title": "Forms of Attack and Security Measures",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "Phishing tricks users into revealing details through fake emails or websites.",
+        "A brute force attack tries many passwords until the correct one is found.",
+        "A DDoS attack floods a server with traffic so it cannot respond to real users.",
+        "Malware includes viruses, worms, Trojan horses, spyware, and ransomware.",
+        "A firewall monitors traffic and blocks unauthorised connections.",
+        "Two-step verification adds a second check beyond a username and password."
+      ]
+    },
+    {
+      "id": "cs_logic_gates",
+      "section": "Unit 2",
+      "category": "topic",
+      "display_category": "logic",
+      "group_id": "logic_gates",
+      "group_label": "Logic Gates and Boolean",
+      "title": "Logic Gates and Boolean Operators",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "An AND gate outputs 1 only when both inputs are 1.",
+        "An OR gate outputs 1 when at least one input is 1.",
+        "A NOT gate inverts the input, turning 1 into 0 and 0 into 1.",
+        "A NAND gate is an AND gate followed by a NOT, so it outputs 0 only when both inputs are 1.",
+        "A NOR gate outputs 1 only when both inputs are 0.",
+        "An XOR gate outputs 1 when the two inputs are different.",
+        "A truth table lists the output for every possible combination of inputs."
+      ]
+    },
+    {
+      "id": "cs_software",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "software",
+      "group_id": "software_translators",
+      "group_label": "Software and Translators",
+      "title": "Software, Operating Systems and Translators",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "System software runs the computer, while application software helps the user do tasks.",
+        "The operating system manages files, memory, peripherals, and user accounts.",
+        "An interrupt is a signal that tells the CPU a task needs immediate attention.",
+        "A high-level language is close to human language and easier to read and write.",
+        "A low-level language is close to machine code and gives fine control of hardware.",
+        "A compiler translates the whole program at once, while an interpreter translates line by line."
+      ]
+    }
+  ]
+}

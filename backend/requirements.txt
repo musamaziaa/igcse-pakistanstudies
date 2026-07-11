@@ -1,0 +1,7 @@
+streamlit
+anthropic
+pymupdf
+python-docx
+python-dotenv
+fastapi
+uvicorn

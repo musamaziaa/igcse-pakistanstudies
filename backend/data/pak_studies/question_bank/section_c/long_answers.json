@@ -1,0 +1,22 @@
+{
+  "questions": [
+    {
+      "section": "C",
+      "type": "extended",
+      "topic_number": 5,
+      "topic_title": "Foreign Policy",
+      "question": "Analyse Pakistan's relations with India and the USA. How have these relationships influenced its foreign policy and regional security? [8]",
+      "model_answer": "Pakistan's foreign policy has been shaped above all by its relations with India and the USA. With India, the relationship has been dominated by historical disputes (Kashmir) and three wars (1948, 1965, 1971). These tensions forced Pakistan to make national security the centre of its policy. With the USA, Pakistan built a strategic Cold-War alliance (SEATO, CENTO) receiving military/economic aid, but this relationship fluctuated with shifting interests. Overall, India pushed Pakistan toward a security-driven posture while the USA brought resources but also unpredictability.",
+      "marks": 8
+    },
+    {
+      "section": "C",
+      "type": "extended",
+      "topic_number": 6,
+      "topic_title": "Current Perspectives",
+      "question": "Evaluate the role of youth in shaping Pakistan's future. [7]",
+      "model_answer": "Youth are decisive because they form a large share of the population (demographic dividend). Education gives them skills, civic engagement makes them responsible citizens, and they drive innovation and entrepreneurship. However, this potential depends on investment - without it, a youth bulge can worsen instability. On balance, youth are Pakistan's greatest asset provided the state educates and engages them.",
+      "marks": 7
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Ikhlas",
+    "surah_number": 112,
+    "question": "What is the main theme of Surah Al-Ikhlas?",
+    "options": {
+      "A": "The Day of Judgement",
+      "B": "The Oneness of Allah (Tawhid)",
+      "C": "The rules of fasting",
+      "D": "The life of the Prophet (pbuh)"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Fatiha",
+    "surah_number": 1,
+    "question": "How many verses (ayat) are there in Surah Al-Fatiha?",
+    "options": { "A": "Three", "B": "Five", "C": "Seven", "D": "Ten" },
+    "correct_answer": "C",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Asr",
+    "surah_number": 103,
+    "question": "In Surah Al-Asr, Allah swears by which of the following?",
+    "options": { "A": "Time (Al-Asr)", "B": "The moon", "C": "The fig and the olive", "D": "The night" },
+    "correct_answer": "A",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Kawthar",
+    "surah_number": 108,
+    "question": "Surah Al-Kawthar, the shortest surah of the Quran, mentions a gift of abundance given to the Prophet (pbuh). What is this gift called?",
+    "options": { "A": "Buraq", "B": "Al-Kawthar (abundance)", "C": "Sidrah", "D": "Mizan" },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Fil",
+    "surah_number": 105,
+    "question": "Surah Al-Fil refers to the People of the Elephant who attacked the Kaaba. Who led this army?",
+    "options": { "A": "Abu Jahl", "B": "Abu Lahab", "C": "Abraha", "D": "Pharaoh" },
+    "correct_answer": "C",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "An-Nas",
+    "surah_number": 114,
+    "question": "In Surah An-Nas, the believer seeks refuge in Allah from which of the following?",
+    "options": { "A": "Poverty", "B": "Illness", "C": "The whisperer (waswas) of the devil", "D": "Enemies in battle" },
+    "correct_answer": "C",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih al-Bukhari",
+    "question": "Complete the well-known Hadith: 'Actions are judged only by their _______.'",
+    "options": { "A": "results", "B": "intentions", "C": "witnesses", "D": "rewards" },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih al-Bukhari",
+    "question": "According to a famous Hadith, none of you truly believes until he loves for his brother what he loves for:",
+    "options": { "A": "his family", "B": "himself", "C": "the Prophet (pbuh)", "D": "his neighbour" },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sunan Ibn Majah",
+    "question": "The Hadith 'Seeking knowledge is an obligation upon every Muslim' emphasises the importance of:",
+    "options": { "A": "wealth", "B": "knowledge and education", "C": "travel", "D": "trade" },
+    "correct_answer": "B",
+    "marks": 1
+  }
+]

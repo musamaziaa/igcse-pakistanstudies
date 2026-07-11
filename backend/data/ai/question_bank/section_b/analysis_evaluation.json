@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "case_study",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 4,
+      "topic_title": "Planning and Autonomous Systems",
+      "question": "Case study: A city plans to use AI-controlled autonomous buses that use sensors to plan routes and avoid obstacles. (i) Identify two advantages of using AI in this scenario. (ii) Identify two challenges related to planning and reasoning in this system. [8]",
+      "model_answer": "(i) Advantages: the buses can run continuously without a human driver, reducing labour costs and allowing a more frequent service; they can react quickly and consistently to sensor data, potentially improving safety and reducing accidents caused by human error. (ii) Challenges: the system must plan safe routes in a constantly changing environment, coping with unexpected events such as roadworks, pedestrians, or other vehicles, which is difficult to anticipate in advance; the reasoning must handle uncertainty and incomplete sensor data reliably, and mistakes could have serious safety consequences, so the decision-making logic must be thoroughly tested and able to adjust its plan when the environment changes.",
+      "marks": 8
+    },
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "evaluation",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 5,
+      "topic_title": "Ethics, Society and Philosophy of AI",
+      "question": "Evaluate the use of facial recognition systems in public spaces, referring to at least two ethical concerns. [6]",
+      "model_answer": "Facial recognition in public spaces can bring benefits, such as helping to identify wanted criminals or missing people and improving security. However, there are serious ethical concerns. Privacy is affected because people are identified and tracked without giving consent, and their data may be stored and misused. Bias is another concern: if the system is trained on unrepresentative data it may misidentify some groups more often than others, leading to unfair treatment such as wrongful suspicion. There is also a lack of transparency and accountability, as it may be unclear how decisions are made or who is responsible for errors. A balanced evaluation is that facial recognition can improve security but should only be used with clear rules, consent where possible, tested accuracy across all groups, and oversight to protect people's rights.",
+      "marks": 6
+    },
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "evaluation",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Compare rule-based systems and machine learning, giving one situation where each would be the more suitable choice. [6]",
+      "model_answer": "A rule-based system uses fixed IF-THEN rules written by experts. It gives clear, consistent, and explainable decisions and works well when the rules are known and limited, for example deciding whether a bank loan meets simple eligibility criteria. However, it struggles with uncertainty and becomes hard to maintain as rules multiply. Machine learning learns patterns from data rather than following fixed rules, so it can handle complex, noisy problems such as recognising objects in images or filtering spam, where writing rules by hand would be impractical. Its weakness is that it needs large amounts of good-quality data and its decisions can be harder to explain. Therefore a rule-based system is more suitable for simple, well-defined problems that must be transparent, while machine learning is more suitable for complex pattern-recognition problems where plenty of data is available.",
+      "marks": 6
+    },
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "logical_reasoning",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "Complete a truth table for A OR B for all four combinations of inputs, then explain how this logic could be used in an automated decision. [6]",
+      "model_answer": "Truth table for A OR B: when A = 0 and B = 0, output = 0; when A = 0 and B = 1, output = 1; when A = 1 and B = 0, output = 1; when A = 1 and B = 1, output = 1. The OR operation outputs 1 (true) if at least one input is true. In an automated decision this could control an alarm: let A = 'a door sensor is triggered' and B = 'a window sensor is triggered'. The rule IF (A OR B) THEN sound the alarm means the alarm activates if either the door or the window (or both) is opened, so any single breach is enough to trigger a response.",
+      "marks": 6
+    }
+  ]
+}

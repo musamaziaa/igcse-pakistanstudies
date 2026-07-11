@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 4,
+      "topic_title": "Constitution of Pakistan",
+      "question": "Explain the main features of the 1956 Constitution of Pakistan. [5]",
+      "model_answer": "The 1956 Constitution was Pakistan's first constitution, ending the interim rule of the 1935 Government of India Act. Its main features were: (1) it declared Pakistan an Islamic Republic and named the country 'The Islamic Republic of Pakistan'; (2) it established a federal, parliamentary system of government with a Prime Minister as head of government and a President as head of state; (3) it created a single (unicameral) National Assembly with parity of seats between East and West Pakistan; (4) Urdu and Bengali were made national languages; and (5) it included directive principles based on Islamic ideology, stating that no law would be made repugnant to the Quran and Sunnah. However, it was abrogated in 1958 when martial law was imposed, so it lasted only about two years.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 4,
+      "topic_title": "Constitution of Pakistan",
+      "question": "Discuss the significant changes introduced under the 1962 Constitution. [5]",
+      "model_answer": "The 1962 Constitution, introduced by President Ayub Khan, brought major changes: (1) it replaced the parliamentary system with a presidential system in which the President held wide executive powers and was head of both state and government; (2) it introduced the system of 'Basic Democracies', an indirect method of election in which a limited electorate of elected members chose the President and assemblies; (3) it created a single-house National Assembly with reduced powers compared with the President; (4) the word 'Islamic' was initially dropped from the country's name but later restored after opposition; and (5) it concentrated power at the centre and in the President, reducing provincial autonomy. It remained in force until it was abrogated in 1969.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "Describe the economic effects of wars on Pakistan's economy. [5]",
+      "model_answer": "Wars have had serious economic effects on Pakistan. (1) They forced a large share of the national budget to be spent on defence rather than on development, health or education. (2) They damaged infrastructure such as roads, bridges and communication links, which had to be rebuilt at great cost. (3) They disrupted trade and industry, reduced foreign investment and confidence, and sometimes led to loss of markets. (4) The 1971 war led to the separation of East Pakistan, removing an important source of raw materials (such as jute) and export earnings. (5) Wars also increased foreign debt and reliance on aid, and diverted skilled manpower to the military. Overall, conflict slowed economic growth and diverted scarce resources away from productive development.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "Evaluate the importance of agriculture in Pakistan's economic development. [5]",
+      "model_answer": "Agriculture is central to Pakistan's economy. It contributes a large share of GDP and employs a very high proportion of the labour force, especially in rural areas. It provides food for the growing population, ensuring food security, and supplies raw materials to major industries such as textiles (cotton) and sugar (sugarcane). Agricultural products such as rice and cotton are important exports that earn foreign exchange. The sector also supports rural incomes and reduces poverty. However, its full potential is limited by problems such as water shortages, outdated methods, small landholdings, waterlogging and salinity, and dependence on weather. Overall, agriculture is a foundation of economic development, but modernisation and better water management are needed for it to drive stronger growth.",
+      "marks": 5
+    }
+  ]
+}

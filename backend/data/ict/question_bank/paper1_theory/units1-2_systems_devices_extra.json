@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "type": "short_answer",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Types and Components of Computer Systems",
+      "question": "State what is meant by a multifunctional device and give one advantage of using one. [2]",
+      "model_answer": "A multifunctional device is a single device that combines several functions in one machine, for example a printer that can also scan, copy and fax. One advantage is that it takes up less space and usually costs less than buying each device separately; it also needs only one connection and one set of consumables to manage.",
+      "marks": 2
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Types and Components of Computer Systems",
+      "question": "Describe three tasks carried out by the operating system of a computer. [3]",
+      "model_answer": "Any three of: managing the hardware and communicating with peripherals such as printers and keyboards (via device drivers); managing memory, deciding where programs and data are held in RAM; managing files and storage, allowing files to be saved, opened, moved and deleted; providing a user interface so the user can interact with the computer; and managing security, for example handling user logins and access rights. The operating system also manages processing, sharing CPU time between running programs.",
+      "marks": 3
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Types and Components of Computer Systems",
+      "question": "Identify two features of a graphical user interface (GUI) and state one reason a GUI may be easier for a beginner to use than a command line interface. [3]",
+      "model_answer": "Two features of a GUI are: windows that display programs and files, and icons that represent programs or actions which the user clicks on (menus and pointers are also acceptable). A GUI is easier for a beginner because the user can select options by pointing and clicking on icons and menus rather than having to remember and type exact commands, so less technical knowledge is required.",
+      "marks": 3
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Input, Output and Storage Devices",
+      "question": "A user stores a backup of their files in cloud storage. (i) State what is meant by cloud storage. (ii) Give one benefit and one drawback of using cloud storage rather than a local hard disk. [4]",
+      "model_answer": "(i) Cloud storage means saving data on remote servers, accessed over the Internet and managed by a third-party provider, rather than on the user's own local device. (ii) Benefit: the files can be accessed from any device with an Internet connection and are kept safe off-site, so they survive if the local computer is lost, stolen or damaged; the provider also handles backups. Drawback: access depends on having a reliable Internet connection, and there may be ongoing subscription costs and privacy or security concerns about storing personal data with a third party.",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Input, Output and Storage Devices",
+      "question": "A user upgrades their computer from a 2GHz processor to a 4GHz processor and adds more RAM. Explain how each change can improve the computer's performance. [4]",
+      "model_answer": "A higher processor clock speed (4GHz rather than 2GHz) means the CPU can carry out more instructions per second, so programs run and respond faster and calculations are completed more quickly. Adding more RAM means more programs and data can be held in main memory at once, so the computer relies less on slower virtual memory (using the hard disk); this lets more applications run smoothly at the same time and reduces slowdown when multitasking. Together, a faster processor and more RAM improve the overall speed and responsiveness of the system.",
+      "marks": 4
+    }
+  ]
+}

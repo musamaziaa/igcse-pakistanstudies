@@ -1,0 +1,101 @@
+{
+  "title": "AI Paper 2: Practical Project Guide",
+  "subtitle": "LRN International GCSE Artificial Intelligence 7923 - Paper 2 (50% of the qualification)",
+  "intro": "Paper 2 is not a written exam. It is an internally assessed practical project, completed under supervised conditions and externally moderated by LRN. You design, build, test and present a working AI system that solves a real-world problem. This guide summarises exactly what is assessed and gives a step-by-step plan for producing a strong submission.",
+  "overview": [
+    { "label": "Format", "value": "Internally assessed practical project, supervised and guided; externally moderated by LRN." },
+    { "label": "Total marks", "value": "100 marks" },
+    { "label": "Weighting", "value": "50% of the overall qualification." },
+    { "label": "Time guidance", "value": "Approx. 20-25 hours over multiple lessons." },
+    { "label": "The task", "value": "Design and build a functional AI system to solve a real-world problem (e.g. classifying objects, recognising emotions, or sorting text)." }
+  ],
+  "components": [
+    {
+      "name": "Component A - AI System Build",
+      "marks": 40,
+      "summary": "Build and test a functional AI model using a beginner-friendly platform.",
+      "criteria": [
+        { "criterion": "Clear problem definition", "marks": 5 },
+        { "criterion": "Selection of a suitable tool/platform", "marks": 5 },
+        { "criterion": "Data preparation (labelling, cleaning, structure)", "marks": 10 },
+        { "criterion": "Model training and testing", "marks": 10 },
+        { "criterion": "Performance evaluation and improvements", "marks": 10 }
+      ]
+    },
+    {
+      "name": "Component B - Project Documentation",
+      "marks": 30,
+      "summary": "Produce a structured written report explaining and reflecting on the project.",
+      "criteria": [
+        { "criterion": "Explanation of the AI system and the objective", "marks": 5 },
+        { "criterion": "Step-by-step process description", "marks": 10 },
+        { "criterion": "Evaluation of results", "marks": 5 },
+        { "criterion": "Screenshots, code snippets, or diagrams included", "marks": 5 },
+        { "criterion": "Ethical considerations and user awareness", "marks": 5 }
+      ]
+    },
+    {
+      "name": "Component C - Presentation & Collaboration",
+      "marks": 30,
+      "summary": "Present the system and demonstrate project skills (solo or group work).",
+      "criteria": [
+        { "criterion": "Clear presentation of how the system works", "marks": 10 },
+        { "criterion": "Use of an appropriate format (video, slides, webpage)", "marks": 5 },
+        { "criterion": "Collaboration and teamwork (if applicable)", "marks": 5 },
+        { "criterion": "Use of shared tools (Google Docs, GitHub, etc.)", "marks": 5 },
+        { "criterion": "Personal reflection and suggested improvements", "marks": 5 }
+      ]
+    }
+  ],
+  "tools": [
+    "Teachable Machine - train image, audio or text models in the browser (fastest starting point).",
+    "Scratch with AI extensions - block-based, good for a simple interactive demo.",
+    "Google Colab - a simple Python model if you want to go further."
+  ],
+  "steps": [
+    {
+      "title": "1. Pick a small, well-scoped problem",
+      "detail": "A 3-class classifier is the classic safe choice (e.g. apple/banana/orange, or mask/no-mask). Small enough to finish, but it still lets you show the full pipeline: define, build, test, evaluate."
+    },
+    {
+      "title": "2. Learn one tool well",
+      "detail": "Teachable Machine is the quickest path. Train a model in the browser and watch how adding more or better example data changes accuracy. That single exercise covers most of Component A."
+    },
+    {
+      "title": "3. Prepare your data carefully",
+      "detail": "Collect enough examples per class, label them clearly, and remove poor or duplicate samples. Data preparation is worth 10 marks - clean, balanced data is where good projects separate from weak ones."
+    },
+    {
+      "title": "4. Train, then test on unseen examples",
+      "detail": "Keep some examples aside that the model has NOT been trained on, and test with those. This is what proves the model actually generalises rather than memorising."
+    },
+    {
+      "title": "5. Evaluate and make one real improvement",
+      "detail": "Note where the model fails, make a change (more data, cleaner labels, better lighting for images), and record the before/after accuracy. The 10-mark 'evaluation and improvements' criterion rewards exactly this."
+    },
+    {
+      "title": "6. Keep an evidence trail as you go",
+      "detail": "Screenshot your dataset, the training screen, and your test results while you work - not at the end. These feed Component B (report) directly and are worth easy marks."
+    },
+    {
+      "title": "7. Write the report with an ethics section",
+      "detail": "Explain the system and objective, describe the process step by step, evaluate the results, and deliberately cover ethics: bias in training data, privacy, consent, and who could be affected."
+    },
+    {
+      "title": "8. Prepare the presentation and reflection",
+      "detail": "A short slide deck or screen recording explaining how the system works, plus an honest reflection on what you would improve next time. Use a shared tool (Google Docs / GitHub) to show collaboration."
+    }
+  ],
+  "submission": [
+    "The working AI model (or a link to it).",
+    "The project report (PDF or DOC).",
+    "Presentation material (slides, screen recording, or live demo).",
+    "Teacher observation log (evidence for practical and collaboration work)."
+  ],
+  "tips": [
+    "Supervision is required during model creation and testing - do the real work in class.",
+    "Guidance from your teacher is allowed, but the work must remain your own.",
+    "Group work is permitted, but each learner's individual contribution must be clearly identified.",
+    "The Section B (Analysis & Evaluation) questions in the Practice Exam - facial recognition, ethical concerns, rule-based vs machine learning - are good rehearsal for the report's ethics and evaluation sections."
+  ]
+}

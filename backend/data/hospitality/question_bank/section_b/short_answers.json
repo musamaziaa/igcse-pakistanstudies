@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "section": "B",
+      "type": "short_answer",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "State the safe operating temperatures for the following: (i) deep-freezer, and (ii) refrigerator. [2]",
+      "model_answer": "(i) Deep-freezer: minus 18 degrees Celsius. (ii) Refrigerator: 0 to 5 degrees Celsius.",
+      "marks": 2
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "source_type": "Hospitality",
+      "topic_number": 1,
+      "topic_title": "Introduction to the Hospitality Industry",
+      "question": "Describe two benefits of working in the hospitality industry. [2]",
+      "model_answer": "It enables an individual to learn about the industry and improve their customer service skills. It also increases confidence in dealing with problems and improves negotiation skills.",
+      "marks": 2
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "source_type": "Hospitality",
+      "topic_number": 1,
+      "topic_title": "Introduction to the Hospitality Industry",
+      "question": "Explain the key characteristics required of personnel working in the hospitality industry. [2]",
+      "model_answer": "Staff must be able to demonstrate patience under pressure in order to convey calmness to customers. They must also be able to work on several tasks at once while being able to prioritise.",
+      "marks": 2
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "source_type": "Hospitality",
+      "topic_number": 2,
+      "topic_title": "Customer Service Skills",
+      "question": "Define two ways in which employees can provide effective customer service skills. [2]",
+      "model_answer": "By being polite and respectful to customers when meeting and greeting them before service. By being attentive to their needs during service, such as noticing when they want to place an order or offering assistance if required.",
+      "marks": 2
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "source_type": "Hospitality",
+      "topic_number": 3,
+      "topic_title": "Effective Team Working",
+      "question": "State two reasons for working well within a team environment. [2]",
+      "model_answer": "To maximise the success of the team and the business overall. To provide a pleasant environment for colleagues to work within.",
+      "marks": 2
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "List three types of pathogenic bacteria which can affect different food types. [3]",
+      "model_answer": "Staph Aureus, Salmonella, and E-Coli.",
+      "marks": 3
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "Define one suitable cooking method for each of the following: (i) meat, (ii) vegetables, (iii) poultry, (iv) fish, and (v) shellfish. [5]",
+      "model_answer": "(i) Meat: braising, cooking in a small amount of liquid such as stock or water. (ii) Vegetables: steaming, cooking over boiling water in a bamboo steamer. (iii) Poultry: roasting, cooking in a hot oven at around 180 degrees Celsius with the addition of oil. (iv) Fish: shallow frying in a small amount of oil in a frying pan. (v) Shellfish: poaching, cooking in liquid at around 75 degrees Celsius.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "State the safe operating temperature for hot food. [2]",
+      "model_answer": "Hot food is safe when held above 63 degrees Celsius, but 75 degrees Celsius is preferable.",
+      "marks": 2
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "source_type": "Hospitality",
+      "topic_number": 5,
+      "topic_title": "Food, Nutrition and Exercise",
+      "question": "List two examples of food for each of the following commodities: (i) meat, (ii) vegetables, (iii) poultry, (iv) fish, and (v) shellfish. [5]",
+      "model_answer": "(i) Meat: beef, lamb. (ii) Vegetables: carrots, tomatoes. (iii) Poultry: chicken, turkey. (iv) Fish: plaice, cod. (v) Shellfish: crabs, lobsters.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "source_type": "Hospitality",
+      "topic_number": 2,
+      "topic_title": "Customer Service Skills",
+      "question": "State the expected requirements of the following customers: (i) a colleague from the events and conference department, and (ii) a disabled customer making a restaurant reservation. [2]",
+      "model_answer": "(i) The colleague requires information on sales and invoices, and an email to clarify conference numbers. (ii) The disabled customer needs a table with easy access to and from the washroom, and may require assistance with ordering and carrying meals to and from the table.",
+      "marks": 2
+    }
+  ]
+}

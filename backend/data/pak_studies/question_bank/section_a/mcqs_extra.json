@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The Khilafat Movement began to protect the:",
+      "options": { "A": "Ottoman Caliphate", "B": "Muslim League", "C": "Hindu Congress", "D": "British Raj" },
+      "model_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The Pakistan Resolution was passed in:",
+      "options": { "A": "1938", "B": "1939", "C": "1940", "D": "1942" },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The Congress Ministries rule (1937-39) was opposed mainly because of:",
+      "options": { "A": "Economic reforms", "B": "Religious bias", "C": "Industrial policy", "D": "Education reforms" },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The 14 Points of Jinnah were presented in:",
+      "options": { "A": "1927", "B": "1928", "C": "1929", "D": "1930" },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Allama Iqbal presented the idea of a separate Muslim state in his famous address at:",
+      "options": { "A": "Lahore", "B": "Delhi", "C": "Allahabad", "D": "Karachi" },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The main source of irrigation water in Pakistan is:",
+      "options": { "A": "Rainfall", "B": "Rivers", "C": "Dams", "D": "Tube wells" },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The largest forest area in Pakistan is found in:",
+      "options": { "A": "Sindh", "B": "Khyber Pakhtunkhwa", "C": "Punjab", "D": "Gilgit-Baltistan" },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The major agricultural crop grown in Punjab is:",
+      "options": { "A": "Jute", "B": "Cotton", "C": "Sugarcane", "D": "Tea" },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The Mangrove forests are found along:",
+      "options": { "A": "Coastal areas", "B": "River plains", "C": "Mountains", "D": "Deserts" },
+      "model_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The population density of Pakistan is highest in:",
+      "options": { "A": "Punjab", "B": "Sindh", "C": "Khyber Pakhtunkhwa", "D": "Balochistan" },
+      "model_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The biggest gas field of Pakistan is:",
+      "options": { "A": "Pirkoh", "B": "Sui", "C": "Mari", "D": "None of the above" },
+      "model_answer": "B",
+      "marks": 1
+    }
+  ]
+}

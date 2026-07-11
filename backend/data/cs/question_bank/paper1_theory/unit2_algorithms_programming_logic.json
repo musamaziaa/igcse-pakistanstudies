@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "type": "short_answer",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Algorithms, Programming and Logic",
+      "question": "Define the terms (i) abstraction and (ii) decomposition as used in computational thinking. [2]",
+      "model_answer": "(i) Abstraction is the process of removing or hiding unnecessary detail so that only the important features of a problem are considered. (ii) Decomposition is breaking a complex problem down into smaller, more manageable sub-problems that can be solved individually.",
+      "marks": 2
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Algorithms, Programming and Logic",
+      "question": "Compare a linear search and a binary search, stating how each works and when a binary search cannot be used. [6]",
+      "model_answer": "A linear search checks each item in a list one at a time, starting at the beginning, until the target is found or the end of the list is reached. It works on any list, whether sorted or not, but can be slow on large lists. A binary search works only on a sorted list: it checks the middle item and, if it is not the target, discards the half of the list that cannot contain the target, repeating on the remaining half. A binary search is much faster on large sorted lists because it halves the search area each time. A binary search cannot be used if the list is not sorted.",
+      "marks": 6
+    },
+    {
+      "type": "short_answer",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Algorithms, Programming and Logic",
+      "question": "Name the three basic programming constructs used to control the flow of a program and give a brief description of each. [3]",
+      "model_answer": "Sequence: instructions are carried out one after another in order. Selection: the program chooses between different actions using IF, ELSE, or CASE statements based on a condition. Iteration: a block of instructions is repeated using a count-controlled loop (for a set number of times) or a condition-controlled loop (while or until a condition is met).",
+      "marks": 3
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Algorithms, Programming and Logic",
+      "question": "Complete the truth table for the Boolean expression X = A AND (NOT B) for all four combinations of inputs A and B. [4]",
+      "model_answer": "When A = 0 and B = 0: NOT B = 1, so X = 0 AND 1 = 0. When A = 0 and B = 1: NOT B = 0, so X = 0 AND 0 = 0. When A = 1 and B = 0: NOT B = 1, so X = 1 AND 1 = 1. When A = 1 and B = 1: NOT B = 0, so X = 1 AND 0 = 0. The output X is 1 only when A = 1 and B = 0.",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Algorithms, Programming and Logic",
+      "question": "A single-table database stores student records. (i) State what is meant by a primary key. (ii) Write an SQL statement to select the Name and Grade of all students whose Grade is 'A', ordered by Name in ascending order. [4]",
+      "model_answer": "(i) A primary key is a field that uniquely identifies each record in the table, so no two records share the same value. (ii) SELECT Name, Grade FROM Students WHERE Grade = 'A' ORDER BY Name ASC;",
+      "marks": 4
+    }
+  ]
+}

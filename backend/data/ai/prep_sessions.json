@@ -1,0 +1,158 @@
+{
+  "sessions": [
+    {
+      "id": "session-1",
+      "title": "Paper 2 - Preparation Session 1",
+      "subtitle": "Build a real, working AI in your browser with Google Teachable Machine - no coding needed.",
+      "project_name": "Project 1: The Recycling Sorter",
+      "difficulty": "Beginner",
+      "duration": "About 2-3 hours",
+      "intro": "In this session you will build a complete, working AI system from start to finish: a 'Recycling Sorter' that looks through a camera and decides whether it is seeing Paper, Plastic, or Metal. You will do every stage of a real Paper 2 project - define the problem, collect and clean data, train a model, test it, improve it, and save your evidence. Follow every step exactly. Each step has a picture of the screen you should be looking at.",
+      "overview": [
+        { "label": "Tool you will use", "value": "Google Teachable Machine - a free website that trains AI models in your browser. No programming, no installing anything." },
+        { "label": "What you will build", "value": "A 3-class image classifier (Paper / Plastic / Metal) - the classic safe project that still shows the full AI pipeline." },
+        { "label": "Time needed", "value": "About 2-3 hours. You can pause after any step and come back later." },
+        { "label": "What it covers", "value": "All of Paper 2 Component A (building the AI system) and it produces the screenshots you need for Component B (the report)." }
+      ],
+      "materials": [
+        "A laptop or desktop with the Google Chrome browser and a working internet connection.",
+        "A webcam - the one built into most laptops is fine. (A phone camera also works if you upload photos instead.)",
+        "Objects to photograph: a few real items for each group - some paper/card, some plastic items (bottle, wrapper), and some metal items (can, spoon). 3-5 real objects per group is enough to take ~40 photos of each.",
+        "A free Google account, so you can save your project to Google Drive and not lose your work.",
+        "An empty folder on your computer named 'Paper2 Evidence' to keep every screenshot you take."
+      ],
+      "steps": [
+        {
+          "title": "Open Teachable Machine and start an Image Project",
+          "detail": "This is the website where you will build the AI. You do not need to log in or download anything to start.",
+          "substeps": [
+            "Open Google Chrome and go to the address: teachablemachine.withgoogle.com",
+            "Click the big 'Get Started' button.",
+            "A box appears asking what kind of project you want. Click 'Image Project'.",
+            "A second box asks for the type of image model. Click 'Standard image model'."
+          ],
+          "tip": "If you get a pop-up asking to use your camera, click 'Allow'. Without this the webcam will not work later.",
+          "illustration": "<svg viewBox='0 0 800 440' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='440' fill='#eef2ff'/><rect x='40' y='30' width='720' height='380' rx='14' fill='#ffffff' stroke='#c7d2fe' stroke-width='2'/><rect x='40' y='30' width='720' height='46' rx='14' fill='#e0e7ff'/><circle cx='68' cy='53' r='6' fill='#f87171'/><circle cx='90' cy='53' r='6' fill='#fbbf24'/><circle cx='112' cy='53' r='6' fill='#34d399'/><rect x='140' y='40' width='560' height='26' rx='13' fill='#ffffff'/><text x='158' y='58' font-size='14' fill='#64748b'>teachablemachine.withgoogle.com</text><text x='400' y='118' font-size='22' fill='#1e293b' text-anchor='middle' font-weight='bold'>New Project</text><rect x='120' y='150' width='170' height='175' rx='14' fill='#eef2ff' stroke='#6366f1' stroke-width='3'/><text x='205' y='235' font-size='44' text-anchor='middle'>&#128247;</text><text x='205' y='290' font-size='16' fill='#3730a3' text-anchor='middle' font-weight='bold'>Image Project</text><rect x='315' y='150' width='170' height='175' rx='14' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='400' y='235' font-size='44' text-anchor='middle'>&#127908;</text><text x='400' y='290' font-size='16' fill='#94a3b8' text-anchor='middle'>Audio Project</text><rect x='510' y='150' width='170' height='175' rx='14' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='595' y='235' font-size='44' text-anchor='middle'>&#127939;</text><text x='595' y='290' font-size='16' fill='#94a3b8' text-anchor='middle'>Pose Project</text><circle cx='120' cy='150' r='16' fill='#ef4444'/><text x='120' y='156' font-size='15' fill='#fff' text-anchor='middle' font-weight='bold'>1</text><text x='205' y='360' font-size='14' fill='#ef4444' text-anchor='middle' font-weight='bold'>Click this, then 'Standard image model'</text></svg>"
+        },
+        {
+          "title": "Get to know the 3 areas of the screen",
+          "detail": "Before you touch anything, understand the layout. The screen is split into three columns, and you always work from left to right.",
+          "substeps": [
+            "On the LEFT are your 'Classes' - the groups the AI learns to tell apart. This is where you add your example photos.",
+            "In the MIDDLE is the 'Training' box with the big 'Train Model' button. This is where the AI actually learns.",
+            "On the RIGHT is the 'Preview' box. This is where you test the finished AI live with your camera."
+          ],
+          "tip": "Think of it as a factory line: put examples in on the left, train in the middle, test the result on the right.",
+          "illustration": "<svg viewBox='0 0 800 440' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='440' fill='#f8fafc'/><rect x='24' y='40' width='250' height='360' rx='14' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><rect x='44' y='62' width='210' height='60' rx='10' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='60' y='88' font-size='14' fill='#334155' font-weight='bold'>Class 1</text><rect x='60' y='96' width='80' height='16' rx='6' fill='#e2e8f0'/><rect x='44' y='136' width='210' height='60' rx='10' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='60' y='162' font-size='14' fill='#334155' font-weight='bold'>Class 2</text><rect x='60' y='170' width='80' height='16' rx='6' fill='#e2e8f0'/><rect x='290' y='140' width='210' height='150' rx='14' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='395' y='185' font-size='15' fill='#334155' text-anchor='middle' font-weight='bold'>Training</text><rect x='320' y='210' width='150' height='40' rx='10' fill='#4f46e5'/><text x='395' y='235' font-size='14' fill='#ffffff' text-anchor='middle' font-weight='bold'>Train Model</text><rect x='516' y='40' width='260' height='360' rx='14' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='646' y='72' font-size='15' fill='#334155' text-anchor='middle' font-weight='bold'>Preview</text><rect x='540' y='90' width='212' height='150' rx='10' fill='#f1f5f9' stroke='#cbd5e1' stroke-width='2'/><text x='646' y='170' font-size='13' fill='#94a3b8' text-anchor='middle'>your camera view</text><circle cx='40' cy='40' r='16' fill='#ef4444'/><text x='40' y='46' font-size='15' fill='#fff' text-anchor='middle' font-weight='bold'>1</text><text x='149' y='420' font-size='13' fill='#ef4444' text-anchor='middle' font-weight='bold'>CLASSES (examples)</text><circle cx='290' cy='140' r='16' fill='#ef4444'/><text x='290' y='146' font-size='15' fill='#fff' text-anchor='middle' font-weight='bold'>2</text><text x='395' y='320' font-size='13' fill='#ef4444' text-anchor='middle' font-weight='bold'>TRAINING (learning)</text><circle cx='532' cy='40' r='16' fill='#ef4444'/><text x='532' y='46' font-size='15' fill='#fff' text-anchor='middle' font-weight='bold'>3</text><text x='646' y='420' font-size='13' fill='#ef4444' text-anchor='middle' font-weight='bold'>PREVIEW (testing)</text></svg>"
+        },
+        {
+          "title": "Name your three classes",
+          "detail": "The AI needs to know which groups it is learning. Your problem is: 'sort recycling into Paper, Plastic, or Metal', so you need three classes with those names.",
+          "substeps": [
+            "The page starts with two classes called 'Class 1' and 'Class 2'. Click on the name 'Class 1' (or the small pencil icon) and type: Paper",
+            "Click on 'Class 2' and rename it to: Plastic",
+            "Click the '+ Add a class' button at the bottom to create a third class, and name it: Metal",
+            "Double-check you now have exactly three classes: Paper, Plastic, Metal."
+          ],
+          "tip": "Clear class names are worth marks - the examiner sees you defined the problem properly (Component A: 'clear problem definition').",
+          "illustration": "<svg viewBox='0 0 800 440' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='440' fill='#f8fafc'/><rect x='250' y='40' width='300' height='72' rx='12' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='274' y='82' font-size='18' fill='#1e293b' font-weight='bold'>Paper</text><text x='372' y='82' font-size='16' fill='#94a3b8'>&#9998;</text><rect x='250' y='124' width='300' height='72' rx='12' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='274' y='166' font-size='18' fill='#1e293b' font-weight='bold'>Plastic</text><text x='390' y='166' font-size='16' fill='#94a3b8'>&#9998;</text><rect x='250' y='208' width='300' height='72' rx='12' fill='#ffffff' stroke='#6366f1' stroke-width='3'/><text x='274' y='250' font-size='18' fill='#1e293b' font-weight='bold'>Metal</text><text x='378' y='250' font-size='16' fill='#94a3b8'>&#9998;</text><rect x='250' y='300' width='300' height='54' rx='12' fill='#eef2ff' stroke='#c7d2fe' stroke-width='2' stroke-dasharray='6 5'/><text x='400' y='333' font-size='16' fill='#4f46e5' text-anchor='middle' font-weight='bold'>+  Add a class</text><circle cx='250' cy='208' r='16' fill='#ef4444'/><text x='250' y='214' font-size='15' fill='#fff' text-anchor='middle' font-weight='bold'>3</text><text x='585' y='250' font-size='13' fill='#ef4444' font-weight='bold'>new 3rd class</text><path d='M575 240 L560 240' stroke='#ef4444' stroke-width='2'/><text x='585' y='330' font-size='13' fill='#ef4444' font-weight='bold'>click to add</text></svg>"
+        },
+        {
+          "title": "Collect example photos for each class",
+          "detail": "Now you teach the AI by giving it lots of examples. You do this one class at a time. The webcam is the fastest way.",
+          "substeps": [
+            "Click inside the 'Paper' class, then click the 'Webcam' button. Your camera turns on.",
+            "Hold a piece of paper in front of the camera. Press and HOLD the 'Hold to Record' button - it keeps taking photos while you hold it.",
+            "While holding, slowly move and rotate the paper so you capture different angles. Aim for about 40-50 photos.",
+            "Do the exact same for 'Plastic' (hold plastic items) and 'Metal' (hold metal items).",
+            "No webcam? Click 'Upload' instead and add photos from your computer or Google Drive."
+          ],
+          "tip": "Change the angle, distance and background between shots. A model trained on only one pose only recognises that one pose.",
+          "illustration": "<svg viewBox='0 0 800 440' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='440' fill='#f8fafc'/><rect x='60' y='40' width='680' height='360' rx='14' fill='#ffffff' stroke='#6366f1' stroke-width='2'/><text x='84' y='78' font-size='18' fill='#1e293b' font-weight='bold'>Paper</text><rect x='84' y='96' width='120' height='34' rx='8' fill='#4f46e5'/><text x='144' y='118' font-size='13' fill='#ffffff' text-anchor='middle' font-weight='bold'>Webcam</text><rect x='214' y='96' width='120' height='34' rx='8' fill='#ffffff' stroke='#cbd5e1' stroke-width='2'/><text x='274' y='118' font-size='13' fill='#475569' text-anchor='middle' font-weight='bold'>Upload</text><rect x='84' y='150' width='250' height='190' rx='10' fill='#0f172a'/><rect x='150' y='195' width='120' height='90' rx='6' fill='#e2e8f0'/><text x='210' y='247' font-size='13' fill='#64748b' text-anchor='middle'>paper in view</text><rect x='84' y='352' width='250' height='38' rx='10' fill='#dc2626'/><text x='209' y='376' font-size='14' fill='#ffffff' text-anchor='middle' font-weight='bold'>Hold to Record</text><text x='560' y='150' font-size='14' fill='#334155' text-anchor='middle' font-weight='bold'>48 Image Samples</text><g fill='#93c5fd'><rect x='370' y='166' width='52' height='52' rx='6'/><rect x='432' y='166' width='52' height='52' rx='6'/><rect x='494' y='166' width='52' height='52' rx='6'/><rect x='556' y='166' width='52' height='52' rx='6'/><rect x='618' y='166' width='52' height='52' rx='6'/><rect x='370' y='228' width='52' height='52' rx='6'/><rect x='432' y='228' width='52' height='52' rx='6'/><rect x='494' y='228' width='52' height='52' rx='6'/><rect x='556' y='228' width='52' height='52' rx='6'/><rect x='618' y='228' width='52' height='52' rx='6'/><rect x='370' y='290' width='52' height='52' rx='6'/><rect x='432' y='290' width='52' height='52' rx='6'/><rect x='494' y='290' width='52' height='52' rx='6'/></g><circle cx='209' cy='352' r='16' fill='#ef4444'/><text x='209' y='358' font-size='15' fill='#fff' text-anchor='middle' font-weight='bold'>4</text><text x='530' y='330' font-size='13' fill='#ef4444' font-weight='bold'>photos collect here as you hold</text></svg>"
+        },
+        {
+          "title": "Clean your data so the classes are fair",
+          "detail": "The quality of your photos decides how good your AI is. This step is worth 10 marks on its own (Component A: 'data preparation'), so do not rush it.",
+          "substeps": [
+            "Check the number of samples on each class. They should be roughly EQUAL (for example ~45 each). If one class has far fewer, add more photos to it.",
+            "Look through the photos. Hover over any that are blurry, too dark, or where the object is out of frame, and click the delete (X) to remove them.",
+            "Make sure each class has variety: different backgrounds, lighting and angles - not 45 identical shots.",
+            "Write one sentence in your notes explaining WHY balanced, clean data matters (the examiner rewards this)."
+          ],
+          "tip": "Unbalanced data makes the AI biased toward the class with the most photos - exactly the kind of point that also earns marks in your report's ethics section.",
+          "illustration": "<svg viewBox='0 0 800 440' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='440' fill='#f8fafc'/><g><rect x='40' y='60' width='210' height='320' rx='12' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='60' y='92' font-size='16' fill='#1e293b' font-weight='bold'>Paper</text><rect x='170' y='74' width='62' height='26' rx='13' fill='#dcfce7'/><text x='201' y='92' font-size='13' fill='#166534' text-anchor='middle' font-weight='bold'>45</text></g><g><rect x='295' y='60' width='210' height='320' rx='12' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='315' y='92' font-size='16' fill='#1e293b' font-weight='bold'>Plastic</text><rect x='425' y='74' width='62' height='26' rx='13' fill='#dcfce7'/><text x='456' y='92' font-size='13' fill='#166534' text-anchor='middle' font-weight='bold'>47</text></g><g><rect x='550' y='60' width='210' height='320' rx='12' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='570' y='92' font-size='16' fill='#1e293b' font-weight='bold'>Metal</text><rect x='680' y='74' width='62' height='26' rx='13' fill='#dcfce7'/><text x='711' y='92' font-size='13' fill='#166534' text-anchor='middle' font-weight='bold'>46</text></g><g fill='#93c5fd'><rect x='60' y='120' width='40' height='40' rx='5'/><rect x='108' y='120' width='40' height='40' rx='5'/><rect x='156' y='120' width='40' height='40' rx='5'/><rect x='60' y='168' width='40' height='40' rx='5'/></g><rect x='108' y='168' width='40' height='40' rx='5' fill='#94a3b8'/><line x1='112' y1='172' x2='144' y2='204' stroke='#ffffff' stroke-width='2'/><line x1='144' y1='172' x2='112' y2='204' stroke='#ffffff' stroke-width='2'/><circle cx='150' cy='168' r='13' fill='#ef4444'/><text x='150' y='173' font-size='13' fill='#fff' text-anchor='middle' font-weight='bold'>X</text><text x='128' y='250' font-size='12' fill='#ef4444' font-weight='bold'>delete blurry ones</text><g fill='#93c5fd'><rect x='315' y='120' width='40' height='40' rx='5'/><rect x='363' y='120' width='40' height='40' rx='5'/><rect x='411' y='120' width='40' height='40' rx='5'/><rect x='570' y='120' width='40' height='40' rx='5'/><rect x='618' y='120' width='40' height='40' rx='5'/><rect x='666' y='120' width='40' height='40' rx='5'/></g><text x='400' y='410' font-size='14' fill='#ef4444' text-anchor='middle' font-weight='bold'>Keep the counts balanced and remove poor photos</text></svg>"
+        },
+        {
+          "title": "Train the model",
+          "detail": "This is the moment the AI actually learns from your photos. It only takes a minute or two.",
+          "substeps": [
+            "Click the big 'Train Model' button in the middle Training box.",
+            "A progress bar appears. IMPORTANT: do not switch to another browser tab or close the window while it trains - that stops the training.",
+            "Wait until it says the model is trained. You do not need to change the 'Advanced' settings (epochs, batch size) - the defaults are fine for now.",
+            "Take a screenshot of the finished training screen for your report."
+          ],
+          "tip": "If you ever add or delete photos later, you must click 'Train Model' again for the changes to take effect.",
+          "illustration": "<svg viewBox='0 0 800 440' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='440' fill='#f8fafc'/><rect x='250' y='120' width='300' height='200' rx='16' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='400' y='162' font-size='18' fill='#1e293b' text-anchor='middle' font-weight='bold'>Training</text><rect x='285' y='185' width='230' height='46' rx='12' fill='#4f46e5'/><text x='400' y='214' font-size='16' fill='#ffffff' text-anchor='middle' font-weight='bold'>Train Model</text><rect x='285' y='250' width='230' height='16' rx='8' fill='#e2e8f0'/><rect x='285' y='250' width='150' height='16' rx='8' fill='#4f46e5'/><text x='400' y='294' font-size='13' fill='#64748b' text-anchor='middle'>Training... 65%</text><rect x='230' y='340' width='340' height='44' rx='10' fill='#fef2f2' stroke='#fecaca' stroke-width='2'/><text x='400' y='367' font-size='13' fill='#dc2626' text-anchor='middle' font-weight='bold'>&#9888; Do NOT switch tabs while training</text><circle cx='285' cy='185' r='16' fill='#ef4444'/><text x='285' y='191' font-size='15' fill='#fff' text-anchor='middle' font-weight='bold'>6</text></svg>"
+        },
+        {
+          "title": "Test your AI with items it has never seen",
+          "detail": "Now find out if it actually works. The right-hand Preview box runs your live AI.",
+          "substeps": [
+            "Look at the 'Preview' box on the right. Make sure 'Input' is set to 'Webcam' and switched ON.",
+            "Hold up an object - ideally a NEW one you did not use in training (this proves the AI really learned, not memorised).",
+            "Watch the coloured bars. The AI shows how confident it is for each class - the longest bar is its answer.",
+            "Try all three types. Take screenshots showing correct predictions for your report."
+          ],
+          "tip": "Testing on unseen items is the whole point of 'generalisation'. If it only works on your training objects, it has memorised, not learned.",
+          "illustration": "<svg viewBox='0 0 800 440' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='440' fill='#f8fafc'/><rect x='250' y='40' width='300' height='360' rx='16' fill='#ffffff' stroke='#6366f1' stroke-width='2'/><text x='400' y='74' font-size='16' fill='#1e293b' text-anchor='middle' font-weight='bold'>Preview</text><rect x='280' y='90' width='240' height='30' rx='8' fill='#eef2ff'/><text x='300' y='110' font-size='12' fill='#4f46e5' font-weight='bold'>Input: Webcam  ON</text><rect x='280' y='130' width='240' height='150' rx='10' fill='#0f172a'/><rect x='345' y='170' width='110' height='75' rx='6' fill='#e2e8f0'/><text x='400' y='212' font-size='12' fill='#64748b' text-anchor='middle'>a NEW plastic bottle</text><text x='285' y='312' font-size='13' fill='#334155' font-weight='bold'>Output</text><text x='285' y='334' font-size='12' fill='#475569'>Paper</text><rect x='340' y='324' width='150' height='12' rx='6' fill='#e2e8f0'/><rect x='340' y='324' width='16' height='12' rx='6' fill='#93c5fd'/><text x='498' y='334' font-size='11' fill='#64748b'>7%</text><text x='285' y='356' font-size='12' fill='#475569'>Plastic</text><rect x='340' y='346' width='150' height='12' rx='6' fill='#e2e8f0'/><rect x='340' y='346' width='132' height='12' rx='6' fill='#4f46e5'/><text x='498' y='356' font-size='11' fill='#4f46e5' font-weight='bold'>88%</text><text x='285' y='378' font-size='12' fill='#475569'>Metal</text><rect x='340' y='368' width='150' height='12' rx='6' fill='#e2e8f0'/><rect x='340' y='368' width='9' height='12' rx='6' fill='#93c5fd'/><text x='498' y='378' font-size='11' fill='#64748b'>5%</text><circle cx='250' cy='355' r='16' fill='#ef4444'/><text x='250' y='361' font-size='14' fill='#fff' text-anchor='middle' font-weight='bold'>7</text><text x='620' y='210' font-size='13' fill='#ef4444' font-weight='bold'>longest bar =</text><text x='620' y='230' font-size='13' fill='#ef4444' font-weight='bold'>the AI answer</text></svg>"
+        },
+        {
+          "title": "Improve the model and record before-and-after",
+          "detail": "No first model is perfect. Finding a weakness and fixing it is worth 10 marks (Component A: 'evaluation and improvements').",
+          "substeps": [
+            "Note down where it gets confused - for example, shiny plastic mistaken for metal.",
+            "Write down the accuracy you see BEFORE improving (roughly how often it is right out of 10 tries).",
+            "Fix the weak class: add 10-15 more varied photos to it (different lighting/angles), then click 'Train Model' again.",
+            "Test again and write down the accuracy AFTER. Keep both numbers - a before/after comparison is exactly what the examiner wants."
+          ],
+          "tip": "One clear, measured improvement beats many vague changes. 'I added 15 photos of shiny plastic and accuracy rose from 7/10 to 9/10' is a top-mark sentence.",
+          "illustration": "<svg viewBox='0 0 800 440' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='440' fill='#f8fafc'/><rect x='120' y='60' width='560' height='320' rx='16' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='400' y='100' font-size='18' fill='#1e293b' text-anchor='middle' font-weight='bold'>My accuracy</text><line x1='180' y1='340' x2='620' y2='340' stroke='#cbd5e1' stroke-width='2'/><rect x='240' y='230' width='90' height='110' rx='6' fill='#94a3b8'/><text x='285' y='215' font-size='18' fill='#334155' text-anchor='middle' font-weight='bold'>70%</text><text x='285' y='365' font-size='14' fill='#64748b' text-anchor='middle'>BEFORE</text><rect x='470' y='140' width='90' height='200' rx='6' fill='#4f46e5'/><text x='515' y='125' font-size='18' fill='#4f46e5' text-anchor='middle' font-weight='bold'>92%</text><text x='515' y='365' font-size='14' fill='#64748b' text-anchor='middle'>AFTER</text><path d='M340 250 Q400 170 460 190' stroke='#22c55e' stroke-width='3' fill='none' stroke-dasharray='6 5'/><text x='400' y='160' font-size='13' fill='#16a34a' text-anchor='middle' font-weight='bold'>+15 photos, retrained</text></svg>"
+        },
+        {
+          "title": "Save and export your model",
+          "detail": "Keep your work safe and get a shareable version of your AI for the presentation.",
+          "substeps": [
+            "First, save the whole project: click the menu (top-left) and choose 'Save project to Drive'. This lets you reopen it later.",
+            "To share the working AI, click the 'Export Model' button (top-right of the Preview box).",
+            "In the box that opens, keep the 'Tensorflow.js' tab selected and click 'Upload my model'.",
+            "It gives you a shareable link. Copy it - anyone can open that link and use your AI in their browser. Save the link for your presentation."
+          ],
+          "tip": "The shareable link is perfect evidence for Component C (presentation) - you can demo the live AI from any computer without rebuilding it.",
+          "illustration": "<svg viewBox='0 0 800 440' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='440' fill='#f8fafc'/><rect x='170' y='40' width='460' height='360' rx='16' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='400' y='78' font-size='18' fill='#1e293b' text-anchor='middle' font-weight='bold'>Export your model</text><rect x='200' y='100' width='130' height='34' rx='8' fill='#eef2ff' stroke='#6366f1' stroke-width='2'/><text x='265' y='122' font-size='12' fill='#4f46e5' text-anchor='middle' font-weight='bold'>Tensorflow.js</text><rect x='336' y='100' width='120' height='34' rx='8' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='396' y='122' font-size='12' fill='#94a3b8' text-anchor='middle'>Tensorflow</text><rect x='462' y='100' width='140' height='34' rx='8' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='532' y='122' font-size='12' fill='#94a3b8' text-anchor='middle'>Tensorflow Lite</text><rect x='200' y='158' width='250' height='40' rx='10' fill='#4f46e5'/><text x='325' y='183' font-size='14' fill='#ffffff' text-anchor='middle' font-weight='bold'>Upload my model</text><text x='200' y='240' font-size='13' fill='#334155' font-weight='bold'>Your shareable link:</text><rect x='200' y='254' width='400' height='38' rx='8' fill='#f1f5f9' stroke='#cbd5e1' stroke-width='2'/><text x='214' y='278' font-size='12' fill='#4f46e5'>teachablemachine.withgoogle.com/models/AbCd12/</text><rect x='200' y='320' width='400' height='50' rx='10' fill='#ecfdf5' stroke='#a7f3d0' stroke-width='2'/><text x='400' y='350' font-size='13' fill='#047857' text-anchor='middle' font-weight='bold'>&#128190; Also: menu &#8594; 'Save project to Drive'</text><circle cx='200' cy='158' r='16' fill='#ef4444'/><text x='200' y='164' font-size='14' fill='#fff' text-anchor='middle' font-weight='bold'>9</text></svg>"
+        },
+        {
+          "title": "Turn it into your Paper 2 evidence",
+          "detail": "You have now built a working AI. This final step converts what you did into the marks for the report (Component B) and presentation (Component C).",
+          "substeps": [
+            "Collect the screenshots you took: your labelled classes, the sample photos, the training screen, the correct predictions, the before/after accuracy, and the export link.",
+            "In your report, write: (1) the objective, (2) the step-by-step process, (3) your results, (4) an ETHICS section - e.g. the model may be biased if it only saw clean items in good light, and using a camera raises privacy questions.",
+            "Prepare a short slide deck or screen recording that demonstrates the live AI using your shareable link.",
+            "You are done with Project 1! You have completed a full AI pipeline end-to-end."
+          ],
+          "tip": "Do the ethics section properly - bias, privacy and who is affected. It is easy marks that weak projects skip.",
+          "illustration": "<svg viewBox='0 0 800 440' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='440' fill='#f8fafc'/><rect x='240' y='30' width='320' height='390' rx='14' fill='#ffffff' stroke='#e2e8f0' stroke-width='2'/><text x='400' y='68' font-size='16' fill='#1e293b' text-anchor='middle' font-weight='bold'>Project Report</text><text x='268' y='104' font-size='13' fill='#4f46e5' font-weight='bold'>1. Objective</text><rect x='268' y='114' width='264' height='10' rx='5' fill='#e2e8f0'/><rect x='268' y='130' width='210' height='10' rx='5' fill='#e2e8f0'/><text x='268' y='168' font-size='13' fill='#4f46e5' font-weight='bold'>2. Process (screenshots)</text><rect x='268' y='180' width='80' height='56' rx='6' fill='#c7d2fe'/><rect x='356' y='180' width='80' height='56' rx='6' fill='#c7d2fe'/><rect x='444' y='180' width='80' height='56' rx='6' fill='#c7d2fe'/><text x='268' y='272' font-size='13' fill='#4f46e5' font-weight='bold'>3. Results (before / after)</text><rect x='268' y='282' width='264' height='10' rx='5' fill='#e2e8f0'/><text x='268' y='320' font-size='13' fill='#dc2626' font-weight='bold'>4. Ethics: bias &amp; privacy</text><rect x='268' y='330' width='264' height='10' rx='5' fill='#fee2e2'/><rect x='268' y='346' width='230' height='10' rx='5' fill='#fee2e2'/><rect x='268' y='378' width='264' height='30' rx='8' fill='#ecfdf5' stroke='#a7f3d0' stroke-width='2'/><text x='400' y='398' font-size='12' fill='#047857' text-anchor='middle' font-weight='bold'>+ slides / recording for the demo</text></svg>"
+        }
+      ],
+      "evidence": [
+        "Screenshot: your three named classes (Paper / Plastic / Metal) with their sample photos.",
+        "Screenshot: the training screen after 'Train Model' finished.",
+        "Screenshot: at least three correct live predictions in the Preview box.",
+        "Your before-and-after accuracy numbers, with a note on what you changed.",
+        "The shareable export link to your working model.",
+        "A short written report including an ethics section, plus slides or a screen recording for the demo."
+      ],
+      "ethics_note": "For the report's ethics section, think about: bias (if you only photographed clean items in bright light, the AI may fail on dirty or dark real recycling); privacy (a camera could capture people, not just objects); and who is affected if the sorter gets it wrong. Naming these earns real marks and shows mature understanding.",
+      "next_up": "Next session will be a brand-new end-to-end project that teaches you more - for example a sound or text classifier, or your first Python model in Google Colab. Each project builds on the skills from this one."
+    }
+  ]
+}

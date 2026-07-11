@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "section": "C",
+      "type": "extended",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "Scenario: You are responsible for food safety in a busy hotel kitchen. Explain the main food-safety practices that staff should follow, covering personal hygiene, temperature control, and preventing cross-contamination. [8]",
+      "model_answer": "Good food safety in a busy kitchen depends on three main areas. Personal hygiene: staff should wash their hands thoroughly and regularly, especially after handling raw food or using the toilet; wear clean uniforms, aprons and hair coverings; keep nails short and remove jewellery; and never work when suffering from illnesses such as vomiting or diarrhoea. Any cuts should be covered with a brightly coloured waterproof dressing. Temperature control: food must be kept out of the danger zone (5 to 63 degrees Celsius) where bacteria multiply quickly. Refrigerators should run at 0 to 5 degrees Celsius and freezers at about minus 18 degrees Celsius; hot food should be held above 63 degrees Celsius. Food should be cooked thoroughly to a safe core temperature, cooled quickly if not served, and reheated only once until piping hot. Preventing cross-contamination: raw and ready-to-eat foods must be kept apart, using separate colour-coded chopping boards and utensils; raw meat should be stored below ready-to-eat food in the fridge; surfaces and equipment should be cleaned and sanitised regularly; and stock should be rotated using first-in, first-out so older items are used first. Following these practices protects customers from food poisoning, meets legal food-hygiene requirements, and maintains the reputation of the business.",
+      "marks": 8
+    },
+    {
+      "section": "C",
+      "type": "extended",
+      "source_type": "Hospitality",
+      "topic_number": 5,
+      "topic_title": "Food, Nutrition and Exercise",
+      "question": "Scenario: A hotel restaurant wants to introduce a healthier menu. Explain how knowledge of nutrition, balanced diets and different dietary requirements can be used to design suitable dishes for a range of customers. [8]",
+      "model_answer": "Designing a healthier menu requires an understanding of nutrition and of customers' differing needs. A balanced diet includes the right proportions of carbohydrates, proteins, fats, vitamins, minerals, fibre and water, so dishes should combine these - for example lean protein, wholegrain carbohydrates and plenty of vegetables - rather than relying on foods high in fat, salt and sugar. Healthier cooking methods such as grilling, steaming, baking or poaching should be chosen instead of deep-frying, and portion sizes controlled. The menu should also cater for different dietary requirements: vegetarian and vegan options; dishes free from common allergens such as nuts, gluten or shellfish, with clear labelling; halal or other religious/cultural requirements; and lower-sugar or lower-salt choices for customers managing conditions such as diabetes or high blood pressure. Offering variety and clearly describing ingredients helps customers make informed choices and keeps them safe. By applying nutritional knowledge in this way, the restaurant can provide meals that are healthy, appealing and inclusive, meeting the needs of a wide range of customers while still being attractive and profitable.",
+      "marks": 8
+    }
+  ]
+}

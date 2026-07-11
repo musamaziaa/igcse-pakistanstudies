@@ -1,0 +1,22 @@
+{
+  "questions": [
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 4,
+      "topic_title": "Constitution of Pakistan",
+      "question": "What were the key objectives of the Objectives Resolution (1949)? [5]",
+      "model_answer": "Allah's sovereignty over the universe; democracy, freedom, equality and social justice as enunciated by Islam; fundamental rights for all citizens; Muslims to live according to the Qur'an and Sunnah; protection of minority rights; and an independent judiciary.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "Explain how trade and transportation contribute to Pakistan's economy. [5]",
+      "model_answer": "They facilitate the movement of goods and services; encourage domestic and international trade; support industrial and agricultural development; generate employment; and improve regional connectivity and economic growth.",
+      "marks": 5
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "case_study",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 4,
+      "topic_title": "Planning and Autonomous Systems",
+      "question": "Case study: A delivery company uses autonomous drones to deliver parcels in urban areas. The drones rely on GPS, camera vision and AI models to navigate and make decisions. (i) Identify two advantages of using AI in this scenario. (ii) Identify two challenges related to planning and reasoning. (iii) Suggest two ways to improve the fairness and reliability of the drone AI system. [12]",
+      "model_answer": "(i) Advantages: deliveries can be made faster and at any time without a human pilot, lowering cost and reaching areas quickly; the AI can react consistently to its sensors, avoiding obstacles and choosing efficient routes, which can improve safety and reduce delays. (ii) Challenges: the drone must plan safe routes in a busy, constantly changing urban environment, coping with buildings, people, other drones and sudden weather changes, which is hard to anticipate; its reasoning must handle uncertain or incomplete sensor data (e.g. poor GPS between tall buildings) reliably, because a wrong decision could cause a crash. (iii) Improvements: train and test the models on diverse, representative data covering many locations, lighting and weather conditions so performance is reliable for everyone; add safety and fallback behaviours (such as hovering or returning to base when confidence is low), thorough real-world testing, and human oversight so errors are caught before they cause harm. Clear rules on privacy and accountability would also improve fairness.",
+      "marks": 12
+    },
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "evaluation",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "Compare knowledge-based systems and machine learning systems. Refer to how knowledge is stored and used, their flexibility and adaptability to new information, and examples of practical applications. [10]",
+      "model_answer": "In a knowledge-based (expert) system, knowledge is stored explicitly as human-written facts and IF-THEN rules in a knowledge base, and an inference engine applies these rules to reach conclusions. This makes decisions transparent and easy to explain, and it works well when expert rules are known - for example a medical diagnosis assistant or a tax-advice system. However, it is not very flexible: adapting to new information means people must write new rules, and it struggles with situations the rules do not cover. In a machine learning system, knowledge is stored implicitly as patterns learned from data rather than hand-written rules. This makes it far more adaptable: it can handle complex, noisy problems and can improve by retraining on new data - for example image recognition, spam filtering or recommendation systems. Its weaknesses are that it needs large amounts of good-quality data and its decisions can be hard to explain. Overall, knowledge-based systems suit well-defined problems that must be transparent, while machine learning suits complex pattern-recognition problems where plenty of data is available; many modern systems combine both approaches.",
+      "marks": 10
+    },
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "logical_reasoning",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "Explain how logical reasoning can help an AI agent make traffic-light decisions. Use example rules in your answer. [6]",
+      "model_answer": "Logical reasoning lets an AI agent decide by applying clear IF-THEN rules to facts it senses, giving consistent and explainable decisions. For a traffic light, the agent senses conditions such as which lanes have waiting vehicles, whether an emergency vehicle is approaching, and how long each light has been green. It then applies rules, for example: IF an emergency vehicle is detected THEN give its lane a green light; IF a lane has been red for too long AND vehicles are waiting THEN switch it to green next; IF pedestrians have requested to cross AND traffic is clear THEN show the walk signal. Using AND, OR and NOT, the agent can combine several conditions to choose a safe, fair sequence - for example only turning a light green when the crossing direction is NOT already green, preventing conflicting signals. Because the reasoning is rule-based, its decisions are predictable and can be checked, which is important for safety.",
+      "marks": 6
+    },
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "evaluation",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 5,
+      "topic_title": "Ethics, Society and Philosophy of AI",
+      "question": "Statement: 'AI systems should be used to support decisions in healthcare.' Write a balanced argument that includes the advantages of using AI in diagnostics and treatment, the risks involving data privacy, accuracy and bias, and a justified conclusion. [10]",
+      "model_answer": "AI can bring real benefits to healthcare. In diagnostics it can analyse medical images or test results quickly and spot patterns a human might miss, helping to detect diseases such as cancer earlier. It can support treatment by suggesting options based on large amounts of medical data, flagging drug interactions, and helping doctors prioritise urgent cases, which can save time and lives. However, there are serious risks. Patient data is highly sensitive, so privacy must be protected; if data is stored or shared without consent or is not secured, it could be misused. Accuracy is critical: an AI that is wrong could lead to a missed or incorrect diagnosis, so its outputs must be checked by qualified professionals rather than trusted blindly. Bias is another danger - if the training data does not represent all patient groups, the system may be less accurate for some people, leading to unequal care. There are also questions of accountability when an AI-supported decision goes wrong. In conclusion, AI should be used in healthcare, but only as a support tool that assists rather than replaces clinicians, and only with strong data protection, tested accuracy across all groups, transparency, and human oversight. Used in this careful way, its benefits can be gained while its risks are managed.",
+      "marks": 10
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 1,
+      "topic_title": "Introduction to the Hospitality Industry",
+      "question": "One type of business ownership allows other people to buy into an existing business and acquire the right to its business model. Which type of ownership is this?",
+      "options": {
+        "A": "franchise",
+        "B": "limited liability partnership - private company",
+        "C": "limited liability partnership - public limited company",
+        "D": "partnership",
+        "E": "sole trader"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 2,
+      "topic_title": "Customer Service Skills",
+      "question": "You work part time in a hotel across reception and the bar. Which of the following is an example of an internal customer?",
+      "options": {
+        "A": "commis chef",
+        "B": "delivery courier",
+        "C": "local florist",
+        "D": "sales client",
+        "E": "taxi driver"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 1,
+      "topic_title": "Introduction to the Hospitality Industry",
+      "question": "Which option correctly sets out what is meant by the abbreviation GDP?",
+      "options": {
+        "A": "greater development product",
+        "B": "greater domestic product",
+        "C": "gross domestic process",
+        "D": "gross domestic product",
+        "E": "gross domestic purpose"
+      },
+      "correct_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 2,
+      "topic_title": "Customer Service Skills",
+      "question": "Which of the following is an example of an external customer?",
+      "options": {
+        "A": "commis chef",
+        "B": "junior housekeeper",
+        "C": "reception manager",
+        "D": "stores person",
+        "E": "taxi driver"
+      },
+      "correct_answer": "E",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "Which food commodity is trussed before being cooked?",
+      "options": {
+        "A": "fish",
+        "B": "meat",
+        "C": "poultry",
+        "D": "shellfish",
+        "E": "vegetables"
+      },
+      "correct_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "One cooking method is a dry method which involves adding oil and cooking food at temperatures in the range of 170 to 185 degrees Celsius. Which method is this?",
+      "options": {
+        "A": "baking",
+        "B": "boiling",
+        "C": "grilling",
+        "D": "roasting",
+        "E": "steaming"
+      },
+      "correct_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "What is the correct safe operating temperature for a deep-freezer?",
+      "options": {
+        "A": "minus 18 degrees Celsius",
+        "B": "0 degrees Celsius",
+        "C": "5 degrees Celsius",
+        "D": "8 degrees Celsius",
+        "E": "63 degrees Celsius"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "A refrigerator should operate within which temperature range?",
+      "options": {
+        "A": "minus 18 to minus 5 degrees Celsius",
+        "B": "0 to 5 degrees Celsius",
+        "C": "6 to 10 degrees Celsius",
+        "D": "11 to 15 degrees Celsius",
+        "E": "63 to 75 degrees Celsius"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "Which of the following is a type of pathogenic bacteria that can affect food?",
+      "options": {
+        "A": "Chlorophyll",
+        "B": "Gluten",
+        "C": "Lactose",
+        "D": "Salmonella",
+        "E": "Sucrose"
+      },
+      "correct_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 1,
+      "topic_title": "Introduction to the Hospitality Industry",
+      "question": "A business owned and run by one person, who keeps all of the profit, is known as which type of ownership?",
+      "options": {
+        "A": "franchise",
+        "B": "limited liability partnership",
+        "C": "partnership",
+        "D": "public limited company",
+        "E": "sole trader"
+      },
+      "correct_answer": "E",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 5,
+      "topic_title": "Food, Nutrition and Exercise",
+      "question": "Which of the following is a method of preserving food?",
+      "options": {
+        "A": "braising",
+        "B": "grilling",
+        "C": "roasting",
+        "D": "trussing",
+        "E": "vacuum-packing"
+      },
+      "correct_answer": "E",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "Hot food is safe when held above which temperature?",
+      "options": {
+        "A": "5 degrees Celsius",
+        "B": "18 degrees Celsius",
+        "C": "37 degrees Celsius",
+        "D": "50 degrees Celsius",
+        "E": "63 degrees Celsius"
+      },
+      "correct_answer": "E",
+      "marks": 1
+    }
+  ]
+}

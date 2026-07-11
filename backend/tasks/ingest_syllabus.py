@@ -1,0 +1,157 @@
+"""Task 1: Ingest syllabus PDF/DOCX and extract structured JSON."""
+import json
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+
+from utils.pdf_parser import extract_text
+from utils.claude_client import call_claude
+
+DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "syllabus.json")
+
+SYSTEM = "You are an expert Islamic studies curriculum analyst. Extract structured data from syllabus documents accurately."
+
+PROMPT_TEMPLATE = """You are given the text of an LRN International GCSE Islamiyat syllabus document.
+
+Extract the complete structured syllabus and return it as a single valid JSON object with this schema:
+
+{{
+  "syllabus": {{
+    "section_a": {{
+      "title": "The Holy Quran and Ahadith",
+      "quran": {{
+        "surahs": [
+          {{"surah_name": "Al-Adiyat", "surah_number": 100, "ayat_count": 11}},
+          ...all 15 surahs from 100 to 114...
+        ]
+      }},
+      "ahadith": [
+        {{
+          "hadith_number": 1,
+          "arabic": "...",
+          "translation": "...",
+          "reference": "..."
+        }}
+      ]
+    }},
+    "section_b": {{
+      "topics": [
+        {{
+          "topic_number": 1,
+          "title": "...",
+          "subtopics": ["...", "..."],
+          "arabic_terms": ["..."]
+        }}
+      ]
+    }},
+    "section_c": {{
+      "topics": [
+        {{
+          "topic_number": 5,
+          "title": "...",
+          "subtopics": ["...", "..."],
+          "arabic_terms": ["..."]
+        }}
+      ]
+    }}
+  }}
+}}
+
+IMPORTANT:
+- For Section A surahs: include ALL 15 surahs (100 Al-Adiyat through 114 Al-Naas) with correct ayat counts
+- For Ahadith: extract ALL Arabic hadith text found in the document; if not in document, include the 15 known ahadith from the LRN syllabus
+- Preserve Arabic text exactly as found
+- Return ONLY valid JSON, no preamble, no markdown fences
+
+SYLLABUS TEXT:
+{text}
+"""
+
+
+def ingest_syllabus(file_bytes: bytes, filename: str) -> dict:
+    """Extract syllabus text and call Claude to structure it."""
+    text = extract_text(file_bytes, filename)
+    prompt = PROMPT_TEMPLATE.format(text=text[:15000])  # token limit
+    raw = call_claude(prompt, system=SYSTEM, max_tokens=6000)
+    # Strip markdown fences if present
+    raw = raw.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+    data = json.loads(raw)
+    os.makedirs(os.path.dirname(DATA_PATH), exist_ok=True)
+    with open(DATA_PATH, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    return data
+
+
+def load_syllabus() -> dict:
+    if os.path.exists(DATA_PATH):
+        with open(DATA_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def get_default_syllabus() -> dict:
+    """Return a hardcoded default syllabus based on LRN spec (used as fallback)."""
+    return {
+        "syllabus": {
+            "section_a": {
+                "title": "The Holy Quran and Ahadith",
+                "quran": {
+                    "surahs": [
+                        {"surah_name": "Al-Adiyat", "surah_number": 100, "ayat_count": 11},
+                        {"surah_name": "Al-Qariah", "surah_number": 101, "ayat_count": 11},
+                        {"surah_name": "Al-Takathur", "surah_number": 102, "ayat_count": 8},
+                        {"surah_name": "Al-Asr", "surah_number": 103, "ayat_count": 3},
+                        {"surah_name": "Al-Humazah", "surah_number": 104, "ayat_count": 9},
+                        {"surah_name": "Al-Fil", "surah_number": 105, "ayat_count": 5},
+                        {"surah_name": "Al-Quraish", "surah_number": 106, "ayat_count": 4},
+                        {"surah_name": "Al-Ma'un", "surah_number": 107, "ayat_count": 7},
+                        {"surah_name": "Al-Kauthar", "surah_number": 108, "ayat_count": 3},
+                        {"surah_name": "Al-Kafirun", "surah_number": 109, "ayat_count": 6},
+                        {"surah_name": "Al-Nasr", "surah_number": 110, "ayat_count": 3},
+                        {"surah_name": "Al-Lahab", "surah_number": 111, "ayat_count": 5},
+                        {"surah_name": "Al-Ikhlas", "surah_number": 112, "ayat_count": 4},
+                        {"surah_name": "Al-Falaq", "surah_number": 113, "ayat_count": 5},
+                        {"surah_name": "Al-Naas", "surah_number": 114, "ayat_count": 6},
+                    ]
+                },
+                "ahadith": [
+                    {"hadith_number": 1, "arabic": "الدِّينُ النَّصِيحَةُ قُلْنَا: لِمَنْ؟ قَالَ: لِلَّهِ وَلِكِتَابِهِ وَلِرَسُولِهِ وَلِأَئِمَّةِ الْمُسْلِمِينَ وَعَامَّتِهِمْ", "translation": "Religion is sincerity. We said: To whom? He said: To Allah, His Book, His Messenger, and to the leaders of the Muslims and their common folk.", "reference": "Sahih Muslim"},
+                    {"hadith_number": 2, "arabic": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ", "translation": "None of you truly believes until he loves for his brother what he loves for himself.", "reference": "Sahih Bukhari"},
+                    {"hadith_number": 3, "arabic": "رَأَى مِنْكُمْ مُنْكَرًا فَلْيُغَيِّرْهُ بِيَدِهِ، فَإِنْ لَمْ يَسْتَطِعْ فَبِلِسَانِهِ، فَإِنْ لَمْ يَسْتَطِعْ فَبِقَلْبِهِ، وَذَلِكَ أَضْعَفُ الإِيمَانِ", "translation": "Whoever sees an evil, let him change it with his hand; if he cannot, then with his tongue; if he cannot, then with his heart – and that is the weakest of faith.", "reference": "Sahih Muslim"},
+                    {"hadith_number": 4, "arabic": "مَا أَكَلَ أَحَدٌ طَعَامًا قَطُّ خَيْرًا مِنْ أَنْ يَأْكُلَ مِنْ عَمَلِ يَدِهِ", "translation": "No one has ever eaten better food than that which he earned by the work of his own hands.", "reference": "Sahih Bukhari"},
+                    {"hadith_number": 5, "arabic": "السَّاعِي عَلَى الأَرْمَلَةِ وَالمِسْكِينِ كَالمُجَاهِدِ فِي سَبِيلِ اللَّهِ، أَوِ القَائِمِ اللَّيْلَ الصَّائِمِ النَّهَارَ", "translation": "The one who strives to help the widow and the poor is like the one who fights in the way of Allah, or like one who prays all night and fasts all day.", "reference": "Sahih Bukhari"},
+                    {"hadith_number": 6, "arabic": "أَنَا وَكَافِلُ الْيَتِيمِ فِي الْجَنَّةِ هَكَذَا وَقَالَ: بِإِصْبَعَيْهِ السَّبَّابَةِ وَالْوُسْطَى", "translation": "I and the one who cares for an orphan will be in Paradise like this – and he indicated his index and middle fingers.", "reference": "Sahih Bukhari"},
+                    {"hadith_number": 7, "arabic": "إِنَّمَا مَثَلُ صَاحِبِ الْقُرْآنِ كَمَثَلِ صَاحِبِ الإِبِلِ الْمُعَقَّلَةِ، إِنْ عَاهَدَ عَلَيْهَا أَمْسَكَهَا، وَإِنْ أَطْلَقَهَا ذَهَبَتْ", "translation": "The example of the one who memorises the Quran is like the owner of hobbled camels. If he tends to them, he keeps them; if he lets them go, they wander away.", "reference": "Sahih Bukhari"},
+                    {"hadith_number": 8, "arabic": "يَرْحَمُ اللَّهُ مَنْ لَا يَرْحَمُ النَّاسَ", "translation": "Allah will not be merciful to those who are not merciful to people.", "reference": "Sahih Bukhari"},
+                    {"hadith_number": 9, "arabic": "الْحَيَاءُ لَا يَأْتِي إِلَّا بِخَيْرٍ", "translation": "Modesty brings nothing but good.", "reference": "Sahih Bukhari"},
+                    {"hadith_number": 10, "arabic": "إِنَّ الدُّنْيَا سِجْنُ الْمُؤْمِنِ وَجَنَّةُ الْكَافِرِ", "translation": "The world is a prison for the believer and a paradise for the disbeliever.", "reference": "Sahih Muslim"},
+                    {"hadith_number": 11, "arabic": "إِنَّ اللَّهَ لَا يَنْظُرُ إِلَى صُوَرِكُمْ وَأَمْوَالِكُمْ، وَلَكِنْ يَنْظُرُ إِلَى قُلُوبِكُمْ وَأَعْمَالِكُمْ", "translation": "Allah does not look at your appearance or your wealth, but He looks at your hearts and your actions.", "reference": "Sahih Muslim"},
+                    {"hadith_number": 12, "arabic": "رَحِمَ اللَّهُ رَجُلًا سَمْحًا، إِذَا بَاعَ، وَإِذَا اشْتَرَى، وَإِذَا اقْتَضَى", "translation": "May Allah have mercy on a man who is kind when he sells, when he buys, and when he asks for payment.", "reference": "Sahih Bukhari"},
+                    {"hadith_number": 13, "arabic": "أَيُّ النَّاسِ أَفْضَلُ؟ فَقَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: مُؤْمِنٌ يُجَاهِدُ فِي سَبِيلِ اللَّهِ بِنَفْسِهِ وَمَالِهِ", "translation": "Which of the people is best? The Messenger of Allah said: A believer who strives in the way of Allah with his person and his wealth.", "reference": "Sahih Bukhari"},
+                    {"hadith_number": 14, "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيُكْرِمْ جَارَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيُكْرِمْ ضَيْفَهُ", "translation": "Whoever believes in Allah and the Last Day, let him speak good or remain silent. Whoever believes in Allah and the Last Day, let him honour his neighbour. Whoever believes in Allah and the Last Day, let him honour his guest.", "reference": "Sahih Bukhari"},
+                    {"hadith_number": 15, "arabic": "إِنَّ رَجُلًا سَأَلَ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: أَيُّ الإِسْلَامِ أَفْضَلُ؟ فَقَالَ: تُطْعِمُ الطَّعَامَ، وَتَقْرَأُ السَّلَامَ عَلَى مَنْ عَرَفْتَ وَمَنْ لَمْ تَعْرِفْ", "translation": "A man asked the Messenger of Allah: Which Islam is best? He said: Feed others, and greet with peace those you know and those you do not know.", "reference": "Sahih Bukhari"},
+                ]
+            },
+            "section_b": {
+                "topics": [
+                    {"topic_number": 1, "title": "Journey of the Holy Prophet Muhammad (pbuh)", "subtopics": ["Family background and tribal affiliation", "Birth to marriage and call to Prophethood", "First revelations and early preaching", "First converts to Islam", "Public proclamation of Islam", "Opposition and persecution in Makkah", "First Hijrah to Abyssinia", "Socio-economic boycott of Banu Hashim", "Year of Sorrow", "Mission to Ta'if", "Isra and Mi'raj (Night Journey and Ascension)", "Pledges of Aqabah", "Hijrah from Makkah to Yathrib (Madinah)"], "arabic_terms": ["هِجْرَة", "وَحْي", "نُبُوَّة"]},
+                    {"topic_number": 2, "title": "The Quran: From Revelation to Compilation", "subtopics": ["Methods of revelation (610–632 CE)", "Physical and emotional impact of revelation", "Preservation during Prophet's lifetime", "Compilation under Abu Bakr (RA)", "Standardisation under Uthman (RA)", "Quran as primary source of Islamic jurisprudence"], "arabic_terms": ["تَنْزِيل", "وَحْي", "مُصْحَف"]},
+                    {"topic_number": 3, "title": "The Community of Believers", "subtopics": ["Ten Blessed Companions (Asharah Mubasharah)", "Wives of the Holy Prophet", "Daughters of the Holy Prophet", "Grandsons of the Holy Prophet"], "arabic_terms": ["صَحَابَة", "أُمَّهَات الْمُؤْمِنِين"]},
+                    {"topic_number": 4, "title": "The Foundation of Islamic Faith", "subtopics": ["Belief in Oneness of Allah (Tawheed)", "Belief in Angels (Malaika)", "Belief in Revealed Books (Kutub)", "Belief in Prophets (Rusul)", "Belief in Resurrection and Day of Judgment", "Belief in Predestination and Decree of Allah (Qadar)"], "arabic_terms": ["تَوْحِيد", "مَلَائِكَة", "كُتُب", "رُسُل", "قَدَر"]}
+                ]
+            },
+            "section_c": {
+                "topics": [
+                    {"topic_number": 5, "title": "The Advent of Islam – Holy Prophet's Life in Madina", "subtopics": ["Immediate measures after arrival in Madina", "Battle of Badr", "Battle of Uhud", "Battle of Khandaq (Trench)", "Treaty of Hudaibiya", "Invitation to Islam to Emperors", "Battle of Khyber", "Conquest of Makkah", "Battle of Hunain", "Farewell Pilgrimage (Hajjat ul Wida)", "Holy Prophet's sickness and demise"], "arabic_terms": ["غَزْوَة", "فَتْح", "حَجّ"]},
+                    {"topic_number": 6, "title": "The Study of Hadith and Sunnah", "subtopics": ["Difference between Sunnah and Hadith", "Stages of compilation of Hadith", "Parts of Hadith (Sanad and Matn)", "Classification of Hadith (Sahih, Hasan, Da'if, Mawdu)"], "arabic_terms": ["سُنَّة", "حَدِيث", "سَنَد", "مَتْن", "صَحِيح", "ضَعِيف", "مَوْضُوع"]},
+                    {"topic_number": 7, "title": "Foundation of Society", "subtopics": ["Rights and Responsibilities of Children, Parents, Teachers, Students and Spouses", "Duties and rights of Ruler and Citizens"], "arabic_terms": ["حُقُوق", "وَاجِبَات"]},
+                    {"topic_number": 8, "title": "The Main Practices in Islam", "subtopics": ["Declaration of Faith (Shahadah)", "Prayer (Salah)", "Zakat (Obligatory Charity)", "Fasting (Sawm)", "Pilgrimage (Hajj)"], "arabic_terms": ["شَهَادَة", "صَلَاة", "زَكَاة", "صَوْم", "حَجّ"]}
+                ]
+            }
+        }
+    }

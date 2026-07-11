@@ -1,0 +1,34 @@
+{
+  "topics": [
+    {
+      "id": "topic_1",
+      "title": "History of Pakistan",
+      "description": "Pakistan Movement, Constitutional Development"
+    },
+    {
+      "id": "topic_2",
+      "title": "Geography of Pakistan",
+      "description": "Physical geography, climate, resources"
+    },
+    {
+      "id": "topic_3",
+      "title": "Economics of Pakistan",
+      "description": "Agriculture, industry, trade"
+    },
+    {
+      "id": "topic_4",
+      "title": "Constitution of Pakistan",
+      "description": "1956, 1962, 1973 Constitutions"
+    },
+    {
+      "id": "topic_5",
+      "title": "Foreign Policy",
+      "description": "Relations with India, USA, China"
+    },
+    {
+      "id": "topic_6",
+      "title": "Current Perspectives",
+      "description": "Youth, Environment, Governance"
+    }
+  ]
+}

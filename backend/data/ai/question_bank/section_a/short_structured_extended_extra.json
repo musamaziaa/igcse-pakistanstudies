@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 5,
+      "topic_title": "Ethics, Society and Philosophy of AI",
+      "question": "Identify one potential bias in an AI system and explain how it could affect its results. [2]",
+      "model_answer": "One common bias is training-data bias. If the data used to train the model is not diverse and under-represents certain groups, the model may perform poorly for those groups, producing unfair or inaccurate outcomes such as misidentifying people or wrongly rejecting applications.",
+      "marks": 2
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 1,
+      "topic_title": "Foundations of Artificial Intelligence",
+      "question": "State two tasks that AI systems can perform that would normally require human intelligence. [2]",
+      "model_answer": "Any two of: understanding or translating human language; recognising objects, faces or speech; making decisions or predictions from data; learning from experience; playing strategic games; or planning a sequence of actions to reach a goal.",
+      "marks": 2
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Describe the difference between supervised and unsupervised learning. [2]",
+      "model_answer": "In supervised learning the model is trained on labelled data, where each example includes the correct output, so it learns to predict that output for new inputs. In unsupervised learning the data has no labels, so the model instead finds patterns or groupings within the data on its own, for example clustering similar customers together.",
+      "marks": 2
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 4,
+      "topic_title": "Planning and Autonomous Systems",
+      "question": "Explain the difference between a sensor and an actuator in a robotic system. [2]",
+      "model_answer": "A sensor is an input device that collects data about the environment, such as distance, light or temperature. An actuator is an output device that carries out a physical action, such as turning a wheel or moving an arm. The robot uses sensor data to decide what to do, then uses actuators to act on that decision.",
+      "marks": 2
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 6,
+      "topic_title": "Building and Deploying AI Systems",
+      "question": "Explain why data usually needs to be cleaned before it is used to train a model. [2]",
+      "model_answer": "Raw data often contains errors, duplicates, missing values or inconsistent formatting. If it is not cleaned, the model may learn from incorrect or misleading examples and make poor predictions. Cleaning the data improves its quality so the patterns the model learns are accurate and reliable.",
+      "marks": 2
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "structured",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "Explain the difference between declarative and procedural knowledge, providing an example of each in an AI context. [5]",
+      "model_answer": "Declarative knowledge is factual knowledge about what is true - statements of facts and relationships. In AI this is typically stored in a knowledge base, for example the fact 'Paris is the capital of France' or a rule such as 'IF temperature > 38 THEN patient has a fever'. Procedural knowledge is knowledge of how to carry out a task - the steps or methods used. In AI this is represented by algorithms or procedures, for example a search algorithm that describes how to find a path, or the steps a sorting routine follows. In short, declarative knowledge describes what the system knows, while procedural knowledge describes how the system does something; a working AI system usually needs both.",
+      "marks": 5
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "structured",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Identify three types of machine learning and describe a real-world application of each. [5]",
+      "model_answer": "Supervised learning uses labelled data to learn to predict an output; a real-world application is an email spam filter that classifies messages as spam or not spam. Unsupervised learning finds patterns in unlabelled data; a real-world application is customer segmentation, where shoppers are grouped by similar buying behaviour without predefined categories. Reinforcement learning learns by trial and error using rewards and penalties; a real-world application is a game-playing agent such as one that learns to play chess or Go, or a robot learning to walk. Each type suits a different situation depending on whether labelled data, hidden structure, or learning through interaction is required.",
+      "marks": 5
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "structured",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 6,
+      "topic_title": "Building and Deploying AI Systems",
+      "question": "Describe three stages involved in preparing data before training a machine learning model. [5]",
+      "model_answer": "First, data collection: gathering relevant data from suitable sources that represents the problem well, ideally covering all the groups or cases the model must handle. Second, data cleaning: removing duplicate or irrelevant records, fixing or removing missing and erroneous values, and correcting inconsistent formatting so the data is accurate. Third, data preparation and labelling: structuring the data into a consistent format such as a table, labelling examples with the correct output for supervised learning, and splitting the data into training and test sets so the model can later be evaluated fairly on unseen data. Good preparation at these stages directly improves how well the trained model performs.",
+      "marks": 5
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "extended",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 4,
+      "topic_title": "Planning and Autonomous Systems",
+      "question": "Discuss how autonomous robots plan their actions in a dynamic environment. Refer to the role of sensors and actuators, planning algorithms such as pathfinding and obstacle avoidance, and the challenges faced by autonomous agents. [10]",
+      "model_answer": "Autonomous robots operate by continuously sensing, planning and acting. Sensors such as cameras, LIDAR, ultrasonic and GPS collect data about the environment - the robot's position, nearby objects and any changes around it. This data is fed to the robot's planning system, and actuators (motors, wheels, arms) then carry out the chosen actions. To decide how to move, the robot uses planning algorithms. Pathfinding algorithms such as A* search for an efficient route from the robot's current position to its goal, weighing distance and obstacles. Obstacle-avoidance techniques adjust the plan in real time when a sensor detects something unexpected, allowing the robot to stop, slow down or re-route. Because the environment is dynamic, planning is not done once but repeated constantly as new sensor data arrives. Autonomous agents face several challenges: sensor data can be noisy, incomplete or delayed; the world changes unpredictably, so a plan can become invalid within moments; there is uncertainty about how other agents (people, vehicles) will behave; and safety-critical decisions must be made quickly with limited computing power. Robust systems therefore combine reliable sensing, fast re-planning, and safe default behaviours, and are thoroughly tested so that mistakes do not cause harm.",
+      "marks": 10
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "extended",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 6,
+      "topic_title": "Building and Deploying AI Systems",
+      "question": "Explain the process of building and deploying a machine learning model, covering data collection and preparation, model training and evaluation, and deployment and performance monitoring. [10]",
+      "model_answer": "Building and deploying a machine learning model follows several connected stages. It begins with data collection and preparation: relevant data is gathered from suitable sources, then cleaned by removing duplicates, fixing missing or erroneous values and standardising the format. The data is labelled where needed and split into a training set and a separate test set. Next comes model training and evaluation: a suitable technique (for example classification or clustering) and tool are chosen, and the model is trained on the training data so it learns the patterns linking inputs to outputs. It is then evaluated on the held-back test data using metrics such as accuracy to judge how well it generalises to unseen examples; if results are poor, the data, features or parameters are adjusted and the model is retrained. Finally comes deployment and performance monitoring: the finished model is put into real use, for instance behind an app or website, where it makes predictions on live data. Its performance is monitored over time because real-world data can drift away from the training data, causing accuracy to fall. When this happens the model is updated or retrained on fresh data. Throughout, the process should be documented and ethical issues such as bias and privacy considered, so the deployed system remains accurate, fair and trustworthy.",
+      "marks": 10
+    }
+  ]
+}

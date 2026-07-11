@@ -1,0 +1,363 @@
+[
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Adiyat",
+    "surah_number": 100,
+    "ayat_number": 1,
+    "arabic_text": "وَٱلۡعَٰدِيَٰتِ ضَبۡحٗا",
+    "english_translation": "By the racers, panting",
+    "question": "What does Allah swear by in the first verse of Surah Al-Adiyat?",
+    "options": {
+      "A": "The angels",
+      "B": "The charging horses",
+      "C": "The rising sun",
+      "D": "The human soul"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Adiyat",
+    "surah_number": 100,
+    "ayat_number": 2,
+    "arabic_text": "فَٱلۡمُورِيَٰتِ قَدۡحٗا",
+    "english_translation": "And the producers of sparks striking",
+    "question": "What do the war horses produce as they strike in Surah Al-Adiyat verse 2?",
+    "options": {
+      "A": "Dust",
+      "B": "Noise",
+      "C": "Sparks",
+      "D": "Flames"
+    },
+    "correct_answer": "C",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Adiyat",
+    "surah_number": 100,
+    "ayat_number": 6,
+    "arabic_text": "إِنَّ ٱلۡإِنسَٰنَ لِرَبِّهِۦ لَكَنُودٞ",
+    "english_translation": "Indeed mankind, to his Lord, is ungrateful",
+    "question": "According to Surah Al-Adiyat, what is the nature of mankind towards their Lord?",
+    "options": {
+      "A": "Grateful",
+      "B": "Obedient",
+      "C": "Ungrateful",
+      "D": "Fearful"
+    },
+    "correct_answer": "C",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Adiyat",
+    "surah_number": 100,
+    "ayat_number": 9,
+    "arabic_text": "أَفَلَا يَعۡلَمُ إِذَا بُعۡثِرَ مَا فِي ٱلۡقُبُورِ",
+    "english_translation": "But does he not know that when the contents of graves are scattered",
+    "question": "What event is described in verse 9 of Surah Al-Adiyat?",
+    "options": {
+      "A": "The Day of Judgement — graves will be opened",
+      "B": "A great earthquake",
+      "C": "The appearance of angels",
+      "D": "The first revelation"
+    },
+    "correct_answer": "A",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Qariah",
+    "surah_number": 101,
+    "ayat_number": 1,
+    "arabic_text": "ٱلۡقَارِعَةُ",
+    "english_translation": "The Striking Calamity",
+    "question": "What does \"Al-Qariah\" literally mean?",
+    "options": {
+      "A": "The Final Hour",
+      "B": "The Striking Calamity",
+      "C": "The Great Flood",
+      "D": "The Day of Reckoning"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Qariah",
+    "surah_number": 101,
+    "ayat_number": 4,
+    "arabic_text": "يَوۡمَ يَكُونُ ٱلنَّاسُ كَٱلۡفَرَاشِ ٱلۡمَبۡثُوثِ",
+    "english_translation": "It is the Day when people will be like scattered moths",
+    "question": "To what are people compared on the Day of Al-Qariah?",
+    "options": {
+      "A": "Scattered moths",
+      "B": "Flowing water",
+      "C": "Falling leaves",
+      "D": "Grazing cattle"
+    },
+    "correct_answer": "A",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Qariah",
+    "surah_number": 101,
+    "ayat_number": 6,
+    "arabic_text": "فَأَمَّا مَن ثَقُلَتۡ مَوَٰزِينُهُۥ",
+    "english_translation": "Then as for one whose scales are heavy with good deeds",
+    "question": "What happens to the person whose scales are heavy with good deeds in Surah Al-Qariah?",
+    "options": {
+      "A": "They will be punished",
+      "B": "They will live a pleasant life in Paradise",
+      "C": "They will be questioned further",
+      "D": "They will be given a second chance"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Asr",
+    "surah_number": 103,
+    "ayat_number": 1,
+    "arabic_text": "وَٱلۡعَصۡرِ",
+    "english_translation": "By time",
+    "question": "What does Allah swear by at the beginning of Surah Al-Asr?",
+    "options": {
+      "A": "The night",
+      "B": "The sun",
+      "C": "Time (Al-Asr)",
+      "D": "The stars"
+    },
+    "correct_answer": "C",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Asr",
+    "surah_number": 103,
+    "ayat_number": 2,
+    "arabic_text": "إِنَّ ٱلۡإِنسَٰنَ لَفِي خُسۡرٍ",
+    "english_translation": "Indeed, mankind is in loss",
+    "question": "According to Surah Al-Asr, what is the condition of mankind?",
+    "options": {
+      "A": "In great gain",
+      "B": "In loss",
+      "C": "In peace",
+      "D": "In ignorance"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Asr",
+    "surah_number": 103,
+    "ayat_number": 3,
+    "arabic_text": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ",
+    "english_translation": "Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience",
+    "question": "How many qualities are mentioned in Surah Al-Asr for those NOT in loss?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "correct_answer": "C",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Kauthar",
+    "surah_number": 108,
+    "ayat_number": 1,
+    "arabic_text": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
+    "english_translation": "Indeed, We have granted you Al-Kauthar",
+    "question": "What did Allah grant to the Prophet (pbuh) in Surah Al-Kauthar?",
+    "options": {
+      "A": "Victory and conquest",
+      "B": "Al-Kauthar (abundance/river in Paradise)",
+      "C": "Wisdom and knowledge",
+      "D": "Protection from enemies"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Kauthar",
+    "surah_number": 108,
+    "ayat_number": 2,
+    "arabic_text": "فَصَلِّ لِرَبِّكَ وَٱنۡحَرۡ",
+    "english_translation": "So pray to your Lord and sacrifice to Him",
+    "question": "What two acts of worship does Allah command in verse 2 of Surah Al-Kauthar?",
+    "options": {
+      "A": "Fasting and pilgrimage",
+      "B": "Prayer and sacrifice",
+      "C": "Charity and prayer",
+      "D": "Recitation and prostration"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Kauthar",
+    "surah_number": 108,
+    "ayat_number": 3,
+    "arabic_text": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
+    "english_translation": "Indeed, your enemy is the one cut off",
+    "question": "In Surah Al-Kauthar, who is described as \"cut off\" (Al-Abtar)?",
+    "options": {
+      "A": "The believers",
+      "B": "The Prophet (pbuh)",
+      "C": "The enemy of the Prophet",
+      "D": "The hypocrites"
+    },
+    "correct_answer": "C",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Ikhlas",
+    "surah_number": 112,
+    "ayat_number": 1,
+    "arabic_text": "قُلۡ هُوَ ٱللَّهُ أَحَدٌ",
+    "english_translation": "Say: He is Allah, the One",
+    "question": "What fundamental concept of Islamic theology does Surah Al-Ikhlas verse 1 express?",
+    "options": {
+      "A": "Belief in angels",
+      "B": "Tawheed (Oneness of Allah)",
+      "C": "Belief in the Day of Judgment",
+      "D": "The importance of prayer"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Ikhlas",
+    "surah_number": 112,
+    "ayat_number": 3,
+    "arabic_text": "لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ",
+    "english_translation": "He neither begets nor is born",
+    "question": "What does verse 3 of Surah Al-Ikhlas state about Allah?",
+    "options": {
+      "A": "He created the heavens and earth",
+      "B": "He neither begets nor was He born",
+      "C": "He is the Most Merciful",
+      "D": "He knows all things"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Naas",
+    "surah_number": 114,
+    "ayat_number": 1,
+    "arabic_text": "قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+    "english_translation": "Say: I seek refuge in the Lord of mankind",
+    "question": "In Surah Al-Naas, who is described as the Lord, King, and God of mankind?",
+    "options": {
+      "A": "The angels",
+      "B": "Allah alone",
+      "C": "The Prophet (pbuh)",
+      "D": "The Jinn"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Naas",
+    "surah_number": 114,
+    "ayat_number": 4,
+    "arabic_text": "مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ",
+    "english_translation": "From the evil of the retreating whisperer",
+    "question": "What does \"Al-Waswas Al-Khannas\" refer to in Surah Al-Naas?",
+    "options": {
+      "A": "A group of disbelievers",
+      "B": "The retreating whisperer (Shaytan)",
+      "C": "The angels of punishment",
+      "D": "Worldly temptations"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Kafirun",
+    "surah_number": 109,
+    "ayat_number": 6,
+    "arabic_text": "لَكُمۡ دِينُكُمۡ وَلِيَ دِينِ",
+    "english_translation": "For you is your religion, and for me is my religion",
+    "question": "What principle does the final verse of Surah Al-Kafirun establish?",
+    "options": {
+      "A": "Unity of all religions",
+      "B": "Clear distinction between Islamic and non-Islamic worship",
+      "C": "Compromise with polytheists",
+      "D": "Superiority of Islam over all faiths"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Quranic",
+    "surah_name": "Al-Nasr",
+    "surah_number": 110,
+    "ayat_number": 1,
+    "arabic_text": "إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ",
+    "english_translation": "When the victory of Allah has come and the conquest",
+    "question": "The \"Fath\" (conquest) mentioned in Surah Al-Nasr refers to:",
+    "options": {
+      "A": "The Battle of Badr",
+      "B": "The Conquest of Makkah",
+      "C": "The Battle of Uhud",
+      "D": "The Treaty of Hudaibiya"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  }
+]

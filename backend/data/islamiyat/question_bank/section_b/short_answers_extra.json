@@ -1,0 +1,56 @@
+[
+  {
+    "section": "B",
+    "type": "short_answer",
+    "topic_number": 1,
+    "topic_title": "Journey of the Holy Prophet Muhammad (pbuh)",
+    "question": "Describe the events of the first revelation to the Prophet Muhammad (pbuh) in the Cave of Hira. [4]",
+    "model_answer": "The Prophet Muhammad (pbuh), at the age of forty, used to withdraw to the Cave of Hira near Makkah to reflect and worship. There the Angel Jibril (Gabriel) appeared to him and commanded him to 'Iqra' (Read/Recite). The Prophet replied that he could not read, and the angel embraced him firmly before revealing the first verses of Surah Al-Alaq, beginning 'Read in the name of your Lord who created.' Deeply shaken, the Prophet returned home trembling and asked to be wrapped in a cloak. His wife Hazrat Khadijah (RA) comforted and reassured him, and took him to her cousin Waraqa ibn Nawfal, who recognised that the Prophet had received divine revelation as earlier prophets had.",
+    "marks": 4
+  },
+  {
+    "section": "B",
+    "type": "short_answer",
+    "topic_number": 2,
+    "topic_title": "The Quran: From Revelation to Compilation",
+    "question": "Describe how the Quran was first compiled into a single book during the caliphate of Hazrat Abu Bakr (RA). [4]",
+    "model_answer": "During the caliphate of Hazrat Abu Bakr (RA), many companions who had memorised the Quran (the huffaz) were killed in the Battle of Yamama. Fearing that parts of the Quran could be lost, Hazrat Umar (RA) advised Abu Bakr (RA) to have the Quran collected into one written book. Abu Bakr (RA) appointed Zayd ibn Thabit (RA), a trusted scribe of the Prophet (pbuh), for this task. Zayd carefully gathered the verses from written materials and from the memories of the companions, verifying each portion. The collected copy (mushaf) was kept with Abu Bakr (RA), then passed to Hazrat Umar (RA), and afterwards to his daughter Hazrat Hafsa (RA).",
+    "marks": 4
+  },
+  {
+    "section": "B",
+    "type": "short_answer",
+    "topic_number": 4,
+    "topic_title": "The Foundation of Islamic Faith",
+    "question": "Explain the belief in angels (Malaikah) as an article of faith, and describe two duties of angels. [4]",
+    "model_answer": "Belief in angels is one of the articles of faith in Islam. Angels are beings created by Allah from light who never disobey Him and constantly carry out His commands. Belief in them is essential because they are part of the unseen world that Allah has told Muslims to accept. Two of their duties are: the Angel Jibril (Gabriel) was responsible for bringing the revelation from Allah to the prophets; and the Angel Israfil is charged with blowing the trumpet to mark the Day of Judgement. Other duties include Mikail being responsible for provision such as rain, the Angel of Death taking souls, and the recording angels writing down people's good and bad deeds.",
+    "marks": 4
+  },
+  {
+    "section": "B",
+    "type": "short_answer",
+    "topic_number": 3,
+    "topic_title": "Biography: Hazrat Abu Bakr (RA)",
+    "question": "Describe the main qualities and contributions of Hazrat Abu Bakr (RA) as the first Caliph of Islam. [4]",
+    "model_answer": "Hazrat Abu Bakr (RA) was the closest friend of the Prophet (pbuh) and the first adult free man to accept Islam. He was known for his honesty and firm faith, earning the title 'As-Siddiq' (the Truthful) after affirming the event of Isra and Mi'raj. He accompanied the Prophet (pbuh) during the Hijrah, hiding with him in the Cave of Thawr. As the first Caliph, he kept the Muslim community united after the Prophet's death, firmly dealt with the wars of apostasy (the Ridda wars) and false prophets, and ordered the first compilation of the Quran into a single book. His just and humble leadership set an example for the caliphs who followed.",
+    "marks": 4
+  },
+  {
+    "section": "B",
+    "type": "short_answer",
+    "topic_number": 8,
+    "topic_title": "The Main Practices in Islam",
+    "question": "Explain the importance of Salah (prayer) in the life of a Muslim. [4]",
+    "model_answer": "Salah is the second pillar of Islam and is performed five times a day at fixed times. It is important because it is a direct link between a Muslim and Allah, allowing the worshipper to remember Him, express gratitude and seek forgiveness throughout the day. Salah instils discipline, punctuality and self-control, as it must be offered regularly at set times. Performed in congregation, it also builds unity, equality and brotherhood among Muslims, who stand together in rows regardless of wealth or status. Regular prayer reminds a Muslim of their duties to Allah and helps keep them away from wrongdoing.",
+    "marks": 4
+  },
+  {
+    "section": "B",
+    "type": "short_answer",
+    "topic_number": 6,
+    "topic_title": "Primary Sources of Islamic Law",
+    "question": "Explain the difference between the Quran and Hadith as sources of Islamic guidance. [4]",
+    "model_answer": "The Quran is the literal word of Allah, revealed to the Prophet Muhammad (pbuh) through the Angel Jibril over about twenty-three years. It is the first and highest source of Islamic law, preserved unchanged, and its words are recited in prayer. Hadith are the recorded sayings, actions and approvals of the Prophet Muhammad (pbuh). They form the second source of guidance and are used to explain, detail and put into practice the teachings of the Quran; for example, the Quran commands prayer, while the Hadith show how it is to be performed. Thus the Quran provides the divine words and principles, and the Hadith provide the Prophet's example that clarifies and applies them.",
+    "marks": 4
+  }
+]

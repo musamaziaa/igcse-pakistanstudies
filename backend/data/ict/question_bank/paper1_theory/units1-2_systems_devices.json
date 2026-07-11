@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "type": "short_answer",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Types and Components of Computer Systems",
+      "question": "Explain the difference between system software and applications software, giving one example of each. [3]",
+      "model_answer": "System software controls and runs the computer itself and manages the hardware; an example is an operating system such as Windows. Applications software helps the user carry out a particular task; an example is a word processor used to write a document. System software is needed for the computer to work, whereas applications software is chosen by the user for specific jobs.",
+      "marks": 3
+    },
+    {
+      "type": "short_answer",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Types and Components of Computer Systems",
+      "question": "Describe the difference between analogue and digital data, and explain why conversion between them is sometimes needed. [3]",
+      "model_answer": "Analogue data is continuous and can take any value, such as a sound wave, whereas digital data is made up of discrete values represented as 0s and 1s. A computer can only process digital data, so analogue signals from the real world (for example from a microphone) must be converted to digital form before processing. Digital data may also be converted back to analogue, for example to play sound through a speaker.",
+      "marks": 3
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Types and Components of Computer Systems",
+      "question": "Compare a command line interface (CLI) with a graphical user interface (GUI), giving one advantage of each. [4]",
+      "model_answer": "A CLI requires the user to type text commands, while a GUI uses graphical elements such as windows, icons, menus, and pointers that the user selects. An advantage of a GUI is that it is easier for a beginner to use because commands do not have to be memorised. An advantage of a CLI is that it can be faster for an experienced user and uses fewer system resources.",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Input, Output, and Storage Devices",
+      "question": "A supermarket uses barcode readers at its checkouts. (i) State what type of device a barcode reader is. (ii) Give two advantages of using barcode readers instead of typing in product codes by hand. [3]",
+      "model_answer": "(i) A barcode reader is a direct data entry (input) device. (ii) Any two of: it is faster than typing codes in by hand; it reduces errors because the code is read automatically; it can automatically update stock levels; it speeds up the checkout process for customers.",
+      "marks": 3
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Input, Output, and Storage Devices",
+      "question": "Compare solid-state storage with magnetic hard disk storage, giving two advantages of solid-state storage and one advantage of magnetic storage. [3]",
+      "model_answer": "Solid-state storage has no moving parts, so it is faster to access data and more durable and resistant to damage if dropped; it also uses less power. Magnetic hard disk storage usually offers a much larger capacity for a lower cost per gigabyte, making it cheaper for storing large amounts of data.",
+      "marks": 3
+    }
+  ]
+}

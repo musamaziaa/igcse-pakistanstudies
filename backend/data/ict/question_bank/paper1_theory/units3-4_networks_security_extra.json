@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Networks and Applications of ICT",
+      "question": "Eshan uses social networking sites. Describe two benefits and one drawback to Eshan of using social networking sites. [3]",
+      "model_answer": "Benefits (any two): he can keep in touch and communicate with friends and family anywhere in the world quickly and cheaply; he can share photos, news and interests and join groups or communities with similar hobbies; and he can access news and information or promote work quickly to a wide audience. Drawback (any one): there are risks to privacy and safety, such as personal information being seen or misused by strangers, exposure to cyberbullying or inappropriate contact, and the sites can be time-consuming or spread false information.",
+      "marks": 3
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Networks and Applications of ICT",
+      "question": "A customer wants to pay for items on a website securely. (i) Describe two ways the customer can check that a website is secure before entering payment details. (ii) State one method used to keep payment data safe as it is transmitted. [4]",
+      "model_answer": "(i) The customer can check that the web address begins with 'https' rather than 'http', where the 's' indicates a secure connection, and look for a closed padlock symbol in the address bar showing the site has a valid security certificate (SSL/TLS). They can also check that the site is a genuine, well-known company and not a fake copy. (ii) Payment data is kept safe by encryption: SSL/TLS encrypts the data as it travels between the customer's browser and the website's server, so that if it is intercepted it cannot be read without the decryption key.",
+      "marks": 4
+    },
+    {
+      "type": "short_answer",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Networks and Applications of ICT",
+      "question": "State what is meant by a router and describe one task it performs on a network. [2]",
+      "model_answer": "A router is a device that connects two or more networks together, most commonly a home or office network to the Internet. One task it performs is directing (routing) data packets between networks, sending each packet along a suitable path toward its destination using IP addresses; it also commonly assigns local IP addresses to devices on the network.",
+      "marks": 2
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "System Development and Security",
+      "question": "Many organisations ask employees to sign an Acceptable Use Policy (AUP). (i) State what is meant by an Acceptable Use Policy. (ii) Give two rules that such a policy might contain. [4]",
+      "model_answer": "(i) An Acceptable Use Policy is a document that sets out the rules employees (or users) must follow when using an organisation's computers, network and Internet, and the consequences of breaking them. (ii) Two example rules: do not share your login details or use another person's account; do not install unauthorised software or visit inappropriate or unsafe websites; use email and the Internet responsibly and not for illegal or offensive material; and report any security concerns. (Any two reasonable rules.)",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "System Development and Security",
+      "question": "Describe the implementation and evaluation stages of the systems development life cycle. [4]",
+      "model_answer": "In the implementation stage, the new system is put into use: the software and hardware are installed, files and data are transferred (data conversion) into the new system, staff are trained, and the system is changed over from the old one to the new one (for example by direct, parallel, phased or pilot changeover). In the evaluation stage, the completed system is reviewed to judge how well it works: its performance is compared against the original requirements, users are asked for feedback, and any problems or limitations are identified so that improvements or maintenance can be planned.",
+      "marks": 4
+    }
+  ]
+}

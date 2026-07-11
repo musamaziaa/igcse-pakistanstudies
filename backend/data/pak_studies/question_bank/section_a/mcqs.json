@@ -1,0 +1,109 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The Partition of Bengal was carried out in which year?",
+      "options": {
+        "A": "1905",
+        "B": "1906",
+        "C": "1911",
+        "D": "1940"
+      },
+      "model_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Where and when was the All-India Muslim League founded?",
+      "options": {
+        "A": "Lahore, 1940",
+        "B": "Dhaka, 1906",
+        "C": "Delhi, 1905",
+        "D": "Aligarh, 1906"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Which is Pakistan's largest province by area?",
+      "options": {
+        "A": "Punjab",
+        "B": "Sindh",
+        "C": "Balochistan",
+        "D": "KPK"
+      },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "When was the Indus Water Treaty signed and who mediated it?",
+      "options": {
+        "A": "1948, UN",
+        "B": "1960, World Bank",
+        "C": "1962, USA",
+        "D": "1971, World Bank"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 4,
+      "topic_title": "Tier 1 - Constitution",
+      "question": "Which Constitution of Pakistan first introduced a presidential system?",
+      "options": {
+        "A": "1956",
+        "B": "1962",
+        "C": "1973",
+        "D": "1949 Objectives Resolution"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 3,
+      "topic_title": "Tier 2 - Economics",
+      "question": "Which sector is considered the backbone of Pakistan's economy, providing food security and employment?",
+      "options": {
+        "A": "Information Technology",
+        "B": "Manufacturing",
+        "C": "Agriculture",
+        "D": "Tourism"
+      },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 6,
+      "topic_title": "Tier 3 - Current Perspectives",
+      "question": "What is widely regarded as a 'demographic dividend' for Pakistan's future development?",
+      "options": {
+        "A": "Its large youth population",
+        "B": "Its aging workforce",
+        "C": "High rates of rural migration",
+        "D": "A declining birth rate"
+      },
+      "model_answer": "A",
+      "marks": 1
+    }
+  ]
+}

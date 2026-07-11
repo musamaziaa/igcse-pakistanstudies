@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "type": "short_answer",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Systems Architecture",
+      "question": "Identify the component within the CPU that is responsible for decoding instructions, and state one other component of the CPU. [2]",
+      "model_answer": "The Control Unit (CU) is responsible for decoding instructions and coordinating the CPU's activities. One other component is the Arithmetic Logic Unit (ALU), which carries out calculations and logical comparisons. (Registers such as the accumulator or the program counter are also acceptable as other components.)",
+      "marks": 2
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Systems Architecture",
+      "question": "Explain the purpose of the fetch-decode-execute cycle and name the three main stages. [4]",
+      "model_answer": "The fetch-decode-execute cycle is the sequence the CPU repeats continuously to process program instructions. In the fetch stage, the next instruction is copied from main memory into the CPU using the address held in the program counter, which is then incremented. In the decode stage, the control unit interprets the instruction to work out what operation is required and which data is needed. In the execute stage, the CPU carries out the instruction, for example performing a calculation in the ALU, moving data, or storing a result. The cycle then repeats for the next instruction.",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Systems Architecture",
+      "question": "A company is deciding whether to use biometric authentication or passwords to secure its computers. (i) State what is meant by biometric authentication and give one example. (ii) Give one advantage and one disadvantage of biometric authentication compared with passwords. [5]",
+      "model_answer": "(i) Biometric authentication verifies a person's identity using a unique physical characteristic, such as a fingerprint, face, iris or voice. (ii) Advantage: a biometric characteristic cannot be easily forgotten, guessed or shared like a password, and it is difficult to copy, so it is generally more secure and convenient. Disadvantage: biometric systems can be expensive to install and can sometimes reject a legitimate user (a false negative) or fail if the characteristic changes (for example a cut finger); unlike a password, a compromised biometric cannot be changed.",
+      "marks": 5
+    }
+  ]
+}

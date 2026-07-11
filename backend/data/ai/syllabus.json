@@ -1,0 +1,34 @@
+{
+  "topics": [
+    {
+      "id": "unit_1",
+      "title": "Foundations of Artificial Intelligence",
+      "description": "Core programming concepts, logical structures and algorithms, and the data types and data structures that underpin how intelligent systems are designed."
+    },
+    {
+      "id": "unit_2",
+      "title": "Machine Learning and Data Science",
+      "description": "How machines learn from data, preparing and organising datasets, and applying learning techniques such as classification and clustering using accessible tools."
+    },
+    {
+      "id": "unit_3",
+      "title": "Knowledge Representation and Reasoning",
+      "description": "Rule-based systems, IF-THEN logic, decision trees, visual representation of structured data, and how computers use logic to make decisions."
+    },
+    {
+      "id": "unit_4",
+      "title": "Planning and Autonomous Systems",
+      "description": "Intelligent agents, planning and conditional logic, autonomous routines, and how sensors and inputs guide behaviour in AI environments."
+    },
+    {
+      "id": "unit_5",
+      "title": "Ethics, Society and Philosophy of AI",
+      "description": "Ethical issues such as bias and privacy, the social and personal impact of AI, and presenting different viewpoints on the risks of AI."
+    },
+    {
+      "id": "unit_6",
+      "title": "Building and Deploying AI Systems",
+      "description": "Designing, building, testing, and sharing a working AI solution using accessible tools, with documentation, collaboration, and presentation skills (Paper 2 practical)."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Algorithms, Programming and Logic",
+      "question": "A program must read 20 numbers and output the largest one. (i) Name the programming construct needed to repeat the input 20 times. (ii) Describe, in steps or pseudocode, how the algorithm would find the largest value. [5]",
+      "model_answer": "(i) A count-controlled loop (iteration), for example a FOR loop, is used to repeat the input 20 times. (ii) The algorithm keeps track of the largest value seen so far. It could work as follows: set a variable 'largest' to the first number entered (or to a very small value); then loop 20 times, each time reading a number into 'current'; inside the loop, IF current > largest THEN set largest = current. After the loop finishes, output 'largest'. This compares every number with the current maximum and updates it whenever a bigger value is found, so the final value of 'largest' is the biggest of the 20 numbers.",
+      "marks": 5
+    },
+    {
+      "type": "short_answer",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Algorithms, Programming and Logic",
+      "question": "State the difference between a syntax error and a logic error in a program. [2]",
+      "model_answer": "A syntax error breaks the rules (grammar) of the programming language, for example a missing bracket or misspelled keyword, so the program will not run or compile. A logic error does not break the language rules, so the program runs, but it produces incorrect or unexpected results because the algorithm itself is wrong, for example using + instead of - in a calculation.",
+      "marks": 2
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Algorithms, Programming and Logic",
+      "question": "Complete a truth table for the Boolean expression X = A OR (NOT B) for all four combinations of A and B. [4]",
+      "model_answer": "NOT B inverts B, and OR outputs 1 if either input is 1. The results are: when A=0, B=0: NOT B = 1, so X = 0 OR 1 = 1. When A=0, B=1: NOT B = 0, so X = 0 OR 0 = 0. When A=1, B=0: NOT B = 1, so X = 1 OR 1 = 1. When A=1, B=1: NOT B = 0, so X = 1 OR 0 = 1. Therefore X = 1, 0, 1, 1 for the four rows in order.",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Algorithms, Programming and Logic",
+      "question": "Explain what is meant by validation and verification when data is entered into a program, giving one example of each. [4]",
+      "model_answer": "Validation is an automatic check carried out by the program to ensure that entered data is sensible and follows set rules; for example a range check that a month entered is between 1 and 12, or a length check on a password. It cannot guarantee the data is correct, only reasonable. Verification is a check that data has been entered accurately and matches the original source; for example double entry, where a password is typed twice and the two entries are compared, or a visual check of the data against the original. Validation checks whether data is reasonable, while verification checks whether it has been entered accurately.",
+      "marks": 4
+    }
+  ]
+}

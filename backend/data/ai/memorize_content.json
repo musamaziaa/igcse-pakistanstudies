@@ -1,0 +1,175 @@
+{
+  "cards": [
+    {
+      "id": "ai_ml_basics",
+      "section": "Unit 2",
+      "category": "topic",
+      "display_category": "machine_learning",
+      "group_id": "machine_learning",
+      "group_label": "How Machines Learn",
+      "title": "What is Machine Learning?",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Machine learning is a process of using data to improve performance or make predictions.",
+        "A model is trained by showing it many examples of data.",
+        "Features are the input values that describe each example.",
+        "A label is the correct answer that the model is trying to predict.",
+        "Training data is used to teach the model, and test data checks how well it learned.",
+        "Pattern recognition means finding repeated relationships in a data set."
+      ]
+    },
+    {
+      "id": "ai_ml_types",
+      "section": "Unit 2",
+      "category": "topic",
+      "display_category": "machine_learning",
+      "group_id": "machine_learning",
+      "group_label": "How Machines Learn",
+      "title": "Learning Techniques and Applications",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Classification sorts data into set categories, such as spam or not spam.",
+        "Clustering groups similar data together without pre-set labels.",
+        "Feedback helps improve the accuracy of a model over time.",
+        "Spam filters learn to separate wanted emails from unwanted ones.",
+        "Recommendation systems suggest items based on past user choices.",
+        "Tools like Teachable Machine let beginners train models without heavy coding."
+      ]
+    },
+    {
+      "id": "ai_programming",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "foundations",
+      "group_id": "foundations",
+      "group_label": "Programming and Logic Foundations",
+      "title": "Core Programming Concepts",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "A variable stores a value that can change while a program runs.",
+        "A conditional uses IF and ELSE to make decisions based on a test.",
+        "A loop repeats a block of instructions using iteration.",
+        "A function is a named block of code that performs a specific task.",
+        "Sequence, selection, and iteration are the three basic logical structures.",
+        "A flowchart or pseudocode can represent the steps of an algorithm clearly."
+      ]
+    },
+    {
+      "id": "ai_data_types",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "foundations",
+      "group_id": "foundations",
+      "group_label": "Programming and Logic Foundations",
+      "title": "Data Types and Data Structures",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "An integer is a whole number and a float is a number with a decimal point.",
+        "A string is a sequence of characters such as text.",
+        "A Boolean can only be True or False.",
+        "A list is an ordered collection of values that can be changed.",
+        "A dictionary stores data as key and value pairs.",
+        "A graph stores data as nodes connected by edges, useful for networks and routes."
+      ]
+    },
+    {
+      "id": "ai_rule_based",
+      "section": "Unit 3",
+      "category": "topic",
+      "display_category": "reasoning",
+      "group_id": "reasoning",
+      "group_label": "Knowledge Representation and Reasoning",
+      "title": "Rule-Based Systems and Logic",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "A rule-based system uses set rules to make decisions.",
+        "Each rule has a condition and an action written as IF condition THEN action.",
+        "A decision tree shows choices as branches leading to outcomes.",
+        "Logical operators AND, OR, and NOT combine or reverse conditions.",
+        "A truth table lists the output for every combination of input conditions.",
+        "Rule-based systems struggle to handle uncertainty or very complex data."
+      ]
+    },
+    {
+      "id": "ai_planning",
+      "section": "Unit 4",
+      "category": "topic",
+      "display_category": "autonomous",
+      "group_id": "autonomous",
+      "group_label": "Planning and Autonomous Systems",
+      "title": "Planning and Autonomous Agents",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "An autonomous system operates without direct human control.",
+        "An AI agent generates a plan based on its goals and available actions.",
+        "Conditional logic lets an agent choose actions based on its environment.",
+        "Sensors provide input data that influences the agent's decisions.",
+        "If the environment changes, the plan may need to be adjusted.",
+        "Examples include self-driving cars, robot vacuum cleaners, and smart thermostats."
+      ]
+    },
+    {
+      "id": "ai_ethics",
+      "section": "Unit 5",
+      "category": "topic",
+      "display_category": "ethics",
+      "group_id": "ethics",
+      "group_label": "Ethics and Society",
+      "title": "Ethical Issues in AI",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "Bias happens when training data is unfair, leading to unfair AI decisions.",
+        "Privacy is at risk when personal data is used without informed consent.",
+        "Transparency means being able to see how an AI reached a decision.",
+        "Accountability means someone is responsible for an AI system's actions.",
+        "Facial recognition and surveillance raise concerns about personal freedom.",
+        "Developers, companies, and users all share responsibility for ethical AI use."
+      ]
+    },
+    {
+      "id": "ai_impact",
+      "section": "Unit 5",
+      "category": "topic",
+      "display_category": "ethics",
+      "group_id": "ethics",
+      "group_label": "Ethics and Society",
+      "title": "Social and Personal Impact of AI",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "AI can improve convenience and access to services such as healthcare and education.",
+        "AI may cause job displacement as machines take over some tasks.",
+        "Recommendation algorithms can influence the choices people make.",
+        "AI can affect privacy, personal data, and digital autonomy.",
+        "Different groups in society may be affected by AI unequally.",
+        "AI has both positive and negative effects at the individual and societal level."
+      ]
+    },
+    {
+      "id": "ai_building",
+      "section": "Unit 6",
+      "category": "topic",
+      "display_category": "deployment",
+      "group_id": "deployment",
+      "group_label": "Building and Deploying AI",
+      "title": "Building, Testing and Deploying AI Systems",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "Building an AI system starts with defining the problem to be solved.",
+        "Data is selected and prepared before choosing and training a model.",
+        "Accuracy is a performance metric that measures how often the model is correct.",
+        "Test data must be kept separate from training data for a fair evaluation.",
+        "AI systems can be deployed as web apps, APIs, or cloud-based platforms.",
+        "Documentation and version control help others use and maintain the system."
+      ]
+    }
+  ]
+}

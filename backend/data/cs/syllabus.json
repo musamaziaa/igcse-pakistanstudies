@@ -1,0 +1,19 @@
+{
+  "topics": [
+    {
+      "id": "unit_1",
+      "title": "Systems Architecture",
+      "description": "CPU and Von Neumann architecture, memory and storage, wired/wireless networks, topologies and protocols, cyber security, ethics, digital currencies, emerging technologies, input/output devices, and software."
+    },
+    {
+      "id": "unit_2",
+      "title": "Algorithms, Programming and Logic",
+      "description": "Computational thinking, searching and sorting algorithms, programming constructs and data types, maintainable programs and arrays, logic gates and Boolean expressions, the program development life cycle, and single-table databases with SQL."
+    },
+    {
+      "id": "unit_3",
+      "title": "Data Representation",
+      "description": "Translators and languages, compression and units of data, denary/binary/hexadecimal number systems, two's complement, character/sound/image representation, data transmission methods, and error detection."
+    }
+  ]
+}

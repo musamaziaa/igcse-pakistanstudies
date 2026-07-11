@@ -1,0 +1,29 @@
+{
+  "topics": [
+    {
+      "id": "topic_1",
+      "title": "Introduction to the Hospitality Industry",
+      "description": "Products and services, sectors, business ownership types, and contribution to GDP"
+    },
+    {
+      "id": "topic_2",
+      "title": "Customer Service Skills",
+      "description": "Internal and external customers, meeting differing needs, feedback and expectations"
+    },
+    {
+      "id": "topic_3",
+      "title": "Effective Team Working",
+      "description": "Positive working relationships, team dynamics, and conflict resolution"
+    },
+    {
+      "id": "topic_4",
+      "title": "Food Preparation and Cooking",
+      "description": "Food safety and hygiene, preparation, cooking methods, and safe temperatures"
+    },
+    {
+      "id": "topic_5",
+      "title": "Food, Nutrition and Exercise",
+      "description": "Main food groups, nutritional value, food preservation, and benefits of exercise"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 1,
+      "topic_title": "Introduction to the Hospitality Industry",
+      "question": "A business owned by shareholders whose shares can be bought and sold by the general public is known as a:",
+      "options": { "A": "franchise", "B": "partnership", "C": "private limited company", "D": "public limited company", "E": "sole trader" },
+      "correct_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 1,
+      "topic_title": "Introduction to the Hospitality Industry",
+      "question": "Which of the following is an example of a commercial (profit-making) hospitality operation?",
+      "options": { "A": "a hospital catering department", "B": "a hotel restaurant", "C": "a prison kitchen", "D": "a school dining hall", "E": "an armed-forces mess" },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 2,
+      "topic_title": "Customer Service Skills",
+      "question": "A guest who uses a wheelchair asks whether the restaurant is accessible. Meeting this need is an example of serving a customer with:",
+      "options": { "A": "a dietary requirement", "B": "a language barrier", "C": "a loyalty membership", "D": "a payment query", "E": "a specific access requirement" },
+      "correct_answer": "E",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 2,
+      "topic_title": "Customer Service Skills",
+      "question": "Which of the following best describes 'body language' in customer service?",
+      "options": { "A": "non-verbal communication such as posture and eye contact", "B": "the menu written in another language", "C": "the uniform worn by staff", "D": "a written complaint form", "E": "a telephone booking script" },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 3,
+      "topic_title": "Effective Team Working",
+      "question": "Which of the following is a benefit of good teamwork in a hospitality business?",
+      "options": { "A": "slower service", "B": "higher staff turnover", "C": "more customer complaints", "D": "improved efficiency and customer satisfaction", "E": "increased food waste" },
+      "correct_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 3,
+      "topic_title": "Effective Team Working",
+      "question": "In a kitchen brigade, the chef who leads the whole kitchen and is responsible for its running is the:",
+      "options": { "A": "commis chef", "B": "kitchen porter", "C": "head (executive) chef", "D": "waiter", "E": "sommelier" },
+      "correct_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "Cross-contamination in the kitchen is best prevented by:",
+      "options": { "A": "using the same chopping board for raw and cooked food", "B": "storing raw meat above ready-to-eat food", "C": "leaving food at room temperature for long periods", "D": "using separate, colour-coded chopping boards for different foods", "E": "reheating food several times" },
+      "correct_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "The temperature range from 5 degrees Celsius to 63 degrees Celsius, in which bacteria multiply most easily, is known as the:",
+      "options": { "A": "chilling zone", "B": "danger zone", "C": "freezing zone", "D": "holding zone", "E": "safe zone" },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 5,
+      "topic_title": "Food, Nutrition and Exercise",
+      "question": "Which nutrient is the body's main source of energy?",
+      "options": { "A": "carbohydrates", "B": "vitamins", "C": "minerals", "D": "water", "E": "fibre" },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 5,
+      "topic_title": "Food, Nutrition and Exercise",
+      "question": "Which of the following foods is a good source of protein?",
+      "options": { "A": "butter", "B": "white sugar", "C": "cooking oil", "D": "eggs", "E": "jam" },
+      "correct_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hospitality",
+      "topic_number": 5,
+      "topic_title": "Food, Nutrition and Exercise",
+      "question": "A balanced diet combined with regular exercise mainly helps a person to:",
+      "options": { "A": "increase food costs", "B": "reduce menu variety", "C": "maintain good health and a healthy weight", "D": "slow down table service", "E": "increase food waste" },
+      "correct_answer": "C",
+      "marks": 1
+    }
+  ]
+}

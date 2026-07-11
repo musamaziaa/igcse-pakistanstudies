@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "type": "short_answer",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Systems Architecture",
+      "question": "State what is meant by the Von Neumann architecture and name the register that holds the address of the next instruction to be fetched. [2]",
+      "model_answer": "In the Von Neumann architecture, program instructions and data are stored together in the same memory and are fetched using the same bus. The register that holds the address of the next instruction to be fetched is the Program Counter (PC).",
+      "marks": 2
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Systems Architecture",
+      "question": "Describe the roles of the following components of the CPU: (i) the Arithmetic Logic Unit (ALU), (ii) the Control Unit (CU), and (iii) cache memory. [3]",
+      "model_answer": "(i) The ALU (Arithmetic Logic Unit) carries out the arithmetic calculations and logical comparisons required by instructions. (ii) The CU (Control Unit) manages and coordinates the fetch-decode-execute cycle, sending control signals to the other components. (iii) Cache memory is a small, very fast memory that stores frequently used instructions and data close to the CPU to reduce the time spent fetching from main memory.",
+      "marks": 3
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Systems Architecture",
+      "question": "Explain how each of the following factors affects the performance of a CPU: (i) clock speed, (ii) number of cores, (iii) cache size. [3]",
+      "model_answer": "(i) A higher clock speed means the CPU carries out more fetch-decode-execute cycles each second, so more instructions are processed. (ii) More cores allow the CPU to process several instructions or threads at the same time, improving performance for tasks that can run in parallel. (iii) A larger cache means more frequently used data and instructions can be held close to the CPU, reducing slow accesses to main memory.",
+      "marks": 3
+    },
+    {
+      "type": "short_answer",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Systems Architecture",
+      "question": "Explain two differences between RAM and ROM. [4]",
+      "model_answer": "RAM is volatile, meaning it loses its contents when power is switched off, whereas ROM is non-volatile and keeps its contents without power. RAM can be both read from and written to during normal use, while ROM is normally read-only and stores the start-up (boot) instructions. RAM temporarily holds the programs and data currently in use, whereas ROM holds permanent instructions needed to start the computer.",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Systems Architecture",
+      "question": "A designer must choose between magnetic, optical, and solid-state storage for a portable device. Compare the three types with reference to speed, portability, and durability. [6]",
+      "model_answer": "Magnetic storage, such as a hard disk drive, offers a large capacity at low cost but is slower and less durable because it contains moving parts that can be damaged if dropped. Optical storage, such as a CD or DVD, is cheap and portable but has a small capacity and slower access, and the discs can be scratched. Solid-state storage, such as an SSD or memory card, has no moving parts, so it is the fastest and most durable and is very portable, though it usually costs more per gigabyte. For a portable device that is moved around often, solid-state storage is the most suitable because it is fast, light, and resistant to physical shock.",
+      "marks": 6
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Systems Architecture",
+      "question": "A company network is at risk of cyber attacks. Describe three forms of attack and, for each, a security measure that would reduce the risk. [6]",
+      "model_answer": "Phishing uses fake emails or websites to trick users into revealing login details; staff training and checking the URL and sender of messages reduces this risk. A brute force attack tries many password combinations to gain access; strong passwords and two-step verification reduce this risk. A distributed denial of service (DDoS) attack floods a server with traffic so it cannot respond; firewalls and proxy servers can filter and block the malicious traffic. (Other valid pairs include malware with anti-malware software, and data interception with encryption.)",
+      "marks": 6
+    }
+  ]
+}

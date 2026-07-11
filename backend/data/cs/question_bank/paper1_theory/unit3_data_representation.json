@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "type": "short_answer",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Data Representation",
+      "question": "(i) How many bits make up one byte? (ii) Name the unit of data that consists of 4 bits. [2]",
+      "model_answer": "(i) One byte is made up of 8 bits. (ii) A unit of 4 bits is called a nibble.",
+      "marks": 2
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Data Representation",
+      "question": "Convert the hexadecimal number A2F: (i) into binary, and (ii) into denary. [4]",
+      "model_answer": "(i) A = 1010, 2 = 0010, F = 1111, so A2F in binary is 1010 0010 1111. (ii) A2F in denary = (10 x 256) + (2 x 16) + (15 x 1) = 2560 + 32 + 15 = 2607.",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Data Representation",
+      "question": "Add the two 8-bit binary integers 01001101 and 00101110. Give your answer in binary and state whether overflow has occurred. [3]",
+      "model_answer": "01001101 (77) + 00101110 (46) = 01111011, which is 123 in denary. The result fits within 8 bits, so no overflow has occurred (overflow would occur only if the result were too large to store in the 8 available bits).",
+      "marks": 3
+    },
+    {
+      "type": "short_answer",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Data Representation",
+      "question": "Explain the difference between lossy and lossless compression. [2]",
+      "model_answer": "Lossy compression permanently removes some data to reduce the file size, so the original file cannot be fully restored; it is often used for images, audio, and video. Lossless compression reduces the file size without removing any data, so the original file can be restored exactly; it is used where all data must be kept, such as text files.",
+      "marks": 2
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Data Representation",
+      "question": "Explain how an image is represented in binary and describe how colour depth and resolution each affect the file size. [5]",
+      "model_answer": "An image is made up of a grid of pixels, and the colour of each pixel is stored as a binary number. The colour depth is the number of bits used to represent each pixel: a greater colour depth allows more colours but uses more bits per pixel, increasing the file size. The resolution is the number of pixels in the image (width x height): a higher resolution means more pixels, which also increases the file size. The total file size can be estimated by multiplying the number of pixels by the colour depth in bits.",
+      "marks": 5
+    },
+    {
+      "type": "short_answer",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Data Representation",
+      "question": "Describe the difference between a compiler and an interpreter. [2]",
+      "model_answer": "A compiler translates the whole high-level program into machine code in one go before it is run, producing an executable file. An interpreter translates and executes the program one line (or statement) at a time, stopping when it reaches an error.",
+      "marks": 2
+    }
+  ]
+}

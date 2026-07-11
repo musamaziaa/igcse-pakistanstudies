@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "type": "short_answer",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Data Representation",
+      "question": "Convert the denary (decimal) number 156 into an 8-bit binary number. Show your working. [2]",
+      "model_answer": "Using place values 128 64 32 16 8 4 2 1: 156 = 128 + 16 + 8 + 4. Setting those columns to 1 gives 10011100. So 156 in 8-bit binary is 10011100 (128 + 16 + 8 + 4 = 156).",
+      "marks": 2
+    },
+    {
+      "type": "short_answer",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Data Representation",
+      "question": "Convert the hexadecimal number 7E into binary. [2]",
+      "model_answer": "Each hex digit becomes 4 bits. 7 = 0111 and E = 1110. So 7E in binary is 0111 1110, i.e. 01111110.",
+      "marks": 2
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Data Representation",
+      "question": "Data can be encrypted using asymmetric encryption. (i) Explain what is meant by asymmetric encryption, referring to the public and private keys. (ii) Give one reason a person might choose asymmetric rather than symmetric encryption. [5]",
+      "model_answer": "(i) Asymmetric encryption uses a pair of related keys: a public key and a private key. The public key can be freely shared and is used to encrypt data, but it cannot decrypt it; only the matching private key, which is kept secret by the owner, can decrypt data that was encrypted with the public key. So any device can request the public key to send a secure message, but only the owner's device knows the private key needed to read it. (ii) A reason to choose asymmetric encryption is that the keys do not have to be secretly shared beforehand: because the public key can be sent openly, there is no risk of the decryption key being intercepted during exchange, which makes it more secure for communicating with people you have not met, for example over the Internet.",
+      "marks": 5
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Data Representation",
+      "question": "Parity bits are used for error detection during data transmission. (i) Using even parity, state the parity bit needed for the 7 data bits 1011010. (ii) Explain briefly how the receiver uses the parity bit to detect an error. [4]",
+      "model_answer": "(i) Count the number of 1s in 1011010: there are four 1s, which is already even. For even parity the total number of 1s (including the parity bit) must be even, so the parity bit is 0. (ii) The receiver counts the 1s in the received data including the parity bit. If even parity is being used and the count is odd, then at least one bit has been changed during transmission, so an error is detected and the data can be re-requested. (If the count is even the data is accepted, though parity cannot detect an even number of bit errors.)",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Computer Science",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Data Representation",
+      "question": "Describe how Automatic Repeat reQuest (ARQ) is used to help ensure reliable data transmission. [4]",
+      "model_answer": "ARQ is an error-control method used during data transmission. When data is sent, the receiver checks it for errors, for example using a checksum or parity. If the data is received correctly, the receiver sends back a positive acknowledgement, and the sender transmits the next block. If an error is detected, or no acknowledgement is received within a set time (a timeout), the sender automatically re-sends (repeats) the affected data. This process continues until the data is received correctly or a retry limit is reached, helping to ensure that the data finally received is accurate.",
+      "marks": 4
+    }
+  ]
+}

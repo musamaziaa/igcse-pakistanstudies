@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "section": "C",
+      "type": "extended",
+      "source_type": "Hospitality",
+      "topic_number": 1,
+      "topic_title": "Introduction to the Hospitality Industry",
+      "question": "Scenario: You have been asked to research the hospitality industry, covering (i) the different types of businesses within the industry, and (ii) one professional body that represents the industry. Present your findings as a description. [10]",
+      "model_answer": "There are different types of businesses within the hospitality industry, falling into the commercial and public categories. Commercial businesses run for profit and include hotels, restaurants, and pubs. Public sector providers include colleges and schools. One example of a professional body is the Institute of Hospitality, which is responsible for monitoring and maintaining standards within the industry, reviewing continuing professional development requirements, and liaising with the industry on best practice.",
+      "marks": 10
+    },
+    {
+      "section": "C",
+      "type": "extended",
+      "source_type": "Hospitality",
+      "topic_number": 2,
+      "topic_title": "Customer Service Skills",
+      "question": "Scenario: You work in a restaurant and must create guidance for new colleagues on (i) allergens, including two ingredients that may cause an allergic reaction and one way to increase allergen awareness, and (ii) how to assist customers with mobility issues and hearing difficulties. Present your findings as a summary statement. [10]",
+      "model_answer": "Allergen awareness: staff must be aware of ingredients that may cause allergic reactions so they can inform customers. There are fourteen foodstuffs on the current regulatory list from the Food Standards Agency; examples include gluten, shellfish, and mustard. Awareness can be increased by producing an allergen factsheet made available online and by increasing staff training. Assisting customers with particular requirements: customers with mobility issues can be supported by dedicated entry points such as a ramp, with information provided in advance via website and social media. Customers with hearing difficulties can be supported by installing hearing loops in key areas such as reception desks and entry points.",
+      "marks": 10
+    },
+    {
+      "section": "C",
+      "type": "extended",
+      "source_type": "Hospitality",
+      "topic_number": 3,
+      "topic_title": "Effective Team Working",
+      "question": "Scenario: As a team leader you have noticed disagreements among new team members that are affecting service. For a team development day, explain ways in which positive working relationships can be encouraged and set out the benefits to the business of working positively within teams. [10]",
+      "model_answer": "Ways to encourage positive working relationships: include getting to know you sessions and trust building activities on team development days; ensure team members work with a variety of colleagues across shifts; introduce reward programmes; encourage participation in regular team meetings; and create a system of mentoring and shadowing so members learn each other's roles. Benefits to the business: positive team working creates a happy and friendly environment, projects a professional image to customers and colleagues, builds trust and respect across the team, and leads to increased sales and better recognition in the workplace.",
+      "marks": 10
+    }
+  ]
+}

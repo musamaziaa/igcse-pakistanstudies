@@ -1,0 +1,220 @@
+{
+  "cards": [
+    {
+      "id": "ps_const_dev",
+      "section": "B",
+      "category": "topic",
+      "display_category": "constitution",
+      "group_id": "constitution",
+      "group_label": "Constitutional Development",
+      "title": "Objectives Resolution & The Three Constitutions",
+      "arabic": "",
+      "lines": [
+        "Pakistan inherited the Government of India Act 1935 (adapted) as its interim constitution in 1947.",
+        "The Objectives Resolution (1949), moved by PM Liaquat Ali Khan, declared that sovereignty over the universe belongs to Allah.",
+        "It guaranteed democracy, freedom, equality, social justice, fundamental rights, and protection of minorities.",
+        "The 1956 Constitution declared Pakistan an Islamic Republic with a parliamentary, federal system.",
+        "The 1962 Constitution, under Ayub Khan, introduced a presidential system with the Basic Democracies electoral model.",
+        "The 1973 Constitution, framed by Z.A. Bhutto, was passed by consensus and restored parliamentary federalism; it remains in force today.",
+        "Key pattern (the pendulum): 1956 parliamentary then 1962 presidential then 1973 parliamentary."
+      ],
+      "tier_label": "Tier 1: Critical"
+    },
+    {
+      "id": "ps_pakistan_movement",
+      "section": "A",
+      "category": "topic",
+      "display_category": "history",
+      "group_id": "pakistan_movement",
+      "group_label": "Pakistan Movement",
+      "title": "The Struggle for Pakistan (1905-1947)",
+      "arabic": "",
+      "lines": [
+        "Two-Nation Theory: Hindus and Muslims were distinct nations in religion, culture, and way of life, deserving separate states.",
+        "Sir Syed Ahmad Khan revived Muslims through modern education in the Aligarh Movement.",
+        "Partition of Bengal (1905) by Lord Curzon benefited Muslims; its annulment in 1911 sparked Muslim political organisation.",
+        "The All-India Muslim League was founded in 1906 at Dhaka to safeguard Muslim political rights.",
+        "The Khilafat Movement (1919-24) aimed to protect the Ottoman Caliphate and built mass Muslim consciousness.",
+        "Jinnah's Fourteen Points (1929) demanded constitutional safeguards in response to the Nehru Report.",
+        "Allama Iqbal's Allahabad Address (1930) first proposed a separate Muslim state in the north-west.",
+        "The Lahore (Pakistan) Resolution (23 March 1940) demanded independent Muslim states; Pakistan was created on 14 August 1947."
+      ],
+      "tier_label": "Tier 1: Critical"
+    },
+    {
+      "id": "ps_key_dates",
+      "section": "A",
+      "category": "topic",
+      "display_category": "history",
+      "group_id": "timeline",
+      "group_label": "Key Dates Timeline",
+      "title": "Dates You Cannot Get Wrong",
+      "arabic": "",
+      "lines": [
+        "1905: Partition of Bengal carried out by Lord Curzon.",
+        "1906: All-India Muslim League founded at Dhaka.",
+        "1929: Jinnah presented his Fourteen Points.",
+        "1930: Iqbal delivered the Allahabad Address.",
+        "1940: Lahore (Pakistan) Resolution passed on 23 March.",
+        "1947: Creation of Pakistan on 14 August.",
+        "1948, 1965, 1971: The three India-Pakistan wars.",
+        "1949: Objectives Resolution passed.",
+        "1956, 1962, 1973: The three constitutions of Pakistan.",
+        "1960: Indus Water Treaty signed with World Bank mediation."
+      ],
+      "tier_label": "Tier 1: Critical"
+    },
+    {
+      "id": "ps_leaders",
+      "section": "B",
+      "category": "topic",
+      "display_category": "history",
+      "group_id": "leaders",
+      "group_label": "Founding Leaders & Reformers",
+      "title": "Key People and Their Contributions",
+      "arabic": "",
+      "lines": [
+        "Sir Syed Ahmad Khan: led the Aligarh Movement for modern Muslim education.",
+        "Allama Iqbal: gave the Allahabad Address (1930) proposing a separate Muslim state.",
+        "Quaid-e-Azam M.A. Jinnah: presented the Fourteen Points (1929) and founded Pakistan as its first Governor-General.",
+        "Liaquat Ali Khan: first Prime Minister who moved the Objectives Resolution (1949).",
+        "Ayub Khan: introduced the 1962 Constitution and the Basic Democracies system.",
+        "Z.A. Bhutto: framed the 1973 Constitution by consensus.",
+        "Nawab Salimullah and Viqar-ul-Mulk: founders of the All-India Muslim League."
+      ],
+      "tier_label": "Tier 1: Critical"
+    },
+    {
+      "id": "ps_foreign_policy",
+      "section": "C",
+      "category": "topic",
+      "display_category": "foreign_policy",
+      "group_id": "foreign_policy",
+      "group_label": "Foreign Policy",
+      "title": "Relations with India, USA, China & Neighbours",
+      "arabic": "",
+      "lines": [
+        "Foreign policy protects national security, territorial integrity (especially Kashmir), and economic development.",
+        "Relations with India are dominated by the Kashmir dispute and three wars (1948, 1965, 1971).",
+        "The 1971 war led to the separation of East Pakistan and the creation of Bangladesh.",
+        "Relations with the USA were a strategic Cold-War alliance (SEATO, CENTO, War on Terror) but fluctuate with shifting interests.",
+        "China is an 'all-weather' friend; cooperation includes CPEC and major economic and defence projects.",
+        "Pakistan promotes peaceful borders with Iran and Afghanistan and works through SAARC and the United Nations."
+      ],
+      "tier_label": "Tier 2: Most Important"
+    },
+    {
+      "id": "ps_economy_geography",
+      "section": "B",
+      "category": "topic",
+      "display_category": "geography",
+      "group_id": "economy",
+      "group_label": "Agriculture, Water & Resources",
+      "title": "Agriculture, Water & Natural Resources",
+      "arabic": "",
+      "lines": [
+        "Agriculture is the backbone of the economy: it provides employment, GDP, food security, raw materials, and export earnings.",
+        "Cotton is the major Punjab crop and supplies the textile industry, Pakistan's largest industry.",
+        "Irrigation depends mainly on the Indus River and its tributaries.",
+        "The Indus Water Treaty (1960), mediated by the World Bank, divided river waters between Pakistan and India.",
+        "Balochistan is the largest province by area; Punjab has the highest population density.",
+        "Largest forests are in Khyber Pakhtunkhwa; mangroves grow along the coast; Sui (Balochistan) is the largest gas field.",
+        "Energy is non-renewable (coal, oil, gas) and renewable (hydel, wind, solar); trade and transport connect producers to markets."
+      ],
+      "tier_label": "Tier 2: Most Important"
+    },
+    {
+      "id": "ps_physical_geography",
+      "section": "A",
+      "category": "topic",
+      "display_category": "geography",
+      "group_id": "physical_geography",
+      "group_label": "Physical Geography",
+      "title": "Location, Provinces, Rivers & Mountains",
+      "arabic": "",
+      "lines": [
+        "Pakistan has four provinces: Punjab, Sindh, Khyber Pakhtunkhwa, and Balochistan.",
+        "The northern mountain ranges include the Himalayas, Karakoram, and Hindu Kush.",
+        "K2, the world's second-highest peak, lies in the Karakoram range.",
+        "The Indus is the main river, joined by the Jhelum, Chenab, Ravi, and Sutlej.",
+        "Lahore lies on the River Ravi; the Balochistan plateau uses the Karez irrigation system.",
+        "Climate ranges from arid deserts like the Thar to alpine mountains, shaping agriculture and settlement."
+      ],
+      "tier_label": "Tier 2: Most Important"
+    },
+    {
+      "id": "ps_economy_challenges",
+      "section": "B",
+      "category": "topic",
+      "display_category": "economics",
+      "group_id": "economy_challenges",
+      "group_label": "Economic Challenges & Development",
+      "title": "Industry, Trade & Economic Challenges",
+      "arabic": "",
+      "lines": [
+        "Major economic challenges include debt, unemployment, poverty, and inflation.",
+        "Wars increase defence spending and reduce foreign investment and aid.",
+        "Industry is classified as primary, secondary, and tertiary; cotton textiles is the largest sector.",
+        "Trade depends on exports such as textiles and rice and imports such as oil and machinery, affecting the balance of payments.",
+        "Sustainable development needs investment in renewable energy and infrastructure.",
+        "Education and vocational training are key to reducing poverty and unemployment."
+      ],
+      "tier_label": "Tier 2: Most Important"
+    },
+    {
+      "id": "ps_current_perspectives",
+      "section": "C",
+      "category": "topic",
+      "display_category": "current_perspectives",
+      "group_id": "current_perspectives",
+      "group_label": "Current Perspectives",
+      "title": "Youth, Environment & Governance",
+      "arabic": "",
+      "lines": [
+        "Pakistan has a large youth population, offering a potential 'demographic dividend'.",
+        "Education and civic engagement turn youth into responsible citizens and drivers of innovation and entrepreneurship.",
+        "Climate change brings rising temperatures, floods, droughts, and water scarcity that threaten agriculture.",
+        "Deforestation and pollution damage ecosystems and public health.",
+        "Solutions include renewable energy (hydel, wind, solar) and strong environmental policies.",
+        "Poverty, unemployment, and weak governance require stable institutions and inclusive, sustainable growth."
+      ],
+      "tier_label": "Tier 3: Nice to Learn"
+    },
+    {
+      "id": "ps_population",
+      "section": "B",
+      "category": "topic",
+      "display_category": "geography",
+      "group_id": "population",
+      "group_label": "Population & Employment",
+      "title": "Population Dynamics & Employment",
+      "arabic": "",
+      "lines": [
+        "Pakistan has a high birth rate, largely due to limited family planning.",
+        "Punjab is the most populous and most densely populated province.",
+        "Rural-to-urban migration is driven by jobs, education, and services in cities.",
+        "The largest employment sector is primary (agriculture).",
+        "A young, growing population can become a productive workforce if educated and employed."
+      ],
+      "tier_label": "Tier 3: Nice to Learn"
+    },
+    {
+      "id": "ps_nuclear_global",
+      "section": "C",
+      "category": "topic",
+      "display_category": "foreign_policy",
+      "group_id": "nuclear_global",
+      "group_label": "Nuclear Programme & Global Role",
+      "title": "Nuclear Programme, UN & Global Organisations",
+      "arabic": "",
+      "lines": [
+        "Pakistan developed its nuclear programme for security and strategic deterrence against India.",
+        "Nuclear status strengthens Pakistan's defence but increases international scrutiny.",
+        "Pakistan is an active member of the United Nations and contributes to global peacekeeping.",
+        "Regional cooperation runs through SAARC; Islamic solidarity is pursued through the OIC.",
+        "A balanced foreign policy lets Pakistan pursue peace, development, and regional influence."
+      ],
+      "tier_label": "Tier 3: Nice to Learn"
+    }
+  ]
+}

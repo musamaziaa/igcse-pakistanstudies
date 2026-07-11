@@ -1,0 +1,206 @@
+[
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Muslim",
+    "arabic_text": "الدِّينُ النَّصِيحَةُ",
+    "english_translation": "Religion is sincerity",
+    "question": "According to Hadith 1, to whom is sincerity (nasihah) owed?",
+    "options": {
+      "A": "To Allah only",
+      "B": "To Allah, His Book, His Messenger, leaders and common folk",
+      "C": "To parents and teachers",
+      "D": "To the scholars of Islam"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Muslim",
+    "arabic_text": "الدِّينُ النَّصِيحَةُ",
+    "english_translation": "Religion is sincerity",
+    "question": "What does the word \"An-Nasihah\" mean in this hadith?",
+    "options": {
+      "A": "Worship",
+      "B": "Sincerity and well-wishing",
+      "C": "Prayer",
+      "D": "Charity"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Muslim",
+    "arabic_text": "الدِّينُ النَّصِيحَةُ",
+    "english_translation": "Religion is sincerity",
+    "question": "This Hadith emphasises that sincerity to Muslim leaders includes:",
+    "options": {
+      "A": "Blind obedience",
+      "B": "Honest counsel and sincere advice",
+      "C": "Financial support only",
+      "D": "Following them regardless of Islamic principles"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Bukhari",
+    "arabic_text": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+    "english_translation": "None of you truly believes until he loves for his brother what he loves for himself",
+    "question": "According to Hadith 2, what is a condition of complete faith?",
+    "options": {
+      "A": "Performing Hajj every year",
+      "B": "Loving for your brother what you love for yourself",
+      "C": "Memorising the Quran",
+      "D": "Giving all your wealth to charity"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Bukhari",
+    "arabic_text": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+    "english_translation": "None of you truly believes until he loves for his brother what he loves for himself",
+    "question": "In which collection is this Hadith about loving for your brother found?",
+    "options": {
+      "A": "Sahih Muslim",
+      "B": "Sahih Bukhari",
+      "C": "Sunan Abu Dawud",
+      "D": "Jami al-Tirmidhi"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Bukhari",
+    "arabic_text": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+    "english_translation": "None of you truly believes until he loves for his brother what he loves for himself",
+    "question": "The principle in this Hadith primarily teaches:",
+    "options": {
+      "A": "Selfishness is part of human nature",
+      "B": "Brotherhood and empathy in Islam",
+      "C": "The importance of fasting",
+      "D": "Avoiding non-Muslims"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Muslim",
+    "arabic_text": "رَأَى مِنْكُمْ مُنْكَرًا فَلْيُغَيِّرْهُ بِيَدِهِ",
+    "english_translation": "Whoever sees an evil, let him change it with his hand",
+    "question": "According to Hadith 3, what is the weakest form of faith when addressing evil?",
+    "options": {
+      "A": "Changing it with the hand",
+      "B": "Changing it with the tongue",
+      "C": "Changing it with the heart",
+      "D": "Ignoring it completely"
+    },
+    "correct_answer": "C",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Muslim",
+    "arabic_text": "رَأَى مِنْكُمْ مُنْكَرًا فَلْيُغَيِّرْهُ بِيَدِهِ",
+    "english_translation": "Whoever sees an evil, let him change it with his hand",
+    "question": "How many methods of changing evil are mentioned in Hadith 3?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Bukhari",
+    "arabic_text": "الْحَيَاءُ لَا يَأْتِي إِلَّا بِخَيْرٍ",
+    "english_translation": "Modesty brings nothing but good",
+    "question": "According to Hadith 9, what does modesty (Al-Haya) always bring?",
+    "options": {
+      "A": "Difficulty",
+      "B": "Only good",
+      "C": "Wealth",
+      "D": "Fame"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Bukhari",
+    "arabic_text": "الْحَيَاءُ لَا يَأْتِي إِلَّا بِخَيْرٍ",
+    "english_translation": "Modesty brings nothing but good",
+    "question": "The Arabic word \"Al-Haya\" in Hadith 9 means:",
+    "options": {
+      "A": "Courage",
+      "B": "Modesty/shyness",
+      "C": "Patience",
+      "D": "Gratitude"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Muslim",
+    "arabic_text": "إِنَّ اللَّهَ لَا يَنْظُرُ إِلَى صُوَرِكُمْ وَأَمْوَالِكُمْ، وَلَكِنْ يَنْظُرُ إِلَى قُلُوبِكُمْ وَأَعْمَالِكُمْ",
+    "english_translation": "Allah does not look at your appearance or your wealth, but He looks at your hearts and your actions",
+    "question": "According to Hadith 11, what does Allah judge a person by?",
+    "options": {
+      "A": "Their wealth and social status",
+      "B": "Their appearance and beauty",
+      "C": "Their hearts and actions",
+      "D": "Their nationality and tribe"
+    },
+    "correct_answer": "C",
+    "marks": 1
+  },
+  {
+    "section": "A",
+    "type": "MCQ",
+    "source_type": "Hadith",
+    "hadith_reference": "Sahih Muslim",
+    "arabic_text": "إِنَّ اللَّهَ لَا يَنْظُرُ إِلَى صُوَرِكُمْ وَأَمْوَالِكُمْ",
+    "english_translation": "Allah does not look at your appearance or your wealth",
+    "question": "What lesson does Hadith 11 teach about equality in Islam?",
+    "options": {
+      "A": "Rich people are preferred by Allah",
+      "B": "All people are equal before Allah regardless of wealth",
+      "C": "Physical beauty matters to Allah",
+      "D": "Social status determines one's rank in Islam"
+    },
+    "correct_answer": "B",
+    "marks": 1
+  }
+]

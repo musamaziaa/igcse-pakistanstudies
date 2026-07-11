@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 1,
+      "topic_title": "Foundations of Artificial Intelligence",
+      "question": "Define the term 'artificial intelligence' and give one example of an application. [2]",
+      "model_answer": "Artificial intelligence is the ability of a computer system to carry out tasks that would normally require human intelligence, such as learning, reasoning, or making decisions. An example of an application is a virtual assistant that understands spoken requests, or a recommendation system that suggests films based on what a user has watched.",
+      "marks": 2
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "Describe the difference between rule-based reasoning and machine learning. [2]",
+      "model_answer": "Rule-based reasoning uses a set of fixed IF-THEN rules written by people to make decisions, so its behaviour is predictable and only covers situations the rules anticipate. Machine learning instead learns patterns from data during training, allowing it to make predictions on new data without being explicitly programmed with rules for every case.",
+      "marks": 2
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "What is meant by 'training data' in an AI system? [2]",
+      "model_answer": "Training data is the set of example data used to teach a machine learning model. It usually contains input features together with the correct labels, and the model uses it to learn the patterns that link the inputs to the outputs so that it can make predictions on new data.",
+      "marks": 2
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 4,
+      "topic_title": "Planning and Autonomous Systems",
+      "question": "Explain the purpose of a sensor in a robot used for autonomous navigation. [2]",
+      "model_answer": "A sensor collects input data about the robot's environment, such as the distance to nearby objects or the amount of light. The robot uses this data with its conditional logic to decide how to move, for example turning when an obstacle is detected, so that it can navigate safely without direct human control.",
+      "marks": 2
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "structured",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "Describe how a decision tree works in a classification problem, including a simple example. [5]",
+      "model_answer": "A decision tree is a structure that classifies data by asking a series of questions about its features. Each internal node tests one feature, each branch represents a possible answer to that test, and each leaf node gives a final classification. Starting at the root, the data follows the branches that match its feature values until it reaches a leaf, which gives the predicted class. For example, to classify whether to play outside: the root might test 'Is it raining?'; if yes, the outcome is 'stay in'; if no, a second test 'Is it windy?' decides between 'stay in' and 'go out'. The tree is built from training data by choosing the features that best separate the classes.",
+      "marks": 5
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "extended",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Extended response: Describe the main stages involved in building and evaluating a simple machine learning model, from defining the problem to testing it. [10]",
+      "model_answer": "First the problem is clearly defined, deciding what the model should predict or classify and what success would look like. Relevant data is then collected from a suitable source. The data is prepared and cleaned, for example by removing duplicate or missing values, labelling fields clearly, and formatting it into a structured layout such as a table. The data is split into training data and test data. An appropriate technique is selected, for example classification or clustering, and a suitable tool or platform is chosen. The model is trained on the training data, learning the patterns that link the input features to the correct labels. The model is then tested using the separate test data, and performance metrics such as accuracy are used to judge how well it performs on unseen examples. The results are interpreted, and the data, inputs, or parameters may be adjusted to improve performance. Finally the model is documented so that others understand how it was built and how it should be used. Keeping the test data separate is essential so that the evaluation gives a fair measure of how the model will perform in the real world.",
+      "marks": 10
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "cards": [
+    {
+      "id": "hosp_sectors",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "industry",
+      "group_id": "industry_sectors",
+      "group_label": "Sectors, Products & Services",
+      "title": "The Hospitality Industry and its Sectors",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Hospitality means providing food, drink, and accommodation services to customers.",
+        "The industry operates across three sectors: commercial, voluntary, and public.",
+        "Commercial businesses run for profit, such as hotels, restaurants, and pubs.",
+        "Public sector providers include schools, colleges, and hospitals.",
+        "Voluntary sector providers are charities and non-profit organisations.",
+        "The industry contributes to the GDP of the UK through jobs, spending, and tourism."
+      ]
+    },
+    {
+      "id": "hosp_ownership",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "industry",
+      "group_id": "business_ownership",
+      "group_label": "Business Ownership Types",
+      "title": "Types of Business Ownership",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "A sole trader is a business owned and run by one person who keeps all the profit.",
+        "A partnership is owned by two or more people who share profit and responsibility.",
+        "A franchise lets others buy into an existing business and use its business model.",
+        "A limited liability partnership protects owners so they only lose what they invested.",
+        "Businesses in hospitality inter-relate, for example a hotel buying from local suppliers."
+      ]
+    },
+    {
+      "id": "hosp_food_safety",
+      "section": "Unit 4",
+      "category": "topic",
+      "display_category": "food",
+      "group_id": "food_safety",
+      "group_label": "Food Safety & Hygiene",
+      "title": "Food Safety, Pathogens & Safe Temperatures",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Food safety and hygiene means keeping food free from contamination that can cause illness.",
+        "Pathogenic bacteria that affect food include Salmonella, E-Coli, and Staph Aureus.",
+        "A deep-freezer must operate at minus 18 degrees Celsius.",
+        "A refrigerator must operate between 0 and 5 degrees Celsius.",
+        "Hot food must be held above 63 degrees Celsius, but 75 degrees Celsius is preferable.",
+        "Hot food should be chilled quickly before being stored safely in a refrigerator."
+      ]
+    },
+    {
+      "id": "hosp_cooking",
+      "section": "Unit 4",
+      "category": "topic",
+      "display_category": "food",
+      "group_id": "cooking_methods",
+      "group_label": "Food Preparation & Cooking",
+      "title": "Cooking Methods and Commodities",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Roasting is a dry method that adds oil and cooks food at 170 to 185 degrees Celsius.",
+        "Baking cooks food in a hot oven, while grilling uses direct radiant heat.",
+        "Braising cooks meat slowly in a small amount of liquid such as stock or water.",
+        "Steaming cooks food over boiling water, for example vegetables in a bamboo steamer.",
+        "Poaching cooks food gently in liquid at around 75 degrees Celsius.",
+        "Poultry is trussed, meaning tied into shape, before it is cooked."
+      ]
+    },
+    {
+      "id": "hosp_customer_service",
+      "section": "Unit 2",
+      "category": "topic",
+      "display_category": "service",
+      "group_id": "customer_service",
+      "group_label": "Customer Service Skills",
+      "title": "Internal, External Customers & Their Needs",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "An internal customer is a colleague from another department, such as a commis chef.",
+        "An external customer is someone outside the business, such as a paying guest.",
+        "Provide effective service by being polite and respectful when greeting customers.",
+        "Be attentive to customer needs during service and offer assistance when required.",
+        "Customer feedback can be gathered through surveys, comment cards, and reviews."
+      ]
+    },
+    {
+      "id": "hosp_allergens",
+      "section": "Unit 2",
+      "category": "topic",
+      "display_category": "service",
+      "group_id": "allergens_access",
+      "group_label": "Allergens & Special Requirements",
+      "title": "Allergen Awareness and Accessibility",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "There are fourteen named allergens on the regulatory list from the Food Standards Agency.",
+        "Common allergens include gluten, shellfish, and mustard.",
+        "Awareness can be raised with an allergen factsheet shared online and through staff training.",
+        "Customers with mobility issues can be supported with ramps and dedicated entry points.",
+        "Customers with hearing difficulties can be supported by installing hearing loops."
+      ]
+    },
+    {
+      "id": "hosp_nutrition",
+      "section": "Unit 5",
+      "category": "topic",
+      "display_category": "nutrition",
+      "group_id": "nutrition_exercise",
+      "group_label": "Food, Nutrition & Exercise",
+      "title": "Food Groups, Nutrition and Exercise",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "The main food commodities are meat, vegetables, poultry, fish, and shellfish.",
+        "A balanced diet incorporates different food groups to supply nutrients, minerals, and vitamins.",
+        "Foods can be preserved by being dried, frozen, vacuum-packed, cured, or canned.",
+        "Preserving food can reduce some of its nutritional value.",
+        "Regular exercise benefits both the human body and the human mind."
+      ]
+    },
+    {
+      "id": "hosp_teamwork",
+      "section": "Unit 3",
+      "category": "topic",
+      "display_category": "team",
+      "group_id": "team_working",
+      "group_label": "Effective Team Working",
+      "title": "Teamwork, Dynamics and Conflict",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "Working well in a team maximises the success of the team and the business overall.",
+        "Positive relationships are encouraged through trust building and getting to know you sessions.",
+        "Negative working relationships can lower team morale and harm the business image.",
+        "Conflict can emerge from disagreements between staff members during service.",
+        "Conflict can be managed through mediation, mentoring, and regular team meetings."
+      ]
+    },
+    {
+      "id": "hosp_assessment",
+      "section": "Overview",
+      "category": "topic",
+      "display_category": "exam",
+      "group_id": "qualification",
+      "group_label": "Qualification & Assessment",
+      "title": "Papers, Objectives and Grading",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "The qualification is assessed by Paper 1, Paper 2-A, and Paper 2-B.",
+        "Paper 1 has multiple choice and short answer questions and lasts one hour.",
+        "Paper 2-A has scenario based questions and lasts one hour.",
+        "Paper 2-B is a portfolio assessment that includes a practical assessment task.",
+        "The guided learning hours are 130, and results are reported on a grade scale of 9 to 1."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 1,
+      "topic_title": "Foundations of Artificial Intelligence",
+      "question": "Which of the following best describes a narrow (weak) AI system?",
+      "options": {
+        "A": "An AI that can perform any intellectual task a human can",
+        "B": "An AI that is fully self-aware",
+        "C": "An AI that never makes mistakes",
+        "D": "An AI designed to perform one specific task well"
+      },
+      "correct_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 1,
+      "topic_title": "Foundations of Artificial Intelligence",
+      "question": "Which of the following is an example of artificial intelligence in everyday use?",
+      "options": {
+        "A": "A calculator adding two numbers",
+        "B": "A light switch turning on a bulb",
+        "C": "A spam filter that learns to detect junk email",
+        "D": "A printed dictionary"
+      },
+      "correct_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "In a labelled training dataset, what is a 'label'?",
+      "options": {
+        "A": "The correct output or answer for a given example",
+        "B": "The name of the data file",
+        "C": "The programming language used",
+        "D": "The size of the dataset"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Which term describes a model that performs well on its training data but poorly on new, unseen data?",
+      "options": {
+        "A": "Underfitting",
+        "B": "Overfitting",
+        "C": "Clustering",
+        "D": "Labelling"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "Which logic gate outputs TRUE only when both of its inputs are TRUE?",
+      "options": {
+        "A": "OR",
+        "B": "NOT",
+        "C": "NOR",
+        "D": "AND"
+      },
+      "correct_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "In an expert system, what does the knowledge base mainly store?",
+      "options": {
+        "A": "Facts and rules about a subject area",
+        "B": "User passwords",
+        "C": "Images and video",
+        "D": "Network configuration settings"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 4,
+      "topic_title": "Planning and Autonomous Systems",
+      "question": "What is the role of an actuator in a robotic system?",
+      "options": {
+        "A": "It senses the surrounding environment",
+        "B": "It stores the robot's data",
+        "C": "It connects the robot to the internet",
+        "D": "It carries out a physical action or movement"
+      },
+      "correct_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 4,
+      "topic_title": "Planning and Autonomous Systems",
+      "question": "A pathfinding algorithm is mainly used to:",
+      "options": {
+        "A": "Find an efficient route between two points",
+        "B": "Encrypt stored data",
+        "C": "Label a training dataset",
+        "D": "Compress image files"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 5,
+      "topic_title": "Ethics, Society and Philosophy of AI",
+      "question": "Algorithmic bias most commonly arises from:",
+      "options": {
+        "A": "Using a fast processor",
+        "B": "Unrepresentative or skewed training data",
+        "C": "Adding comments to the code",
+        "D": "Drawing a flowchart"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 6,
+      "topic_title": "Building and Deploying AI Systems",
+      "question": "Which stage normally comes FIRST when building a machine learning model?",
+      "options": {
+        "A": "Deploying the model",
+        "B": "Defining the problem",
+        "C": "Monitoring performance",
+        "D": "Retraining the model"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 6,
+      "topic_title": "Building and Deploying AI Systems",
+      "question": "Why is a machine learning model monitored after it is deployed?",
+      "options": {
+        "A": "To make it run more slowly",
+        "B": "To delete its training data",
+        "C": "To detect drops in performance as real-world data changes",
+        "D": "To remove all of its users"
+      },
+      "correct_answer": "C",
+      "marks": 1
+    }
+  ]
+}

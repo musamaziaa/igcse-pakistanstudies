@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Networks and Applications of ICT",
+      "question": "Describe what is meant by a MAC address and an IP address, and explain how they differ. [4]",
+      "model_answer": "A MAC (media access control) address is a permanent, unique hardware address given to a network interface card by the manufacturer, and it does not change. An IP (internet protocol) address is a logical address assigned to a device when it joins a network so that data can be routed to it, and it can change between networks or over time. The MAC address identifies the physical device, whereas the IP address identifies its location on the network.",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Networks and Applications of ICT",
+      "question": "A school connects laptops to its network wirelessly. State three benefits of using wireless rather than wired connections. [3]",
+      "model_answer": "Any three of: the laptops can be moved around and used anywhere within range, giving greater mobility; there is no need to install and maintain cables, which reduces cost and clutter; new devices can join the network easily without needing a physical port; it avoids the hazard of trailing cables.",
+      "marks": 3
+    },
+    {
+      "type": "short_answer",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Networks and Applications of ICT",
+      "question": "Explain the difference between a LAN and a WAN. [2]",
+      "model_answer": "A LAN (Local Area Network) connects devices over a small geographical area, such as a single building or site, and is usually owned by one organisation. A WAN (Wide Area Network) connects devices over a large geographical area, often using external communication links, with the internet being the largest example of a WAN.",
+      "marks": 2
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Networks and Applications of ICT",
+      "question": "Identify two health problems that can result from prolonged use of IT equipment and, for each, describe one way it can be prevented. [4]",
+      "model_answer": "Repetitive strain injury (RSI) can be caused by long periods of typing or using a mouse; it can be prevented by taking regular breaks, using a wrist rest, and maintaining good posture. Eye strain can be caused by staring at a screen for too long; it can be prevented by taking regular screen breaks, using suitable lighting, and adjusting screen brightness or using an anti-glare screen.",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "System Development and Security",
+      "question": "Describe the analysis and design stages of the systems development life cycle. [4]",
+      "model_answer": "In the analysis stage, the current system is investigated and the requirements of the new system are identified, for example by interviewing users and observing how the existing system works. In the design stage, the new system is planned in detail: this includes designing the file and data structures, the input and output formats (such as forms and reports), and the validation routines that will check that entered data is sensible.",
+      "marks": 4
+    },
+    {
+      "type": "structured",
+      "source_type": "Information and Communication Technology",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "System Development and Security",
+      "question": "A company stores personal data about its customers. Describe three threats to this data and a suitable protection method for each. [6]",
+      "model_answer": "Hacking is unauthorised access to the system; it can be reduced with firewalls, strong passwords, and user access levels. Phishing tricks staff into revealing login details through fake emails; it can be reduced by training staff and checking the sender and links before responding. Viruses and other malware can corrupt or destroy the data; anti-malware software and regular updates reduce this risk. In addition, encrypting the data means that even if it is intercepted it cannot be read without the key, and regular backups allow lost data to be restored.",
+      "marks": 6
+    }
+  ]
+}

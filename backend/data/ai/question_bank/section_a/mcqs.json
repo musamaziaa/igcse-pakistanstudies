@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "Which of the following is a key component of knowledge representation?",
+      "options": {
+        "A": "Sorting",
+        "B": "IF-THEN rule",
+        "C": "Variable",
+        "D": "Boolean"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Which of the following is an example of supervised learning?",
+      "options": {
+        "A": "Clustering data with no labels",
+        "B": "Training a model with labelled images",
+        "C": "Reinforcement learning through rewards",
+        "D": "Navigating without a dataset"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 4,
+      "topic_title": "Planning and Autonomous Systems",
+      "question": "What best describes the role of an autonomous system?",
+      "options": {
+        "A": "Executes code with no user input",
+        "B": "Learns without training",
+        "C": "Operates independently to achieve goals",
+        "D": "Requires manual control at all times"
+      },
+      "correct_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 5,
+      "topic_title": "Ethics, Society and Philosophy of AI",
+      "question": "Which AI concept is most associated with ethical concerns?",
+      "options": {
+        "A": "Syntax checking",
+        "B": "Data types",
+        "C": "Face recognition systems",
+        "D": "Loop control statements"
+      },
+      "correct_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 4,
+      "topic_title": "Planning and Autonomous Systems",
+      "question": "Which of the following tools would typically be used to plan AI system behaviour?",
+      "options": {
+        "A": "Data matrix",
+        "B": "Flowchart",
+        "C": "Pixel scanner",
+        "D": "Frequency table"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Why must test data be kept separate from training data when evaluating a model?",
+      "options": {
+        "A": "To make training faster",
+        "B": "To check performance on examples the model has not seen before",
+        "C": "To reduce the size of the dataset",
+        "D": "To label the data automatically"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    }
+  ]
+}

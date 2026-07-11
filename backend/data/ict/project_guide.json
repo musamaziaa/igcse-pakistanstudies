@@ -1,0 +1,108 @@
+{
+  "title": "ICT Paper 2: Practical Exam Guide",
+  "subtitle": "LRN International GCSE ICT 7927 - Paper 2 Practical (70 marks, approx. 2.5 hours)",
+  "intro": "Paper 2 is a hands-on practical examination taken at a computer, set and marked by LRN - not a written or multiple-choice paper. You are given a set of source files and must produce real documents: format a report and insert a chart, import and query a database, and build a presentation, capturing screenshots in an Evidence Document as you go. It assesses AO2 (practical application) almost entirely, and covers syllabus Units 5 and 6, which the theory Paper 1 does not.",
+  "overview": [
+    { "label": "Format", "value": "Practical exam at a computer using supplied source files; you produce and print/submit documents." },
+    { "label": "Total marks", "value": "70 marks." },
+    { "label": "Duration", "value": "Approx. 2 hours 30 minutes (May/June 2025 paper; the spec indicates 2 hours 15 minutes)." },
+    { "label": "Assessment focus", "value": "Almost entirely AO2 - practical skills in real software, marked on the finished output." },
+    { "label": "Coverage", "value": "Syllabus Units 5 & 6 (Document Management, Processing & Productivity Tools; Advanced Data Handling & Web Development) - the practical half not tested in Paper 1." },
+    { "label": "Conditions", "value": "No internet or email access during the exam; every printout must carry your name, centre and candidate number." }
+  ],
+  "components": [
+    {
+      "name": "Task 1 - Evidence Document",
+      "summary": "Set up the file that collects proof of your work throughout the exam.",
+      "criteria": [
+        { "criterion": "Open the evidence file and add your name, centre and candidate number to every page" },
+        { "criterion": "Save it with the required name (e.g. EVIDENCE + candidate number)" },
+        { "criterion": "Keep it open to paste required screenshots as you complete later tasks" }
+      ]
+    },
+    {
+      "name": "Task 2 - Document production",
+      "summary": "Edit a report to a corporate house style and add a chart.",
+      "criteria": [
+        { "criterion": "Create, modify and apply paragraph styles consistently" },
+        { "criterion": "Build a chart from CSV data with correct title, labels and axes" },
+        { "criterion": "Place the chart neatly within the column width with correct spacing" }
+      ]
+    },
+    {
+      "name": "Task 3 - Databases",
+      "summary": "Import data and answer questions from it accurately.",
+      "criteria": [
+        { "criterion": "Import CSV files as tables with the correct field data types" },
+        { "criterion": "Create queries/calculations and screenshot the formula used" },
+        { "criterion": "Sort, filter and present the required records" }
+      ]
+    },
+    {
+      "name": "Task 4 - Presentation",
+      "summary": "Produce a short, consistent slideshow from a supplied brief.",
+      "criteria": [
+        { "criterion": "Create the required number of slides from the source file" },
+        { "criterion": "Apply a uniform layout, master slide and formatting" },
+        { "criterion": "Save the completed presentation correctly" }
+      ]
+    },
+    {
+      "name": "Task 5 - Output & printing",
+      "summary": "Deliver clean, correctly labelled printouts/files for assessment.",
+      "criteria": [
+        { "criterion": "Ensure candidate details appear on every printout" },
+        { "criterion": "Print or export the required documents and evidence" },
+        { "criterion": "Mark drafts clearly and place final output in the assessment folder" }
+      ]
+    }
+  ],
+  "tools": [
+    "Word processor (e.g. Microsoft Word) - styles, headers/footers, inserting and sizing charts.",
+    "Spreadsheet software - creating charts from CSV data with correct labels.",
+    "Database software (e.g. Access) - importing CSVs, setting field types, queries and calculations.",
+    "Presentation software (e.g. PowerPoint) - master slides and consistent layout."
+  ],
+  "steps": [
+    {
+      "title": "1. Learn your software's shortcuts cold",
+      "detail": "The clock is tight for 70 marks. Know how to apply and modify styles, insert charts, import CSVs and set field types without hunting through menus."
+    },
+    {
+      "title": "2. Practise the Evidence Document habit",
+      "detail": "Many marks depend on screenshots proving what you did. Rehearse taking a screenshot, pasting it into the evidence file, and labelling it - as a reflex after every task."
+    },
+    {
+      "title": "3. Master styles and house style",
+      "detail": "Create, modify and apply paragraph styles rather than formatting text manually. Consistent, style-based formatting is exactly what the document task rewards."
+    },
+    {
+      "title": "4. Get fluent with charts from data",
+      "detail": "Practise turning a CSV column into a correctly titled and labelled chart, sized to fit within a column - a recurring, easily-lost set of marks."
+    },
+    {
+      "title": "5. Drill database import and queries",
+      "detail": "Import CSVs with the correct data types, then build and screenshot the queries/formulas asked for. Getting field types wrong on import breaks everything downstream."
+    },
+    {
+      "title": "6. Always add candidate details first",
+      "detail": "Printouts without your name, centre and candidate number are not marked. Make adding them to headers/footers the very first thing you do in each file."
+    },
+    {
+      "title": "7. Rehearse full past papers to time",
+      "detail": "Work an entire practical paper end to end under exam conditions so file management, saving with the right names, and printing all become automatic."
+    }
+  ],
+  "submission": [
+    "All required printouts/exported files, each showing your name, centre and candidate number.",
+    "The completed Evidence Document containing the required screenshots.",
+    "The saved database and presentation files with the specified filenames.",
+    "Draft printouts clearly crossed out so they are not assessed."
+  ],
+  "tips": [
+    "No internet or email is allowed during the exam - everything must come from the supplied source files.",
+    "Save constantly and use the exact filenames requested; wrong or missing filenames lose marks.",
+    "Read each step fully before acting - tasks specify precise labels, spacing and layouts that are marked exactly.",
+    "The Practice Exam covers Paper 1 theory (Units 1-4); Paper 2 is hands-on, so the best preparation is repeated practice in the actual software."
+  ]
+}

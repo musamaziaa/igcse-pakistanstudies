@@ -1,0 +1,1656 @@
+{
+  "cards": [
+    {
+      "id": "surah_100_a",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_100",
+      "group_label": "Surah Al-Adiyat (100)",
+      "title": "Surah Al-Adiyat (100) - Ayat 1-6",
+      "arabic": "وَالْعَادِيَاتِ ضَبْحًا ﴿١﴾ فَالْمُورِيَاتِ قَدْحًا ﴿٢﴾ فَالْمُغِيرَاتِ صُبْحًا ﴿٣﴾ فَأَثَرْنَ بِهِ نَقْعًا ﴿٤﴾ فَوَسَطْنَ بِهِ جَمْعًا ﴿٥﴾ إِنَّ الْإِنسَانَ لِرَبِّهِ لَكَنُودٌ ﴿٦﴾",
+      "lines": [
+        "By the charging steeds panting,",
+        "And those that strike sparks of fire,",
+        "And those that make raids at dawn,",
+        "And raise the dust in clouds,",
+        "And penetrate into the midst of the enemy,",
+        "Surely, man is ungrateful to his Lord."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_100_b",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_100",
+      "group_label": "Surah Al-Adiyat (100)",
+      "title": "Surah Al-Adiyat (100) - Ayat 7-11",
+      "arabic": "وَإِنَّهُ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ ﴿٧﴾ وَإِنَّهُ لِحُبِّ الْخَيْرِ لَشَدِيدٌ ﴿٨﴾ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِي الْقُبُورِ ﴿٩﴾ وَحُصِّلَ مَا فِي الصُّدُورِ ﴿١٠﴾ إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌ ﴿١١﴾",
+      "lines": [
+        "And indeed he is a witness to that,",
+        "And indeed he is intense in love of wealth.",
+        "Does he not know that when the graves are turned upside down,",
+        "And that which is in the breasts is made manifest,",
+        "Surely, their Lord on that Day will be All-Aware of them."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_101_a",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_101",
+      "group_label": "Surah Al-Qariah (101)",
+      "title": "Surah Al-Qariah (101) - Ayat 1-6",
+      "arabic": "الْقَارِعَةُ ﴿١﴾ مَا الْقَارِعَةُ ﴿٢﴾ وَمَا أَدْرَاكَ مَا الْقَارِعَةُ ﴿٣﴾ يَوْمَ يَكُونُ النَّاسُ كَالْفَرَاشِ الْمَبْثُوثِ ﴿٤﴾ وَتَكُونُ الْجِبَالُ كَالْعِهْنِ الْمَنفُوشِ ﴿٥﴾ فَأَمَّا مَن ثَقُلَتْ مَوَازِينُهُ ﴿٦﴾",
+      "lines": [
+        "The Striking Calamity!",
+        "What is the Striking Calamity?",
+        "And what will make you know what the Striking Calamity is?",
+        "It is a Day when mankind will be like scattered moths,",
+        "And the mountains will be like carded wool.",
+        "Then as for one whose scales are heavy with good deeds,"
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_101_b",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_101",
+      "group_label": "Surah Al-Qariah (101)",
+      "title": "Surah Al-Qariah (101) - Ayat 7-11",
+      "arabic": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ ﴿٧﴾ وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ ﴿٨﴾ فَأُمُّهُ هَاوِيَةٌ ﴿٩﴾ وَمَا أَدْرَاكَ مَا هِيَهْ ﴿١٠﴾ نَارٌ حَامِيَةٌ ﴿١١﴾",
+      "lines": [
+        "He will be in a pleasant life.",
+        "But as for one whose scales are light,",
+        "His refuge will be an abyss.",
+        "And what will make you know what that is?",
+        "It is a blazing Fire."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_102",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_102",
+      "group_label": "Surah Al-Takathur (102)",
+      "title": "Surah Al-Takathur (102) - Complete",
+      "arabic": "أَلْهَاكُمُ التَّكَاثُرُ ﴿١﴾ حَتَّىٰ زُرْتُمُ الْمَقَابِرَ ﴿٢﴾ كَلَّا سَوْفَ تَعْلَمُونَ ﴿٣﴾ ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ ﴿٤﴾ كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَقِينِ ﴿٥﴾ لَتَرَوُنَّ الْجَحِيمَ ﴿٦﴾ ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِينِ ﴿٧﴾ ثُمَّ لَتُسْأَلُنَّ يَوْمَئِذٍ عَنِ النَّعِيمِ ﴿٨﴾",
+      "lines": [
+        "Competition for worldly increase diverts you,",
+        "Until you visit the graves.",
+        "But no! You will soon come to know.",
+        "Then no! You will soon come to know.",
+        "No! If you knew with certain knowledge,",
+        "You would surely see the Hellfire.",
+        "Then you will surely see it with the eye of certainty.",
+        "Then you will surely be asked that Day about pleasures."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_103",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_103",
+      "group_label": "Surah Al-Asr (103)",
+      "title": "Surah Al-Asr (103) - Complete",
+      "arabic": "وَالْعَصْرِ ﴿١﴾ إِنَّ الْإِنسَانَ لَفِي خُسْرٍ ﴿٢﴾ إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ ﴿٣﴾",
+      "lines": [
+        "By the declining day,",
+        "Indeed, mankind is in loss,",
+        "Except those who believe and do righteous deeds,",
+        "And advise each other to truth,",
+        "And advise each other to patience."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_104_a",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_104",
+      "group_label": "Surah Al-Humazah (104)",
+      "title": "Surah Al-Humazah (104) - Ayat 1-5",
+      "arabic": "وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ ﴿١﴾ الَّذِي جَمَعَ مَالًا وَعَدَّدَهُ ﴿٢﴾ يَحْسَبُ أَنَّ مَالَهُ أَخْلَدَهُ ﴿٣﴾ كَلَّا لَيُنبَذَنَّ فِي الْحُطَمَةِ ﴿٤﴾ وَمَا أَدْرَاكَ مَا الْحُطَمَةُ ﴿٥﴾",
+      "lines": [
+        "Woe to every scorner and mocker,",
+        "Who collects wealth and counts it repeatedly,",
+        "He thinks that his wealth will make him immortal.",
+        "No! He will surely be thrown into the Crusher.",
+        "And what will make you know what the Crusher is?"
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_104_b",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_104",
+      "group_label": "Surah Al-Humazah (104)",
+      "title": "Surah Al-Humazah (104) - Ayat 6-9",
+      "arabic": "نَارُ اللَّهِ الْمُوقَدَةُ ﴿٦﴾ الَّتِي تَطَّلِعُ عَلَى الْأَفْئِدَةِ ﴿٧﴾ إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ ﴿٨﴾ فِي عَمَدٍ مُّمَدَّدَةٍ ﴿٩﴾",
+      "lines": [
+        "It is the fire of Allah, kindled,",
+        "Which leaps over the hearts.",
+        "Indeed, it will be closed down upon them,",
+        "In extended columns."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_105",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_105",
+      "group_label": "Surah Al-Fil (105)",
+      "title": "Surah Al-Fil (105) - Complete",
+      "arabic": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ ﴿١﴾ أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ ﴿٢﴾ وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ ﴿٣﴾ تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ ﴿٤﴾ فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍ ﴿٥﴾",
+      "lines": [
+        "Have you not seen how your Lord dealt with the companions of the Elephant?",
+        "Did He not make their plan go astray?",
+        "And He sent against them birds in flocks,",
+        "Striking them with stones of hard clay,",
+        "And He made them like eaten straw."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_106",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_106",
+      "group_label": "Surah Al-Quraish (106)",
+      "title": "Surah Al-Quraish (106) - Complete",
+      "arabic": "لِإِيلَافِ قُرَيْشٍ ﴿١﴾ إِيلَافِهِمْ رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ ﴿٢﴾ فَلْيَعْبُدُوا رَبَّ هَٰذَا الْبَيْتِ ﴿٣﴾ الَّذِي أَطْعَمَهُم مِّن جُوعٍ وَآمَنَهُم مِّنْ خَوْفٍ ﴿٤﴾",
+      "lines": [
+        "For the accustomed security of the Quraysh,",
+        "Their accustomed security in the journey of winter and summer,",
+        "Let them worship the Lord of this House,",
+        "Who has fed them against hunger and made them secure against fear."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_107",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_107",
+      "group_label": "Surah Al-Ma'un (107)",
+      "title": "Surah Al-Ma'un (107) - Complete",
+      "arabic": "أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ ﴿١﴾ فَذَٰلِكَ الَّذِي يَدُعُّ الْيَتِيمَ ﴿٢﴾ وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ ﴿٣﴾ فَوَيْلٌ لِّلْمُصَلِّينَ ﴿٤﴾ الَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ ﴿٥﴾ الَّذِينَ هُمْ يُرَاءُونَ ﴿٦﴾ وَيَمْنَعُونَ الْمَاعُونَ ﴿٧﴾",
+      "lines": [
+        "Have you seen the one who denies the Judgment?",
+        "It is he who drives away the orphan,",
+        "And does not encourage the feeding of the poor.",
+        "So woe to those who pray,",
+        "But are heedless of their prayer,",
+        "Those who make a show of their deeds,",
+        "And withhold small acts of kindness."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_108",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_108",
+      "group_label": "Surah Al-Kauthar (108)",
+      "title": "Surah Al-Kauthar (108) - Complete",
+      "arabic": "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ ﴿١﴾ فَصَلِّ لِرَبِّكَ وَانْحَرْ ﴿٢﴾ إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ ﴿٣﴾",
+      "lines": [
+        "Indeed, We have granted you abundant good,",
+        "So pray to your Lord and sacrifice.",
+        "Indeed, your enemy is the one cut off."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_109",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_109",
+      "group_label": "Surah Al-Kafirun (109)",
+      "title": "Surah Al-Kafirun (109) - Complete",
+      "arabic": "قُلْ يَا أَيُّهَا الْكَافِرُونَ ﴿١﴾ لَا أَعْبُدُ مَا تَعْبُدُونَ ﴿٢﴾ وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ ﴿٣﴾ وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ ﴿٤﴾ وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ ﴿٥﴾ لَكُمْ دِينُكُمْ وَلِيَ دِينِ ﴿٦﴾",
+      "lines": [
+        "Say: O you disbelievers,",
+        "I do not worship what you worship,",
+        "Nor do you worship what I worship,",
+        "Nor will I worship what you worship,",
+        "Nor will you worship what I worship.",
+        "For you is your religion, and for me is my religion."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_110",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_110",
+      "group_label": "Surah Al-Nasr (110)",
+      "title": "Surah Al-Nasr (110) - Complete",
+      "arabic": "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ ﴿١﴾ وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا ﴿٢﴾ فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ إِنَّهُ كَانَ تَوَّابًا ﴿٣﴾",
+      "lines": [
+        "When the victory of Allah has come and the conquest,",
+        "And you see the people entering into the religion of Allah in multitudes,",
+        "Then exalt Him with praise and ask forgiveness of Him.",
+        "Indeed, He is ever Accepting of repentance."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_111",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_111",
+      "group_label": "Surah Al-Lahab (111)",
+      "title": "Surah Al-Lahab (111) - Complete",
+      "arabic": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ ﴿١﴾ مَا أَغْنَىٰ عَنْهُ مَالُهُ وَمَا كَسَبَ ﴿٢﴾ سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ ﴿٣﴾ وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ ﴿٤﴾ فِي جِيدِهَا حَبْلٌ مِّن مَّسَدٍ ﴿٥﴾",
+      "lines": [
+        "May the hands of Abu Lahab be ruined, and ruined is he.",
+        "His wealth will not avail him or that which he gained.",
+        "He will enter a Fire of blazing flame,",
+        "And his wife, the carrier of firewood,",
+        "Around her neck is a rope of palm fiber."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_112",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_112",
+      "group_label": "Surah Al-Ikhlas (112)",
+      "title": "Surah Al-Ikhlas (112) - Complete",
+      "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ ﴿١﴾ اللَّهُ الصَّمَدُ ﴿٢﴾ لَمْ يَلِدْ وَلَمْ يُولَدْ ﴿٣﴾ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ ﴿٤﴾",
+      "lines": [
+        "Say: He is Allah, the One,",
+        "Allah, the Eternal Refuge.",
+        "He neither begets nor is born,",
+        "Nor is there to Him any equivalent."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_113",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_113",
+      "group_label": "Surah Al-Falaq (113)",
+      "title": "Surah Al-Falaq (113) - Complete",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ﴿١﴾ مِن شَرِّ مَا خَلَقَ ﴿٢﴾ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ﴿٣﴾ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ﴿٤﴾ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴿٥﴾",
+      "lines": [
+        "Say: I seek refuge in the Lord of daybreak,",
+        "From the evil of what He has created,",
+        "And from the evil of darkness when it settles,",
+        "And from the evil of the blowers in knots,",
+        "And from the evil of an envier when he envies."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "surah_114",
+      "section": "A",
+      "category": "quran",
+      "group_id": "surah_114",
+      "group_label": "Surah Al-Naas (114)",
+      "title": "Surah Al-Naas (114) - Complete",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ ﴿١﴾ مَلِكِ النَّاسِ ﴿٢﴾ إِلَٰهِ النَّاسِ ﴿٣﴾ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ﴿٤﴾ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ﴿٥﴾ مِنَ الْجِنَّةِ وَالنَّاسِ ﴿٦﴾",
+      "lines": [
+        "Say: I seek refuge in the Lord of mankind,",
+        "The Sovereign of mankind,",
+        "The God of mankind,",
+        "From the evil of the retreating whisperer,",
+        "Who whispers in the breasts of mankind,",
+        "From among the jinn and mankind."
+      ],
+      "display_category": "quran_surahs"
+    },
+    {
+      "id": "hadith_1",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_1",
+      "group_label": "Hadith 1 - Religion is Sincerity",
+      "title": "Hadith 1 - Religion is Sincerity",
+      "arabic": "الدِّينُ النَّصِيحَةُ قُلْنَا: لِمَنْ؟ قَالَ: لِلَّهِ وَلِكِتَابِهِ وَلِرَسُولِهِ وَلِأَئِمَّةِ الْمُسْلِمِينَ وَعَامَّتِهِمْ",
+      "lines": [
+        "Religion is sincerity.",
+        "We said: To whom?",
+        "He said: To Allah, His Book, His Messenger,",
+        "And to the leaders of the Muslims and their common folk.",
+        "Source: Sahih Muslim"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_2",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_2",
+      "group_label": "Hadith 2 - Love for Your Brother",
+      "title": "Hadith 2 - Love for Your Brother",
+      "arabic": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+      "lines": [
+        "None of you truly believes",
+        "Until he loves for his brother",
+        "What he loves for himself.",
+        "Source: Sahih Bukhari"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_3",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_3",
+      "group_label": "Hadith 3 - Changing Evil",
+      "title": "Hadith 3 - Changing Evil",
+      "arabic": "مَنْ رَأَى مِنْكُمْ مُنْكَرًا فَلْيُغَيِّرْهُ بِيَدِهِ، فَإِنْ لَمْ يَسْتَطِعْ فَبِلِسَانِهِ، فَإِنْ لَمْ يَسْتَطِعْ فَبِقَلْبِهِ، وَذَلِكَ أَضْعَفُ الإِيمَانِ",
+      "lines": [
+        "Whoever sees an evil, let him change it with his hand;",
+        "If he cannot, then with his tongue;",
+        "If he cannot, then with his heart.",
+        "And that is the weakest of faith.",
+        "Source: Sahih Muslim"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_4",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_4",
+      "group_label": "Hadith 4 - Earning by One's Own Hands",
+      "title": "Hadith 4 - Earning by One's Own Hands",
+      "arabic": "مَا أَكَلَ أَحَدٌ طَعَامًا قَطُّ خَيْرًا مِنْ أَنْ يَأْكُلَ مِنْ عَمَلِ يَدِهِ",
+      "lines": [
+        "No one has ever eaten better food",
+        "Than that which he earned by the work of his own hands.",
+        "Source: Sahih Bukhari"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_5",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_5",
+      "group_label": "Hadith 5 - Caring for the Widow and Poor",
+      "title": "Hadith 5 - Caring for the Widow and Poor",
+      "arabic": "السَّاعِي عَلَى الأَرْمَلَةِ وَالمِسْكِينِ كَالمُجَاهِدِ فِي سَبِيلِ اللَّهِ",
+      "lines": [
+        "The one who strives to help the widow and the poor",
+        "Is like the one who fights in the way of Allah,",
+        "Or like one who prays all night and fasts all day.",
+        "Source: Sahih Bukhari"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_6",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_6",
+      "group_label": "Hadith 6 - Caring for an Orphan",
+      "title": "Hadith 6 - Caring for an Orphan",
+      "arabic": "أَنَا وَكَافِلُ الْيَتِيمِ فِي الْجَنَّةِ هَكَذَا",
+      "lines": [
+        "I and the one who cares for an orphan",
+        "Will be in Paradise like this.",
+        "He indicated his index and middle fingers.",
+        "Source: Sahih Bukhari"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_7",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_7",
+      "group_label": "Hadith 7 - Memorising the Quran",
+      "title": "Hadith 7 - Memorising the Quran",
+      "arabic": "إِنَّمَا مَثَلُ صَاحِبِ الْقُرْآنِ كَمَثَلِ صَاحِبِ الإِبِلِ الْمُعَقَّلَةِ",
+      "lines": [
+        "The example of the one who memorises the Quran",
+        "Is like the owner of hobbled camels.",
+        "If he tends to them, he keeps them;",
+        "If he lets them go, they wander away.",
+        "Source: Sahih Bukhari"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_8",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_8",
+      "group_label": "Hadith 8 - Mercy",
+      "title": "Hadith 8 - Allah Shows Mercy to the Merciful",
+      "arabic": "يَرْحَمُ اللَّهُ مَنْ لَا يَرْحَمُ النَّاسَ",
+      "lines": [
+        "Allah will not be merciful",
+        "To those who are not merciful to people.",
+        "Source: Sahih Bukhari"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_9",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_9",
+      "group_label": "Hadith 9 - Modesty",
+      "title": "Hadith 9 - Modesty Brings Good",
+      "arabic": "الْحَيَاءُ لَا يَأْتِي إِلَّا بِخَيْرٍ",
+      "lines": [
+        "Modesty brings nothing but good.",
+        "Source: Sahih Bukhari"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_10",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_10",
+      "group_label": "Hadith 10 - The World is a Prison",
+      "title": "Hadith 10 - The World is a Prison for the Believer",
+      "arabic": "إِنَّ الدُّنْيَا سِجْنُ الْمُؤْمِنِ وَجَنَّةُ الْكَافِرِ",
+      "lines": [
+        "The world is a prison for the believer",
+        "And a paradise for the disbeliever.",
+        "Source: Sahih Muslim"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_11",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_11",
+      "group_label": "Hadith 11 - Allah Looks at Hearts",
+      "title": "Hadith 11 - Allah Looks at Hearts and Actions",
+      "arabic": "إِنَّ اللَّهَ لَا يَنْظُرُ إِلَى صُوَرِكُمْ وَأَمْوَالِكُمْ، وَلَكِنْ يَنْظُرُ إِلَى قُلُوبِكُمْ وَأَعْمَالِكُمْ",
+      "lines": [
+        "Allah does not look at your appearance or your wealth,",
+        "But He looks at your hearts and your actions.",
+        "Source: Sahih Muslim"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_12",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_12",
+      "group_label": "Hadith 12 - Kindness in Trade",
+      "title": "Hadith 12 - Kindness When Buying and Selling",
+      "arabic": "رَحِمَ اللَّهُ رَجُلًا سَمْحًا، إِذَا بَاعَ، وَإِذَا اشْتَرَى، وَإِذَا اقْتَضَى",
+      "lines": [
+        "May Allah have mercy on a man who is kind",
+        "When he sells, when he buys,",
+        "And when he asks for payment.",
+        "Source: Sahih Bukhari"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_13",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_13",
+      "group_label": "Hadith 13 - Best of People",
+      "title": "Hadith 13 - The Best of People",
+      "arabic": "أَيُّ النَّاسِ أَفْضَلُ؟ مُؤْمِنٌ يُجَاهِدُ فِي سَبِيلِ اللَّهِ بِنَفْسِهِ وَمَالِهِ",
+      "lines": [
+        "Which of the people is best?",
+        "The Messenger of Allah said:",
+        "A believer who strives in the way of Allah",
+        "With his person and his wealth.",
+        "Source: Sahih Bukhari"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_14",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_14",
+      "group_label": "Hadith 14 - Speak Good or Be Silent",
+      "title": "Hadith 14 - Speak Good or Be Silent",
+      "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+      "lines": [
+        "Whoever believes in Allah and the Last Day,",
+        "Let him speak good or remain silent.",
+        "Whoever believes in Allah and the Last Day, let him honour his neighbour.",
+        "Whoever believes in Allah and the Last Day, let him honour his guest.",
+        "Source: Sahih Bukhari"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "hadith_15",
+      "section": "A",
+      "category": "hadith",
+      "group_id": "hadith_15",
+      "group_label": "Hadith 15 - Best Act of Islam",
+      "title": "Hadith 15 - The Best Act of Islam",
+      "arabic": "أَيُّ الإِسْلَامِ أَفْضَلُ؟ تُطْعِمُ الطَّعَامَ، وَتَقْرَأُ السَّلَامَ عَلَى مَنْ عَرَفْتَ وَمَنْ لَمْ تَعْرِفْ",
+      "lines": [
+        "Which Islam is best?",
+        "He said: Feed others,",
+        "And greet with peace those you know",
+        "And those you do not know.",
+        "Source: Sahih Bukhari"
+      ],
+      "display_category": "ahadith"
+    },
+    {
+      "id": "topic_1_birth",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_1_birth",
+      "group_label": "Topic 1: Birth and Early Life",
+      "title": "Topic 1 - Birth and Early Life",
+      "arabic": "مُحَمَّدٌ رَّسُولُ اللَّهِ",
+      "lines": [
+        "The Prophet was born in Makkah in 570 CE, the Year of the Elephant.",
+        "His father Abdullah died before his birth; mother Aminah died when he was six.",
+        "He was cared for by grandfather Abdul Muttalib, then uncle Abu Talib.",
+        "He belonged to the Banu Hashim clan of the Quraysh tribe.",
+        "He was known as Al-Amin (the Trustworthy) for his honesty.",
+        "At age 25 he married Khadijah (RA), a wealthy widow aged 40."
+      ],
+      "display_category": "prophets_life"
+    },
+    {
+      "id": "topic_1_revelation",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_1_revelation",
+      "group_label": "Topic 1: First Revelation & Early Converts",
+      "title": "Topic 1 - First Revelation and Early Converts",
+      "arabic": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ",
+      "lines": [
+        "At age 40 in 610 CE, the Prophet received the first revelation in Cave Hira.",
+        "Angel Jibrail commanded Iqra (Read/Recite) three times.",
+        "The first five verses of Surah Al-Alaq were revealed.",
+        "Khadijah (RA) comforted him; Waraqah ibn Nawfal confirmed it was prophethood.",
+        "First converts: Khadijah (RA), Ali ibn Abi Talib (RA), Zayd ibn Harithah (RA), Abu Bakr (RA)."
+      ],
+      "display_category": "prophets_life"
+    },
+    {
+      "id": "topic_1_persecution",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_1_persecution",
+      "group_label": "Topic 1: Opposition & Persecution in Makkah",
+      "title": "Topic 1 - Opposition and Persecution in Makkah",
+      "arabic": "وَالَّذِينَ هَاجَرُوا فِي اللَّهِ",
+      "lines": [
+        "The Quraysh opposed Islam to protect their idols, trade, and social status.",
+        "Early Muslims were tortured, boycotted, and killed.",
+        "Bilal (RA) was tortured by Umayyah ibn Khalaf by being left in the sun.",
+        "In 615 CE some Muslims migrated to Abyssinia under King Negus.",
+        "In 617-619 CE, the Banu Hashim faced a three-year social and economic boycott.",
+        "619 CE was the Year of Sorrow: Khadijah (RA) and Abu Talib both died."
+      ],
+      "display_category": "prophets_life"
+    },
+    {
+      "id": "topic_1_isra",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_1_isra",
+      "group_label": "Topic 1: Isra, Mi'raj & Pledges of Aqabah",
+      "title": "Topic 1 - Isra, Mi'raj and Pledges of Aqabah",
+      "arabic": "سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا",
+      "lines": [
+        "Isra was the miraculous night journey from Makkah to Jerusalem on the Buraq.",
+        "Mi'raj was the ascension through the heavens where the Prophet met past prophets.",
+        "Allah prescribed 50 daily prayers, reduced to 5 through Musa's (AS) advice.",
+        "First Pledge of Aqabah (620 CE): six men from Yathrib accepted Islam.",
+        "Second Pledge (621 CE): 12 men pledged allegiance.",
+        "Third Pledge (622 CE): 73 men and 2 women pledged to protect the Prophet."
+      ],
+      "display_category": "prophets_life"
+    },
+    {
+      "id": "topic_1_hijrah",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_1_hijrah",
+      "group_label": "Topic 1: Hijrah to Madinah",
+      "title": "Topic 1 - Hijrah to Madinah",
+      "arabic": "هِجْرَة",
+      "lines": [
+        "The Quraysh plotted to assassinate the Prophet; he left Makkah secretly in 622 CE.",
+        "He hid with Abu Bakr (RA) in Cave Thawr for three nights.",
+        "They traveled north through the desert with guide Abdullah ibn Urayqit.",
+        "The Prophet arrived in Quba and built the first mosque in Islam.",
+        "He formally entered Madinah on 12 Rabi ul Awwal 1 AH.",
+        "The Hijrah marks the start of the Islamic calendar."
+      ],
+      "display_category": "prophets_life"
+    },
+    {
+      "id": "topic_2_revelation_forms_1",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_2_revelation_forms",
+      "group_label": "Topic 2: Forms of Revelation",
+      "title": "Topic 2 - Forms of Revelation (Part 1)",
+      "arabic": "إِلْهَام - وَحْي جَلِي",
+      "lines": [
+        "Ilham (Inspiration): Allah (SWT) placed ideas directly into the Prophet's heart.",
+        "Angel Jibreel in human form (Wahi Jali): appeared as a man and delivered the message clearly.",
+        "Often Angel Jibreel appeared in the form of Hazrat Dihyah Kalbi (RA).",
+        "Angel Jibreel in original form: appeared in his real angelic form; very rare.",
+        "Seen in original form near Sidrat-ul-Muntaha (Quran 53:13).",
+        "These different forms show how revelation came in various ways to guide humanity."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_2_revelation_forms_2",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_2_revelation_forms",
+      "group_label": "Topic 2: Forms of Revelation",
+      "title": "Topic 2 - Forms of Revelation (Part 2)",
+      "arabic": "إِسْرَاء - مِعْرَاج",
+      "lines": [
+        "Sound like ringing of a bell: revelation came like a ringing bell, very intense.",
+        "The Prophet (pbuh) said the bell-like revelation was the hardest form.",
+        "True dreams: revelation came through dreams of prophets, which are always truthful.",
+        "Direct speech from Allah (SWT): Allah spoke directly without any intermediary.",
+        "Direct speech occurred during special events like Isra and Mi'raj.",
+        "Quranic revelation took place over 23 years (610-632 CE)."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_2_revelation_effects",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_2_revelation_effects",
+      "group_label": "Topic 2: Effects of Revelation",
+      "title": "Topic 2 - Physical Effects of Revelation",
+      "arabic": "",
+      "lines": [
+        "Sweating: The Prophet (pbuh) would sweat heavily even on very cold days.",
+        "Heaviness: His body would become very heavy during revelation.",
+        "Once his head was on Zayd ibn Thabit's thigh; it felt like the leg would break.",
+        "Stillness: The Prophet would become very quiet and still during revelation.",
+        "Animals: If he was on a camel, it would sit down due to the weight of revelation.",
+        "Appearance: His face would sometimes change colour during the process."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_2_revelation_emotional",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_2_revelation_emotional",
+      "group_label": "Topic 2: Emotional Impact of Revelation",
+      "title": "Topic 2 - Emotional Impact of Revelation",
+      "arabic": "",
+      "lines": [
+        "Fear and shock: After the first revelation, he was very afraid (Cave Hira).",
+        "Confidence: Revelation made him brave to preach even when opposed.",
+        "Peace in the heart: Revelation brought calmness and comfort from Allah (SWT).",
+        "Responsibility: He understood he had to deliver Allah's message exactly.",
+        "Patience and hope: It gave him strength during difficult times in Makkah.",
+        "Overall: revelation changed him from being fearful to confident and strong."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_2_makki_madani",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_2_makki_madani",
+      "group_label": "Topic 2: Makki and Madani Revelations",
+      "title": "Topic 2 - Themes of Makki and Madani Revelations",
+      "arabic": "تَوْحِيد - آخِرَة",
+      "lines": [
+        "Makki Revelations (610-622 CE): shorter Surahs focused on Tawhid and Akhirah.",
+        "Makki themes: stories of earlier prophets and warnings about Judgment Day.",
+        "Madani Revelations (622-632 CE): longer Surahs focused on building society.",
+        "Madani themes: laws about marriage, inheritance, trade, and justice.",
+        "Madani guidance: war and peace, unity, and brotherhood.",
+        "Differences show message developed from belief to practical life guidance."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_2_preservation",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_2_preservation",
+      "group_label": "Topic 2: Preservation in the Prophet's Lifetime",
+      "title": "Topic 2 - Preservation During the Prophet's Lifetime",
+      "arabic": "مُصْحَف",
+      "lines": [
+        "Memorisation (Hifz): The Prophet memorised and taught companions (Huffaz).",
+        "Writing: Scribes (Zayd ibn Thabit, Ali ibn Abi Talib) wrote on bones and leather.",
+        "Supervision: The Prophet checked writing and guided the order of verses.",
+        "Recitation: Quran was recited daily in Salah and revised in Ramadan.",
+        "In the final year, the Prophet revised the Quran twice with Angel Jibreel.",
+        "These methods ensured the Quran was perfectly preserved during his lifetime."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_2_abubakar",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_2_abubakar",
+      "group_label": "Topic 2: Compilation Under Abu Bakr (RA)",
+      "title": "Topic 2 - Compilation Under Abu Bakr (RA)",
+      "arabic": "أَبُو بَكْر الصِّدِّيق",
+      "lines": [
+        "Reason: Many Huffaz martyred in Battle of Yamamah; feared loss of Quran.",
+        "Suggestion: Umar (RA) advised compilation; Abu Bakr (RA) initially hesitant.",
+        "Leadership: Zayd ibn Thabit (trusted scribe) was appointed to lead.",
+        "Method: Collected from written materials and memory with strict verification.",
+        "Result: Formed one complete book (Mushaf) in the same taught order.",
+        "Custody: Mushaf kept by Abu Bakr, then Umar, then Hafsa (RA)."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_2_uthman",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_2_uthman",
+      "group_label": "Topic 2: Standardisation Under Uthman (RA)",
+      "title": "Topic 2 - Standardisation Under Uthman (RA)",
+      "arabic": "عُثْمَان بْن عَفَّان",
+      "lines": [
+        "Reason: Islam spread to new regions causing different accents and disputes.",
+        "Concern: Hudhayfah ibn al-Yaman feared division and reported it to Uthman (RA).",
+        "Action: Uthman borrowed the Mushaf from Hafsa and formed a committee.",
+        "Standardisation: Prepared standard copy in the Quraysh (Prophet's) dialect.",
+        "Distribution: Copies sent to Makkah, Kufa, Basra, and Damascus.",
+        "Control: Other personal copies removed to ensure unity and prevent confusion."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_2_authority_law",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_2_authority",
+      "group_label": "Topic 2: Authority of the Quran",
+      "title": "Topic 2 - Quran's Authority in Islamic Law",
+      "arabic": "شَرِيعَة - فُرْقَان",
+      "lines": [
+        "The Quran is the primary source of Islamic law (Shariah) as it's Allah's direct word.",
+        "It is the most authentic and highest authority, free from any mistake.",
+        "Provides clear guidance on beliefs, worship (Salah, Zakah), and laws.",
+        "All other sources (Hadith, Ijma, Qiyas) are based on the Quran.",
+        "Quran acts as a criterion (Furqan) to judge what is right and wrong.",
+        "It provides basic principles used by scholars to develop further laws."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_2_code_of_life",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_2_authority",
+      "group_label": "Topic 2: Authority of the Quran",
+      "title": "Topic 2 - Quran as a Complete Code of Life",
+      "arabic": "ظُلْم - حُقُوق",
+      "lines": [
+        "Moral Life: teaches good character (honesty, kindness) and warns against lying.",
+        "Reminds Muslims that Allah is always watching, building responsibility.",
+        "Social Matters: guidance on family life and rights of parents and spouses.",
+        "Legal Matters: clear laws on marriage, inheritance, trade, and justice.",
+        "Equality: promotes justice ensuring everyone is treated fairly regardless of status.",
+        "Complete Code: covers religious, moral, social, and legal matters (16:89)."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_3_companions",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_3_companions",
+      "group_label": "Topic 3: The Ten Blessed Companions",
+      "title": "Topic 3 - The Ten Blessed Companions",
+      "arabic": "الْعَشَرَةُ الْمُبَشَّرُون",
+      "lines": [
+        "These ten companions were given glad tidings of Paradise by the Prophet.",
+        "Abu Bakr al-Siddiq (RA) - closest companion and first Caliph.",
+        "Umar ibn al-Khattab (RA) - known for justice and strength.",
+        "Uthman ibn Affan (RA) - married two daughters of the Prophet.",
+        "Ali ibn Abi Talib (RA) - cousin and son-in-law of the Prophet.",
+        "Others: Talha, Zubayr, Abd al-Rahman ibn Awf, Sa'd ibn Abi Waqqas, Said ibn Zayd, Abu Ubayda."
+      ],
+      "display_category": "companions"
+    },
+    {
+      "id": "topic_3_wives",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_3_wives",
+      "group_label": "Topic 3: Wives of the Holy Prophet",
+      "title": "Topic 3 - Wives of the Holy Prophet",
+      "arabic": "أُمَّهَاتُ الْمُؤْمِنِين",
+      "lines": [
+        "The Prophet had 11 wives; they are called Mothers of the Believers.",
+        "Khadijah (RA) - first wife; supported the Prophet greatly; died 619 CE.",
+        "Aisha (RA) - daughter of Abu Bakr; narrated thousands of Hadith.",
+        "Hafsa (RA) - daughter of Umar; custodian of the Mushaf.",
+        "Zaynab bint Jahsh, Umm Salamah, Juwayriah, Umm Habibah, Safiyyah, Maymunah.",
+        "Sawdah (RA) was married after Khadijah's death."
+      ],
+      "display_category": "wives"
+    },
+    {
+      "id": "topic_3_daughters",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_3_daughters",
+      "group_label": "Topic 3: Daughters and Grandsons",
+      "title": "Topic 3 - Daughters and Grandsons",
+      "arabic": "فَاطِمَة الزَّهْرَاء",
+      "lines": [
+        "The Prophet had four daughters, all from Khadijah (RA).",
+        "Zaynab (RA) - eldest; married Abul As ibn Rabi.",
+        "Ruqayyah (RA) - married Uthman ibn Affan (RA); died 624 CE.",
+        "Umm Kulthum (RA) - also married Uthman after Ruqayyah's death.",
+        "Fatimah al-Zahra (RA) - youngest and most beloved; married Ali (RA).",
+        "Grandsons: Hasan (RA) and Husayn (RA), sons of Fatimah and Ali."
+      ],
+      "display_category": "ahl_e_bayt"
+    },
+    {
+      "id": "topic_4_six_articles",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_4_six_articles",
+      "group_label": "Topic 4: The Six Articles of Faith",
+      "title": "Topic 4 - The Six Articles of Faith (Arkan al-Iman)",
+      "arabic": "أَرْكَانُ الْإِيمَان",
+      "lines": [
+        "1st: Tawheed - Belief in the absolute Oneness and Unity of Allah.",
+        "2nd: Malaika - Belief in Angels, created from light, who never disobey Allah.",
+        "3rd: Kutub - Belief in the Revealed Books: Torah, Psalms, Gospel, and the Quran.",
+        "4th: Rusul - Belief in the Prophets from Adam to Muhammad, the last prophet.",
+        "5th: Yawm al-Qiyamah - Belief in the Day of Resurrection and Final Judgement.",
+        "6th: Qadar - Belief in Divine Decree; Allah has knowledge and control of all things."
+      ],
+      "display_category": "islamic_faith"
+    },
+    {
+      "id": "topic_4_tawheed",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_4_tawheed",
+      "group_label": "Topic 4: Tawheed and Angels",
+      "title": "Topic 4 - Tawheed and Angels",
+      "arabic": "تَوْحِيد - مَلَائِكَة",
+      "lines": [
+        "Tawheed means the absolute Oneness and Unity of Allah.",
+        "Allah has no partners, no children, and nothing is equal to Him.",
+        "First article of faith: Belief in Allah (Tawheed).",
+        "Second article: Belief in Angels (Malaika).",
+        "Angels are created from light; they do not disobey Allah.",
+        "Key angels: Jibrail (revelation), Mikail (sustenance), Israfil (trumpet), Azrail (death)."
+      ],
+      "display_category": "islamic_faith"
+    },
+    {
+      "id": "topic_4_books",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_4_books",
+      "group_label": "Topic 4: Books and Prophets",
+      "title": "Topic 4 - Books and Prophets",
+      "arabic": "كُتُب - رُسُل",
+      "lines": [
+        "Third article: Belief in the Revealed Books (Kutub).",
+        "Books revealed: Torah to Musa, Psalms to Dawud, Gospel to Isa, Quran to Muhammad.",
+        "The Quran is the final and preserved book; all others were altered over time.",
+        "Fourth article: Belief in the Prophets (Rusul).",
+        "There were 124,000 prophets; 25 are named in the Quran.",
+        "Muhammad (pbuh) is the last and final prophet - Khatam al-Nabiyeen."
+      ],
+      "display_category": "islamic_faith"
+    },
+    {
+      "id": "topic_4_judgement",
+      "section": "B",
+      "category": "topic",
+      "group_id": "topic_4_judgement",
+      "group_label": "Topic 4: Day of Judgement and Qadar",
+      "title": "Topic 4 - Day of Judgement and Qadar",
+      "arabic": "يَوْمُ الْقِيَامَة - قَدَر",
+      "lines": [
+        "Fifth article: Belief in the Day of Resurrection and Judgement.",
+        "On that Day all humans will be resurrected and their deeds judged.",
+        "The scales (Mizan) will weigh good and evil deeds.",
+        "Those with heavy good scales enter Paradise; light scales face Hellfire.",
+        "Sixth article: Belief in Predestination and Divine Decree (Qadar).",
+        "Allah has full knowledge and control of all things past, present, and future."
+      ],
+      "display_category": "islamic_faith"
+    },
+    {
+      "id": "topic_5_madinah",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_5_madinah",
+      "group_label": "Topic 5: Early Madinah - Immediate Measures (1 AH)",
+      "title": "Topic 5 - Immediate Measures After Hijrah (1 AH / 622 CE)",
+      "arabic": "الْمَدِينَة الْمُنَوَّرَة",
+      "lines": [
+        "The Prophet built Masjid al-Nabawi in Madinah upon arrival (1 AH / 622 CE).",
+        "He established brotherhood (Muakhah) between Muhajirun (migrants) and Ansar (helpers).",
+        "He signed the Constitution of Madinah uniting all tribes under one state.",
+        "The Adhaan (call to prayer) was introduced in Madinah (1 AH).",
+        "The Qiblah was changed from Jerusalem to the Kaabah in Makkah (2 AH / 624 CE).",
+        "These measures united the Muslim community politically and spiritually."
+      ],
+      "display_category": "treaties_events"
+    },
+    {
+      "id": "topic_5_badr",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_5_badr",
+      "group_label": "Topic 5: Battle of Badr (2 AH / 624 CE)",
+      "title": "Topic 5 - Battle of Badr (2 AH / 624 CE) - CEO",
+      "arabic": "غَزْوَة بَدْر",
+      "lines": [
+        "C - Muslims intercepted a Quraysh trade caravan; Quraysh sent 1000 soldiers to protect it.",
+        "C - The Prophet marched with only 313 companions to defend Muslim interests (2 AH / 624 CE).",
+        "E - Allah sent angels to assist; Muslims fought with exceptional faith and discipline.",
+        "E - Key Quraysh leaders Abu Jahl and Umayyah ibn Khalaf were killed in battle.",
+        "O - Decisive Muslim victory: 70 Quraysh killed, 70 captured; first major Islamic military triumph.",
+        "O - Boosted Muslim confidence; established Islam as a political and military force."
+      ],
+      "display_category": "battles"
+    },
+    {
+      "id": "topic_5_uhud",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_5_uhud",
+      "group_label": "Topic 5: Battle of Uhud (3 AH / 625 CE)",
+      "title": "Topic 5 - Battle of Uhud (3 AH / 625 CE) - CEO",
+      "arabic": "غَزْوَة أُحُد",
+      "lines": [
+        "C - Quraysh sought revenge for Badr; Abu Sufyan led 3000 soldiers to Madinah (3 AH / 625 CE).",
+        "C - Muslims had 700 fighters; the Prophet positioned 50 archers on Mount Uhud.",
+        "E - Archers disobeyed orders and abandoned their posts to collect war spoils.",
+        "E - Khalid ibn al-Walid (then non-Muslim) exploited the gap and attacked from the rear.",
+        "O - 70 Muslims martyred including Hamza (RA), the Prophet's uncle; Prophet himself was injured.",
+        "O - Critical lesson: disobedience to the Prophet's command leads to defeat."
+      ],
+      "display_category": "battles"
+    },
+    {
+      "id": "topic_5_khandaq",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_5_khandaq",
+      "group_label": "Topic 5: Battle of Khandaq / Trench (5 AH / 627 CE)",
+      "title": "Topic 5 - Battle of Khandaq / Trench (5 AH / 627 CE) - CEO",
+      "arabic": "غَزْوَة الْخَنْدَق",
+      "lines": [
+        "C - Quraysh formed a confederacy (Ahzab) of 10,000 men to destroy Madinah (5 AH / 627 CE).",
+        "C - No single tribe could defeat the Muslims, so they allied together for a combined attack.",
+        "E - Salman al-Farisi (RA) suggested digging a trench; it took six days and the siege lasted 27 days.",
+        "E - Confederates could not cross the trench; cold, hunger, and internal divisions weakened them.",
+        "O - Confederates retreated in failure; the Quraysh threat to Madinah was ended permanently.",
+        "O - Banu Qurayza, who broke their treaty during the siege, were subsequently defeated."
+      ],
+      "display_category": "battles"
+    },
+    {
+      "id": "topic_5_hudaybiyah",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_5_hudaybiyah",
+      "group_label": "Topic 5: Treaty of Hudaybiyah & Conquest of Makkah",
+      "title": "Topic 5 - Treaty of Hudaybiyah (6 AH) and Conquest of Makkah (8 AH)",
+      "arabic": "صُلْح الْحُدَيْبِيَة - فَتْح مَكَّة",
+      "lines": [
+        "The Prophet attempted Umrah with 1400 companions; Quraysh blocked entry (6 AH / 628 CE).",
+        "Treaty of Hudaybiyah signed: 10-year truce; Muslims to return the following year.",
+        "Allah called it a clear victory (Surah Al-Fath); it opened the door for mass conversion.",
+        "In 8 AH / 630 CE, Quraysh broke the treaty; the Prophet marched with 10,000 men.",
+        "Makkah was conquered peacefully without bloodshed; idols in the Kaabah were destroyed.",
+        "The Prophet declared a general amnesty - even his worst enemies were forgiven."
+      ],
+      "display_category": "treaties_events"
+    },
+    {
+      "id": "topic_5_emperors",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_5_emperors",
+      "group_label": "Topic 5: Invitation to Rulers (7 AH / 628 CE)",
+      "title": "Topic 5 - Invitation to Rulers (7 AH / 628 CE)",
+      "arabic": "دَعْوَة الْمُلُوك",
+      "lines": [
+        "After Hudaybiyah, the Prophet sent letters inviting world rulers to Islam (7 AH / 628 CE).",
+        "Letter to Heraclius (Byzantine Emperor): he respected it but did not convert.",
+        "Letter to Khosrau (Persian Emperor): he tore it in anger.",
+        "The Prophet said: He tore my letter, so Allah shall tear his kingdom.",
+        "Letter to Negus (Abyssinia), Muqawqis (Egypt), and other rulers also sent.",
+        "This demonstrated that Islam's message was universal - not limited to Arabia."
+      ],
+      "display_category": "treaties_events"
+    },
+    {
+      "id": "topic_5_khyber",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_5_khyber",
+      "group_label": "Topic 5: Battle of Khyber (7 AH / 629 CE)",
+      "title": "Topic 5 - Battle of Khyber (7 AH / 629 CE) - CEO",
+      "arabic": "غَزْوَة خَيْبَر",
+      "lines": [
+        "C - Banu Nadir Jews at Khyber fort were inciting enemies against the Muslims (7 AH / 629 CE).",
+        "C - The Prophet marched with 1600 men to neutralise this ongoing threat to Madinah.",
+        "E - Ali ibn Abi Talib (RA) was given the banner and led the assault on the main fortress.",
+        "E - The fortress of Qamus was conquered after fierce fighting.",
+        "O - Khyber was captured; Jews permitted to remain as farmers paying half their harvest as tribute.",
+        "O - Northern frontier of Madinah was secured; Muslim power in Arabia greatly extended."
+      ],
+      "display_category": "battles"
+    },
+    {
+      "id": "topic_5_hunain",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_5_hunain",
+      "group_label": "Topic 5: Battle of Hunain (8 AH / 630 CE)",
+      "title": "Topic 5 - Battle of Hunain (8 AH / 630 CE) - CEO",
+      "arabic": "غَزْوَة حُنَيْن",
+      "lines": [
+        "C - Hawazin and Thaqif tribes assembled 20,000 men after Conquest of Makkah (8 AH / 630 CE).",
+        "C - They aimed to defeat the Muslims before Islam took firm hold across Arabia.",
+        "E - Muslims entered the valley of Hunain overconfidently and were ambushed from both sides.",
+        "E - Many companions fled; the Prophet stood firm and called them back to rally.",
+        "O - Muslims regrouped and achieved a decisive victory over the Hawazin and Thaqif.",
+        "O - Largest war booty ever received; thousands of captives released; Islam spread widely."
+      ],
+      "display_category": "battles"
+    },
+    {
+      "id": "topic_5_farewell",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_5_farewell",
+      "group_label": "Topic 5: Farewell Pilgrimage & Demise",
+      "title": "Topic 5 - Farewell Pilgrimage and Demise",
+      "arabic": "حَجَّةُ الْوَدَاع",
+      "lines": [
+        "In 632 CE the Prophet performed his only Hajj - the Farewell Pilgrimage.",
+        "He delivered the Farewell Sermon at Mount Arafah to 124,000 pilgrims.",
+        "Key points: equality of all humans, sanctity of life, property, and rights of women.",
+        "Surah Al-Maida 5:3 was revealed: Today I have perfected your religion for you.",
+        "He said: I have left two things - hold fast to the Quran and my Sunnah.",
+        "The Prophet passed away on 12 Rabi ul Awwal 11 AH (632 CE)."
+      ],
+      "display_category": "treaties_events"
+    },
+    {
+      "id": "topic_6_sunnah",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_6_sunnah",
+      "group_label": "Topic 6: Sunnah vs Hadith",
+      "title": "Topic 6 - Sunnah vs Hadith",
+      "arabic": "سُنَّة - حَدِيث",
+      "lines": [
+        "Sunnah refers to the practices, actions, and way of life of the Prophet.",
+        "Hadith refers to the recorded sayings, actions, and approvals of the Prophet.",
+        "Sunnah is the broader concept; Hadith is the written record of Sunnah.",
+        "Hadith is the second primary source of Islamic law after the Quran.",
+        "Scholars who memorised and verified Hadith are called Muhaddithun.",
+        "The study of Hadith is called Ilm al-Hadith (Science of Hadith)."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_6_parts",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_6_parts",
+      "group_label": "Topic 6: Parts of a Hadith & Classification",
+      "title": "Topic 6 - Parts of a Hadith and Classification",
+      "arabic": "سَنَد - مَتْن - صَحِيح - ضَعِيف",
+      "lines": [
+        "Every Hadith has two parts: Sanad (chain of narrators) and Matn (text).",
+        "Sanad is the chain of narrators who transmitted the Hadith.",
+        "Matn is the actual text and content of the Hadith.",
+        "Sahih - Authentic: unbroken chain of reliable, trustworthy narrators.",
+        "Hasan - Good: slightly weaker chain but still acceptable.",
+        "Da'if - Weak: chain has a flaw. Mawdu - Fabricated: invented and rejected entirely.",
+        "Most reliable collections: Sahih Bukhari and Sahih Muslim."
+      ],
+      "display_category": "quran_law"
+    },
+    {
+      "id": "topic_7_family",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_7_family",
+      "group_label": "Topic 7: Rights & Responsibilities in the Family",
+      "title": "Topic 7 - Rights and Responsibilities in the Family",
+      "arabic": "حُقُوق - وَاجِبَات",
+      "lines": [
+        "Parents have the right to obedience, care, and respect from their children.",
+        "Children have the right to education, fair treatment, and love from parents.",
+        "The Prophet said: Paradise lies under the feet of mothers.",
+        "Husbands must provide financial support, protection, and kind treatment.",
+        "Wives must maintain the household and remain faithful.",
+        "Teachers deserve respect and obedience in matters of knowledge.",
+        "Students have the right to clear teaching and fair treatment."
+      ],
+      "display_category": "society_law"
+    },
+    {
+      "id": "topic_7_rulers",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_7_rulers",
+      "group_label": "Topic 7: Rights of Rulers and Citizens",
+      "title": "Topic 7 - Rights of Rulers and Citizens",
+      "arabic": "حَاكِم - مُوَاطِن",
+      "lines": [
+        "The ruler must govern with justice, equity, and consultation (Shura).",
+        "The ruler must protect the rights and welfare of all citizens.",
+        "Citizens must obey the ruler as long as he does not order disobedience to Allah.",
+        "Citizens have the right to express disagreement through proper channels.",
+        "The Prophet said: The best ruler is one whom you love and who loves you.",
+        "A ruler who oppresses the people will be held accountable before Allah."
+      ],
+      "display_category": "society_law"
+    },
+    {
+      "id": "topic_8_shahadah_salah",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_8_shahadah_salah",
+      "group_label": "Topic 8: Shahadah and Salah",
+      "title": "Topic 8 - Shahadah and Salah",
+      "arabic": "شَهَادَة - صَلَاة",
+      "lines": [
+        "Shahadah: There is no god but Allah and Muhammad is His Messenger.",
+        "Saying the Shahadah sincerely makes a person Muslim.",
+        "Salah - Prayer: Muslims pray five times daily: Fajr, Zuhr, Asr, Maghrib, Isha.",
+        "Salah was prescribed during the Mi'raj.",
+        "Prayer requires Wudu (ritual purity) and facing the Qiblah.",
+        "Friday Zuhr prayer (Jumu'ah) is a communal obligation for Muslim men."
+      ],
+      "display_category": "pillars"
+    },
+    {
+      "id": "topic_8_zakat_sawm",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_8_zakat_sawm",
+      "group_label": "Topic 8: Zakat and Sawm",
+      "title": "Topic 8 - Zakat and Sawm",
+      "arabic": "زَكَاة - صَوْم",
+      "lines": [
+        "Zakat - Obligatory Charity: 2.5% of savings above the Nisab threshold per year.",
+        "Zakat purifies wealth and supports the poor, debtors, and those in need.",
+        "Nisab is the minimum wealth threshold; those below it are exempt.",
+        "Sawm - Fasting: obligatory during the month of Ramadan.",
+        "Muslims abstain from food, drink, and sinful behaviour from Fajr to Maghrib.",
+        "The purpose of Sawm is Taqwa (God-consciousness) and self-discipline."
+      ],
+      "display_category": "pillars"
+    },
+    {
+      "id": "topic_8_hajj",
+      "section": "C",
+      "category": "topic",
+      "group_id": "topic_8_hajj",
+      "group_label": "Topic 8: Hajj",
+      "title": "Topic 8 - Hajj",
+      "arabic": "حَجّ",
+      "lines": [
+        "Hajj - Pilgrimage to Makkah: obligatory once in a lifetime for able Muslims.",
+        "Hajj takes place in the Islamic month of Dhul Hijjah.",
+        "Key rituals: Ihram, Tawaf around the Kaabah, Sa'i between Safa and Marwa.",
+        "Standing at Arafah is the most essential ritual of Hajj.",
+        "Stoning the Jamarat at Mina represents rejecting Shaytan.",
+        "Hajj commemorates the trials of Ibrahim (AS), Hajar (AS), and Ismail (AS)."
+      ],
+      "display_category": "pillars"
+    },
+    {
+      "id": "prophets_caves",
+      "section": "B",
+      "category": "topic",
+      "display_category": "prophets_life",
+      "group_id": "prophets_caves",
+      "group_label": "Prophet's Experience in Caves",
+      "title": "Prophet's Experience in Caves - Hira & Thawr",
+      "arabic": "",
+      "lines": [
+        "Cave of Hira: situated on Jabal al-Nour near Makkah; the Prophet retreated here regularly for prayer and contemplation (Tahannuth).",
+        "It was in Cave Hira that Angel Jibreel appeared in 610 CE and commanded 'Iqra!' (Read/Recite) three times.",
+        "The first five verses of Surah Al-Alaq were revealed here - the beginning of prophethood.",
+        "Cave of Thawr: located south of Makkah; the Prophet and Abu Bakr (RA) hid here for three days during the Hijrah in 622 CE.",
+        "The Quraysh searched everywhere but could not find them - Allah miraculously protected them.",
+        "According to tradition, a spider wove its web and a pigeon laid eggs at the cave entrance, deterring the pursuers.",
+        "Both caves represent pivotal moments: Hira marks the start of prophethood; Thawr marks the start of the Islamic state."
+      ]
+    },
+    {
+      "id": "early_preaching",
+      "section": "B",
+      "category": "topic",
+      "display_category": "prophets_life",
+      "group_id": "early_preaching",
+      "group_label": "Early Preaching of Islam",
+      "title": "Early Preaching - Secret and Public",
+      "arabic": "",
+      "lines": [
+        "After the first revelation in 610 CE, the Prophet preached Islam secretly for three years to protect early Muslims.",
+        "Meetings were held at the house of Arqam ibn Abi al-Arqam (Dar al-Arqam) in Makkah.",
+        "First converts: Khadijah (RA) - wife; Ali (RA) - child; Abu Bakr (RA) - adult male; Zayd ibn Harithah (RA) - freed slave.",
+        "The message focused on Tawhid (one God), abandoning idols, honesty, and caring for the poor and orphans.",
+        "After three years, Allah revealed: 'And warn your closest relatives' (Surah Ash-Shu'ara 26:214).",
+        "The Prophet gathered the Quraysh on Mount Safa and publicly declared his prophethood.",
+        "Most Quraysh leaders rejected him and began active persecution of the Muslims."
+      ]
+    },
+    {
+      "id": "first_revelation_detail",
+      "section": "B",
+      "category": "topic",
+      "display_category": "prophets_life",
+      "group_id": "first_revelation_detail",
+      "group_label": "The First Revelation",
+      "title": "The First Revelation - Cave of Hira (610 CE)",
+      "arabic": "",
+      "lines": [
+        "In 610 CE, the Prophet was 40 years old and meditating alone in Cave Hira during the month of Ramadan.",
+        "Angel Jibreel appeared and commanded 'Iqra!' (Read/Recite!); the Prophet replied 'I cannot read' - three times.",
+        "On the third embrace, the angel revealed the first five verses of Surah Al-Alaq (96:1-5): 'Read in the name of your Lord who created...'",
+        "The Prophet returned home trembling with fear; Khadijah (RA) wrapped him in a blanket and comforted him.",
+        "She took him to her cousin Waraqah ibn Nawfal - a Christian scholar - who confirmed it was the same angel that came to Prophet Musa (AS).",
+        "Waraqah said: 'Your people will drive you out' - predicting the hardships of the mission ahead.",
+        "This event marked the beginning of prophethood and the revelation of the Quran over the next 23 years."
+      ]
+    },
+    {
+      "id": "isra_miraj_detail",
+      "section": "B",
+      "category": "topic",
+      "display_category": "prophets_life",
+      "group_id": "isra_miraj_detail",
+      "group_label": "Isra and Mi'raj (Night Journey)",
+      "title": "Isra and Mi'raj - The Night Journey & Heavenly Ascension",
+      "arabic": "",
+      "lines": [
+        "Isra: the miraculous night journey in 620 CE from Masjid al-Haram (Makkah) to Masjid al-Aqsa (Jerusalem) on the Buraq.",
+        "At Masjid al-Aqsa, the Prophet led all previous prophets in prayer - confirming his status as the final and greatest prophet.",
+        "Mi'raj: the ascension through the seven heavens, accompanied by Angel Jibreel.",
+        "The Prophet met and exchanged greetings with: Adam (AS), Yahya & Isa (AS), Yusuf (AS), Idris (AS), Harun (AS), Musa (AS), and Ibrahim (AS).",
+        "He reached Sidrat al-Muntaha (Lote Tree of the Utmost Boundary) - the farthest limit any creation can reach.",
+        "Allah prescribed 50 daily prayers; at Musa's (AS) advice, the Prophet repeatedly requested reduction until five were finalised.",
+        "Abu Bakr (RA) immediately believed the Prophet's account, earning the title 'As-Siddiq' (The Confirmer of Truth)."
+      ]
+    },
+    {
+      "id": "visit_taif",
+      "section": "B",
+      "category": "topic",
+      "display_category": "prophets_life",
+      "group_id": "visit_taif",
+      "group_label": "Visit to Ta'if",
+      "title": "The Prophet's Mission to Ta'if (619 CE)",
+      "arabic": "",
+      "lines": [
+        "After the Year of Grief (619 CE), with no protection in Makkah, the Prophet traveled to Ta'if seeking support.",
+        "He was accompanied by his loyal companion and adopted son Zayd ibn Harithah (RA).",
+        "He met the three leaders of the Banu Thaqif tribe - all three mocked and rejected him.",
+        "The leaders incited the children and slaves to chase and stone him out of the city; both the Prophet and Zayd were injured and bleeding.",
+        "Taking refuge in a garden near Ta'if, the Prophet made his famous heartfelt dua: 'O Allah, I complain to You of my weakness and helplessness...'",
+        "An angel appeared offering to crush Ta'if between two mountains; the Prophet refused, praying that their descendants might one day accept Islam.",
+        "This event is a powerful example of the Prophet's extraordinary patience, mercy, and absolute trust in Allah."
+      ]
+    },
+    {
+      "id": "causes_hijrah",
+      "section": "B",
+      "category": "topic",
+      "display_category": "prophets_life",
+      "group_id": "causes_hijrah",
+      "group_label": "Causes of Migration to Madinah",
+      "title": "Causes of the Hijrah to Madinah",
+      "arabic": "",
+      "lines": [
+        "The Quraysh subjected Muslims to years of physical torture, economic boycott, and social isolation in Makkah.",
+        "The three-year social and economic boycott of Banu Hashim (616-619 CE) caused extreme suffering and starvation.",
+        "In the Year of Grief (619 CE), Khadijah (RA) and Abu Talib both died - the Prophet lost his greatest emotional and tribal protection.",
+        "The mission to Ta'if (619 CE) failed completely, leaving no prospect of support elsewhere in Arabia.",
+        "The Pledges of Aqabah (621-622 CE): people of Yathrib accepted Islam and pledged to protect the Prophet - creating a viable new base.",
+        "The Quraysh held a secret council and plotted to assassinate the Prophet simultaneously so no single tribe could be blamed.",
+        "Allah commanded the Prophet to migrate; the Hijrah became both a necessity and a divine command."
+      ]
+    },
+    {
+      "id": "events_hijrah",
+      "section": "B",
+      "category": "topic",
+      "display_category": "prophets_life",
+      "group_id": "events_hijrah",
+      "group_label": "Events of the Hijrah",
+      "title": "Events of the Hijrah - The Migration to Madinah (622 CE)",
+      "arabic": "",
+      "lines": [
+        "The Quraysh surrounded the Prophet's house planning to kill him at dawn; Hazrat Ali (RA) slept in his bed to deceive them.",
+        "The Prophet and Abu Bakr (RA) slipped away secretly at night and hid in Cave Thawr for three days.",
+        "Asma bint Abu Bakr (RA) brought them food and news daily; Abdullah ibn Abu Bakr gathered intelligence from Makkah.",
+        "After three days they traveled south then northwest, guided by Abdullah ibn Urayqit along an unfamiliar coastal route.",
+        "Suraqah ibn Malik pursued them for reward; his horse sank into the sand three times - he accepted it as a divine sign and turned back.",
+        "They arrived at Quba on the outskirts of Madinah, where the Prophet built Masjid Quba - the first mosque in Islamic history.",
+        "The Prophet formally entered Madinah on 12 Rabi al-Awwal 1 AH; the Ansar welcomed him with great joy and the Hijrah marks the start of the Islamic calendar."
+      ]
+    },
+    {
+      "id": "charter_madinah",
+      "section": "C",
+      "category": "topic",
+      "display_category": "treaties_events",
+      "group_id": "charter_madinah",
+      "group_label": "Charter of Madinah",
+      "title": "The Charter of Madinah (622 CE)",
+      "arabic": "",
+      "lines": [
+        "Written by the Prophet (pbuh) shortly after the Hijrah in 622 CE - considered the first written constitution in history.",
+        "Declared all Muslims (Muhajirun and Ansar) as one unified Ummah, with equal rights and mutual support.",
+        "Granted full religious freedom to Jewish tribes, Christians, and other groups living in Madinah.",
+        "All citizens - regardless of religion - were required to defend Madinah jointly against any external attack.",
+        "No group could make a separate peace treaty with the enemy; all disputes were to be referred to the Prophet (pbuh).",
+        "Prohibited treachery, injustice, and wrongdoing within the city; established principles of justice and equality.",
+        "Demonstrated the Prophet's remarkable wisdom as a statesman and laid the foundation of the first Islamic state."
+      ]
+    },
+    {
+      "id": "events_after_hijrah",
+      "section": "C",
+      "category": "topic",
+      "display_category": "treaties_events",
+      "group_id": "events_after_hijrah",
+      "group_label": "Events After Migration to Madinah",
+      "title": "Key Events After the Hijrah to Madinah",
+      "arabic": "",
+      "lines": [
+        "The Prophet built Masjid al-Nabawi in Madinah - the second mosque in Islam and the centre of the new Islamic community.",
+        "Brotherhood (Mu'akhat) was established between Muhajirun (migrants) and Ansar (helpers) - each Ansar shared home and wealth.",
+        "The Charter of Madinah was signed, uniting all tribes and establishing Madinah as an Islamic state.",
+        "The Adhan (call to prayer) was introduced and the Qiblah was changed from Jerusalem to Makkah in 2 AH.",
+        "Three major battles tested the new community: Badr (2 AH), Uhud (3 AH), and Khandaq (5 AH).",
+        "The Treaty of Hudaybiya (6 AH) and Conquest of Makkah (8 AH) extended Muslim power across Arabia.",
+        "The Prophet passed away in 11 AH / 632 CE having completed the mission of Islam throughout the Arabian Peninsula."
+      ]
+    },
+    {
+      "id": "treaty_hudaibiya_detail",
+      "section": "C",
+      "category": "topic",
+      "display_category": "treaties_events",
+      "group_id": "treaty_hudaibiya_detail",
+      "group_label": "Treaty of Hudaibiya (Detailed)",
+      "title": "Treaty of Hudaibiya - A Clear Victory (6 AH / 628 CE)",
+      "arabic": "",
+      "lines": [
+        "In 6 AH, the Prophet marched with 1,400 companions intending to perform Umrah; the Quraysh blocked their entry near Hudaibiya.",
+        "Key terms: a 10-year peace, Muslims to return that year and come the following year; any Muslim fleeing to Makkah not to be returned.",
+        "Many companions were upset, feeling the terms favoured the Quraysh; Umar (RA) questioned the agreement openly.",
+        "The Prophet accepted the treaty with wisdom; Allah revealed: 'Indeed We have granted you a clear victory' (Surah Al-Fath 48:1).",
+        "During the peace, Islam spread rapidly through preaching - more people accepted Islam than in all previous years combined.",
+        "In 8 AH, Quraysh allies attacked a Muslim-allied tribe, breaking the treaty; the Prophet marched on Makkah with 10,000.",
+        "The treaty demonstrated that diplomacy and patience can achieve greater results than force."
+      ]
+    },
+    {
+      "id": "battle_trench_detail",
+      "section": "C",
+      "category": "topic",
+      "display_category": "battles",
+      "group_id": "battle_trench_detail",
+      "group_label": "Battle of the Trench (Detailed)",
+      "title": "Battle of the Trench (Khandaq) - 5 AH / 627 CE",
+      "arabic": "",
+      "lines": [
+        "The Quraysh formed a massive confederacy (Ahzab) of approximately 10,000 soldiers from multiple tribes to destroy Madinah.",
+        "Salman al-Farsi (RA) suggested digging a trench on the exposed northern side - an innovative Persian defensive strategy.",
+        "The trench was dug by 3,000 Muslims in just six days; the Prophet worked alongside them, boosting morale.",
+        "The confederacy laid siege for nearly a month but could not cross the trench; cavalry was rendered completely ineffective.",
+        "Harsh winter, food shortages, and growing internal divisions weakened the confederacy's resolve.",
+        "The Banu Qurayza tribe violated their treaty with the Muslims during the siege - they were later dealt with after the battle.",
+        "The enemy forces retreated in failure; the Quraysh threat to Madinah was ended permanently - a decisive strategic victory."
+      ]
+    },
+    {
+      "id": "bio_abubakar",
+      "section": "B",
+      "category": "topic",
+      "display_category": "companions",
+      "group_id": "bio_abubakar",
+      "group_label": "Biography: Hazrat Abu Bakr (RA)",
+      "title": "Hazrat Abu Bakr al-Siddiq (RA) - First Caliph",
+      "arabic": "",
+      "lines": [
+        "Full name: Abdullah ibn Abi Quhafa; titled 'As-Siddiq' (The Confirmer of Truth) for immediately believing the Isra & Mi'raj.",
+        "First adult male to accept Islam; closest and most trusted companion of the Prophet throughout his life.",
+        "Used his personal wealth to free tortured Muslim slaves including Bilal (RA), Ammar (RA), and others.",
+        "Accompanied the Prophet during the Hijrah, hiding with him in Cave Thawr for three days at great personal risk.",
+        "Led the congregational prayers during the Prophet's final illness - a sign of his designated leadership.",
+        "Became the First Caliph (632-634 CE); united the Muslims, crushed apostasy (Riddah wars), and initiated the first written compilation of the Quran.",
+        "Died in 13 AH / 634 CE after just two years as Caliph; buried beside the Prophet in Madinah."
+      ]
+    },
+    {
+      "id": "bio_usman",
+      "section": "B",
+      "category": "topic",
+      "display_category": "companions",
+      "group_id": "bio_usman",
+      "group_label": "Biography: Hazrat Usman (RA)",
+      "title": "Hazrat Uthman ibn Affan (RA) - Dhul-Nurayn",
+      "arabic": "",
+      "lines": [
+        "Full name: Uthman ibn Affan; titled 'Dhul-Nurayn' (Holder of Two Lights) for marrying two daughters of the Prophet.",
+        "One of the earliest converts to Islam; gave up wealth and comfort and migrated twice - to Abyssinia and to Madinah.",
+        "Known for extraordinary generosity - personally financed the entire Muslim army for the Battle of Tabuk.",
+        "Third Caliph of Islam (644-656 CE); his caliphate saw Islam expand into Persia, North Africa, and Central Asia.",
+        "Greatest achievement: standardised the Quran into one authoritative Mushaf based on the Qurayshi dialect.",
+        "Sent official copies to all major cities and ordered all other dialect versions burned to prevent division.",
+        "Martyred in 35 AH / 656 CE while reciting the Quran in his home; his blood fell on the Mushaf."
+      ]
+    },
+    {
+      "id": "bio_ali",
+      "section": "B",
+      "category": "topic",
+      "display_category": "companions",
+      "group_id": "bio_ali",
+      "group_label": "Biography: Hazrat Ali (RA)",
+      "title": "Hazrat Ali ibn Abi Talib (RA) - Fourth Caliph",
+      "arabic": "",
+      "lines": [
+        "Cousin and son-in-law of the Prophet; raised in the Prophet's own household from a young age.",
+        "First child to accept Islam; his faith and dedication to the Prophet were lifelong and unwavering.",
+        "Married Fatimah al-Zahra (RA), the Prophet's most beloved daughter; father of Hasan and Husain (RA).",
+        "Slept in the Prophet's bed on the night of Hijrah to deceive Quraysh assassins - risking his own life.",
+        "Known as 'Asadullah' (Lion of Allah) for exceptional bravery in battles including Badr, Uhud, and Khandaq.",
+        "Renowned for deep Islamic knowledge and wisdom; called 'Bab al-Ilm' (Gate of Knowledge) by the Prophet.",
+        "Fourth Caliph (656-661 CE); martyred while performing Fajr prayer in the mosque of Kufa in 40 AH."
+      ]
+    },
+    {
+      "id": "bio_abdulrahman",
+      "section": "B",
+      "category": "topic",
+      "display_category": "companions",
+      "group_id": "bio_abdulrahman",
+      "group_label": "Biography: Hazrat Abdul Rahman bin Auf (RA)",
+      "title": "Hazrat Abdul Rahman ibn Awf (RA) - One of the Ten Promised Paradise",
+      "arabic": "",
+      "lines": [
+        "One of the Asharah Mubasharah (Ten Companions promised Paradise); among the earliest converts to Islam.",
+        "A highly successful merchant in Makkah; left all his wealth behind for the sake of Islam during the Hijrah.",
+        "In Madinah, was paired with Sa'd ibn Rabi (RA) as a brother; declined to accept charity, preferring to earn independently.",
+        "Within a short time rebuilt his entire fortune through honest trade - a model of self-reliance and trust in Allah.",
+        "Famous for extraordinary generosity: on one occasion donated a caravan of 700 camels loaded with goods for the cause of Islam.",
+        "Fought in all major battles alongside the Prophet and was known for his bravery and sound judgement.",
+        "Died approximately 32 AH; left behind enormous charitable endowments benefiting the entire Muslim community."
+      ]
+    },
+    {
+      "id": "bio_talha",
+      "section": "B",
+      "category": "topic",
+      "display_category": "companions",
+      "group_id": "bio_talha",
+      "group_label": "Biography: Hazrat Talha bin Ubaidullah (RA)",
+      "title": "Hazrat Talha ibn Ubaydillah (RA) - One of the Ten Promised Paradise",
+      "arabic": "",
+      "lines": [
+        "One of the Asharah Mubasharah (Ten Companions promised Paradise); among the first eight people to accept Islam.",
+        "Accepted Islam at the invitation of Abu Bakr (RA) before the Prophet had even begun public preaching.",
+        "At the Battle of Uhud, he used his own body as a human shield to protect the Prophet during the fiercest fighting.",
+        "His hand was permanently injured - paralysed from deflecting sword blows aimed at the Prophet - earning him undying honour.",
+        "The Prophet (pbuh) named him 'Talha al-Khayr' (Talha the Good) and 'Talha al-Fayyad' (Talha the Overflowing) for his generosity.",
+        "Known for regularly distributing his wealth among the poor of Madinah - sometimes giving away everything he owned.",
+        "Martyred at the Battle of the Camel in 36 AH / 656 CE; buried in Basra."
+      ]
+    },
+    {
+      "id": "bio_khadijah",
+      "section": "B",
+      "category": "topic",
+      "display_category": "wives",
+      "group_id": "bio_khadijah",
+      "group_label": "Biography: Hazrat Khadijah (RA)",
+      "title": "Hazrat Khadijah bint Khuwaylid (RA) - First Wife",
+      "arabic": "",
+      "lines": [
+        "First and most beloved wife of the Prophet; married him when she was 40 and he was 25 years old (595 CE).",
+        "A respected, wealthy, and successful businesswoman in Makkah who had witnessed his honesty firsthand.",
+        "First person to accept Islam - she immediately believed and supported the Prophet without hesitation.",
+        "When the first revelation came, she comforted him, wrapped him in a blanket, and took him to Waraqah ibn Nawfal for guidance.",
+        "Spent her entire personal fortune supporting the Prophet's mission and relieving the suffering of poor Muslims.",
+        "Mother of all the Prophet's children except Ibrahim: Zainab, Ruqayyah, Umm Kulthum, and Fatimah (RA).",
+        "Died in 619 CE (Year of Grief); her death devastated the Prophet who continued to honour her memory throughout his life."
+      ]
+    },
+    {
+      "id": "bio_sawda",
+      "section": "B",
+      "category": "topic",
+      "display_category": "wives",
+      "group_id": "bio_sawda",
+      "group_label": "Biography: Hazrat Sawda (RA)",
+      "title": "Hazrat Sawda bint Zam'a (RA) - Second Wife",
+      "arabic": "",
+      "lines": [
+        "Second wife of the Prophet, married after the death of Khadijah (RA) in 619 CE to provide a mother's care for his children.",
+        "A widow who had accepted Islam in its earliest days and endured hardship and persecution for her faith.",
+        "Migrated to Abyssinia with the first group of Muslims to escape Quraysh oppression.",
+        "Known for her extraordinary generosity, warmth, cheerful nature, and strong sense of humour.",
+        "In an act of remarkable selflessness, she gave her designated day with the Prophet to Aisha (RA) out of love and respect.",
+        "Lived a simple, humble life devoted entirely to worship, charity, and service to the Prophet's household.",
+        "A model of patience, selflessness, and sincere devotion; she asked only to die as a Muslim in the Prophet's care."
+      ]
+    },
+    {
+      "id": "bio_aisha",
+      "section": "B",
+      "category": "topic",
+      "display_category": "wives",
+      "group_id": "bio_aisha",
+      "group_label": "Biography: Hazrat Aisha (RA)",
+      "title": "Hazrat Aisha bint Abi Bakr (RA) - Scholar of Islam",
+      "arabic": "",
+      "lines": [
+        "Daughter of Abu Bakr (RA); the Prophet called her the most knowledgeable woman in Islamic history.",
+        "Gifted with exceptional intelligence, a sharp memory, and a deep understanding of Quranic rulings.",
+        "Narrated over 2,200 hadiths - one of the top five hadith narrators among all companions.",
+        "Scholars, companions, and later generations came to her to learn about the Prophet's daily life, worship, and rulings.",
+        "Her knowledge covered Islamic jurisprudence, Quranic commentary, medicine, poetry, and genealogy.",
+        "After the Prophet's death, she taught both men and women for over 40 years, becoming a pillar of Islamic scholarship.",
+        "Died 58 AH / 678 CE; buried in Jannat al-Baqi, Madinah - her legacy of knowledge continues to benefit Muslims today."
+      ]
+    },
+    {
+      "id": "bio_hafsa",
+      "section": "B",
+      "category": "topic",
+      "display_category": "wives",
+      "group_id": "bio_hafsa",
+      "group_label": "Biography: Hazrat Hafsa (RA)",
+      "title": "Hazrat Hafsa bint Umar (RA) - Guardian of the Quran",
+      "arabic": "",
+      "lines": [
+        "Daughter of Umar ibn al-Khattab (RA); married the Prophet after her first husband Khunays was martyred at Badr.",
+        "One of the very few people of her era who had memorised the entire Quran - a rare achievement for any Muslim.",
+        "The official written Mushaf compiled under Abu Bakr (RA) was entrusted to her custody - a reflection of the companions' trust in her piety.",
+        "Known for her deep devotion to worship: she spent long nights in prayer and regularly observed voluntary fasts.",
+        "The Prophet once divorced her, then took her back at the command of Angel Jibreel - a sign of her high rank.",
+        "Played a crucial role in the physical preservation of the Quran for all of humanity.",
+        "Died 45 AH; buried in Jannat al-Baqi, Madinah - remembered as a model of knowledge, piety, and service to Islam."
+      ]
+    },
+    {
+      "id": "primary_sources_law",
+      "section": "B",
+      "category": "topic",
+      "display_category": "quran_law",
+      "group_id": "primary_sources_law",
+      "group_label": "Primary Sources of Islamic Law",
+      "title": "Primary Sources of Islamic Law (Shariah)",
+      "arabic": "",
+      "lines": [
+        "The Quran is the first and most authoritative source of Islamic law - the direct and unaltered word of Allah.",
+        "The Sunnah (recorded in Hadith) is the second source - the Prophet's sayings, actions, and silent approvals.",
+        "Together, Quran and Sunnah form the foundation of Shariah; no ruling can contradict either of them.",
+        "The Quran provides general principles and broad commands; the Sunnah explains, details, and demonstrates their application.",
+        "Scholars use the Quran and Sunnah to derive rulings for all aspects of life: worship, family, trade, and governance.",
+        "Secondary sources - Ijma (scholarly consensus) and Qiyas (analogy) - are derived from and must align with the primary sources.",
+        "The science of deriving rulings from these sources is called Fiqh (Islamic jurisprudence), practised by qualified scholars."
+      ]
+    },
+    {
+      "id": "ijma",
+      "section": "B",
+      "category": "topic",
+      "display_category": "quran_law",
+      "group_id": "ijma",
+      "group_label": "Ijma (Scholarly Consensus)",
+      "title": "Ijma - The Third Source of Islamic Law",
+      "arabic": "",
+      "lines": [
+        "Ijma means the consensus or unanimous agreement of qualified Muslim scholars on a religious ruling.",
+        "It is the third source of Islamic law, used after the Quran and Sunnah fail to provide an explicit ruling.",
+        "Its authority is based on the hadith: 'My Ummah will never agree upon an error.' (Ibn Majah)",
+        "The strongest form is Ijma of the Companions (Sahabah) - their consensus carries the greatest weight in Islamic law.",
+        "Other forms include Ijma of scholars of a particular era or recognised school of jurisprudence.",
+        "Ijma allows Islamic law to address new situations not explicitly covered in the Quran or Sunnah.",
+        "Decisions reached through Ijma become binding on the Muslim community and cannot be overturned by individual opinions."
+      ]
+    }
+  ]
+}
