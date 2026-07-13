@@ -4,7 +4,8 @@ import json
 import random
 import time
 import logging
-from datetime import datetime
+import uuid
+from datetime import datetime, date, timedelta
 from typing import List, Dict, Any, Optional
 
 # --- Robust Path Setup ---
@@ -62,10 +63,54 @@ class ExamSubmission(BaseModel):
     answers: Dict[str, str] # Note: JSON keys are strings
     time_taken: int
 
+# ── Per-User Progress Models ─────────────────────────────────────────────────
+
+import urllib.request
+import urllib.parse
+import threading
+
+class UserProfile(BaseModel):
+    name: str
+    email: str
+    picture: str = ""
+    whatsapp_number: Optional[str] = None
+    whatsapp_enabled: bool = False
+
+class CardAttempt(BaseModel):
+    card_id: str
+    title: str
+    lines_total: int
+    lines_completed: int
+    accuracy_pct: float
+    typo_count: int
+    time_seconds: int
+
+class MemorizeAttemptV2(BaseModel):
+    groups_selected: List[str]
+    cards: List[CardAttempt]
+    cards_completed: int
+    cards_total: int
+    total_time_seconds: int
+    overall_accuracy_pct: float
+
 # ── Helper Functions ─────────────────────────────────────────────────────────
 
 def get_student_path(name: str, subject: str = "islamiyat"):
     return os.path.join(STUDENTS_DIR, subject, name.strip().title().replace(" ", "_"))
+
+def trigger_whatsapp_report(phone: str, message: str):
+    def run():
+        try:
+            url = "http://localhost:3001/send-message"
+            data = json.dumps({"phone": phone, "message": message}).encode("utf-8")
+            req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json"}, method="POST")
+            with urllib.request.urlopen(req, timeout=5) as response:
+                if response.status == 200:
+                    logger.info(f"WhatsApp message sent successfully to {phone}")
+        except Exception as e:
+            logger.error(f"Failed to send WhatsApp message: {e}")
+
+    threading.Thread(target=run).start()
 
 def load_json(path: str):
     if os.path.exists(path):
@@ -231,6 +276,223 @@ async def log_memorize_attempt(student_name: str, subject: str, attempt: Memoriz
     with open(log_path, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
     return {"status": "success"}
+
+# ── Per-User Progress Helpers ────────────────────────────────────────────────
+
+def get_user_dir(user_id: str) -> str:
+    """Return storage dir for a Google-authenticated user, sanitised."""
+    safe_id = ''.join(c for c in user_id if c.isalnum() or c == '-')
+    return os.path.join(STUDENTS_DIR, safe_id)
+
+def _collect_dates(memorize_log: list, exam_log: list) -> set:
+    """Extract unique YYYY-MM-DD strings from both logs."""
+    dates = set()
+    for entry in memorize_log:
+        d = entry.get("date", "")
+        if d:
+            dates.add(d[:10])  # handle both date and datetime strings
+    for entry in exam_log:
+        d = entry.get("date", "")
+        if d:
+            dates.add(d[:10])
+    return dates
+
+def compute_streak(memorize_log: list, exam_log: list) -> int:
+    """Count consecutive calendar days with activity ending today or most-recent day."""
+    dates = _collect_dates(memorize_log, exam_log)
+    if not dates:
+        return 0
+    sorted_dates = sorted(dates, reverse=True)
+    today = date.today()
+    most_recent = date.fromisoformat(sorted_dates[0])
+    # If most recent activity is more than 1 day ago, streak is 0
+    if (today - most_recent).days > 1:
+        return 0
+    streak = 1
+    for i in range(1, len(sorted_dates)):
+        prev = date.fromisoformat(sorted_dates[i - 1])
+        curr = date.fromisoformat(sorted_dates[i])
+        if (prev - curr).days == 1:
+            streak += 1
+        else:
+            break
+    return streak
+
+def compute_stats(memorize_log: list, exam_log: list) -> dict:
+    """Aggregate stats from both logs."""
+    total_sessions = len(memorize_log) + len(exam_log)
+    total_time = sum(e.get("total_time_seconds", 0) for e in memorize_log)
+    total_time += sum(e.get("time_taken", 0) for e in exam_log)
+    # Average accuracy from memorize sessions only
+    accuracies = [e.get("overall_accuracy_pct", 0) for e in memorize_log if "overall_accuracy_pct" in e]
+    avg_accuracy = round(sum(accuracies) / max(len(accuracies), 1), 1)
+    return {
+        "current_streak": compute_streak(memorize_log, exam_log),
+        "total_sessions": total_sessions,
+        "avg_accuracy": avg_accuracy,
+        "total_time_seconds": total_time,
+    }
+
+# ── Per-User Progress Endpoints ──────────────────────────────────────────────
+
+@app.post("/api/users/{user_id}/profile")
+async def upsert_user_profile(user_id: str, profile: UserProfile):
+    user_dir = get_user_dir(user_id)
+    os.makedirs(user_dir, exist_ok=True)
+    profile_path = os.path.join(user_dir, "profile.json")
+    existing = load_json(profile_path) or {}
+    
+    # Merge existing values if not provided in request
+    whatsapp_number = profile.whatsapp_number if profile.whatsapp_number is not None else existing.get("whatsapp_number")
+    whatsapp_enabled = profile.whatsapp_enabled if profile.whatsapp_enabled is not None else existing.get("whatsapp_enabled", False)
+    
+    data = {
+        "name": profile.name,
+        "email": profile.email,
+        "picture": profile.picture,
+        "whatsapp_number": whatsapp_number,
+        "whatsapp_enabled": whatsapp_enabled,
+        "created_at": existing.get("created_at", datetime.now().isoformat()),
+        "updated_at": datetime.now().isoformat(),
+    }
+    with open(profile_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    return {"status": "success"}
+
+@app.get("/api/users/{user_id}/{subject}/progress")
+async def get_user_progress(user_id: str, subject: str):
+    user_dir = get_user_dir(user_id)
+    mem_path = os.path.join(user_dir, subject, "memorize_log.json")
+    exam_path = os.path.join(user_dir, subject, "exam_log.json")
+    profile_path = os.path.join(user_dir, "profile.json")
+    
+    memorize_log = load_json(mem_path) or []
+    exam_log = load_json(exam_path) or []
+    profile = load_json(profile_path) or {}
+    
+    return {
+        "stats": compute_stats(memorize_log, exam_log),
+        "memorize_log": memorize_log,
+        "exam_log": exam_log,
+        "profile": profile,
+    }
+
+@app.post("/api/users/{user_id}/{subject}/memorize-attempt")
+async def log_user_memorize_attempt(user_id: str, subject: str, attempt: MemorizeAttemptV2):
+    user_dir = get_user_dir(user_id)
+    subject_dir = os.path.join(user_dir, subject)
+    os.makedirs(subject_dir, exist_ok=True)
+    log_path = os.path.join(subject_dir, "memorize_log.json")
+    log = load_json(log_path) or []
+    entry = {
+        "session_id": str(uuid.uuid4()),
+        "date": datetime.now().isoformat(),
+        "groups_selected": attempt.groups_selected,
+        "cards": [c.model_dump() for c in attempt.cards],
+        "cards_completed": attempt.cards_completed,
+        "cards_total": attempt.cards_total,
+        "total_time_seconds": attempt.total_time_seconds,
+        "overall_accuracy_pct": attempt.overall_accuracy_pct,
+    }
+    log.append(entry)
+    with open(log_path, "w", encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
+
+    # Trigger WhatsApp Report if enabled
+    profile_path = os.path.join(user_dir, "profile.json")
+    profile = load_json(profile_path) or {}
+    if profile.get("whatsapp_enabled") and profile.get("whatsapp_number"):
+        groups = ", ".join(attempt.groups_selected)
+        exam_log_path = os.path.join(user_dir, subject, "exam_log.json")
+        exam_log = load_json(exam_log_path) or []
+        streak = compute_streak(log, exam_log)
+        msg = (
+            f"📚 *Nur Academy - Memorize Progress Report*\\n\\n"
+            f"👤 *Student:* {profile.get('name', 'Student')}\\n"
+            f"📖 *Subject:* {subject.title()}\\n"
+            f"📝 *Topics:* {groups}\\n"
+            f"⏱️ *Duration:* {attempt.total_time_seconds} seconds\\n"
+            f"🎯 *Accuracy:* {attempt.overall_accuracy_pct}%\\n"
+            f"🏆 *Cards Completed:* {attempt.cards_completed}/{attempt.cards_total}\\n"
+            f"🔥 *Current Streak:* {streak} days\\n\\n"
+            f"Keep going! 🚀"
+        )
+        trigger_whatsapp_report(profile["whatsapp_number"], msg)
+
+    return {"status": "success", "session_id": entry["session_id"]}
+
+@app.post("/api/users/{user_id}/{subject}/exam/evaluate")
+async def evaluate_user_exam(user_id: str, subject: str, submission: ExamSubmission):
+    """Same grading logic as the original evaluate, but saves to user-keyed storage."""
+    score = 0
+    total_marks = 0
+    question_results = []
+
+    for i, q in enumerate(submission.questions):
+        marks = q.get("marks", 1)
+        total_marks += marks
+        student_ans = submission.answers.get(str(i), "")
+        correct_ans = q.get("correct_answer", q.get("model_answer", ""))
+        qtype = q.get("type", "mcq").lower()
+
+        if qtype == "mcq":
+            correct = student_ans.strip().upper() == str(correct_ans).strip().upper()
+        else:
+            correct = False
+
+        if correct:
+            score += marks
+
+        topic_label = q.get("surah_name") or q.get("topic") or q.get("hadith_reference") or q.get("topic_name") or ""
+        question_results.append({
+            "question": q.get("question", ""),
+            "student_answer": student_ans,
+            "correct_answer": correct_ans,
+            "correct": correct,
+            "marks_earned": marks if correct else 0,
+            "topic": topic_label,
+        })
+
+    percentage = round((score / max(total_marks, 1)) * 100, 1)
+    result = {
+        "attempt_id": str(uuid.uuid4()),
+        "date": datetime.now().isoformat(),
+        "score": score,
+        "total": total_marks,
+        "percentage": percentage,
+        "time_taken": submission.time_taken,
+        "question_results": question_results,
+    }
+
+    # Save to user-keyed storage
+    user_dir = get_user_dir(user_id)
+    subject_dir = os.path.join(user_dir, subject)
+    os.makedirs(subject_dir, exist_ok=True)
+    exam_path = os.path.join(subject_dir, "exam_log.json")
+    exam_log = load_json(exam_path) or []
+    exam_log.append(result)
+    with open(exam_path, "w", encoding="utf-8") as f:
+        json.dump(exam_log, f, ensure_ascii=False, indent=2)
+
+    # Trigger WhatsApp Report if enabled
+    profile_path = os.path.join(user_dir, "profile.json")
+    profile = load_json(profile_path) or {}
+    if profile.get("whatsapp_enabled") and profile.get("whatsapp_number"):
+        mem_log_path = os.path.join(user_dir, subject, "memorize_log.json")
+        mem_log = load_json(mem_log_path) or []
+        streak = compute_streak(mem_log, exam_log)
+        msg = (
+            f"📝 *Nur Academy - Exam Results Report*\\n\\n"
+            f"👤 *Student:* {profile.get('name', 'Student')}\\n"
+            f"📖 *Subject:* {subject.title()}\\n"
+            f"📊 *Score:* {score}/{total_marks} ({percentage}%)\\n"
+            f"⏱️ *Time Spent:* {submission.time_taken} seconds\\n"
+            f"🔥 *Current Streak:* {streak} days\\n\\n"
+            f"Keep reviewing to master the topics! 🏆"
+        )
+        trigger_whatsapp_report(profile["whatsapp_number"], msg)
+
+    return result
 
 if __name__ == "__main__":
     import uvicorn
