@@ -36,7 +36,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useGoogleLogin } from '@react-oauth/google';
 import * as htmlToImage from 'html-to-image';
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000";
 
 // --- Google Auth Types & Helpers ---
 interface GoogleUser {
