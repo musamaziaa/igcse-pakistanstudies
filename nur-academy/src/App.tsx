@@ -764,9 +764,21 @@ export default function App() {
                 </div>
               </div>
 
+              {!user && (
+                <div className="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-4 flex items-start gap-4">
+                  <div className="bg-amber-500/20 p-2 rounded-lg text-amber-400">
+                    <LogOut size={20} className="rotate-180" />
+                  </div>
+                  <div>
+                    <h4 className="text-amber-400 font-bold">Browsing as Guest</h4>
+                    <p className="text-amber-400/80 text-sm mt-1 leading-relaxed">Your progress will not be permanently saved. Sign in with Google to unlock Practice Exams and keep track of your learning streaks.</p>
+                  </div>
+                </div>
+              )}
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <DashboardCard icon={<GraduationCap size={28} className="text-emerald-400" />} color="emerald" title="Practice Exam" desc="Test your knowledge with random questions." action={() => requireLogin(startExam)} />
-                <DashboardCard icon={<BookOpen size={28} className="text-blue-400" />} color="blue" title="Memorize Topics" desc="Interactive character-by-character typing practice." action={() => requireLogin(() => setView('memorize'))} />
+                <DashboardCard icon={<GraduationCap size={28} className="text-emerald-400" />} color="emerald" title="Practice Exam" desc="Test your knowledge with random questions." action={startExam} locked={!user} />
+                <DashboardCard icon={<BookOpen size={28} className="text-blue-400" />} color="blue" title="Memorize Topics" desc="Interactive character-by-character typing practice." action={() => setView('memorize')} />
                 {guide && (
                   <DashboardCard icon={<ClipboardList size={28} className="text-violet-400" />} color="violet" title={guide.title || "Paper 2 Guide"} desc="Paper 2 format, what's assessed, and a step-by-step preparation plan." action={() => setView('project_guide')} />
                 )}
@@ -1559,7 +1571,7 @@ export default function App() {
   );
 }
 
-function DashboardCard({ icon, color, title, desc, action }: any) {
+function DashboardCard({ icon, color, title, desc, action, locked }: any) {
   const styles: any = {
     emerald: { card: 'border-emerald-500/20 hover:border-emerald-400 hover:shadow-[0_0_30px_rgba(52,211,153,0.15)]', wrap: 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400', btn: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/20' },
     blue: { card: 'border-blue-500/20 hover:border-blue-400 hover:shadow-[0_0_30px_rgba(96,165,250,0.15)]', wrap: 'bg-blue-500/10 border-blue-500/20 text-blue-400', btn: 'bg-blue-500/10 text-blue-400 border-blue-500/30 hover:bg-blue-500/20' },
@@ -1573,8 +1585,8 @@ function DashboardCard({ icon, color, title, desc, action }: any) {
       <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border mb-6 ${s.wrap}`}>{icon}</div>
       <h3 className="text-2xl font-bold mb-2 text-white">{title}</h3>
       <p className="text-slate-400 mb-8 flex-1">{desc}</p>
-      <button onClick={action} className={`w-full py-3.5 font-bold rounded-xl border flex items-center justify-center gap-2 transition-all ${s.btn}`}>
-        <PlayCircle size={18} /> Start
+      <button onClick={locked ? undefined : action} className={`w-full py-3.5 font-bold rounded-xl border flex items-center justify-center gap-2 transition-all ${locked ? 'bg-slate-800/50 text-slate-500 border-slate-700 cursor-not-allowed' : s.btn}`}>
+        {locked ? "Sign in to unlock" : <><PlayCircle size={18} /> Start</>}
       </button>
     </div>
   );
