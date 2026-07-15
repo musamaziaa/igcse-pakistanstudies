@@ -31,8 +31,7 @@ app = FastAPI(title="Nur Academy API", description="Backend for IGCSE Islamiyat 
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://igcse-pakistanstudies.vercel.app",
-    "https://igcse-pakistanstudies-usama-zias-projects-f1e7dfa2.vercel.app"
+    "https://al-nuracademy.vercel.app"
 ]
 
 app.add_middleware(
