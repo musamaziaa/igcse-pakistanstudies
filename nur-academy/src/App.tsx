@@ -33,7 +33,7 @@ import {
   BarChart3
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { useGoogleLogin } from '@react-oauth/google';
+import { GoogleLogin } from '@react-oauth/google';
 import * as htmlToImage from 'html-to-image';
 
 const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000";
@@ -47,6 +47,19 @@ interface GoogleUser {
 }
 
 const STORAGE_KEY = 'nur_academy_user';
+
+function decodeJwt(token: string) {
+  try {
+    const base64Url = token.split('.')[1];
+    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+    return JSON.parse(jsonPayload);
+  } catch (err) {
+    return null;
+  }
+}
 
 function loadUser(): GoogleUser | null {
   try {
@@ -222,33 +235,26 @@ export default function App() {
 
   const studentName = user?.name || 'Guest';
 
-  const googleLogin = useGoogleLogin({
-    onSuccess: async (tokenResponse) => {
-      try {
-        const res = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
-          headers: { Authorization: `Bearer ${tokenResponse.access_token}` },
-        });
-        const profile = await res.json();
-        const gUser: GoogleUser = {
-          sub: profile.sub,
-          name: profile.name,
-          email: profile.email,
-          picture: profile.picture,
-        };
-        saveUser(gUser);
-        setUser(gUser);
-        // Sync profile to backend
-        fetch(`${API_BASE}/api/users/${profile.sub}/profile`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name: profile.name, email: profile.email, picture: profile.picture }),
-        }).catch(() => {});
-      } catch (err) {
-        console.error('Failed to fetch Google profile:', err);
-      }
-    },
-    onError: (err) => console.error('Google login error:', err),
-  });
+  const handleCredentialResponse = (credentialResponse: any) => {
+    if (!credentialResponse.credential) return;
+    const profile = decodeJwt(credentialResponse.credential);
+    if (!profile) return;
+    
+    const gUser: GoogleUser = {
+      sub: profile.sub,
+      name: profile.name,
+      email: profile.email,
+      picture: profile.picture,
+    };
+    saveUser(gUser);
+    setUser(gUser);
+    // Sync profile to backend
+    fetch(`${API_BASE}/api/users/${profile.sub}/profile`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: profile.name, email: profile.email, picture: profile.picture }),
+    }).catch(() => {});
+  };
 
   const handleLogout = useCallback(() => {
     clearUser();
@@ -258,9 +264,7 @@ export default function App() {
 
   const requireLogin = (action: () => void) => {
     if (!user) {
-      if (confirm('Sign in with Google to save your progress. Sign in now?')) {
-        googleLogin();
-      }
+      alert('Please click the "Sign in" button at the top right to save your progress!');
       return;
     }
     action();
@@ -685,10 +689,16 @@ export default function App() {
               )}
             </div>
           ) : (
-            <button onClick={() => googleLogin()} className="flex items-center gap-2 px-4 py-2 bg-slate-800 border border-slate-700 rounded-full hover:border-emerald-500/50 hover:bg-slate-700 hover:shadow-[0_0_15px_rgba(16,185,129,0.15)] transition-all text-sm font-bold text-slate-200">
-              <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59a14.5 14.5 0 0 1 0-9.18l-7.98-6.19a24.04 24.04 0 0 0 0 21.56l7.98-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
-              Sign in
-            </button>
+            <div className="overflow-hidden rounded-full shadow-[0_0_15px_rgba(16,185,129,0.15)] hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all bg-slate-800">
+              <GoogleLogin
+                onSuccess={handleCredentialResponse}
+                onError={() => console.error('Google login error')}
+                useOneTap
+                theme="filled_black"
+                shape="pill"
+                text="signin"
+              />
+            </div>
           )}
         </div>
       </header>
