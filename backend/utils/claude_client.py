@@ -2,7 +2,11 @@ import anthropic
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+# Load the repo-root .env explicitly: a bare load_dotenv() searches upward from
+# the current working directory, which is not the repo root on PythonAnywhere.
+load_dotenv(os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), ".env"
+))
 
 _client = None
 

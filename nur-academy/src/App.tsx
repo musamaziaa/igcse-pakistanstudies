@@ -1616,23 +1616,34 @@ export default function App() {
                             <div className="border-t border-slate-800 px-4 py-3">
                               <p className="text-xs font-bold text-slate-400 uppercase tracking-wide mb-2">Question Results</p>
                               <div className="grid gap-1.5">
-                                {s.question_results.map((qr: any, qi: number) => (
-                                  <div key={qi} className={`flex items-center gap-3 px-3 py-2 rounded-lg ${qr.correct ? 'bg-emerald-950/20 border border-emerald-500/20' : 'bg-red-950/20 border border-red-500/20'}`}>
-                                    <span className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 text-xs font-bold ${qr.correct ? 'bg-emerald-950/20 border border-emerald-500/200 text-white' : 'bg-red-400 text-white'}`}>
-                                      {qr.correct ? '✓' : '✗'}
+                                {s.question_results.map((qr: any, qi: number) => {
+                                  // Written answers earn partial marks, so this can't be a
+                                  // right/wrong badge: 7 out of 8 is a strong answer, not a cross.
+                                  const max = qr.marks ?? 1;
+                                  const got = qr.marks_earned ?? 0;
+                                  const ungraded = qr.graded_by === 'ungraded';
+                                  const tone = ungraded ? 'slate' : got === max ? 'emerald' : got > 0 ? 'amber' : 'red';
+                                  const box = { emerald: 'bg-emerald-950/20 border-emerald-500/20', amber: 'bg-amber-950/20 border-amber-500/30', red: 'bg-red-950/20 border-red-500/20', slate: 'bg-slate-900 border-slate-700' }[tone];
+                                  const chip = { emerald: 'bg-emerald-500/20 text-emerald-300', amber: 'bg-amber-500/20 text-amber-300', red: 'bg-red-500/20 text-red-300', slate: 'bg-slate-800 text-slate-400' }[tone];
+                                  return (
+                                  <div key={qi} className={`flex items-center gap-3 px-3 py-2 rounded-lg border ${box}`}>
+                                    <span className={`px-2 py-0.5 rounded-lg flex items-center justify-center shrink-0 text-xs font-black ${chip}`}>
+                                      {ungraded ? '—' : got}/{max}
                                     </span>
                                     <div className="flex-1 min-w-0">
                                       <p className="text-sm text-slate-300 truncate">{qr.question?.slice(0, 80)}{(qr.question?.length || 0) > 80 ? '...' : ''}</p>
                                       {qr.topic && <p className="text-xs text-slate-400">{qr.topic}</p>}
                                     </div>
-                                    {!qr.correct && (
+                                    {/* Only MCQs have a single right answer worth showing. */}
+                                    {qr.graded_by === 'auto' && got < max && (
                                       <div className="text-xs text-right shrink-0">
                                         <p className="text-red-500">Your: {qr.student_answer || '—'}</p>
                                         <p className="text-emerald-400">Ans: {String(qr.correct_answer).slice(0, 30)}</p>
                                       </div>
                                     )}
                                   </div>
-                                ))}
+                                  );
+                                })}
                               </div>
                             </div>
                           )}

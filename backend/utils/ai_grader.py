@@ -17,7 +17,11 @@ import os
 import anthropic
 from dotenv import load_dotenv
 
-load_dotenv()
+# Load the repo-root .env explicitly: a bare load_dotenv() searches upward from
+# the current working directory, which is not the repo root on PythonAnywhere.
+load_dotenv(os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), ".env"
+))
 
 logger = logging.getLogger("nur-api")
 
@@ -82,6 +86,19 @@ Mark each answer against the mark scheme exactly as a real examiner would:
 - A blank or entirely irrelevant answer earns 0.
 - Never award more than the marks available for the question.
 - Do not inflate marks to be kind. The score must be the one the student would receive in the real exam.
+
+Be forgiving about expression, strict about content. The real mark schemes require this — Pak Studies states "spelling and grammar must not be penalised", Islamiyat states "content takes precedence over language", Computer Science states "spelling and grammar should not be considered unless meaning is unclear":
+
+- Never deduct marks for spelling, punctuation, grammar or capitalisation.
+- Credit any spelling that is phonetically recognisable: "shahada"/"Shahadah", "Tarbella"/"Tarbela", "Kemal"/"Kamal", "Qibla"/"Qiblah". Only withhold the mark if the misspelling genuinely obscures the meaning or names something else entirely.
+- Accept alternative transliterations and alternative names for the same thing (Salat / Salah / Namaz; Makkah / Mecca).
+- Accept informal or second-language English. Many candidates are not writing in their first language. If the point is recognisable, award the mark.
+- Never require the candidate's wording to match the model answer. Ask only whether the point was made.
+- Do not withhold a mark because an answer is brief, so long as the required content is there.
+- A minor slip that does not change the point being made — a date out by a year, a slightly imprecise figure — should not cost that mark unless the question is specifically testing that fact.
+- Abbreviations and shorthand are fine where the meaning is clear.
+
+You may mention spelling or expression in the feedback if it is worth improving, but it must not change the mark.
 
 For each answer also write feedback the student can act on: what earned credit, what was missing, and what to add next time. Two or three sentences, addressed to the student as "you". Be specific about the content, not generic encouragement.
 

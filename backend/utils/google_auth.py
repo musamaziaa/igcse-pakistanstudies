@@ -18,7 +18,11 @@ from fastapi import Header, HTTPException
 from google.auth.transport import requests as google_requests
 from google.oauth2 import id_token
 
-load_dotenv()
+# Load the repo-root .env explicitly: a bare load_dotenv() searches upward from
+# the current working directory, which is not the repo root on PythonAnywhere.
+load_dotenv(os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), ".env"
+))
 
 logger = logging.getLogger("nur-api")
 
