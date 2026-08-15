@@ -37,6 +37,9 @@ import { GoogleLogin } from '@react-oauth/google';
 import * as htmlToImage from 'html-to-image';
 
 const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000";
+// AI marking runs as a Vercel serverless function, same origin in production.
+// Override for local dev (e.g. `vercel dev` on another port).
+const GRADER_URL = import.meta.env.VITE_GRADER_URL || "/api/grade";
 
 // --- Google Auth Types & Helpers ---
 interface GoogleUser {
@@ -44,6 +47,8 @@ interface GoogleUser {
   name: string;       // display name
   email: string;
   picture: string;    // profile photo URL
+  token: string;      // the raw Google ID token — the backend verifies its signature
+  exp: number;        // token expiry (unix seconds); Google IDs last ~1 hour
 }
 
 const STORAGE_KEY = 'nur_academy_user';
@@ -64,7 +69,15 @@ function decodeJwt(token: string) {
 function loadUser(): GoogleUser | null {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : null;
+    if (!raw) return null;
+    const stored = JSON.parse(raw) as GoogleUser;
+    // A stored token past its expiry is useless — every request would 401, so
+    // treat it as signed out and make the user sign in again.
+    if (!stored.token || !stored.exp || stored.exp * 1000 <= Date.now()) {
+      localStorage.removeItem(STORAGE_KEY);
+      return null;
+    }
+    return stored;
   } catch { return null; }
 }
 
@@ -74,6 +87,16 @@ function saveUser(user: GoogleUser) {
 
 function clearUser() {
   localStorage.removeItem(STORAGE_KEY);
+}
+
+// Google ID tokens are short-lived (~1h). Treat an expired one as signed out
+// rather than firing requests the backend will reject.
+function tokenValid(user: GoogleUser | null): boolean {
+  return !!user?.token && !!user.exp && user.exp * 1000 > Date.now();
+}
+
+function authHeaders(user: GoogleUser | null): Record<string, string> {
+  return tokenValid(user) ? { Authorization: `Bearer ${user!.token}` } : {};
 }
 
 interface MemCard {
@@ -87,6 +110,21 @@ interface MemCard {
   arabic?: string;
   lines: string[];
   tier_label?: string;
+}
+
+// One graded question from /exam/evaluate. MCQs come back graded_by "auto";
+// written answers are "ai" when Claude marked them, "ungraded" when it couldn't.
+interface QuestionResult {
+  question: string;
+  student_answer: string;
+  correct_answer: string;
+  marks: number;
+  marks_earned: number;
+  correct: boolean;
+  graded_by: 'auto' | 'ai' | 'ungraded';
+  feedback: string;
+  topic: string;
+  section: string;
 }
 
 
@@ -245,15 +283,28 @@ export default function App() {
       name: profile.name,
       email: profile.email,
       picture: profile.picture,
+      token: credentialResponse.credential,
+      exp: profile.exp,
     };
     saveUser(gUser);
     setUser(gUser);
     // Sync profile to backend
     fetch(`${API_BASE}/api/users/${profile.sub}/profile`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${credentialResponse.credential}` },
       body: JSON.stringify({ name: profile.name, email: profile.email, picture: profile.picture }),
     }).catch(() => {});
+  };
+
+  // A rejected token (expired, or not ours) means the session is over.
+  const handleAuthFailure = (res: Response): boolean => {
+    if (res.status === 401 || res.status === 403) {
+      clearUser();
+      setUser(null);
+      alert('Your sign-in has expired. Please sign in again to save your progress.');
+      return true;
+    }
+    return false;
   };
 
   const handleLogout = useCallback(() => {
@@ -298,6 +349,7 @@ export default function App() {
   const [sessionStartTime, setSessionStartTime] = useState<number>(0);
   const [examStartTime, setExamStartTime] = useState<number>(0);
   const [examElapsed, setExamElapsed] = useState<number>(0);
+  const [submitting, setSubmitting] = useState<boolean>(false);
   const [progressData, setProgressData] = useState<any>(null);
   const [selectedDay, setSelectedDay] = useState<string | null>(null);
   const [sessionResult, setSessionResult] = useState<{
@@ -311,6 +363,11 @@ export default function App() {
     totalMarks?: number;
     percentage?: number;
     cardDetails?: Array<{title: string; accuracy_pct: number; typo_count: number; time_seconds: number}>;
+    questionResults?: QuestionResult[];
+    objective?: {score: number; total: number};
+    written?: {score: number; total: number};
+    ungradedMarks?: number;
+    aiGrading?: {status: string; detail: string};
   } | null>(null);
 
   const shareOnWhatsApp = async () => {
@@ -446,7 +503,7 @@ export default function App() {
   // Fetch progress data
   useEffect(() => {
     if (view === 'progress' && user && activeSubject) {
-      fetch(`${API_BASE}/api/users/${user.sub}/${activeSubject}/progress`)
+      fetch(`${API_BASE}/api/users/${user.sub}/${activeSubject}/progress`, { headers: authHeaders(user) })
         .then(r => r.ok ? r.json() : null)
         .then(d => { if (d) setProgressData(d); })
         .catch(() => {});
@@ -485,18 +542,57 @@ export default function App() {
     }
   };
 
+  // Ask the Vercel grading function to mark the written answers. The FastAPI
+  // backend can't call Anthropic directly on free PythonAnywhere (outbound
+  // allowlist), so grading happens here and the marks travel with the
+  // submission. Returns null if there's nothing to grade or grading failed —
+  // the backend then reports those questions as ungraded rather than wrong.
+  const gradeWrittenAnswers = async (): Promise<Record<string, unknown> | null> => {
+    const items = questions
+      .map((q, i) => ({ q, i }))
+      .filter(({ q }) => String(q.type || 'mcq').toLowerCase() !== 'mcq')
+      .map(({ q, i }) => ({
+        index: i,
+        question: q.question || '',
+        type: String(q.type || 'written').toLowerCase(),
+        marks: q.marks ?? 1,
+        model_answer: q.model_answer || q.correct_answer || '',
+        student_answer: answers[i] || '',
+        topic: q.topic_title || q.topic || q.surah_name || '',
+      }));
+    if (items.length === 0) return null;
+
+    try {
+      const res = await fetch(GRADER_URL, {
+        method: 'POST',
+        // The grading endpoint costs money per call, so it requires a signed-in
+        // user. Without a valid token it returns 403 and answers stay unmarked.
+        headers: { 'Content-Type': 'application/json', ...authHeaders(user) },
+        body: JSON.stringify({ subject: activeSubject, items }),
+      });
+      if (!res.ok) return null;
+      const data = await res.json();
+      return data.results ?? null;
+    } catch {
+      return null;
+    }
+  };
+
   const submitExam = async () => {
-    if (!activeSubject) return;
+    if (!activeSubject || submitting) return;
+    setSubmitting(true);
     const realTime = Math.round((Date.now() - examStartTime) / 1000);
     const endpoint = user
       ? `${API_BASE}/api/users/${user.sub}/${activeSubject}/exam/evaluate`
       : `${API_BASE}/api/${activeSubject}/exam/evaluate`;
     try {
+      const aiMarks = await gradeWrittenAnswers();
       const res = await fetch(endpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ student_name: studentName, questions, answers, time_taken: realTime })
+        headers: { "Content-Type": "application/json", ...authHeaders(user) },
+        body: JSON.stringify({ student_name: studentName, questions, answers, time_taken: realTime, ai_marks: aiMarks })
       });
+      if (handleAuthFailure(res)) return;
       const data = await res.json();
       setExamStartTime(0);
       setSessionResult({
@@ -507,10 +603,17 @@ export default function App() {
         score: data.score,
         totalMarks: data.total,
         percentage: data.percentage,
+        questionResults: data.question_results,
+        objective: data.objective,
+        written: data.written,
+        ungradedMarks: data.ungraded_marks,
+        aiGrading: data.ai_grading,
       });
       setView('session_result');
     } catch {
       alert("Failed to submit exam.");
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -624,7 +727,7 @@ export default function App() {
     };
     await fetch(endpoint, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...authHeaders(user) },
       body: JSON.stringify(body),
     }).catch(() => {});
     setIsMemStarted(false);
@@ -860,7 +963,7 @@ export default function App() {
                 </div>
                 <div className="flex justify-between">
                   <button disabled={currentQIdx === 0} onClick={() => setCurrentQuestion(currentQIdx - 1)} className="px-8 py-3 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 hover:bg-slate-800 hover:text-white font-bold transition-all disabled:opacity-50">Previous</button>
-                  {currentQIdx === questions.length - 1 ? <button onClick={submitExam} className="px-12 py-3 rounded-xl bg-emerald-600 text-white font-bold border-b-4 border-emerald-800">Submit</button> : <button onClick={() => setCurrentQuestion(currentQIdx + 1)} className="px-12 py-3 rounded-xl bg-emerald-600 text-white font-bold border-b-4 border-emerald-800">Next</button>}
+                  {currentQIdx === questions.length - 1 ? <button onClick={submitExam} disabled={submitting} className="px-12 py-3 rounded-xl bg-emerald-600 text-white font-bold border-b-4 border-emerald-800 disabled:opacity-60 disabled:cursor-not-allowed">{submitting ? "Marking your answers…" : "Submit"}</button> : <button onClick={() => setCurrentQuestion(currentQIdx + 1)} className="px-12 py-3 rounded-xl bg-emerald-600 text-white font-bold border-b-4 border-emerald-800">Next</button>}
                 </div>
               </div>
               <aside className="lg:col-span-4 bg-slate-900 border border-slate-800 rounded-3xl p-6 h-fit sticky top-24">
@@ -1248,6 +1351,60 @@ export default function App() {
                             <span className="text-slate-500">{c.typo_count} typos</span>
                             <span className="text-slate-500">{c.time_seconds}s</span>
                           </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Marked answers + AI feedback for Exams */}
+                {sessionResult.type === 'exam' && sessionResult.questionResults && sessionResult.questionResults.length > 0 && (
+                  <div className="w-full bg-slate-900 border border-slate-800 rounded-2xl p-5 text-left z-10">
+                    <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-3">Marked Answers</h3>
+
+                    {/* Objective vs written split — makes clear which marks came from where */}
+                    <div className="grid grid-cols-2 gap-2 mb-4">
+                      <div className="p-3 bg-slate-950 rounded-xl border border-slate-800/50">
+                        <p className="text-xs font-bold text-slate-500 uppercase tracking-wide">Multiple Choice</p>
+                        <p className="text-lg font-black text-white">{sessionResult.objective?.score ?? 0} / {sessionResult.objective?.total ?? 0}</p>
+                      </div>
+                      <div className="p-3 bg-slate-950 rounded-xl border border-slate-800/50">
+                        <p className="text-xs font-bold text-slate-500 uppercase tracking-wide">Written</p>
+                        <p className="text-lg font-black text-white">{sessionResult.written?.score ?? 0} / {sessionResult.written?.total ?? 0}</p>
+                      </div>
+                    </div>
+
+                    {sessionResult.aiGrading && sessionResult.aiGrading.status !== 'ok' && (
+                      <div className="mb-4 p-3 rounded-xl bg-amber-950/40 border border-amber-500/30">
+                        <p className="text-xs font-bold text-amber-300 uppercase tracking-wide mb-1">
+                          {sessionResult.ungradedMarks ?? 0} marks not assessed
+                        </p>
+                        <p className="text-sm text-amber-100/80">
+                          {sessionResult.aiGrading.detail} Your percentage covers only the questions that were marked.
+                        </p>
+                      </div>
+                    )}
+
+                    <div className="grid gap-3">
+                      {sessionResult.questionResults.map((qr, i) => (
+                        <div key={i} className={`p-4 rounded-xl border ${qr.graded_by === 'ungraded' ? 'bg-slate-950 border-slate-700' : qr.marks_earned === qr.marks ? 'bg-emerald-950/20 border-emerald-500/30' : qr.marks_earned > 0 ? 'bg-amber-950/20 border-amber-500/30' : 'bg-red-950/20 border-red-500/30'}`}>
+                          <div className="flex items-start justify-between gap-3 mb-2">
+                            <p className="text-sm font-medium text-slate-200 flex-1">{i + 1}. {qr.question}</p>
+                            <span className={`text-xs font-black px-2 py-1 rounded-lg shrink-0 ${qr.graded_by === 'ungraded' ? 'bg-slate-800 text-slate-400' : qr.marks_earned === qr.marks ? 'bg-emerald-500/20 text-emerald-300' : qr.marks_earned > 0 ? 'bg-amber-500/20 text-amber-300' : 'bg-red-500/20 text-red-300'}`}>
+                              {qr.graded_by === 'ungraded' ? '—' : qr.marks_earned} / {qr.marks}
+                            </span>
+                          </div>
+                          {qr.student_answer ? (
+                            <p className="text-xs text-slate-400 mb-2">Your answer: {qr.student_answer}</p>
+                          ) : (
+                            <p className="text-xs text-slate-500 italic mb-2">Left blank</p>
+                          )}
+                          {qr.feedback && (
+                            <p className="text-sm text-slate-300 leading-relaxed border-l-2 border-slate-700 pl-3">{qr.feedback}</p>
+                          )}
+                          {qr.graded_by === 'auto' && !qr.correct && (
+                            <p className="text-sm text-emerald-400">Correct answer: {qr.correct_answer}</p>
+                          )}
                         </div>
                       ))}
                     </div>

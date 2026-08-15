@@ -26,3 +26,7 @@ backend/data/students/
 
 # Large source reference material (kept locally; app serves JSON, not PDFs)
 backend/data/source_docs/
+
+# Exam-board source PDFs (24MB, only needed to rebuild grading guides).
+# The distilled grading_guide.md files ARE committed — those are what ship.
+backend/data/*/source_docs/

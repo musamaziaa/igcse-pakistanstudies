@@ -125,8 +125,10 @@ Current relevant facts:
 
 ---
 
-### I2. Free-text answers + AI grading (Sections B/C) — `TODO`
-**What's needed:** Only MCQs are auto-graded; short/scenario answers score 0 and have no input field. Claude is already wired (`claude_client.py`) but unused at runtime. This is the natural differentiator.
+### I2. Free-text answers + AI grading (Sections B/C) — `SHIPPED (Option 1)`
+**Shipped:** `backend/utils/ai_grader.py` marks every non-MCQ answer with Claude (`claude-opus-5`, structured outputs, one API call per submission) against the question's `model_answer` and mark allocation, returning partial credit plus per-question feedback. `grade_submission()` in `main.py` is the single grading path for both evaluate endpoints. When the grader is unavailable (no API key, API error, refusal) written marks are held **out of the denominator** and reported as `ungraded_marks` — the percentage never silently scores essays zero. Still outstanding from the original plan: the per-user usage cap and rate limiting (R6), and Option 2 (self-marking) as the budget-exhausted fallback.
+
+**Original analysis:** Only MCQs were auto-graded; short/scenario answers scored 0 while still counting toward the total, so the maximum achievable score was 13.7% (Islamiyat) down to 0% (CS/ICT, which have no MCQs at all).
 
 **Options:**
 1. **LLM-graded free text:** add a textarea; grade the answer against `model_answer` + marks via Claude, returning a score + rubric feedback.

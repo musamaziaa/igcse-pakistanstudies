@@ -17,9 +17,12 @@ if PROJECT_ROOT not in sys.path:
 if CURRENT_DIR not in sys.path:
     sys.path.insert(0, CURRENT_DIR)
 
-from fastapi import FastAPI, HTTPException
+from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+
+from utils.ai_grader import GradingUnavailable, grade_written_answers
+from utils.google_auth import require_user
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO)
@@ -29,10 +32,21 @@ app = FastAPI(title="Nur Academy API", description="Backend for IGCSE Islamiyat 
 
 # Configure CORS
 origins = [
+    # Vite dev server. package.json's "dev" script uses port 3000; 5173 is
+    # Vite's default and what start_nur_academy.sh advertises. Allow both.
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://al-nuracademy.vercel.app"
 ]
+
+# Add deployed frontends without editing this file: set ALLOWED_ORIGINS to a
+# comma-separated list (e.g. "https://my-app.vercel.app") in the host's
+# environment. Vercel gives every deployment a unique preview URL, so add the
+# production domain here and use Vercel's domain settings for the rest.
+_extra_origins = os.getenv("ALLOWED_ORIGINS", "")
+origins += [o.strip() for o in _extra_origins.split(",") if o.strip()]
 
 app.add_middleware(
     CORSMiddleware,
@@ -66,6 +80,14 @@ class ExamSubmission(BaseModel):
     questions: List[Dict[str, Any]]
     answers: Dict[str, str] # Note: JSON keys are strings
     time_taken: int
+    # Marks for written answers graded elsewhere — the Vercel /api/grade
+    # function, used when this backend cannot reach api.anthropic.com itself
+    # (free PythonAnywhere restricts outbound traffic to an allowlist).
+    # Shape: {"<question index>": {"marks_awarded": int, "feedback": str}}.
+    # Trusted as supplied: values are clamped to the question's marks but the
+    # client could still under-report. Acceptable for a self-study app; if this
+    # ever backs a real grade, the backend must do the grading itself.
+    ai_marks: Optional[Dict[str, Dict[str, Any]]] = None
 
 # ── Per-User Progress Models ─────────────────────────────────────────────────
 
@@ -207,16 +229,30 @@ async def generate_exam(subject: str, setup: ExamSetup):
         "count": len(selected)
     }
 
-@app.post("/api/{subject}/exam/evaluate")
-async def evaluate_exam(subject: str, submission: ExamSubmission):
+async def grade_submission(subject: str, submission: ExamSubmission) -> Dict[str, Any]:
+    """Grade one exam submission.
+
+    MCQs are graded here by comparing the student's option letter to the answer
+    key. Every other question type has no machine-checkable answer, so it is
+    sent to Claude with its mark scheme (one API call for the whole paper) and
+    comes back with partial credit plus written feedback.
+
+    If the AI grader is unavailable, written questions are reported as
+    `graded_by: "ungraded"` and their marks are held out of `total` — so the
+    percentage always describes the marks that were actually assessed rather
+    than silently scoring every essay zero.
+    """
     score = 0
     total_marks = 0
+    ungraded_marks = 0
+    objective = {"score": 0, "total": 0}
+    written = {"score": 0, "total": 0}
     question_results = []
     section_scores = {}
+    written_items = []
 
     for i, q in enumerate(submission.questions):
         marks = q.get("marks", 1)
-        total_marks += marks
         student_ans = submission.answers.get(str(i), "")
         correct_ans = q.get("correct_answer", q.get("model_answer", ""))
         qtype = q.get("type", "mcq").lower()
@@ -225,35 +261,122 @@ async def evaluate_exam(subject: str, submission: ExamSubmission):
 
         if section not in section_scores:
             section_scores[section] = {"score": 0, "total": 0, "source": source}
-        section_scores[section]["total"] += marks
 
-        if qtype == "mcq":
-            correct = student_ans.strip().upper() == str(correct_ans).strip().upper()
-        else:
-            correct = False
+        topic_label = (q.get("surah_name") or q.get("topic") or q.get("hadith_reference")
+                       or q.get("topic_name") or source)
 
-        if correct:
-            score += marks
-            section_scores[section]["score"] += marks
-
-        topic_label = q.get("surah_name") or q.get("topic") or q.get("hadith_reference") or q.get("topic_name") or source
-        question_results.append({
+        entry = {
             "question": q.get("question", ""),
             "student_answer": student_ans,
             "correct_answer": correct_ans,
-            "correct": correct,
-            "marks_earned": marks if correct else 0,
-            "topic": topic_label
-        })
+            "marks": marks,
+            "marks_earned": 0,
+            "correct": False,
+            "graded_by": "auto",
+            "feedback": "",
+            "topic": topic_label,
+            "section": section,
+        }
+
+        if qtype == "mcq":
+            entry["correct"] = student_ans.strip().upper() == str(correct_ans).strip().upper()
+            entry["marks_earned"] = marks if entry["correct"] else 0
+            score += entry["marks_earned"]
+            total_marks += marks
+            objective["score"] += entry["marks_earned"]
+            objective["total"] += marks
+            section_scores[section]["score"] += entry["marks_earned"]
+            section_scores[section]["total"] += marks
+        else:
+            # Marks and section totals are added after grading, so an ungraded
+            # question never inflates the denominator.
+            entry["graded_by"] = "ai"
+            written_items.append({
+                "index": i,
+                "question": q.get("question", ""),
+                "type": qtype,
+                "marks": marks,
+                "model_answer": q.get("model_answer", "") or correct_ans,
+                "student_answer": student_ans,
+                "topic": topic_label,
+            })
+
+        question_results.append(entry)
+
+    grading_status = {"status": "ok", "detail": ""}
+    graded = {}
+    if written_items:
+        if submission.ai_marks:
+            # Already marked by the Vercel function — trust it rather than
+            # calling Anthropic from here (this host may not be able to).
+            valid = {it["index"]: it["marks"] for it in written_items}
+            for key, row in submission.ai_marks.items():
+                try:
+                    idx = int(key)
+                except (TypeError, ValueError):
+                    continue
+                if idx not in valid or not isinstance(row, dict):
+                    continue
+                awarded = max(0, min(int(row.get("marks_awarded", 0)), valid[idx]))
+                graded[idx] = {
+                    "marks_awarded": awarded,
+                    "feedback": str(row.get("feedback", "")).strip(),
+                }
+            grading_status = {"status": "ok", "detail": "Graded by the AI marking service."}
+        else:
+            try:
+                graded = await grade_written_answers(subject, written_items)
+            except GradingUnavailable as exc:
+                grading_status = {"status": "unavailable", "detail": str(exc)}
+                logger.warning("Written answers left ungraded: %s", exc)
+
+    for item in written_items:
+        i = item["index"]
+        entry = question_results[i]
+        marks = item["marks"]
+        section = entry["section"]
+        if i in graded:
+            earned = graded[i]["marks_awarded"]
+            entry["marks_earned"] = earned
+            entry["feedback"] = graded[i]["feedback"]
+            entry["correct"] = earned == marks
+            score += earned
+            total_marks += marks
+            written["score"] += earned
+            written["total"] += marks
+            section_scores[section]["score"] += earned
+            section_scores[section]["total"] += marks
+        else:
+            entry["graded_by"] = "ungraded"
+            entry["feedback"] = (
+                "This answer was not marked. Compare it against the model answer yourself."
+            )
+            ungraded_marks += marks
+            if grading_status["status"] == "ok":
+                grading_status = {
+                    "status": "partial",
+                    "detail": "Some written answers could not be marked.",
+                }
 
     percentage = round((score / max(total_marks, 1)) * 100, 1)
-    result = {
-        "student": submission.student_name,
+    return {
         "score": score,
         "total": total_marks,
         "percentage": percentage,
-        "question_results": question_results
+        "ungraded_marks": ungraded_marks,
+        "objective": objective,
+        "written": written,
+        "section_scores": section_scores,
+        "ai_grading": grading_status,
+        "question_results": question_results,
     }
+
+
+@app.post("/api/{subject}/exam/evaluate")
+async def evaluate_exam(subject: str, submission: ExamSubmission):
+    result = await grade_submission(subject, submission)
+    result["student"] = submission.student_name
+    score, total_marks, percentage = result["score"], result["total"], result["percentage"]
 
     # Save logic
     student_dir = get_student_path(submission.student_name, subject)
@@ -340,7 +463,7 @@ def compute_stats(memorize_log: list, exam_log: list) -> dict:
 # ── Per-User Progress Endpoints ──────────────────────────────────────────────
 
 @app.post("/api/users/{user_id}/profile")
-async def upsert_user_profile(user_id: str, profile: UserProfile):
+async def upsert_user_profile(user_id: str, profile: UserProfile, _auth: str = Depends(require_user)):
     user_dir = get_user_dir(user_id)
     os.makedirs(user_dir, exist_ok=True)
     profile_path = os.path.join(user_dir, "profile.json")
@@ -364,7 +487,7 @@ async def upsert_user_profile(user_id: str, profile: UserProfile):
     return {"status": "success"}
 
 @app.get("/api/users/{user_id}/{subject}/progress")
-async def get_user_progress(user_id: str, subject: str):
+async def get_user_progress(user_id: str, subject: str, _auth: str = Depends(require_user)):
     user_dir = get_user_dir(user_id)
     mem_path = os.path.join(user_dir, subject, "memorize_log.json")
     exam_path = os.path.join(user_dir, subject, "exam_log.json")
@@ -382,7 +505,7 @@ async def get_user_progress(user_id: str, subject: str):
     }
 
 @app.post("/api/users/{user_id}/{subject}/memorize-attempt")
-async def log_user_memorize_attempt(user_id: str, subject: str, attempt: MemorizeAttemptV2):
+async def log_user_memorize_attempt(user_id: str, subject: str, attempt: MemorizeAttemptV2, _auth: str = Depends(require_user)):
     user_dir = get_user_dir(user_id)
     subject_dir = os.path.join(user_dir, subject)
     os.makedirs(subject_dir, exist_ok=True)
@@ -426,47 +549,13 @@ async def log_user_memorize_attempt(user_id: str, subject: str, attempt: Memoriz
     return {"status": "success", "session_id": entry["session_id"]}
 
 @app.post("/api/users/{user_id}/{subject}/exam/evaluate")
-async def evaluate_user_exam(user_id: str, subject: str, submission: ExamSubmission):
+async def evaluate_user_exam(user_id: str, subject: str, submission: ExamSubmission, _auth: str = Depends(require_user)):
     """Same grading logic as the original evaluate, but saves to user-keyed storage."""
-    score = 0
-    total_marks = 0
-    question_results = []
-
-    for i, q in enumerate(submission.questions):
-        marks = q.get("marks", 1)
-        total_marks += marks
-        student_ans = submission.answers.get(str(i), "")
-        correct_ans = q.get("correct_answer", q.get("model_answer", ""))
-        qtype = q.get("type", "mcq").lower()
-
-        if qtype == "mcq":
-            correct = student_ans.strip().upper() == str(correct_ans).strip().upper()
-        else:
-            correct = False
-
-        if correct:
-            score += marks
-
-        topic_label = q.get("surah_name") or q.get("topic") or q.get("hadith_reference") or q.get("topic_name") or ""
-        question_results.append({
-            "question": q.get("question", ""),
-            "student_answer": student_ans,
-            "correct_answer": correct_ans,
-            "correct": correct,
-            "marks_earned": marks if correct else 0,
-            "topic": topic_label,
-        })
-
-    percentage = round((score / max(total_marks, 1)) * 100, 1)
-    result = {
-        "attempt_id": str(uuid.uuid4()),
-        "date": datetime.now().isoformat(),
-        "score": score,
-        "total": total_marks,
-        "percentage": percentage,
-        "time_taken": submission.time_taken,
-        "question_results": question_results,
-    }
+    result = await grade_submission(subject, submission)
+    result["attempt_id"] = str(uuid.uuid4())
+    result["date"] = datetime.now().isoformat()
+    result["time_taken"] = submission.time_taken
+    score, total_marks, percentage = result["score"], result["total"], result["percentage"]
 
     # Save to user-keyed storage
     user_dir = get_user_dir(user_id)
