@@ -149,7 +149,9 @@ def _build_prompt(subject: str, items: list) -> str:
         if it.get("topic"):
             lines.append(f"Topic: {it['topic']}")
         lines.append(f"Question: {it['question']}")
-        lines.append(f"Mark scheme / model answer: {it['model_answer'] or '(none supplied)'}")
+        lines.append(f"Model answer (an exemplar response, not the only acceptable one): {it['model_answer'] or '(none supplied)'}")
+        if it.get("mark_scheme"):
+            lines.append(f"Official mark scheme for this question: {it['mark_scheme']}")
         student = (it.get("student_answer") or "").strip()
         lines.append(f"Student's answer: {student if student else '(left blank)'}")
         lines.append("")

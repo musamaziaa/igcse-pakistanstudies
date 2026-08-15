@@ -20,8 +20,9 @@
     "arabic_text": "",
     "transliteration": "",
     "english_translation": "",
-    "model_answer": "Level 1 (1-2): Basic mention that it was a battle between Muslims and Quraysh. Level 2 (3-4): Numbers — 313 Muslims vs ~1000 Quraysh; Muslim victory despite being outnumbered. Level 3 (5-6): Detailed account including: interception of Quraysh caravan, key leaders (Abu Jahl killed), divine assistance (angels), 70 Quraysh killed and 70 captured, significance as Allah's help to believers.",
-    "marks": 6
+    "model_answer": "The Battle of Badr took place in 2 AH (624 CE) and was the first major battle between the Muslims and the Quraysh of Makkah. It began when the Muslims set out to intercept a Quraysh trade caravan led by Abu Sufyan; the caravan escaped, but a Quraysh army of around 1,000 men marched out to fight. The Muslims numbered only 313 and were poorly equipped in comparison. The fighting opened with single combat, and despite being heavily outnumbered the Muslims won a decisive victory. About 70 of the Quraysh were killed, including their leader Abu Jahl, and around 70 were taken prisoner. The Qur'an records that Allah sent angels to assist the believers. The victory established the Muslims as a real power in Arabia and was understood as clear proof of Allah's help to those who believe.",
+    "marks": 6,
+    "mark_scheme": "Level 1 (1-2): Basic mention that it was a battle between Muslims and Quraysh. Level 2 (3-4): Numbers — 313 Muslims vs ~1000 Quraysh; Muslim victory despite being outnumbered. Level 3 (5-6): Detailed account including: interception of Quraysh caravan, key leaders (Abu Jahl killed), divine assistance (angels), 70 Quraysh killed and 70 captured, significance as Allah's help to believers."
   },
   {
     "section": "C",
@@ -44,8 +45,9 @@
     "arabic_text": "فَتْح مَكَّة",
     "transliteration": "Fath Makkah",
     "english_translation": "Conquest of Makkah",
-    "model_answer": "Level 1 (1-2): Basic mention of the conquest. Level 2 (3-4): Description of events — 10,000 Muslim army, peaceful entry, Prophet's forgiveness. Level 3 (5-6): Significance — destruction of idols from Kaaba, mass conversion of Makkans, fulfilment of Quranic promise. Level 4 (7-8): Critical evaluation of its impact on Arabian Peninsula unity, consolidation of Islamic state, demonstration of Islamic values of mercy and forgiveness, and its lasting spiritual significance.",
-    "marks": 8
+    "model_answer": "The Conquest of Makkah took place in 8 AH (630 CE), after the Quraysh broke the Treaty of Hudaibiya. The Prophet (pbuh) marched on the city with an army of about 10,000 and entered almost without bloodshed. Instead of taking revenge, he declared a general amnesty and forgave even those who had persecuted the Muslims for years. The idols surrounding the Kaaba were destroyed and it was restored to the worship of one God, fulfilling the Qur'anic promise of a manifest victory. The conquest was of great importance: it removed the main centre of opposition to Islam, and the Makkans accepted Islam in large numbers. Its significance reaches further still — with Makkah secured, the tribes of Arabia began to submit, allowing the unification of the peninsula and the consolidation of the Islamic state. The Prophet's forgiveness also demonstrated the moral character of Islam, and arguably had a more lasting impact than the military victory itself. Overall the conquest was the decisive turning point that transformed Islam from a persecuted movement into the dominant force in Arabia.",
+    "marks": 8,
+    "mark_scheme": "Level 1 (1-2): Basic mention of the conquest. Level 2 (3-4): Description of events — 10,000 Muslim army, peaceful entry, Prophet's forgiveness. Level 3 (5-6): Significance — destruction of idols from Kaaba, mass conversion of Makkans, fulfilment of Quranic promise. Level 4 (7-8): Critical evaluation of its impact on Arabian Peninsula unity, consolidation of Islamic state, demonstration of Islamic values of mercy and forgiveness, and its lasting spiritual significance."
   },
   {
     "section": "C",

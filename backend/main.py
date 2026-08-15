@@ -297,6 +297,7 @@ async def grade_submission(subject: str, submission: ExamSubmission) -> Dict[str
                 "type": qtype,
                 "marks": marks,
                 "model_answer": q.get("model_answer", "") or correct_ans,
+                "mark_scheme": q.get("mark_scheme", ""),
                 "student_answer": student_ans,
                 "topic": topic_label,
             })

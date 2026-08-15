@@ -557,6 +557,7 @@ export default function App() {
         type: String(q.type || 'written').toLowerCase(),
         marks: q.marks ?? 1,
         model_answer: q.model_answer || q.correct_answer || '',
+        mark_scheme: q.mark_scheme || '',
         student_answer: answers[i] || '',
         topic: q.topic_title || q.topic || q.surah_name || '',
       }));
