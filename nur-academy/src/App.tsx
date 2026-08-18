@@ -99,6 +99,10 @@ function authHeaders(user: GoogleUser | null): Record<string, string> {
   return tokenValid(user) ? { Authorization: `Bearer ${user!.token}` } : {};
 }
 
+// Memorize typing is case-insensitive: typing "A" for "a" is not a typo.
+const charMatches = (typed: string, expected: string) =>
+  typed.toLowerCase() === expected.toLowerCase();
+
 interface MemCard {
   id: string;
   section?: string;
@@ -655,7 +659,7 @@ export default function App() {
         memQueue[currentMemIdx].lines.forEach((line: string, i: number) => {
           const t = newTyped[i] || '';
           for (let c = 0; c < Math.min(t.length, line.length); c++) {
-            if (t[c] !== line[c]) typos++;
+            if (!charMatches(t[c], line[c])) typos++;
           }
         });
         if (typos === 0) {
@@ -673,7 +677,7 @@ export default function App() {
       for (let c = 0; c < line.length; c++) {
         totalChars++;
         if (c < typed.length) {
-          if (typed[c] === line[c]) correctChars++;
+          if (charMatches(typed[c], line[c])) correctChars++;
           else typos++;
         }
       }
@@ -1039,7 +1043,7 @@ export default function App() {
                                 {line.split("").map((char, charIdx) => {
                                   let color = "text-slate-400"; // Darkened from slate-300
                                   if (charIdx < typed.length) {
-                                    color = typed[charIdx] === char ? "text-emerald-400 font-bold" : "text-red-500 bg-red-100 rounded-[2px]";
+                                    color = charMatches(typed[charIdx], char) ? "text-emerald-400 font-bold" : "text-red-500 bg-red-100 rounded-[2px]";
                                   } else if (isActive && charIdx === typed.length) {
                                     color = "text-emerald-400 border-l-2 border-emerald-600 animate-pulse font-black";
                                   }
