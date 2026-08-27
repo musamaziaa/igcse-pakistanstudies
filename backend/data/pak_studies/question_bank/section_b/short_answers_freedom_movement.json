@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Explain the main causes of the decline of the Mughal Empire. [5]",
+      "model_answer": "Weak and incompetent successors after Aurangzeb lacked the ability to hold the empire together. Constant wars of succession among princes drained the treasury and divided the nobility. The empire had expanded too far to be governed effectively from Delhi, so provincial governors became independent in practice. Aurangzeb's long and costly Deccan campaigns exhausted state finances and weakened the army. Invasions by Nadir Shah and Ahmad Shah Abdali destroyed the empire's prestige and wealth, while the growing commercial and military power of the East India Company filled the vacuum that was left.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "What were the main provisions of the Morley-Minto Reforms of 1909, and why were they important for Muslims? [5]",
+      "model_answer": "The reforms enlarged the legislative councils at the centre and in the provinces and allowed some elected members for the first time. Their most important feature for Muslims was the granting of separate electorates, so that Muslims voted for Muslim candidates in reserved seats. Muslims were also given weightage, meaning representation greater than their share of the population in some provinces. This mattered because it accepted the Muslim League's central demand made at Simla in 1906, and gave official recognition to the idea that Muslims were a distinct political community rather than a minority within a Hindu majority. This principle underpinned all later constitutional development and led towards the Two-Nation Theory.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Describe the significance of the Lucknow Pact of 1916. [5]",
+      "model_answer": "The Lucknow Pact was an agreement between the All-India Muslim League and the Indian National Congress, and it is the only occasion on which the two parties formally agreed a joint constitutional demand. Congress accepted the principle of separate electorates for Muslims, which was a major concession. Both parties jointly demanded greater self-government from the British. It marked the high point of Hindu-Muslim political unity and made Jinnah known as the Ambassador of Hindu-Muslim Unity. Its long-term significance is that when the spirit of the pact collapsed in the following years, Muslim leaders concluded that agreement with Congress could not be relied upon.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Explain the purpose and outcome of the Round Table Conferences (1930-1932). [5]",
+      "model_answer": "The British called three Round Table Conferences in London to discuss constitutional reform and the future government of India. The First Conference (1930) was attended by Muslim leaders including Jinnah but boycotted by Congress. The Second (1931) was attended by Gandhi for Congress, but it broke down over the question of separate electorates and minority representation. The Third (1932) was poorly attended and achieved little. Allama Iqbal attended the second and third sessions. The conferences failed to produce agreement between the communities, but the discussions did lead directly to the Communal Award and to the Government of India Act 1935.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Why were the elections of 1945-46 a turning point in the movement for Pakistan? [5]",
+      "model_answer": "The elections were fought by the Muslim League on the single issue of Pakistan, so they acted as a referendum on the demand. The League won all thirty Muslim seats in the Central Legislative Assembly and the large majority of Muslim seats in the provincial assemblies. This destroyed the British and Congress claim that the League did not truly represent Indian Muslims. It established Jinnah as the sole spokesman for the Muslim community. From this point the British accepted that no constitutional settlement was possible without League agreement, which made partition far more likely.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Explain the main proposals of the Cabinet Mission Plan (1946) and why it failed. [5]",
+      "model_answer": "The Cabinet Mission proposed a united India with a three-tier structure: a weak central government controlling defence, foreign affairs and communications; groups of provinces with their own subjects; and the provinces themselves. Muslim-majority provinces would form Groups B and C, giving Muslims effective autonomy without a separate state. The plan rejected the demand for a fully sovereign Pakistan. The Muslim League accepted it at first, but withdrew when Congress declared it would be free to alter the grouping arrangements after joining the Constituent Assembly. Because the two parties could not agree on the interpretation, the plan collapsed, and the League turned to Direct Action to press its demand.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Describe the main policies introduced during the government of General Zia-ul-Haq (1977-1988). [5]",
+      "model_answer": "Zia-ul-Haq came to power through a military coup in 1977 and imposed martial law. His central policy was Islamisation: the introduction of the Hudood Ordinances, Islamic penal laws, the Zakat and Ushr system, and the establishment of Federal Shariat Courts. The Objectives Resolution was made a substantive part of the Constitution through the Eighth Amendment in 1985. He held a referendum in 1984 and non-party elections in 1985, and the Eighth Amendment also gave the President power to dismiss elected governments. In foreign policy his government supported the Afghan resistance after the Soviet invasion of 1979, which brought large amounts of American aid but also refugees and weapons into Pakistan.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Assess the contribution of Allama Iqbal to the demand for a separate Muslim state. [5]",
+      "model_answer": "Iqbal gave the demand for a separate homeland its intellectual and philosophical foundation. In his presidential address to the Muslim League at Allahabad in 1930 he proposed the amalgamation of Punjab, Sindh, the North-West Frontier Province and Balochistan into a single Muslim state, the first clear statement of the idea by a major leader. Through his poetry in Urdu and Persian he revived Muslim self-confidence and a sense of separate identity. He argued that Islam was not merely a private religion but a complete social and political order requiring its own territory. He also corresponded with Jinnah and persuaded him to return from London to lead the League, which proved decisive for the movement.",
+      "marks": 5
+    }
+  ]
+}

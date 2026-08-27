@@ -1,0 +1,350 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Qariah",
+      "surah_number": 101,
+      "question": "In Surah Al-Qariah (101), the people on the Day of Judgement are compared to:",
+      "options": {
+        "A": "Scattered moths",
+        "B": "Falling stars",
+        "C": "Dry leaves",
+        "D": "Grains of sand"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Qariah",
+      "surah_number": 101,
+      "question": "In Surah Al-Qariah (101), the mountains on that Day will be like:",
+      "options": {
+        "A": "Molten copper",
+        "B": "Carded wool",
+        "C": "Flowing water",
+        "D": "Broken glass"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Takathur",
+      "surah_number": 102,
+      "question": "According to Surah Al-Takathur (102), what distracts people until they visit the graves?",
+      "options": {
+        "A": "Idol worship",
+        "B": "Competition for worldly increase",
+        "C": "Fear of enemies",
+        "D": "Long journeys"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Asr",
+      "surah_number": 103,
+      "question": "Surah Al-Asr (103) states that all mankind is in loss except those who believe, do righteous deeds and:",
+      "options": {
+        "A": "Give charity and fast",
+        "B": "Perform Hajj and Umrah",
+        "C": "Enjoin truth and enjoin patience",
+        "D": "Migrate for the sake of Allah"
+      },
+      "correct_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Humazah",
+      "surah_number": 104,
+      "question": "In Surah Al-Humazah (104), what is the name of the fire mentioned?",
+      "options": {
+        "A": "Hutamah",
+        "B": "Hawiyah",
+        "C": "Saqar",
+        "D": "Jahim"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Humazah",
+      "surah_number": 104,
+      "question": "Surah Al-Humazah (104) condemns the person who:",
+      "options": {
+        "A": "Slanders others and hoards wealth, counting it",
+        "B": "Refuses to fight in battle",
+        "C": "Breaks his oath",
+        "D": "Denies the Prophets"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Fil",
+      "surah_number": 105,
+      "question": "In Surah Al-Fil (105), what were the birds that attacked the army called?",
+      "options": {
+        "A": "Ababil",
+        "B": "Salwa",
+        "C": "Hudhud",
+        "D": "Ghurab"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Fil",
+      "surah_number": 105,
+      "question": "In Surah Al-Fil (105), the destroyed army is compared to:",
+      "options": {
+        "A": "A withered tree",
+        "B": "Eaten straw",
+        "C": "Scattered dust",
+        "D": "A dried river"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Quraish",
+      "surah_number": 106,
+      "question": "Surah Al-Quraish (106) refers to the caravan journeys of:",
+      "options": {
+        "A": "Spring and autumn",
+        "B": "Winter and summer",
+        "C": "Day and night",
+        "D": "Hajj and Umrah"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Quraish",
+      "surah_number": 106,
+      "question": "According to Surah Al-Quraish (106), the Lord of this House gave the Quraysh two blessings. These were:",
+      "options": {
+        "A": "Wealth and children",
+        "B": "Food against hunger and safety from fear",
+        "C": "Rain and fertile land",
+        "D": "Victory and honour"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Ma'un",
+      "surah_number": 107,
+      "question": "Surah Al-Ma'un (107) warns those who pray but are:",
+      "options": {
+        "A": "Heedless of their prayer and show off",
+        "B": "Late to the mosque",
+        "C": "Poor and weak",
+        "D": "Travelling"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Kauthar",
+      "surah_number": 108,
+      "question": "Surah Al-Kauthar (108) commands the Prophet (PBUH) to:",
+      "options": {
+        "A": "Fast and give charity",
+        "B": "Pray to his Lord and sacrifice",
+        "C": "Migrate to Madinah",
+        "D": "Recite the Quran at night"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Nasr",
+      "surah_number": 110,
+      "question": "Surah Al-Nasr (110) instructs the Prophet (PBUH), after victory comes, to:",
+      "options": {
+        "A": "Glorify his Lord and seek His forgiveness",
+        "B": "Destroy the idols",
+        "C": "Appoint a successor",
+        "D": "Return to Makkah"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Lahab",
+      "surah_number": 111,
+      "question": "In Surah Al-Lahab (111), the wife of Abu Lahab is described as:",
+      "options": {
+        "A": "The carrier of firewood",
+        "B": "The keeper of the well",
+        "C": "The weaver of cloth",
+        "D": "The mother of believers"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Ikhlas",
+      "surah_number": 112,
+      "question": "In Surah Al-Ikhlas (112), what is meant by 'As-Samad'?",
+      "options": {
+        "A": "The Most Merciful",
+        "B": "The Eternal, on whom all depend",
+        "C": "The Creator of all things",
+        "D": "The Forgiving"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Quranic",
+      "surah_name": "Al-Falaq",
+      "surah_number": 113,
+      "question": "Surah Al-Falaq (113) seeks refuge with the Lord of daybreak from all of the following EXCEPT:",
+      "options": {
+        "A": "The evil of the darkening night",
+        "B": "Those who blow on knots",
+        "C": "The envier when he envies",
+        "D": "The whisperer who withdraws"
+      },
+      "correct_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hadith",
+      "hadith_reference": "Sahih Bukhari",
+      "question": "According to the Hadith, the one who strives on behalf of the widow and the poor is like:",
+      "options": {
+        "A": "A pilgrim performing Hajj",
+        "B": "One who fights in the way of Allah",
+        "C": "A scholar of the Quran",
+        "D": "A prophet among his people"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hadith",
+      "hadith_reference": "Sahih Bukhari",
+      "question": "In the Hadith about the caretaker of an orphan, the Prophet (PBUH) indicated their closeness in Paradise by joining:",
+      "options": {
+        "A": "His two palms",
+        "B": "His index and middle fingers",
+        "C": "His thumb and little finger",
+        "D": "Both arms"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hadith",
+      "hadith_reference": "Sahih Bukhari",
+      "question": "According to the Hadith, the best food a person eats is that which:",
+      "options": {
+        "A": "Is given as charity",
+        "B": "He earns by the work of his own hands",
+        "C": "Is shared with a guest",
+        "D": "Is eaten after fasting"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hadith",
+      "hadith_reference": "Sahih Muslim",
+      "question": "According to the Hadith, the world is described as:",
+      "options": {
+        "A": "A prison for the believer and a paradise for the disbeliever",
+        "B": "A garden for the patient",
+        "C": "A road with no end",
+        "D": "A test only for the wealthy"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hadith",
+      "hadith_reference": "Sahih Muslim",
+      "question": "According to the Hadith, Allah does not look at your forms and your wealth, but rather at your:",
+      "options": {
+        "A": "Words and promises",
+        "B": "Hearts and your deeds",
+        "C": "Family and lineage",
+        "D": "Knowledge and learning"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "source_type": "Hadith",
+      "hadith_reference": "Sahih Bukhari",
+      "question": "The Hadith on believing in Allah and the Last Day instructs a person to honour his:",
+      "options": {
+        "A": "Ruler",
+        "B": "Guest",
+        "C": "Teacher",
+        "D": "Elder brother"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    }
+  ]
+}

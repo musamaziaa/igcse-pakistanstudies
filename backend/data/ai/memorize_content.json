@@ -58,6 +58,89 @@
       ]
     },
     {
+      "id": "ai_algorithms",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "foundations",
+      "group_id": "algorithms",
+      "group_label": "Algorithms and Problem Solving",
+      "title": "Searching, Sorting and Representing Algorithms",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "An algorithm is a finite sequence of clear steps that solves a problem.",
+        "Linear search checks each item in turn from the start; best case 1 comparison, worst case n.",
+        "Linear search works on unsorted data; binary search is faster but needs the list sorted first.",
+        "Binary search repeatedly halves the search range, so it is much faster on large sorted lists.",
+        "A sorting algorithm puts items in order, for example bubble sort comparing neighbouring pairs.",
+        "Algorithms can be represented as pseudocode (structured English) or as a flowchart (shapes and arrows).",
+        "Flowchart shapes: oval for start and stop, parallelogram for input and output, rectangle for a process, diamond for a decision.",
+        "Trace the algorithm by stepping through with sample values to check it gives the right answer."
+      ]
+    },
+    {
+      "id": "ai_logic_structures",
+      "section": "Unit 1",
+      "category": "topic",
+      "display_category": "foundations",
+      "group_id": "algorithms",
+      "group_label": "Algorithms and Problem Solving",
+      "title": "Sequence, Selection and Iteration",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "The three logical structures are sequence, selection and iteration.",
+        "Sequence: steps run one after another in the order written.",
+        "Selection: a choice using IF, IF-ELSE or IF-ELIF-ELSE, based on a condition being true or false.",
+        "Iteration: repeating steps, using a FOR loop for a known number of repeats.",
+        "A WHILE loop repeats for as long as a condition stays true, so the count need not be known.",
+        "A condition evaluates to True or False, and that Boolean result decides which branch runs.",
+        "Errors to look for: a loop that never ends, an off-by-one count, or a condition using = instead of ==."
+      ]
+    },
+    {
+      "id": "ai_data_prep",
+      "section": "Unit 2",
+      "category": "topic",
+      "display_category": "machine_learning",
+      "group_id": "data_science",
+      "group_label": "Data Preparation and Cleaning",
+      "title": "Preparing and Cleaning Data",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Garbage in, garbage out: a model can only be as good as the data it is trained on.",
+        "Collect relevant data from a reliable source, then format it into a structured table.",
+        "Common errors to clean: missing values, duplicate records, inconsistent labels, obvious outliers.",
+        "Inconsistent labels such as Yes, yes and Y are read as three separate categories.",
+        "Classify each field by data type: numerical, categorical, or text.",
+        "Label every column clearly so anyone reading the file knows what it holds.",
+        "Save the prepared data in a format suitable for analysis, most commonly CSV.",
+        "Document every change made, so the preparation is reproducible and can be explained."
+      ]
+    },
+    {
+      "id": "ai_metrics",
+      "section": "Unit 6",
+      "category": "topic",
+      "display_category": "deployment",
+      "group_id": "evaluation",
+      "group_label": "Testing and Performance Metrics",
+      "title": "Testing a Model and Measuring Performance",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Always test on data the model has not seen in training, or the score only measures memorisation.",
+        "Split the data into a training set and a separate test set.",
+        "Accuracy is the proportion of test examples classified correctly, given as a percentage.",
+        "Accuracy misleads on unbalanced data: predicting the majority class always can still score highly.",
+        "Precision asks what proportion of the model's positive predictions were actually correct.",
+        "Recall asks what proportion of the real positive cases the model managed to find.",
+        "Loss measures how far the outputs are from the correct answers; training reduces it.",
+        "Overfitting: training loss keeps falling while validation loss rises, so the model has memorised the examples."
+      ]
+    },
+    {
       "id": "ai_data_types",
       "section": "Unit 1",
       "category": "topic",
@@ -115,6 +198,69 @@
       ]
     },
     {
+      "id": "ai_visualisation",
+      "section": "Unit 3",
+      "category": "topic",
+      "display_category": "reasoning",
+      "group_id": "visualisation",
+      "group_label": "Data Visualisation",
+      "title": "Presenting Data Clearly and Honestly",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "Match the chart to the data: line graph for change over time, bar chart to compare categories.",
+        "Pie chart shows parts of a whole; scatter plot shows the relationship between two variables.",
+        "Every chart needs a title saying what it shows.",
+        "Label both axes with the quantity and its unit, for example Accuracy (%).",
+        "Add a legend or key whenever more than one series is plotted.",
+        "A chart misleads if the vertical axis does not start at zero, making small gaps look large.",
+        "Other distortions: uneven scale intervals, 3D effects, or showing only a favourable range of the data.",
+        "Read a chart by describing the trend first, then any outlier, then what it means for the model."
+      ]
+    },
+    {
+      "id": "ai_truth_tables",
+      "section": "Unit 3",
+      "category": "topic",
+      "display_category": "reasoning",
+      "group_id": "logic",
+      "group_label": "Logic and Truth Tables",
+      "title": "Logical Operators and Truth Tables",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "AND is true only when both inputs are true.",
+        "OR is true when at least one input is true.",
+        "NOT reverses the input: NOT true is false, NOT false is true.",
+        "A truth table lists every possible combination of inputs and the resulting output.",
+        "Two inputs give 4 rows, three inputs give 8 rows; the number of rows is 2 to the power of the inputs.",
+        "Conditions can be combined, for example IF temperature > 30 AND humidity > 70 THEN warn.",
+        "Changing AND to OR usually makes a rule fire far more often, which changes the system's behaviour.",
+        "Real AI uses these in rule-based systems, spam filters, alarm systems and decision trees."
+      ]
+    },
+    {
+      "id": "ai_project_pipeline",
+      "section": "Unit 6",
+      "category": "topic",
+      "display_category": "deployment",
+      "group_id": "evaluation",
+      "group_label": "Building an AI System",
+      "title": "The AI Project Pipeline End to End",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "Stage 1: define the problem and the intended purpose of the system.",
+        "Stage 2: collect raw data relevant to the task, from a source you can justify.",
+        "Stage 3: clean and prepare the data, and select a suitable subset for training.",
+        "Stage 4: train the model using an appropriate tool or platform.",
+        "Stage 5: test with separate data and record the performance outcomes.",
+        "Stage 6: evaluate against the intended purpose, then refine the model or the dataset.",
+        "Stage 7: deploy on an accessible platform, considering usability and who will use it.",
+        "Stage 8: document how the system works, and use version control to track changes."
+      ]
+    },
+    {
       "id": "ai_ethics",
       "section": "Unit 5",
       "category": "topic",
@@ -169,6 +315,69 @@
         "Test data must be kept separate from training data for a fair evaluation.",
         "AI systems can be deployed as web apps, APIs, or cloud-based platforms.",
         "Documentation and version control help others use and maintain the system."
+      ]
+    },
+    {
+      "id": "ai_tools",
+      "section": "Unit 6",
+      "category": "topic",
+      "display_category": "deployment",
+      "group_id": "tools",
+      "group_label": "Tools and Platforms",
+      "title": "Comparing AI Building Tools",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "Teachable Machine: no-code, browser-based, trains image, audio or pose models very quickly.",
+        "Machine Learning for Kids: trains a model then plugs it into Scratch blocks for a working program.",
+        "Scratch with AI extensions: block-based, good for showing logic and conditions visually.",
+        "Google Colab: writes real Python with TensorFlow, full control and detailed metrics, steeper to learn.",
+        "No-code tools are faster to a working result and keep the focus on the AI process.",
+        "Code gives control over the model, the parameters and the metrics, and teaches transferable skills.",
+        "For a school project, build a baseline with a no-code tool first, then rebuild in code and compare.",
+        "Comparing two tools in the report is itself good evaluation material."
+      ]
+    },
+    {
+      "id": "ai_risks_views",
+      "section": "Unit 5",
+      "category": "topic",
+      "display_category": "ethics",
+      "group_id": "risks",
+      "group_label": "Perceived Risks and Viewpoints",
+      "title": "Risks of AI and Differing Viewpoints",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "Commonly named risks: bias, loss of jobs, loss of privacy, misinformation, over-reliance, lack of accountability.",
+        "Different groups judge these risks differently and with different urgency.",
+        "Developers often stress the benefits and argue that problems are technical and solvable.",
+        "Workers and unions stress job displacement and the pace of change.",
+        "Governments and regulators focus on safety, accountability and who is liable when AI causes harm.",
+        "Optimistic view: AI removes dull work, speeds up medicine and science, and creates new kinds of jobs.",
+        "Cautious view: benefits are unevenly shared and harms fall hardest on those with least power.",
+        "A good answer presents more than one perspective, supports it with a real example, and acknowledges genuine disagreement."
+      ]
+    },
+    {
+      "id": "ai_teamwork",
+      "section": "Unit 6",
+      "category": "topic",
+      "display_category": "deployment",
+      "group_id": "tools",
+      "group_label": "Working on an AI Project",
+      "title": "Collaboration and Documentation",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "Agree roles and responsibilities at the start so each member owns a clear part.",
+        "Use a shared platform to store files, code and datasets so everyone has the same version.",
+        "Record project steps, decisions and changes in an organised format as you go.",
+        "Version control keeps a history of changes so you can undo a mistake and see who changed what.",
+        "Documentation should state the purpose, the process, the data used and the results.",
+        "Communicate clearly and respectfully, and hold short regular progress check-ins.",
+        "Reflect at the end on both group performance and individual contribution.",
+        "Present the final project in a format suitable for review or assessment."
       ]
     }
   ]

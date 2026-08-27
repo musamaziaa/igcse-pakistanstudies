@@ -1,0 +1,190 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 1,
+      "topic_title": "Foundations of Artificial Intelligence",
+      "question": "A linear search finds an item in a list by:",
+      "options": {
+        "A": "Repeatedly halving the list",
+        "B": "Checking each item in turn from the start",
+        "C": "Sorting the list first, then jumping to the middle",
+        "D": "Storing every item in a dictionary"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 1,
+      "topic_title": "Foundations of Artificial Intelligence",
+      "question": "Which data structure stores an ordered collection of items that can be accessed by index?",
+      "options": {
+        "A": "Boolean",
+        "B": "Array or list",
+        "C": "Integer",
+        "D": "String constant"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Which file format is most commonly used to save a simple table of training data?",
+      "options": {
+        "A": "CSV",
+        "B": "MP3",
+        "C": "EXE",
+        "D": "PNG"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 6,
+      "topic_title": "Building and Deploying AI Systems",
+      "question": "A model is tested on 200 images and classifies 180 of them correctly. Its accuracy is:",
+      "options": {
+        "A": "18%",
+        "B": "80%",
+        "C": "90%",
+        "D": "20%"
+      },
+      "correct_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "Which chart type is most suitable for showing how one value changes over time?",
+      "options": {
+        "A": "Pie chart",
+        "B": "Line graph",
+        "C": "Scatter plot of two unrelated variables",
+        "D": "Word cloud"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "State three common errors that must be corrected when cleaning a dataset. [3]",
+      "model_answer": "Missing values, where a field has been left blank and must be filled in or the row removed. Duplicate records, where the same entry appears more than once and would give that example extra weight in training. Inconsistent formatting or labelling, for example the same category written as 'Yes', 'yes' and 'Y', or dates written in different formats. Other acceptable answers include obvious outliers caused by data-entry mistakes, and spelling errors in category labels.",
+      "marks": 3
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Explain why data cleaning is an important step before training a machine learning model. [4]",
+      "model_answer": "A machine learning model learns patterns directly from the data it is given, so any error in the data becomes an error in the model. Missing values may cause the training process to fail or to ignore useful examples. Duplicates give some examples more influence than they should have, biasing the result. Inconsistent labels such as 'Yes', 'yes' and 'Y' are treated as three separate categories, so the model splits what should be one class into several. Outliers caused by typing mistakes can pull the model away from the real pattern. Cleaning the data first therefore improves accuracy and makes the results trustworthy. The principle is often summarised as garbage in, garbage out.",
+      "marks": 4
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Explain why a record should be kept of the changes made while preparing a dataset. [3]",
+      "model_answer": "Documenting the changes makes the work reproducible, so that another person, or the same person later, can repeat the preparation and obtain the same dataset. It makes the process transparent, so anyone reviewing the model can see what was removed or altered and judge whether the decisions were reasonable. It also helps with debugging: if the model behaves oddly, the record shows whether a cleaning step caused the problem, and the step can be reversed or corrected.",
+      "marks": 3
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "structured",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "A student presents the results of an AI experiment as a chart. (i) State three features a chart must have to be clearly labelled. (ii) Explain one way in which a chart can mislead the person reading it. [6]",
+      "model_answer": "(i) A clear title stating what the chart shows. Labelled axes, each naming the quantity and its unit, for example 'Accuracy (%)' on the vertical axis and 'Number of training images' on the horizontal axis. A legend or key where more than one series is plotted, so each colour or line can be identified. Credit also for readable scale markings and a stated data source.\n\n(ii) A chart can mislead if the vertical axis does not start at zero, because a small difference is then made to look very large. Other acceptable answers: using a scale with uneven intervals; using a 3D effect that distorts the apparent size of bars or slices; choosing only a favourable range of data and omitting the rest; using a pie chart for values that do not sum to a meaningful whole; or using colours that imply a ranking that does not exist.",
+      "marks": 6
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "Explain why the choice of visual format matters when presenting a data visualisation of an AI model's results. [4]",
+      "model_answer": "A data visualisation is chosen to reveal a pattern, and different formats reveal different things, so the wrong choice hides the pattern the reader needs to see. A line graph shows change over time, a bar chart compares separate categories, a pie chart shows parts of a whole, and a scatter plot shows the relationship between two variables. Choosing a format that matches the data lets the reader understand the result quickly and without explanation. A poor choice, such as a pie chart with twenty slices, forces the reader to work hard and may cause them to draw the wrong conclusion. Because AI results are often used to make decisions, a clear and honest presentation is part of communicating the model responsibly.",
+      "marks": 4
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "structured",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 6,
+      "topic_title": "Building and Deploying AI Systems",
+      "question": "(i) Explain what is meant by the accuracy of a machine learning model. (ii) Explain why accuracy alone can be a misleading measure of how good a model is. [6]",
+      "model_answer": "(i) Accuracy is the proportion of test examples that the model classifies correctly, usually expressed as a percentage. It is measured on test data that the model has not seen during training, because measuring it on the training data would only show how well the model has memorised those examples.\n\n(ii) Accuracy is misleading when the classes are unbalanced. If ninety-five per cent of the examples belong to one class, a model that always predicts that class scores ninety-five per cent accuracy while being completely useless. It also treats every mistake as equally serious, which is often untrue: in a medical screening system, failing to flag a sick patient matters far more than a false alarm. For these reasons other measures are used alongside accuracy, such as precision, which asks what proportion of the model's positive predictions were correct, and recall, which asks what proportion of the real positive cases the model found. Loss is another measure, showing how far the model's outputs are from the correct answers during training.",
+      "marks": 6
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 6,
+      "topic_title": "Building and Deploying AI Systems",
+      "question": "Explain what is meant by 'loss' when training a machine learning model, and what a falling loss value indicates. [3]",
+      "model_answer": "Loss is a number that measures how far the model's predictions are from the correct answers. A high loss means the model's outputs are badly wrong; a low loss means they are close to the target values. During training the model repeatedly adjusts its internal values in order to reduce the loss. A falling loss therefore indicates that the model is learning the patterns in the training data. If the training loss keeps falling while the loss on unseen validation data starts to rise, this is a sign of overfitting: the model is memorising the training examples rather than learning a general rule.",
+      "marks": 3
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 6,
+      "topic_title": "Building and Deploying AI Systems",
+      "question": "Describe three things a team should do to collaborate effectively on an AI project. [3]",
+      "model_answer": "Agree clear roles and responsibilities at the start, so each member knows which part of the project, such as data collection, model training or documentation, belongs to them. Use a shared platform to store files, code and datasets, so everyone is working from the same version and nothing is lost. Keep an organised record of decisions and changes as the project progresses, so the reasoning behind each choice can be explained later. Credit also for regular progress meetings, collaborating and communicating respectfully, and reflecting on individual and group performance at the end.",
+      "marks": 3
+    }
+  ]
+}

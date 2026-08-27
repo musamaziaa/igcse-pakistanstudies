@@ -116,6 +116,34 @@ interface MemCard {
   tier_label?: string;
 }
 
+// One story from /{subject}/memorize_stories. Unlike a MemCard, a story is read
+// rather than typed: narrative, then the exam points it carries, then a self-check.
+interface StoryCard {
+  id: string;
+  title: string;
+  unit: number;
+  unit_title: string;
+  lesson: number;
+  lesson_title: string;
+  tier_label: string;
+  starred?: boolean;
+  summary: string;
+  paragraphs: string[];
+  key_points: { moment: string; exam_point: string }[];
+  quiz: { question: string; answer: string; source: string }[];
+}
+
+// Shape of the paper /exam/generate assembled, so the exam view can show the
+// real mark total and timing rather than just a question count.
+interface PaperInfo {
+  mode: 'full' | 'quick';
+  name?: string;
+  totalMarks: number;
+  targetMarks?: number;
+  durationMinutes?: number;
+  sections: { key: string; title: string; marks: number; target_marks: number; count: number }[];
+}
+
 // One graded question from /exam/evaluate. MCQs come back graded_by "auto";
 // written answers are "ai" when Claude marked them, "ungraded" when it couldn't.
 interface QuestionResult {
@@ -268,6 +296,12 @@ export default function App() {
   const [activeSubject, setActiveSubject] = useState<string | null>(null);
   const [guide, setGuide] = useState<any>(null);
   const [prepSessions, setPrepSessions] = useState<any[]>([]);
+  // Story-based memorize content (optional per subject; only Hospitality ships it today)
+  const [stories, setStories] = useState<StoryCard[]>([]);
+  const [activeStory, setActiveStory] = useState<StoryCard | null>(null);
+  const [storyTab, setStoryTab] = useState<'story' | 'points' | 'quiz'>('story');
+  const [revealedQuiz, setRevealedQuiz] = useState<Record<number, boolean>>({});
+  const [storySearch, setStorySearch] = useState('');
   const [activeSession, setActiveSession] = useState<any>(null);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -327,6 +361,8 @@ export default function App() {
   
   // Exam State
   const [questions, setQuestions] = useState<any[]>([]);
+  // Structure of the generated paper, when the backend built a full one
+  const [paper, setPaper] = useState<PaperInfo | null>(null);
   const [currentQIdx, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [revealed, setRevealed] = useState<Record<number, boolean>>({});
@@ -465,6 +501,17 @@ export default function App() {
       .catch(() => setPrepSessions([]));
   }, [activeSubject]);
 
+  // Fetch optional story-based memorize content when subject changes
+  useEffect(() => {
+    if (!activeSubject) { setStories([]); setActiveStory(null); return; }
+    setStories([]);
+    setActiveStory(null);
+    fetch(`${API_BASE}/api/${activeSubject}/memorize_stories`)
+      .then(res => res.ok ? res.json() : null)
+      .then(data => setStories(data?.stories ?? []))
+      .catch(() => setStories([]));
+  }, [activeSubject]);
+
   // Fetch Memorize Data when subject changes
   useEffect(() => {
     if (!activeSubject) return;
@@ -515,15 +562,17 @@ export default function App() {
   }, [view, user, activeSubject]);
 
   // --- Exam Logic ---
-  const startExam = async () => {
+  // paperMode 'full' asks the backend to assemble a paper matching the real LRN
+  // structure (mark total, sections); 'quick' is the old 10-random-questions run.
+  const startExam = async (paperMode: 'full' | 'quick' = 'full') => {
     if (!activeSubject) return;
     try {
       const res = await fetch(`${API_BASE}/api/${activeSubject}/exam/generate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ student_name: studentName, n_questions: 10 })
+        body: JSON.stringify({ student_name: studentName, n_questions: 10, paper_mode: paperMode })
       });
-      
+
       const data = await res.json();
 
       if (!res.ok) {
@@ -534,6 +583,14 @@ export default function App() {
         throw new Error("No questions found in the question bank.");
       }
 
+      setPaper({
+        mode: data.paper_mode ?? 'quick',
+        name: data.paper,
+        totalMarks: data.total_marks ?? 0,
+        targetMarks: data.target_marks,
+        durationMinutes: data.duration_minutes,
+        sections: data.sections ?? [],
+      });
       setQuestions(data.questions);
       setCurrentQuestion(0);
       setAnswers({});
@@ -772,7 +829,7 @@ export default function App() {
             NUR ACADEMY
           </h1>
           {activeSubject && (
-             <button onClick={() => { setActiveSubject(null); setView('subject_selection'); setIsMemStarted(false); setQuestions([]); }} className="text-sm font-bold text-slate-400 hover:text-emerald-400 flex items-center gap-1 bg-slate-800/50 hover:bg-slate-800 px-3 py-1.5 rounded-full transition-colors border border-slate-700/50 hover:border-emerald-500/30">
+             <button onClick={() => { setActiveSubject(null); setView('subject_selection'); setIsMemStarted(false); setQuestions([]); setActiveStory(null); }} className="text-sm font-bold text-slate-400 hover:text-emerald-400 flex items-center gap-1 bg-slate-800/50 hover:bg-slate-800 px-3 py-1.5 rounded-full transition-colors border border-slate-700/50 hover:border-emerald-500/30">
                <ArrowLeft size={16} /> Subjects
              </button>
           )}
@@ -895,7 +952,7 @@ export default function App() {
               )}
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <DashboardCard icon={<GraduationCap size={28} className="text-emerald-400" />} color="emerald" title="Practice Exam" desc="Test your knowledge with random questions." action={startExam} locked={!user} />
+                <DashboardCard icon={<GraduationCap size={28} className="text-emerald-400" />} color="emerald" title="Practice Exam" desc="A full paper built to the real LRN structure: the same mark total, sections and timing." action={() => startExam('full')} secondaryLabel="Quick practice (10 questions)" secondaryAction={() => startExam('quick')} locked={!user} />
                 <DashboardCard icon={<BookOpen size={28} className="text-blue-400" />} color="blue" title="Memorize Topics" desc="Interactive character-by-character typing practice." action={() => setView('memorize')} />
                 {guide && (
                   <DashboardCard icon={<ClipboardList size={28} className="text-violet-400" />} color="violet" title={guide.title || "Paper 2 Guide"} desc="Paper 2 format, what's assessed, and a step-by-step preparation plan." action={() => setView('project_guide')} />
@@ -918,10 +975,33 @@ export default function App() {
             <motion.div key="exam" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="grid grid-cols-1 lg:grid-cols-12 gap-8">
               <div className="lg:col-span-8 flex flex-col gap-6">
                 {/* Exam Timer */}
-                <div className="flex items-center justify-center gap-3 bg-slate-900 border border-slate-800 rounded-2xl px-6 py-3">
-                  <Clock size={20} className="text-emerald-400" />
-                  <span className="text-2xl font-mono font-bold text-white">{fmtTimer(examElapsed)}</span>
+                <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 bg-slate-900 border border-slate-800 rounded-2xl px-6 py-3">
+                  <div className="flex items-center gap-3">
+                    <Clock size={20} className="text-emerald-400" />
+                    <span className="text-2xl font-mono font-bold text-white">{fmtTimer(examElapsed)}</span>
+                  </div>
+                  {paper && paper.durationMinutes && (
+                    <span className="text-sm text-slate-400">of {paper.durationMinutes} min</span>
+                  )}
+                  {paper && paper.totalMarks > 0 && (
+                    <span className="text-sm font-bold text-slate-300">
+                      {paper.totalMarks} marks
+                      {paper.targetMarks && paper.totalMarks < paper.targetMarks && (
+                        <span className="font-normal text-slate-500"> of {paper.targetMarks} in the real paper</span>
+                      )}
+                    </span>
+                  )}
+                  <span className="text-sm text-slate-400">{questions.length} questions</span>
                 </div>
+                {paper?.mode === 'full' && paper.sections.length > 0 && (
+                  <div className="flex flex-wrap items-center justify-center gap-2">
+                    {paper.sections.map(s => (
+                      <span key={s.key} className="text-xs font-bold px-3 py-1.5 rounded-full bg-slate-900 text-slate-300 border border-slate-800">
+                        {s.title} - {s.marks} marks
+                      </span>
+                    ))}
+                  </div>
+                )}
                 <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-sm">
                   {(() => {
                     const q = questions[currentQIdx];
@@ -929,7 +1009,7 @@ export default function App() {
                     return (
                       <>
                         <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
-                          {q.section && <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-400 text-xs font-bold uppercase tracking-wide">Section {q.section}{q.section_title ? `: ${q.section_title}` : ''}</span>}
+                          {(q.section_title || q.section) && <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-400 text-xs font-bold uppercase tracking-wide">{q.section_title || `Section ${q.section}`}</span>}
                           {q.topic_title && <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-400 text-xs font-bold uppercase tracking-wide">{q.topic_title}</span>}
                           {q.marks && <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-400 text-xs font-bold uppercase tracking-wide">{q.marks} {q.marks === 1 ? 'mark' : 'marks'}</span>}
                         </div>
@@ -977,7 +1057,79 @@ export default function App() {
             </motion.div>
           )}
 
-          {view === 'memorize' && (
+          {view === 'memorize' && activeStory && (
+            <motion.div key="story" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-4xl mx-auto flex flex-col gap-6">
+              <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-sm">
+                <button onClick={() => { setActiveStory(null); setRevealedQuiz({}); }} className="text-sm font-bold text-slate-400 hover:text-emerald-400 flex items-center gap-1 mb-4">
+                  <ArrowLeft size={16} /> All stories
+                </button>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Unit {activeStory.unit}: {activeStory.unit_title}</span>
+                  <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Lesson {activeStory.lesson}: {activeStory.lesson_title}</span>
+                  {activeStory.starred && <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20 flex items-center gap-1"><Star size={12} /> Exam workhorse</span>}
+                </div>
+                <h2 className="text-2xl font-bold mb-3">{activeStory.title}</h2>
+                <p className="text-slate-300 leading-relaxed">{activeStory.summary}</p>
+              </div>
+
+              <div className="flex gap-2">
+                {([['story', 'Story'], ['points', `Key Points (${activeStory.key_points.length})`], ['quiz', `Quiz (${activeStory.quiz.length})`]] as const).map(([key, label]) => (
+                  <button key={key} onClick={() => setStoryTab(key)}
+                    className={`px-4 py-2.5 rounded-xl font-bold text-sm border transition-all ${storyTab === key ? 'bg-emerald-600 text-white border-emerald-700' : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-emerald-500/40'}`}>
+                    {label}
+                  </button>
+                ))}
+              </div>
+
+              {storyTab === 'story' && (
+                <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-sm flex flex-col gap-4 max-h-[65vh] overflow-y-auto">
+                  {activeStory.paragraphs.map((p, i) => (
+                    <p key={i} className="text-slate-300 leading-relaxed">{p}</p>
+                  ))}
+                </div>
+              )}
+
+              {storyTab === 'points' && (
+                <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-sm flex flex-col gap-3 max-h-[65vh] overflow-y-auto">
+                  <p className="text-sm text-slate-400 mb-2">Each moment in the story maps to a point the exam can ask about.</p>
+                  {activeStory.key_points.map((kp, i) => (
+                    <div key={i} className="grid md:grid-cols-2 gap-3 p-4 bg-slate-900/50 border border-slate-800/80 rounded-xl">
+                      <div className="text-slate-400 text-sm italic">{kp.moment}</div>
+                      <div className="text-emerald-300 font-medium border-l-0 md:border-l-2 md:border-emerald-500/30 md:pl-4">{kp.exam_point}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {storyTab === 'quiz' && (
+                <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-sm flex flex-col gap-3 max-h-[65vh] overflow-y-auto">
+                  <p className="text-sm text-slate-400 mb-2">Answer out loud or on paper, then reveal.</p>
+                  {activeStory.quiz.map((q, i) => (
+                    <div key={i} className="p-4 bg-slate-900/50 border border-slate-800/80 rounded-xl">
+                      <div className="flex items-start justify-between gap-4">
+                        <p className="font-medium flex-1">{i + 1}. {q.question}</p>
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700 whitespace-nowrap">{q.source}</span>
+                      </div>
+                      {revealedQuiz[i] ? (
+                        <p className="mt-3 text-emerald-300 leading-relaxed border-l-2 border-emerald-500/30 pl-4">{q.answer}</p>
+                      ) : (
+                        <button onClick={() => setRevealedQuiz(prev => ({ ...prev, [i]: true }))}
+                          className="mt-3 text-sm font-bold text-emerald-400 hover:text-emerald-300">Show answer</button>
+                      )}
+                    </div>
+                  ))}
+                  {activeStory.quiz.some((_, i) => !revealedQuiz[i]) && (
+                    <button onClick={() => setRevealedQuiz(Object.fromEntries(activeStory.quiz.map((_, i) => [i, true])))}
+                      className="self-start mt-2 px-5 py-2.5 rounded-xl border border-slate-800 bg-slate-900 hover:bg-slate-800 font-bold text-slate-300 text-sm">
+                      Reveal all
+                    </button>
+                  )}
+                </div>
+              )}
+            </motion.div>
+          )}
+
+          {view === 'memorize' && !activeStory && (
              <motion.div key="mem" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                {!isMemStarted ? (
                  <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-sm max-w-2xl mx-auto">
@@ -1023,6 +1175,66 @@ export default function App() {
                      )}
                    </div>
                    <button onClick={startMemorize} className="w-full py-4 bg-emerald-600 text-white font-bold rounded-xl border-b-4 border-emerald-800">Start Session</button>
+
+                   {stories.length > 0 && (
+                     <div className="mt-10 pt-8 border-t border-slate-800">
+                       <div className="flex items-center gap-2 mb-1">
+                         <BookOpen size={22} className="text-emerald-400" />
+                         <h2 className="text-2xl font-bold">Memorize with Stories</h2>
+                       </div>
+                       <p className="text-slate-400 mb-5">Read a story, see the exam points it carries, then test yourself. {stories.length} stories.</p>
+                       <div className="relative mb-5">
+                         <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={20} />
+                         <input
+                           type="text"
+                           placeholder="Search stories..."
+                           value={storySearch}
+                           onChange={(e) => setStorySearch(e.target.value)}
+                           className="w-full pl-12 pr-4 py-3 bg-slate-900/50 border border-slate-800 rounded-xl outline-none focus:border-emerald-500 focus:bg-slate-900 transition-all"
+                         />
+                       </div>
+                       <div className="grid gap-4 max-h-[60vh] overflow-y-auto pr-2">
+                         {Array.from(new Set(stories.map(s => s.tier_label))).map((tierLabel: string) => {
+                           const q = storySearch.toLowerCase();
+                           const inTier = stories.filter(s => s.tier_label === tierLabel && (
+                             s.title.toLowerCase().includes(q) ||
+                             s.lesson_title.toLowerCase().includes(q) ||
+                             s.unit_title.toLowerCase().includes(q)
+                           ));
+                           if (inTier.length === 0) return null;
+                           return (
+                             <div key={tierLabel} className="mb-2">
+                               <h3 className="text-lg font-bold text-emerald-400 mb-3 border-b-2 border-emerald-100 pb-2">{tierLabel}</h3>
+                               <div className="grid gap-3">
+                                 {inTier.map(s => (
+                                   <button key={s.id} onClick={() => { setActiveStory(s); setStoryTab('story'); setRevealedQuiz({}); }}
+                                     className="text-left p-4 bg-slate-900/50 border border-slate-800/80 rounded-xl hover:bg-emerald-950/20 hover:border-emerald-500/40 transition-all group">
+                                     <div className="flex items-start justify-between gap-3">
+                                       <div className="min-w-0">
+                                         <div className="font-bold group-hover:text-emerald-300 transition-colors flex items-center gap-2">
+                                           {s.title}
+                                           {s.starred && <Star size={14} className="text-amber-400 shrink-0" />}
+                                         </div>
+                                         <div className="text-xs text-slate-400 mt-1">Unit {s.unit} - {s.lesson_title}</div>
+                                       </div>
+                                       <ChevronRight size={18} className="text-slate-600 group-hover:text-emerald-400 shrink-0 mt-1" />
+                                     </div>
+                                     <div className="text-xs text-slate-500 mt-2">{s.key_points.length} exam points - {s.quiz.length} quiz questions</div>
+                                   </button>
+                                 ))}
+                               </div>
+                             </div>
+                           );
+                         })}
+                         {storySearch && stories.filter(s => {
+                           const q = storySearch.toLowerCase();
+                           return s.title.toLowerCase().includes(q) || s.lesson_title.toLowerCase().includes(q) || s.unit_title.toLowerCase().includes(q);
+                         }).length === 0 && (
+                           <p className="text-slate-400 italic text-center py-4">No stories match your search.</p>
+                         )}
+                       </div>
+                     </div>
+                   )}
                  </div>
                ) : (
                  <div className="flex flex-col gap-6 w-full max-w-4xl mx-auto">
@@ -1717,10 +1929,13 @@ export default function App() {
 
       {activeSubject && (
         <nav className="fixed bottom-0 left-0 right-0 h-20 bg-slate-900/90 backdrop-blur-md border-t border-slate-800 flex justify-around items-center z-50 px-2 pb-safe">
-          <NavButton icon={<LayoutDashboard size={24} />} label="Dash" active={view === 'dashboard'} onClick={() => {setView('dashboard'); setIsMemStarted(false);}} />
+          <NavButton icon={<LayoutDashboard size={24} />} label="Dash" active={view === 'dashboard'} onClick={() => {setView('dashboard'); setIsMemStarted(false); setActiveStory(null);}} />
           <NavButton icon={<BookOpen size={24} />} label="Memorize" active={view === 'memorize'} onClick={() => {
             if (view === 'memorize') {
-              if (!isMemStarted && selectedGroups.length > 0) {
+              // Tapping Memorize while reading a story goes back to the list first
+              if (activeStory) {
+                setActiveStory(null);
+              } else if (!isMemStarted && selectedGroups.length > 0) {
                 startMemorize();
               } else {
                 setIsMemStarted(false);
@@ -1729,8 +1944,8 @@ export default function App() {
               setView('memorize');
             }
           }} />
-          <NavButton icon={<Trophy size={24} />} label="Progress" active={view === 'progress'} onClick={() => { if (user) { setView('progress'); setIsMemStarted(false); } else { requireLogin(() => setView('progress')); }}} />
-          <NavButton icon={<GraduationCap size={24} />} label="Exams" active={view === 'exam'} onClick={() => {setView('exam'); setIsMemStarted(false);}} />
+          <NavButton icon={<Trophy size={24} />} label="Progress" active={view === 'progress'} onClick={() => { if (user) { setView('progress'); setIsMemStarted(false); setActiveStory(null); } else { requireLogin(() => setView('progress')); }}} />
+          <NavButton icon={<GraduationCap size={24} />} label="Exams" active={view === 'exam'} onClick={() => {setView('exam'); setIsMemStarted(false); setActiveStory(null);}} />
         </nav>
       )}
       
@@ -1754,7 +1969,7 @@ export default function App() {
   );
 }
 
-function DashboardCard({ icon, color, title, desc, action, locked }: any) {
+function DashboardCard({ icon, color, title, desc, action, locked, secondaryLabel, secondaryAction }: any) {
   const styles: any = {
     emerald: { card: 'border-emerald-500/20 hover:border-emerald-400 hover:shadow-[0_0_30px_rgba(52,211,153,0.15)]', wrap: 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400', btn: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/20' },
     blue: { card: 'border-blue-500/20 hover:border-blue-400 hover:shadow-[0_0_30px_rgba(96,165,250,0.15)]', wrap: 'bg-blue-500/10 border-blue-500/20 text-blue-400', btn: 'bg-blue-500/10 text-blue-400 border-blue-500/30 hover:bg-blue-500/20' },
@@ -1771,6 +1986,11 @@ function DashboardCard({ icon, color, title, desc, action, locked }: any) {
       <button onClick={locked ? undefined : action} className={`w-full py-3.5 font-bold rounded-xl border flex items-center justify-center gap-2 transition-all ${locked ? 'bg-slate-800/50 text-slate-500 border-slate-700 cursor-not-allowed' : s.btn}`}>
         {locked ? "Sign in to unlock" : <><PlayCircle size={18} /> Start</>}
       </button>
+      {!locked && secondaryAction && (
+        <button onClick={secondaryAction} className="w-full mt-3 py-2.5 text-sm font-bold rounded-xl border border-slate-800 bg-slate-900/60 text-slate-400 hover:text-slate-200 hover:bg-slate-800 transition-all">
+          {secondaryLabel}
+        </button>
+      )}
     </div>
   );
 }

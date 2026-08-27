@@ -30,3 +30,11 @@ backend/data/source_docs/
 # Exam-board source PDFs (24MB, only needed to rebuild grading guides).
 # The distilled grading_guide.md files ARE committed — those are what ship.
 backend/data/*/source_docs/
+
+# Teaching/course material that is not an exam-board source. Kept locally for
+# writing questions and memorize content; deliberately NOT under source_docs/,
+# because build_grading_guides.py reads that tree and these would bloat it.
+backend/data/*/reference/
+
+# Drop zone for newly downloaded PDFs before they are filed into a subject.
+Docs/

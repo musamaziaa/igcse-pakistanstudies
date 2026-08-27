@@ -1,0 +1,199 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The War of Independence, which marked the end of effective Mughal rule, took place in:",
+      "options": {
+        "A": "1852",
+        "B": "1857",
+        "C": "1861",
+        "D": "1877"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "After the War of Independence, control of India passed from the East India Company to:",
+      "options": {
+        "A": "The Mughal Emperor",
+        "B": "The British Crown",
+        "C": "The Indian National Congress",
+        "D": "The Nizam of Hyderabad"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The Simla Deputation of 1906 presented Muslim demands to Lord Minto under the leadership of:",
+      "options": {
+        "A": "Sir Syed Ahmad Khan",
+        "B": "Sir Aga Khan",
+        "C": "Muhammad Ali Jinnah",
+        "D": "Allama Iqbal"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The Morley-Minto Reforms of 1909 are most significant for Muslims because they introduced:",
+      "options": {
+        "A": "Provincial autonomy",
+        "B": "Separate electorates",
+        "C": "Complete independence",
+        "D": "A federal constitution"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The Lucknow Pact of 1916 was an agreement between the Muslim League and:",
+      "options": {
+        "A": "The British Government",
+        "B": "The Indian National Congress",
+        "C": "The Khilafat Committee",
+        "D": "The Unionist Party"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "How many Round Table Conferences were held in London between 1930 and 1932?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The main constitutional change introduced by the Government of India Act 1935 was:",
+      "options": {
+        "A": "Separate electorates for Muslims",
+        "B": "Provincial autonomy",
+        "C": "Immediate independence",
+        "D": "Abolition of the provinces"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The Lahore Resolution, also known as the Pakistan Resolution, was moved by:",
+      "options": {
+        "A": "Liaquat Ali Khan",
+        "B": "A. K. Fazlul Haq",
+        "C": "Chaudhry Rehmat Ali",
+        "D": "Nawab Viqar-ul-Mulk"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "In the elections of 1945-46, the All-India Muslim League won:",
+      "options": {
+        "A": "None of the Muslim seats in the Central Assembly",
+        "B": "About half of the Muslim seats in the Central Assembly",
+        "C": "All of the Muslim seats in the Central Assembly",
+        "D": "Only the seats in Bengal"
+      },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The Cabinet Mission Plan of 1946 proposed:",
+      "options": {
+        "A": "Immediate partition into two states",
+        "B": "A three-tier federation for a united India",
+        "C": "Continued direct British rule",
+        "D": "A union with Afghanistan"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The boundary between India and Pakistan at independence was drawn by the commission headed by:",
+      "options": {
+        "A": "Lord Mountbatten",
+        "B": "Sir Cyril Radcliffe",
+        "C": "Sir Stafford Cripps",
+        "D": "Lord Wavell"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The policy most closely associated with the government of General Zia-ul-Haq (1977-1988) was:",
+      "options": {
+        "A": "Nationalisation of industry",
+        "B": "Islamisation",
+        "C": "The Basic Democracies system",
+        "D": "The One Unit scheme"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Under which government was the 1973 Constitution of Pakistan framed?",
+      "options": {
+        "A": "Ayub Khan",
+        "B": "Yahya Khan",
+        "C": "Zulfikar Ali Bhutto",
+        "D": "Zia-ul-Haq"
+      },
+      "model_answer": "C",
+      "marks": 1
+    }
+  ]
+}

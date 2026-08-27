@@ -1,0 +1,244 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The Khewra Salt Mine, one of the largest in the world, is located in:",
+      "options": {
+        "A": "Sindh",
+        "B": "Punjab",
+        "C": "Balochistan",
+        "D": "Gilgit-Baltistan"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Pakistan's largest coal reserves are found in the Thar coalfield, which lies in:",
+      "options": {
+        "A": "Punjab",
+        "B": "Sindh",
+        "C": "Khyber Pakhtunkhwa",
+        "D": "Azad Kashmir"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The Saindak and Reko Diq projects in Balochistan are associated with the extraction of:",
+      "options": {
+        "A": "Coal and limestone",
+        "B": "Copper and gold",
+        "C": "Rock salt and gypsum",
+        "D": "Natural gas"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Most of Pakistan's marine fishing takes place along the coast of:",
+      "options": {
+        "A": "Punjab and Sindh",
+        "B": "Sindh and Balochistan",
+        "C": "Khyber Pakhtunkhwa",
+        "D": "Gilgit-Baltistan"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Farming in which the produce is grown mainly to feed the farmer's own family is called:",
+      "options": {
+        "A": "Cash crop farming",
+        "B": "Subsistence farming",
+        "C": "Commercial farming",
+        "D": "Plantation farming"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Which of the following is a cash crop rather than a food crop?",
+      "options": {
+        "A": "Wheat",
+        "B": "Cotton",
+        "C": "Maize",
+        "D": "Pulses"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Which of these is NOT a benefit of livestock farming in Pakistan?",
+      "options": {
+        "A": "Supply of milk and meat",
+        "B": "Hides and skins for the leather industry",
+        "C": "Draught power for small farms",
+        "D": "Generation of hydroelectric power"
+      },
+      "model_answer": "D",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "The main raw material used by Pakistan's cement industry is:",
+      "options": {
+        "A": "Iron ore",
+        "B": "Limestone",
+        "C": "Cotton",
+        "D": "Bauxite"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "Pakistan's largest manufacturing industry by employment and export earnings is:",
+      "options": {
+        "A": "Cement",
+        "B": "Cotton textiles",
+        "C": "Shipbuilding",
+        "D": "Electronics"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "A street vendor who is not registered and pays no income tax is working in the:",
+      "options": {
+        "A": "Formal sector",
+        "B": "Informal sector",
+        "C": "Public sector",
+        "D": "Primary sector"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "Industries that extract raw materials directly from the earth, such as mining and fishing, are classified as:",
+      "options": {
+        "A": "Primary",
+        "B": "Secondary",
+        "C": "Tertiary",
+        "D": "Quaternary"
+      },
+      "model_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The Main Line 1 (ML-1) railway project runs between:",
+      "options": {
+        "A": "Karachi and Peshawar",
+        "B": "Lahore and Quetta",
+        "C": "Gwadar and Islamabad",
+        "D": "Multan and Sukkur"
+      },
+      "model_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The Karakoram Highway links Pakistan with:",
+      "options": {
+        "A": "Iran",
+        "B": "China",
+        "C": "Afghanistan",
+        "D": "India"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The deep-sea port developed in Balochistan as a key part of CPEC is:",
+      "options": {
+        "A": "Port Qasim",
+        "B": "Karachi Port",
+        "C": "Gwadar Port",
+        "D": "Pasni Port"
+      },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The movement of people from villages to cities in search of work is known as:",
+      "options": {
+        "A": "Emigration",
+        "B": "Rural-urban migration",
+        "C": "Seasonal migration",
+        "D": "Immigration"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Which of the following is a 'push' factor causing rural-urban migration in Pakistan?",
+      "options": {
+        "A": "Better hospitals in cities",
+        "B": "Shortage of land and rural unemployment",
+        "C": "More universities in cities",
+        "D": "Higher wages in factories"
+      },
+      "model_answer": "B",
+      "marks": 1
+    }
+  ]
+}

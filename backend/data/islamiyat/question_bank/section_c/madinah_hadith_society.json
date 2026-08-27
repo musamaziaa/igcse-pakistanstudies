@@ -1,0 +1,148 @@
+{
+  "questions": [
+    {
+      "section": "C",
+      "type": "extended",
+      "topic_number": 5,
+      "topic_title": "The Advent of Islam - Holy Prophet's Life in Madina",
+      "question": "Describe the main events of the Battle of Mu'tah (8 AH / 629 CE). [8]",
+      "model_answer": "The battle was caused by the killing of the Prophet's envoy to the ruler of Busra, an act which violated the custom that messengers were never harmed. The Prophet (PBUH) sent an army of about three thousand men, the first direct confrontation with the Byzantine Empire. He appointed three commanders in order of succession: Zayd ibn Haritha (RA), then Ja'far ibn Abi Talib (RA), then Abdullah ibn Rawahah (RA). At Mu'tah the Muslims found themselves facing a vastly larger Byzantine and allied Arab force. Zayd (RA) advanced with the banner and was martyred. Ja'far (RA) took it up and fought until both his arms were severed, and he too was martyred. Abdullah ibn Rawahah (RA) then took the banner and was likewise killed. With all three commanders gone the army chose Khalid ibn al-Walid (RA), who reorganised the ranks, changed the formation to give the impression of fresh reinforcements, and withdrew the army without allowing it to be destroyed. The Prophet (PBUH) was informed of the deaths by revelation before news arrived. He named Khalid Sayfullah, the Sword of Allah. Although Mu'tah was not a victory, saving an outnumbered army from annihilation was itself a considerable achievement, and it announced Muslim power on the northern frontier, preparing the way for later expansion.",
+      "mark_scheme": "Level 1 (1-2): Very basic; a battle against the Byzantines. Level 2 (3-4): Some events, may confuse the order of commanders. Level 3 (5-6): Correct sequence of the three commanders and Khalid's withdrawal. Level 4 (7-8): Comprehensive - the cause, the numbers, all three martyrdoms in order, Khalid's tactic, the title Sayfullah, and the significance of the withdrawal.",
+      "marks": 8
+    },
+    {
+      "section": "C",
+      "type": "extended",
+      "topic_number": 5,
+      "topic_title": "The Advent of Islam - Holy Prophet's Life in Madina",
+      "question": "Describe the expedition of Tabuk (9 AH / 630 CE) and explain its significance. [8]",
+      "model_answer": "Reports reached Madinah that the Byzantines were gathering a large force to attack the Muslims. The Prophet (PBUH) called for an expedition, but the circumstances made it exceptionally hard: it was a year of drought and famine, the heat was severe, the date harvest was ready, and the journey was long. For this reason the force is remembered as Jaysh al-Usrah, the Army of Hardship. Unusually, the Prophet (PBUH) announced the destination openly rather than concealing it, because of the distance and the strength of the enemy. Wealthy companions gave generously: Uthman (RA) equipped a large part of the army, Abu Bakr (RA) gave everything he owned, and Umar (RA) gave half his wealth. About thirty thousand men marched to Tabuk, but the Byzantine army did not appear. The Prophet (PBUH) remained about twenty days, made treaties with local chiefs such as the ruler of Aylah who agreed to pay jizyah, and returned to Madinah without fighting.\n\nIts significance was considerable. The hardship exposed the hypocrites, who invented excuses to stay behind, and the Quran condemned them. On the return the Masjid al-Dirar, built by hypocrites as a centre of intrigue, was demolished on the Prophet's order. Three sincere companions who had stayed behind without excuse, including Ka'b ibn Malik (RA), were boycotted for fifty days before their repentance was accepted, an event recorded in the Quran. The expedition secured the northern frontier, demonstrated that the Muslims could field a large army at great distance, and was the last campaign the Prophet (PBUH) led in person.",
+      "mark_scheme": "Level 1 (1-2): Mentions an expedition to Tabuk. Level 2 (3-4): Some detail of the hardship or the outcome. Level 3 (5-6): Clear account of the conditions, the march and the fact that no battle occurred. Level 4 (7-8): Comprehensive, including Jaysh al-Usrah, the contributions of the companions, the exposure of the hypocrites, Masjid al-Dirar, Ka'b ibn Malik, and the significance as the last expedition.",
+      "marks": 8
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 5,
+      "topic_title": "The Advent of Islam - Holy Prophet's Life in Madina",
+      "question": "Why is the expedition of Tabuk called Jaysh al-Usrah, the Army of Hardship? [3]",
+      "model_answer": "It took place in a year of drought and famine when food and water were scarce. The heat was extreme and the journey to Tabuk was long, and the date harvest was ready so men were reluctant to leave. Many were too poor to equip themselves and wept when they could not join, so wealthy companions had to fund the army.",
+      "marks": 3
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 5,
+      "topic_title": "The Advent of Islam - Holy Prophet's Life in Madina",
+      "question": "Describe what happened at the siege of Ta'if after the Battle of Hunain. [4]",
+      "model_answer": "After their defeat at Hunain in 8 AH the surviving Hawazin and Thaqif took refuge inside the strongly fortified city of Ta'if. The Muslims besieged the city for about twenty days and used catapults against its walls, but the defences held and the siege caused casualties among the Muslims. The Prophet (PBUH) lifted the siege and withdrew rather than continue. When asked to curse the people of Ta'if he prayed for their guidance instead. About a year later a delegation from Thaqif came to Madinah and accepted Islam, so the city was won without further fighting.",
+      "marks": 4
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 5,
+      "topic_title": "The Advent of Islam - Holy Prophet's Life in Madina",
+      "question": "What was the Year of Deputations, and why was it significant? [4]",
+      "model_answer": "The Year of Deputations, Am al-Wufud, was the ninth year after the Hijrah, when delegations came to Madinah from tribes across the whole Arabian peninsula to accept Islam and pledge their loyalty to the Prophet (PBUH). It followed the Conquest of Makkah and the expedition to Tabuk, after which the remaining tribes recognised that opposition was finished. It was significant because it showed that Islam had spread across Arabia by agreement rather than by war, that the Prophet (PBUH) was now accepted as the leader of the peninsula, and that a single community had replaced the old tribal divisions.",
+      "marks": 4
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 6,
+      "topic_title": "The Study of Hadith and Sunnah",
+      "question": "Explain the difference between Hadith and Sunnah. [4]",
+      "model_answer": "Hadith is the recorded report of what the Prophet (PBUH) said, did or silently approved, and it consists of the narration itself, transmitted in words with a chain of narrators. Sunnah is the practice and way of the Prophet (PBUH), the model of conduct that the community follows, whether or not it was ever recorded in a particular report. So Hadith is the record and Sunnah is the practice that the record describes. A Sunnah can reach the community by continuous practice from one generation to the next, such as the method of praying or performing Hajj, even where no single Hadith text sets it out in full. Every authentic Hadith about the Prophet's conduct is evidence for the Sunnah, but the Sunnah is broader than the collected Hadith.",
+      "marks": 4
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 6,
+      "topic_title": "The Study of Hadith and Sunnah",
+      "question": "Describe the two parts of a Hadith and explain why both are important. [4]",
+      "model_answer": "A Hadith has two parts. The Sanad, or Isnad, is the chain of narrators, the list of people who passed the report on from the Prophet (PBUH) down to the person who recorded it. The Matn is the actual text or content of the report, the words describing what the Prophet (PBUH) said or did. Both are essential. The Sanad allows scholars to judge reliability, because each narrator can be examined for honesty, memory and whether he actually met the person he reports from; a break or a weak narrator in the chain weakens the Hadith. The Matn is examined to check that the content does not contradict the Quran, established Sunnah, reason or known history. A Hadith is accepted only when both the chain and the text pass examination.",
+      "marks": 4
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 6,
+      "topic_title": "The Study of Hadith and Sunnah",
+      "question": "What methods did the scholars of Hadith (Muhaddithun) use to authenticate a Hadith? Explain with examples. [6]",
+      "model_answer": "The Muhaddithun developed a rigorous system. First they examined the Sanad, requiring an unbroken chain in which each narrator had genuinely met the one before him. Second they examined each narrator personally through the science of Jarh wa Ta'dil, criticism and endorsement, assessing his honesty, piety, accuracy of memory and whether he was known to have made errors; biographical dictionaries such as those of Ibn Hajar recorded the lives of thousands of narrators for this purpose. Third they compared different chains for the same report, since a Hadith reported through many independent chains is stronger than one reported through a single chain. Fourth they examined the Matn, rejecting any text that contradicted the Quran, a well-established Sunnah, sound reason or known historical fact, or which used language unlike that of the Prophet (PBUH). Imam Bukhari is the best-known example of this rigour: he is reported to have examined many thousands of narrations and to have accepted only a small fraction into his Sahih, travelling widely to meet narrators in person, and requiring proof that a narrator had actually met the one he quoted rather than merely lived at the same time.",
+      "mark_scheme": "Level 1 (1-2): Mentions that scholars checked the narrators. Level 2 (3-4): Describes examination of the chain and the text with limited detail. Level 3 (5-6): Full account covering the unbroken chain, Jarh wa Ta'dil, comparison of multiple chains and examination of the Matn, supported by a named example such as Imam Bukhari.",
+      "marks": 6
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 6,
+      "topic_title": "The Study of Hadith and Sunnah",
+      "question": "How do Da'if (weak) and Mawdu (fabricated) Hadith differ from each other? Explain with at least one example. [4]",
+      "model_answer": "A Da'if or weak Hadith is a genuine attempt at a report which fails to meet the conditions of authenticity. Its chain may be broken, or a narrator may have a poor memory, or be of doubtful reliability, but there is no proof that anyone invented it deliberately. A Mawdu or fabricated Hadith is not a real Hadith at all: it is a saying invented and falsely attributed to the Prophet (PBUH), whether for political advantage, sectarian purposes, to encourage people towards good deeds, or to support a personal view. The difference is therefore one of intention and status: weakness is a defect, fabrication is a lie. In practice, a Da'if Hadith may be mentioned in matters of virtue and encouragement under strict conditions, but a Mawdu Hadith may never be narrated as a saying of the Prophet (PBUH) except to warn people that it is false. The Prophet (PBUH) himself warned that whoever deliberately lies about him should take his place in the Fire.",
+      "marks": 4
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 6,
+      "topic_title": "The Study of Hadith and Sunnah",
+      "question": "Describe the main stages in the compilation of Hadith. [6]",
+      "model_answer": "In the first stage, during the Prophet's lifetime, Hadith was preserved mainly in memory. The Prophet (PBUH) initially discouraged general writing so that Hadith would not be confused with the Quran, though he permitted certain companions to write, and Abdullah ibn Amr (RA) kept a written collection called al-Sahifah al-Sadiqah. In the second stage, the era of the Companions and their successors, reports were transmitted carefully by word of mouth, and the companions were cautious, often requiring witnesses before accepting a report. In the third stage, official written compilation began: the caliph Umar ibn Abdul Aziz ordered the systematic collection of Hadith about a hundred years after the Hijrah, fearing that scholars were dying and knowledge being lost, and Imam Malik's Muwatta belongs to this period. In the fourth stage, during the third century after the Hijrah, the great classified collections were produced, arranged by subject and screened for authenticity. These include the six most respected books: Sahih Bukhari, Sahih Muslim, Sunan Abu Dawud, Jami al-Tirmidhi, Sunan al-Nasa'i and Sunan Ibn Majah. Bukhari and Muslim are regarded as the most authentic. In later stages scholars produced commentaries, abridgements and works of criticism on these collections.",
+      "mark_scheme": "Level 1 (1-2): Names one collection or states that Hadith was memorised. Level 2 (3-4): Two or three stages described with limited detail. Level 3 (5-6): Clear account of the progression from memory to written compilation, including Umar ibn Abdul Aziz and at least two of the six books named.",
+      "marks": 6
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 7,
+      "topic_title": "Foundation of Society",
+      "question": "Discuss three rights and responsibilities of husbands and wives in Islam. [6]",
+      "model_answer": "The first is maintenance and obedience. The husband is responsible for providing his wife with food, clothing and shelter according to his means, and this remains his duty even if she has wealth of her own. In return the wife is expected to cooperate with him in what is lawful and to manage the household with him.\n\nThe second is kind treatment and companionship. The Quran commands husbands to live with their wives in kindness, and the Prophet (PBUH) said that the best of you are those who are best to their wives. Neither may abuse, humiliate or neglect the other, and both are required to be faithful.\n\nThe third is the protection of rights and property. The wife has an absolute right to her mahr, which belongs to her alone, and she keeps full ownership of any wealth she brings or earns; the husband has no claim on it. Both must guard each other's honour and keep private matters private, and both share responsibility for raising and educating their children.\n\nThe Quran describes spouses as garments for one another, which conveys mutual protection, closeness and the covering of each other's faults. The relationship is therefore one of shared responsibility rather than one-sided authority.",
+      "mark_scheme": "Level 1 (1-2): Names one right without explanation. Level 2 (3-4): Two or three rights named with brief explanation. Level 3 (5-6): Three rights fully explained, balanced between husband and wife, and supported by reference to the Quran or a Hadith.",
+      "marks": 6
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 7,
+      "topic_title": "Foundation of Society",
+      "question": "Explain the rights and duties of parents and children in Islam. [6]",
+      "model_answer": "Parents have the right to be obeyed in all that is lawful, and to be treated with kindness and respect. The Quran places kindness to parents immediately after the worship of Allah and forbids a child even to say a word of complaint to them, particularly in their old age. Children must speak gently to them, maintain them when they are old, and pray for them during their lives and after their deaths. Obedience has one limit: no parent may be obeyed in disobedience to Allah, though even then they must be treated with respect.\n\nChildren have rights from the moment of birth. They have the right to life, since the killing of infants is forbidden; the right to a good name; the right to be fed, clothed and sheltered; and the right to affection. The Prophet (PBUH) said that no father gives his child a better gift than good education and upbringing, so education, both religious and worldly, is a duty owed to the child. Parents must treat their children justly and not favour one over another, and the Prophet (PBUH) especially urged kind treatment of daughters, promising Paradise to a man who raises daughters well. Parents are also responsible for setting a good example, since a child learns conduct from what is done rather than what is said.",
+      "mark_scheme": "Level 1 (1-2): States that children must obey parents. Level 2 (3-4): Covers rights on one side with some detail. Level 3 (5-6): Covers both parents' and children's rights fully, including the limit on obedience and the duty of education, supported by Quranic reference or Hadith.",
+      "marks": 6
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 7,
+      "topic_title": "Foundation of Society",
+      "question": "Describe the duties of a ruler and the rights of citizens in an Islamic state. [6]",
+      "model_answer": "A ruler in Islam holds a trust rather than a personal possession. His duties are to govern by the Quran and Sunnah, to establish justice without favour to rich or poor, and to consult others through Shura rather than rule by his own opinion alone. He must protect the lives, property, honour and religion of his people, including non-Muslim citizens, collect and distribute Zakat and public wealth honestly, defend the state, and provide for the poor, the orphan and the traveller. He is accountable to Allah for every person under his authority, and the Prophet (PBUH) said that every one of you is a shepherd and each is responsible for his flock. Hazrat Umar (RA) is the standard example, saying that if a dog died of hunger by the Euphrates he would fear being questioned about it.\n\nCitizens have the right to justice, security, equality before the law and the necessities of life, and the right to hold the ruler to account. Their duty in return is obedience to the ruler in all that is lawful, payment of lawful taxes, defence of the state and preservation of public order. This obedience is conditional: there is no obedience to a created being in disobedience to the Creator, so an order to commit sin must not be followed. The Prophet (PBUH) described speaking a word of truth before an unjust ruler as the best form of jihad, so honest criticism is a duty rather than a rebellion.",
+      "mark_scheme": "Level 1 (1-2): States that a ruler must be just. Level 2 (3-4): Several duties or rights listed with limited explanation. Level 3 (5-6): Both duties and rights covered, including Shura, accountability, the conditional nature of obedience, and supported by a Hadith or the example of a caliph.",
+      "marks": 6
+    },
+    {
+      "section": "C",
+      "type": "short_answer",
+      "topic_number": 8,
+      "topic_title": "The Main Practices in Islam",
+      "question": "Explain the importance of Zakat in Islamic society. [6]",
+      "model_answer": "Zakat is the fourth pillar of Islam and is obligatory on every Muslim whose wealth reaches the nisab threshold and has been held for a lunar year. The usual rate on savings, gold and silver is two and a half per cent. Its importance is both spiritual and social. Spiritually the word means purification and growth: it purifies the giver's wealth and cleanses the heart of greed and attachment to money, and it is an act of obedience through which a Muslim acknowledges that wealth is a trust from Allah rather than an absolute possession. Socially, Zakat transfers wealth from those who have surplus to the eight categories named in the Quran, including the poor, the needy, those in debt, travellers and those whose hearts are to be reconciled. This narrows the gap between rich and poor, reduces resentment and crime, and provides a permanent, organised system of relief rather than occasional charity. Because it is a right of the poor rather than a favour from the rich, the recipient keeps his dignity. It also keeps wealth circulating in the economy rather than being hoarded. The Quran repeatedly pairs the command to establish Salah with the command to give Zakat, which shows that duty to Allah and duty to society are inseparable in Islam.",
+      "mark_scheme": "Level 1 (1-2): States that Zakat is charity for the poor. Level 2 (3-4): Explains the rate or the recipients with some detail. Level 3 (5-6): Covers both the spiritual and social importance, the nisab and rate, the categories of recipient, and the pairing with Salah in the Quran.",
+      "marks": 6
+    },
+    {
+      "section": "C",
+      "type": "extended",
+      "topic_number": 8,
+      "topic_title": "The Main Practices in Islam",
+      "question": "Describe the main rites of Hajj and explain their significance. [8]",
+      "model_answer": "Hajj is the fifth pillar, obligatory once in a lifetime on every Muslim who is physically and financially able, and it is performed in the month of Dhul-Hijjah. The pilgrim first enters the state of ihram at the appointed miqat, wearing two plain unstitched white sheets and reciting the Talbiyah. On arrival at Makkah the pilgrim performs Tawaf, circling the Kaaba seven times, and Sa'i, walking seven times between Safa and Marwah in memory of Hajar's search for water for her son Isma'il. On the eighth day the pilgrims move to Mina, and on the ninth they stand at Arafat from midday until sunset; this standing, the Wuquf, is the essential pillar of Hajj, and the Prophet (PBUH) said that Hajj is Arafat. After sunset they move to Muzdalifah to spend the night and gather pebbles. On the tenth day they stone the largest pillar at Mina, offer a sacrifice in memory of Ibrahim's willingness to sacrifice his son, shave or cut the hair and remove ihram, and perform Tawaf al-Ifadah. The stoning is repeated on the following days, and the pilgrim finally performs Tawaf al-Wida, the farewell circling.\n\nThe significance is considerable. The identical white garments erase every distinction of wealth, race and rank, so millions stand as equals before Allah, which is the clearest possible demonstration of Muslim brotherhood and of Tawheed. The rites recall the sacrifices of Ibrahim, Hajar and Isma'il (AS), linking the pilgrim to the origins of monotheism. The standing at Arafat is a rehearsal for the Day of Judgement, when all mankind will stand before Allah. Hajj demands patience, discipline and self-restraint, and the pilgrim whose Hajj is accepted returns free of sin, as the Prophet (PBUH) said, like the day his mother bore him. It also unites Muslims from every country in a single act of worship each year, strengthening the sense of one global community.",
+      "mark_scheme": "Level 1 (1-2): Names Hajj as pilgrimage to Makkah. Level 2 (3-4): Some rites named, order may be confused, little significance given. Level 3 (5-6): Most rites described in correct order with some explanation of significance. Level 4 (7-8): Full and correctly sequenced account of the rites, with developed significance covering equality, the link to Ibrahim, Arafat as a rehearsal for Judgement, and Muslim unity.",
+      "marks": 8
+    }
+  ]
+}

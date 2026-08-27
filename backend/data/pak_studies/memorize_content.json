@@ -85,6 +85,47 @@
       "tier_label": "Tier 1: Critical"
     },
     {
+      "id": "ps_mughal_decline",
+      "section": "B",
+      "category": "topic",
+      "display_category": "history",
+      "group_id": "mughal_decline",
+      "group_label": "Decline of the Mughals and British Rule",
+      "title": "Decline of the Mughals and the Rise of the British",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Weak successors after Aurangzeb (d. 1707) could not hold the empire together.",
+        "Wars of succession drained the treasury and split the nobility; provincial governors became independent in practice.",
+        "Invasions by Nadir Shah (1739) and Ahmad Shah Abdali destroyed Mughal wealth and prestige.",
+        "The East India Company won Bengal at Plassey (1757) and became the real power in India.",
+        "The War of Independence (1857) failed; the last Mughal, Bahadur Shah Zafar, was exiled to Rangoon.",
+        "Control passed from the Company to the British Crown in 1858, and Muslims were blamed and excluded from office.",
+        "Key pattern: political decline then military defeat then educational and economic backwardness for Muslims."
+      ]
+    },
+    {
+      "id": "ps_constitutional_milestones",
+      "section": "B",
+      "category": "topic",
+      "display_category": "history",
+      "group_id": "freedom_milestones",
+      "group_label": "Constitutional Milestones 1906-1947",
+      "title": "Constitutional Milestones of the Freedom Movement",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "Simla Deputation (1906): led by Sir Aga Khan to Lord Minto, demanded separate representation for Muslims.",
+        "Morley-Minto Reforms (1909): granted separate electorates and weightage; recognised Muslims as a distinct community.",
+        "Lucknow Pact (1916): Congress accepted separate electorates; Jinnah called the Ambassador of Hindu-Muslim Unity.",
+        "Round Table Conferences (1930, 1931, 1932): three sessions in London; failed to agree on minority representation.",
+        "Government of India Act (1935): introduced provincial autonomy; led to the elections of 1937.",
+        "Congress Ministries (1937-1939): Muslim grievances recorded in the Pirpur and Shareef reports; League marked a Day of Deliverance.",
+        "Cabinet Mission Plan (1946): three-tier federation for a united India; collapsed when Congress and the League read it differently.",
+        "Elections 1945-1946: the League won all 30 Muslim seats in the Central Assembly, proving it spoke for Muslims."
+      ]
+    },
+    {
       "id": "ps_foreign_policy",
       "section": "C",
       "category": "topic",
@@ -162,6 +203,66 @@
       "tier_label": "Tier 2: Most Important"
     },
     {
+      "id": "ps_minerals_fishing",
+      "section": "B",
+      "category": "topic",
+      "display_category": "resources",
+      "group_id": "minerals_fishing",
+      "group_label": "Minerals and Fishing",
+      "title": "Mineral Resources and the Fishing Industry",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "Rock salt: Khewra in Punjab, one of the largest salt mines in the world.",
+        "Coal: the Thar coalfield in Sindh holds the largest reserves, mostly low-grade lignite.",
+        "Copper and gold: Saindak and Reko Diq in Balochistan.",
+        "Limestone and gypsum feed the cement industry; natural gas comes mainly from Sui in Balochistan.",
+        "Mining problems: remote sites, poor transport, shortage of capital and technology, security concerns, land and water pollution.",
+        "Fishing: main ports are Karachi and Gwadar; shrimp and fish are exported to the Middle East and Asia.",
+        "Fishing problems: overfishing, fine nets, industrial pollution, no refrigeration on small boats, loss of mangrove breeding grounds."
+      ]
+    },
+    {
+      "id": "ps_farming_systems",
+      "section": "B",
+      "category": "topic",
+      "display_category": "agriculture",
+      "group_id": "farming_systems",
+      "group_label": "Farming Systems, Crops and Livestock",
+      "title": "Farming Systems, Cash Crops and Livestock",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "Subsistence farming: grown to feed the farmer's own family; small plots, simple tools, low yields (wheat, maize, pulses).",
+        "Cash crop farming: grown for sale to industry or export; larger holdings, tube wells, fertiliser and improved seed.",
+        "Pakistan's main cash crops are cotton, sugarcane, rice and tobacco.",
+        "Cotton is the most important because it supplies the textile industry, the largest source of export earnings.",
+        "Livestock gives milk, meat, hides for leather, wool for carpets, and draught power on small farms.",
+        "Livestock also acts as savings for poor families, since animals can be sold when money is needed.",
+        "Key pattern: most Pakistani farmers do both, wheat for the family and cotton or sugarcane for sale."
+      ]
+    },
+    {
+      "id": "ps_industry_sectors",
+      "section": "B",
+      "category": "topic",
+      "display_category": "economy",
+      "group_id": "industry_sectors",
+      "group_label": "Industry and Economic Sectors",
+      "title": "Industry, Cement and the Informal Sector",
+      "arabic": "",
+      "tier_label": "Tier 2: Most Important",
+      "lines": [
+        "Primary industry extracts raw materials (mining, farming, fishing); secondary manufactures; tertiary provides services.",
+        "Cotton textiles is the largest industry by employment and export earnings.",
+        "Cement plants sit near limestone and gypsum: northern Punjab (Salt Range), Khyber Pakhtunkhwa, Sindh and Balochistan.",
+        "Pakistan now produces surplus cement and exports it to Afghanistan and neighbouring countries.",
+        "Formal sector: registered, taxed, keeps accounts, workers have contracts and legal protection.",
+        "Informal sector: unregistered street vendors, small workshops, domestic servants; no tax, no records, no job security.",
+        "The informal sector absorbs labour the formal economy cannot, but the government loses tax revenue and workers can be exploited."
+      ]
+    },
+    {
       "id": "ps_current_perspectives",
       "section": "C",
       "category": "topic",
@@ -215,6 +316,46 @@
         "A balanced foreign policy lets Pakistan pursue peace, development, and regional influence."
       ],
       "tier_label": "Tier 3: Nice to Learn"
+    },
+    {
+      "id": "ps_transport_comms",
+      "section": "B",
+      "category": "topic",
+      "display_category": "infrastructure",
+      "group_id": "transport_comms",
+      "group_label": "Transport and Telecommunications",
+      "title": "Transport, Railways and Telecommunications",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "Pakistan Railways follows the Indus valley, linking Karachi with Lahore, Peshawar and Quetta.",
+        "Main Line 1 (ML-1) runs Karachi to Peshawar and is being upgraded under CPEC.",
+        "Railways move bulky goods (coal, wheat, cement, fertiliser) more cheaply per tonne than road.",
+        "Rail has declined through under-investment, ageing track and competition from road haulage.",
+        "The Karakoram Highway links Pakistan with China; Gwadar is the deep-sea port developed under CPEC.",
+        "Mobile phones reached rural areas that never had landlines; farmers check crop prices before selling.",
+        "Mobile banking moves remittances quickly and cheaply; the limits are data cost and patchy coverage in the mountains."
+      ]
+    },
+    {
+      "id": "ps_migration_urban",
+      "section": "B",
+      "category": "topic",
+      "display_category": "population",
+      "group_id": "migration_urban",
+      "group_label": "Migration and Urbanisation",
+      "title": "Rural-Urban Migration and Urbanisation",
+      "arabic": "",
+      "tier_label": "Tier 3: Nice to Learn",
+      "lines": [
+        "Push factors: shortage of farmland, holdings divided between sons, rural unemployment, low wages, floods.",
+        "Push factors also include lack of schools, hospitals and electricity in the villages.",
+        "Pull factors: factory and service jobs, higher wages, better schools and hospitals, the attraction of city life.",
+        "Cities gain cheap labour but suffer overcrowding and the spread of katchi abadis (squatter settlements).",
+        "Urban effects: pressure on water, sanitation and transport, and rising urban unemployment.",
+        "Rural effects: loss of young working-age men leaves an ageing population and a shortage of farm labour.",
+        "Remittances sent home by migrants do raise rural incomes, so the effect is not wholly negative."
+      ]
     }
   ]
 }

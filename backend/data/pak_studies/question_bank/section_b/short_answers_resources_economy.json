@@ -1,0 +1,85 @@
+{
+  "questions": [
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Describe the main mineral resources of Pakistan and the problems facing their extraction. [5]",
+      "model_answer": "Pakistan has large deposits of rock salt at Khewra in Punjab, coal in the Thar desert of Sindh and at Quetta, limestone and gypsum used by the cement industry, and copper and gold at Saindak and Reko Diq in Balochistan. There is also chromite, marble and iron ore, and natural gas at Sui. Extraction faces serious problems: many deposits lie in remote areas of Balochistan with poor roads and no railway access. There is a shortage of capital and modern mining technology, and much coal is low-grade lignite with a high sulphur content. Security concerns in Balochistan discourage investment, and mining causes land degradation, water pollution and health risks to workers.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Explain the importance of the fishing industry in Pakistan and the challenges it faces. [5]",
+      "model_answer": "Fishing is important because it provides employment along the coasts of Sindh and Balochistan, supplies protein for the domestic diet, and earns foreign exchange through the export of shrimp and fish to the Middle East and Asia. Karachi and Gwadar are the main fishing ports, and there is also inland fishing in the rivers and lakes. The industry faces several challenges: overfishing and the use of fine nets have reduced stocks, and pollution from Karachi's industrial and domestic waste damages the marine environment. Many boats are small and lack refrigeration, so the catch spoils before it reaches market. Damage to the mangrove forests of the Indus delta destroys the breeding grounds on which many species depend.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Distinguish between subsistence farming and cash crop farming, giving examples from Pakistan. [5]",
+      "model_answer": "In subsistence farming the farmer grows food mainly to feed his own family, with little or no surplus for sale. Holdings are small, tools are simple and yields are low. Wheat, maize and pulses grown on small plots are typical examples. In cash crop farming the crop is grown deliberately for sale, usually to industry or for export. Holdings are larger, and farmers use tube wells, fertiliser, pesticides and improved seed. Cotton, sugarcane, rice and tobacco are Pakistan's main cash crops. Cotton is the most important because it supplies the textile industry, which is the country's largest source of export earnings. Many Pakistani farmers in practice combine the two, growing wheat for the family and cotton or sugarcane for sale.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Explain the importance of livestock farming to Pakistan's rural economy. [5]",
+      "model_answer": "Livestock provides milk, meat, eggs and butter, which are a major part of the rural diet and an important source of protein. It gives farming families a regular income between harvests, so it reduces the risk of relying on a single crop. Hides and skins supply the leather industry, and wool supplies carpet and textile manufacture, both of which earn export income. Cattle and buffalo still provide draught power for ploughing and transport on small farms that cannot afford tractors, and animal dung is used as fertiliser and fuel. Livestock also acts as a form of savings for poor families, since animals can be sold when money is urgently needed.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "Describe the location and importance of the cement industry in Pakistan. [5]",
+      "model_answer": "Cement plants are located close to deposits of limestone and gypsum, the main raw materials, so the industry is concentrated in northern Punjab around the Salt Range, in Khyber Pakhtunkhwa, and in parts of Sindh and Balochistan. Its importance is that it supplies the construction sector with a bulky product that is expensive to import, so domestic production saves foreign exchange. It supports large infrastructure projects such as dams, roads and housing. The industry provides direct employment at the plants and indirect employment in quarrying and transport. Pakistan now produces a surplus and exports cement to Afghanistan and other neighbouring countries. The main drawbacks are high energy consumption and dust and air pollution around the plants.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "Explain the difference between the formal and informal sectors of Pakistan's economy. [5]",
+      "model_answer": "The formal sector consists of registered businesses that keep accounts, pay taxes and follow labour laws. Workers have contracts, fixed wages, and often pensions or social security. Banks, registered factories and government departments belong to this sector. The informal sector consists of unregistered activity such as street vendors, small workshops, domestic servants, rickshaw drivers and casual construction labour. It pays no tax, keeps no records and offers no job security or legal protection. The informal sector employs a very large share of Pakistan's workforce, which means it absorbs labour that the formal economy cannot, but it also means the government loses tax revenue, workers are open to exploitation, and reliable economic statistics are difficult to collect.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Assess the importance of the railway network to Pakistan's economy. [5]",
+      "model_answer": "Pakistan Railways links Karachi with Lahore, Peshawar and Quetta, following the natural corridor of the Indus valley. Railways are important because they move bulky, heavy goods such as coal, wheat, cement and fertiliser more cheaply per tonne than road transport. They connect the port of Karachi with the industrial and agricultural areas of the interior, which is essential for exports. They provide affordable long-distance passenger travel for people who cannot afford air fares, and they employ a large workforce. However, the network has suffered from years of under-investment, ageing track and rolling stock, and competition from road haulage, so its share of freight has fallen. The ML-1 upgrade between Karachi and Peshawar is intended to reverse this decline.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Explain how the development of telecommunications has benefited Pakistan. [5]",
+      "model_answer": "The rapid spread of mobile phones and mobile internet has connected rural areas that never had landline telephones. Farmers can check crop prices in different markets before selling, which improves the price they receive. Mobile banking and branchless banking allow people without a bank account to transfer money, and overseas workers can send remittances home quickly and cheaply. Businesses can reach customers and suppliers across the country, and online work and e-commerce create new employment for young people. Telecommunications also improves access to education and health advice at a distance, and helps the government issue warnings during floods and other emergencies. The main limitations are the cost of data for poor households and uneven coverage in mountainous and remote regions.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Explain the causes and effects of rural-urban migration in Pakistan. [5]",
+      "model_answer": "Migration is caused by push factors in the villages and pull factors in the cities. Push factors include shortage of farmland, division of holdings between sons, rural unemployment and underemployment, low agricultural wages, mechanisation reducing the need for labour, and lack of schools, hospitals and electricity. Floods and land degradation also drive people out. Pull factors include the prospect of factory and service jobs, higher wages, better schools and hospitals, and the attraction of city life. The effects are mixed. Cities gain a supply of cheap labour, but they suffer overcrowding, growth of katchi abadis or squatter settlements, pressure on water, sanitation and transport, and rising unemployment. In the villages the loss of young working-age men leaves an ageing population and a shortage of farm labour, though remittances sent home do raise rural incomes.",
+      "marks": 5
+    }
+  ]
+}

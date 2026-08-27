@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "In supervised learning, a 'label' is:",
+      "options": {
+        "A": "The name of the file the data is stored in",
+        "B": "The correct answer attached to a training example",
+        "C": "The number of times the model is trained",
+        "D": "A column that is removed before training"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "A model performs very well on its training data but badly on new data. This is called:",
+      "options": {
+        "A": "Underfitting",
+        "B": "Overfitting",
+        "C": "Cleaning",
+        "D": "Labelling"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Grouping customers into segments without being given any labels is an example of:",
+      "options": {
+        "A": "Supervised learning",
+        "B": "Unsupervised learning",
+        "C": "Reinforcement learning",
+        "D": "Rule-based reasoning"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "A truth table for a rule with three inputs will have how many rows?",
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "8",
+        "D": "9"
+      },
+      "correct_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 4,
+      "topic_title": "Planning and Autonomous Systems",
+      "question": "In an autonomous robot, the component that detects conditions in the environment is the:",
+      "options": {
+        "A": "Actuator",
+        "B": "Sensor",
+        "C": "Processor",
+        "D": "Display"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "MCQ",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 5,
+      "topic_title": "Ethics, Society and Philosophy of AI",
+      "question": "An AI recruitment system rejects more female applicants because it was trained on the company's past hiring records. This is an example of:",
+      "options": {
+        "A": "Overfitting",
+        "B": "Bias in training data",
+        "C": "A hardware fault",
+        "D": "Unsupervised learning"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Explain the difference between training data and test data, and why they must be kept separate. [4]",
+      "model_answer": "Training data is the set of examples the model learns from; it adjusts its internal values to fit the patterns in this data. Test data is a separate set of examples that the model has never seen, used to measure how well it performs. They must be kept separate because a model can memorise the examples it was trained on rather than learning a general rule. If it is tested on the same data it was trained on, it will score very highly while still failing on anything new, so the score tells you nothing useful. Testing on unseen data measures whether the model can generalise, which is what actually matters when it is used in the real world.",
+      "marks": 4
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 1,
+      "topic_title": "Foundations of Artificial Intelligence",
+      "question": "State the three logical structures used to control the flow of a program, and give one example of each. [3]",
+      "model_answer": "Sequence: steps carried out one after another in order, for example read the sensor value, then calculate the average, then display it. Selection: a choice made using a condition, for example IF temperature > 30 THEN switch on the fan ELSE do nothing. Iteration: repeating steps, for example a FOR loop that processes each of 100 images in turn, or a WHILE loop that keeps reading data while the sensor is connected.",
+      "marks": 3
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "structured",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 3,
+      "topic_title": "Knowledge Representation and Reasoning",
+      "question": "A greenhouse control system uses the rule: IF temperature > 28 AND humidity < 40 THEN turn on the mist sprayer. (i) State the output when temperature is 30 and humidity is 35. (ii) State the output when temperature is 30 and humidity is 55. (iii) Explain what would change if AND were replaced by OR. [6]",
+      "model_answer": "(i) Temperature 30 is greater than 28, so the first condition is true. Humidity 35 is less than 40, so the second condition is true. AND requires both to be true, so the rule fires and the mist sprayer turns on.\n\n(ii) Temperature 30 satisfies the first condition, but humidity 55 is not less than 40, so the second condition is false. AND requires both, so the rule does not fire and the sprayer stays off.\n\n(iii) With OR, the rule fires whenever at least one condition is true. In case (ii) it would now turn the sprayer on, because the temperature condition alone is satisfied. In general the sprayer would run far more often, including on hot but already humid days when misting is unnecessary and could encourage mould, and on cool but very dry days. Changing the operator therefore changes the behaviour of the whole system, which is why logical rules must be written and tested carefully.",
+      "marks": 6
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "structured",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 4,
+      "topic_title": "Planning and Autonomous Systems",
+      "question": "A robot vacuum cleaner must clean a room and return to its charging dock. (i) Describe the steps it would take to plan and carry out this task. (ii) Explain how it should respond if a door is closed part-way through. [6]",
+      "model_answer": "(i) The robot first defines its goal, which is to cover the whole floor area and then return to the dock. It uses its sensors to detect its surroundings and build or recall a map of the room. It plans a route that covers the area efficiently, for example moving in rows. As it moves it continually reads its sensors, using bump and distance sensors to detect obstacles and a cliff sensor to avoid stairs, and applies conditional logic: IF an obstacle is detected THEN turn and take an alternative path. It monitors its battery level, and when the area is covered or the battery falls below a threshold it navigates back to the dock.\n\n(ii) A closed door is a change in the environment that invalidates part of the existing plan. The robot should detect the obstacle through its sensors rather than assuming the map is still correct, update its internal map to mark that route as blocked, and re-plan: it should continue cleaning the areas it can still reach rather than stopping or repeatedly bumping into the door. It should still ensure it can return to the dock before the battery runs out. This ability to adjust a plan in response to new information is what distinguishes an autonomous system from one that simply follows a fixed sequence.",
+      "marks": 6
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "extended",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 6,
+      "topic_title": "Building and Deploying AI Systems",
+      "question": "Describe the main stages involved in building an AI system, from defining the problem to deploying it. [8]",
+      "model_answer": "The first stage is to define the problem and the intended purpose: what the system must do, who will use it and what counts as success. Without this the later stages have no target to aim at.\n\nThe second stage is to collect raw data relevant to the task, from a source that can be justified and used lawfully. The quantity and variety matter, because a model can only learn patterns present in the data it is given.\n\nThe third stage is to prepare the data: clean it by removing duplicates, correcting inconsistent labels and dealing with missing values, classify the fields by data type, label the columns clearly, and save it in a suitable format such as CSV. Every change should be documented so the process is reproducible. A subset is then selected for training, keeping a separate portion back for testing.\n\nThe fourth stage is to train the model using an appropriate tool, such as Teachable Machine for a quick no-code build or Python with TensorFlow for full control.\n\nThe fifth stage is to test using the held-back data and record the results, measuring accuracy alongside other metrics such as precision and recall, and watching the loss for signs of overfitting.\n\nThe sixth stage is to evaluate against the original purpose and refine: adjust parameters, add more training examples for weak classes, or rebalance the dataset, then retest and compare.\n\nThe seventh stage is deployment, making the system available through a web page, an app or an embedded device, and considering usability, accessibility and who is responsible if it makes a mistake.\n\nThe final stage is documentation and maintenance: record how the system works, what data it used and its known limitations, use version control to track changes, and monitor performance after release, since real-world data drifts away from the training data over time.",
+      "marks": 8
+    },
+    {
+      "section": "A",
+      "section_title": "Knowledge and Understanding",
+      "type": "short_answer",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 5,
+      "topic_title": "Ethics, Society and Philosophy of AI",
+      "question": "Explain why 'explainability' is important in AI systems used for decisions about people. [4]",
+      "model_answer": "Explainability means being able to say why a system produced a particular output. It matters because a person affected by a decision, such as a refused loan, a rejected job application or a medical recommendation, has a reasonable right to know the reason. Without an explanation there is no way to challenge or appeal a wrong decision. Explainability also allows bias to be detected: if a system can be shown to be weighting postcode or gender, the fault can be found and corrected, whereas a black box hides it. It supports accountability, because responsibility can be traced when something goes wrong. It also builds trust, since professionals such as doctors and judges are unlikely to rely on a system whose reasoning they cannot inspect. This is why simple, inspectable approaches such as decision trees are sometimes preferred over more accurate but opaque models in high-stakes settings.",
+      "marks": 4
+    }
+  ]
+}

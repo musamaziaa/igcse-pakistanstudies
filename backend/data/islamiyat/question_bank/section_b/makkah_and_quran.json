@@ -1,0 +1,138 @@
+{
+  "questions": [
+    {
+      "section": "B",
+      "type": "extended",
+      "topic_number": 1,
+      "topic_title": "Journey of the Holy Prophet Muhammad (pbuh)",
+      "question": "Describe the early life of the Holy Prophet (PBUH) from his birth until his marriage to Khadija (RA). [8]",
+      "model_answer": "The Prophet (PBUH) was born in Makkah in 570 CE, the Year of the Elephant, into the noble clan of Banu Hashim of the Quraysh. His father Abdullah had died before his birth. Following Arab custom he was sent into the desert to be nursed by Halima Sa'diyah of the Banu Sa'd, where he grew strong and learned pure Arabic. It was here that the event of Shaqq al-Sadr took place, when angels opened his breast and purified his heart. His mother Aminah died at Abwa when he was six, and he was raised first by his grandfather Abdul Muttalib and then, after his death two years later, by his uncle Abu Talib. At about twelve he travelled with Abu Talib on a trade caravan to Syria, where the monk Buhira recognised the Seal of Prophethood between his shoulders and warned Abu Talib to protect him. As a young man he worked as a shepherd and then as a trader, and his honesty earned him the titles Al-Amin and Al-Sadiq. At twenty-five he led the trade caravan of Khadija bint Khuwaylid (RA) to Syria and returned a large profit; impressed by his character, she proposed marriage. He was twenty-five and she was forty, and the marriage lasted twenty-five years until her death.",
+      "mark_scheme": "Level 1 (1-2): Very basic; names only, e.g. born in Makkah, an orphan. Level 2 (3-4): Some events described, may be out of order or with minor inaccuracies. Level 3 (5-6): Clear sequence with key details - Year of the Elephant, Halima, deaths of parents and grandfather, Abu Talib, Syria journey, marriage. Level 4 (7-8): Comprehensive and accurate, correctly sequenced, includes Shaqq al-Sadr and Buhira, and explains the significance of Al-Amin.",
+      "marks": 8
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "Journey of the Holy Prophet Muhammad (pbuh)",
+      "question": "Who was Halima Sa'diyah, and why was the Prophet (PBUH) sent to live with her? [4]",
+      "model_answer": "Halima Sa'diyah was a woman of the Banu Sa'd tribe who became the foster mother and wet nurse of the Prophet (PBUH). It was the custom of the noble families of Makkah to send infants into the desert to be nursed. This was done because the desert air was clean and healthy, life there made children strong, and the Bedouin spoke the purest form of Arabic, which the child would learn. Halima's household was blessed with rain, milk and prosperity while he was with her.",
+      "marks": 4
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "Journey of the Holy Prophet Muhammad (pbuh)",
+      "question": "What happened when the Quraysh rebuilt the Kaaba, and how did the Prophet (PBUH) settle their dispute? [4]",
+      "model_answer": "When the Prophet (PBUH) was about thirty-five, the Quraysh rebuilt the Kaaba after it was damaged by flood. A serious quarrel broke out over which clan would have the honour of placing the Black Stone, and the tribes came close to fighting. They agreed to accept the judgement of the first man to enter the sanctuary, and that man was Muhammad (PBUH). He spread a cloak on the ground, placed the Black Stone in the centre, and had a leader of each clan lift a corner so that all shared the honour equally. He then set the stone in place himself. This showed his wisdom and his ability to keep peace, and confirmed the trust the Quraysh placed in him.",
+      "marks": 4
+    },
+    {
+      "section": "B",
+      "type": "extended",
+      "topic_number": 1,
+      "topic_title": "Journey of the Holy Prophet Muhammad (pbuh)",
+      "question": "Describe the persecution faced by the early Muslims in Makkah and how they responded to it. [8]",
+      "model_answer": "Once the Prophet (PBUH) began open preaching, the Quraysh turned from mockery to violence. Slaves and the weak suffered most because they had no clan to protect them: Bilal (RA) was laid on burning sand with a rock on his chest, Sumayyah (RA) was killed and became the first martyr of Islam, and Khabbab and Ammar (RA) were tortured. Abu Bakr (RA) spent his wealth buying and freeing tortured slaves. The Prophet (PBUH) himself was insulted, had refuse thrown on him while praying, and was protected only by the standing of Abu Talib. The Muslims responded in several ways. In 615 CE the Prophet (PBUH) sent a group of about eleven men and four women to Abyssinia, where the Christian Negus gave them refuge and refused to hand them back after Ja'far ibn Abi Talib (RA) recited Surah Maryam to him; a larger second group followed. The Quraysh then imposed a social and economic boycott on Banu Hashim from about 616 to 619 CE, confining the clan to Shi'b Abi Talib and hanging the boycott document in the Kaaba. It ended only when the document was found eaten by termites except for the name of Allah. In 619 CE, the Year of Sorrow, both Abu Talib and Khadija (RA) died, leaving the Prophet (PBUH) without his protector and his closest support.",
+      "mark_scheme": "Level 1 (1-2): Very basic, e.g. Muslims were treated badly. Level 2 (3-4): Some examples of persecution named, limited detail on the response. Level 3 (5-6): Clear account with named victims and at least one organised response (Abyssinia or the boycott). Level 4 (7-8): Comprehensive - named individuals, both Abyssinian migrations, the boycott with dates and the termite detail, and the Year of Sorrow.",
+      "marks": 8
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "Journey of the Holy Prophet Muhammad (pbuh)",
+      "question": "Why did the Prophet (PBUH) send some of his companions to Abyssinia? [3]",
+      "model_answer": "Persecution in Makkah had become severe and the weaker Muslims had no clan protection. Abyssinia was ruled by the Negus, a just Christian king who would not wrong anyone under his protection. It was also far enough away and across the sea, so the Quraysh could not easily reach the Muslims there.",
+      "marks": 3
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "Journey of the Holy Prophet Muhammad (pbuh)",
+      "question": "Describe the boycott of Banu Hashim and explain how it ended. [4]",
+      "model_answer": "From about 616 to 619 CE the Quraysh imposed a total social and economic boycott on Banu Hashim because the clan refused to surrender the Prophet (PBUH). No one was to trade with them, marry into them or speak to them. The clan was confined to a narrow valley, Shi'b Abi Talib, where they suffered severe hunger and the cries of hungry children could be heard outside. The boycott document was hung inside the Kaaba to make it binding. It ended when sympathetic members of the Quraysh moved to annul it, and the document was found to have been eaten by termites so that nothing remained except the name of Allah.",
+      "marks": 4
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "The Quran: From Revelation to Compilation",
+      "question": "Describe the different ways in which revelation came to the Holy Prophet (PBUH). [6]",
+      "model_answer": "Revelation came in several forms. The earliest was true dreams, which came clear as daybreak. Sometimes revelation came like the ringing of a bell, which was the hardest form on the Prophet (PBUH). At other times Angel Jibrail appeared in the form of a man, often as the companion Dihyah al-Kalbi, and spoke to him directly. Occasionally Jibrail appeared in his true angelic form, as at the first revelation in the Cave of Hira and during the Isra. Sometimes words were cast directly into his heart. On the night of Mi'raj Allah spoke to him without any intermediary. Physical effects accompanied revelation: he would perspire heavily even on a cold day, his body would become heavy so that a camel would kneel under the weight, and his face would change colour.",
+      "mark_scheme": "Level 1 (1-2): One or two forms named without explanation. Level 2 (3-4): Several forms named with brief description. Level 3 (5-6): Most forms covered accurately, with the physical effects and at least one supporting example such as Dihyah al-Kalbi or the Cave of Hira.",
+      "marks": 6
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "The Quran: From Revelation to Compilation",
+      "question": "Explain how the Quran was preserved during the lifetime of the Holy Prophet (PBUH). [6]",
+      "model_answer": "The Quran was preserved in two ways during the Prophet's lifetime: in memory and in writing. Whenever a passage was revealed the Prophet (PBUH) recited it to his companions, who memorised it; many became huffaz who knew the whole revelation by heart. He also appointed scribes, among them Zayd ibn Thabit (RA), Ubayy ibn Ka'b (RA) and Mu'awiyah (RA), who wrote the verses on whatever was available, including parchment, palm leaves, flat stones, shoulder blades and pieces of leather. The Prophet (PBUH) himself told the scribes exactly where each new verse belonged in its surah, so the arrangement was fixed by revelation and not by the companions. Jibrail reviewed the whole Quran with the Prophet (PBUH) once every Ramadan, and twice in the final year of his life. The Quran was also recited daily in the five prayers, which kept it constantly in circulation among the whole community.",
+      "mark_scheme": "Level 1 (1-2): Mentions memorisation only. Level 2 (3-4): Both memorisation and writing mentioned, limited detail. Level 3 (5-6): Both fully explained with named scribes, the writing materials, the annual review with Jibrail, and the point that the order was fixed by the Prophet (PBUH).",
+      "marks": 6
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "The Quran: From Revelation to Compilation",
+      "question": "Why was it necessary to compile the Quran into one book during the caliphate of Hazrat Abu Bakr (RA)? [4]",
+      "model_answer": "At the Battle of Yamama against the false prophet Musaylima, a large number of huffaz, those who had memorised the whole Quran, were killed. Hazrat Umar (RA) feared that if such losses continued the Quran might be lost with the deaths of those who carried it in their memory, and he urged Abu Bakr (RA) to have it collected into a single book. Abu Bakr (RA) hesitated at first because the Prophet (PBUH) had not done so, but he was persuaded of the need. The written verses were scattered on many different materials and held by different companions, so gathering them into one authoritative copy protected the text for future generations.",
+      "marks": 4
+    },
+    {
+      "section": "B",
+      "type": "extended",
+      "topic_number": 2,
+      "topic_title": "The Quran: From Revelation to Compilation",
+      "question": "Explain how the Quran was compiled in the caliphate of Hazrat Abu Bakr (RA) and standardised under Hazrat Uthman (RA). [8]",
+      "model_answer": "After many huffaz were killed at the Battle of Yamama, Hazrat Umar (RA) urged Abu Bakr (RA) to collect the Quran into one book. Abu Bakr (RA) appointed Zayd ibn Thabit (RA), who had been a scribe of revelation, to carry out the task. Zayd applied a strict method: he accepted no verse unless it was confirmed both from memory and from a written record, and unless two reliable witnesses testified that it had been written in the presence of the Prophet (PBUH). The completed copy was kept with Abu Bakr (RA), then passed to Umar (RA), and afterwards to his daughter Hafsa (RA).\n\nDuring the caliphate of Uthman (RA) the empire had spread widely and Muslims in different regions recited the Quran in different dialects. Hudhayfah ibn al-Yaman (RA) returned from the campaigns in Armenia and Azerbaijan alarmed at the disputes he had seen over recitation. Uthman (RA) borrowed the copy held by Hafsa (RA) and appointed a committee under Zayd ibn Thabit (RA) to produce standard copies in the dialect of the Quraysh, the dialect in which the Quran was revealed. Several copies were made and sent to the main centres of the Muslim world, each with a qualified reciter, and all other variant copies were destroyed to prevent future dispute. The original was returned to Hafsa (RA). Because of this work the text of the Quran has remained identical everywhere ever since, and Uthman (RA) is remembered as Jami al-Quran, the one who united the Muslims on one recitation.",
+      "mark_scheme": "Level 1 (1-2): Names Abu Bakr or Uthman with no process. Level 2 (3-4): One of the two stages described with basic detail. Level 3 (5-6): Both stages described accurately with Zayd ibn Thabit and the reason for each. Level 4 (7-8): Both stages fully covered including Yamama, Zayd's two-witness method, the copy passing to Hafsa, Hudhayfah's report, the Quraysh dialect and the destruction of variants.",
+      "marks": 8
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "The Quran: From Revelation to Compilation",
+      "question": "Explain how the Quran and the Sunnah act as the primary sources of Islamic law. [6]",
+      "model_answer": "The Quran is the first and highest source of Islamic law because it is the direct word of Allah, preserved without change. It lays down the fundamental beliefs, the obligations of worship, the limits set by Allah, and rules on matters such as inheritance, marriage, trade and criminal punishment. However, the Quran often states principles rather than detail. The Sunnah, the sayings, actions and approvals of the Prophet (PBUH), is the second source and explains and applies what the Quran states in general terms. The Quran commands prayer but the Sunnah shows its times, units and method; the Quran commands Zakat but the Sunnah fixes the rates and thresholds. The Sunnah may also establish rulings on which the Quran is silent. The two can never conflict, because the Prophet (PBUH) did not speak from his own desire. Where neither gives a direct ruling, scholars turn to the secondary sources of Ijma, the consensus of qualified scholars, and Qiyas, reasoning by analogy from an existing ruling.",
+      "mark_scheme": "Level 1 (1-2): States that the Quran and Sunnah are sources without explanation. Level 2 (3-4): Explains the role of each with limited example. Level 3 (5-6): Explains the relationship clearly, gives at least one concrete example such as Salah or Zakat, and mentions the secondary sources.",
+      "marks": 6
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 4,
+      "topic_title": "The Foundation of Islamic Faith",
+      "question": "Discuss the Muslim belief concerning the revealed books. [6]",
+      "model_answer": "Belief in the revealed books is the third of the six articles of faith. Muslims believe that Allah sent guidance to mankind through books revealed to His prophets, and that a Muslim must believe in all of them without distinction. Four are named in the Quran: the Suhuf given to Ibrahim (AS), the Tawrat given to Musa (AS), the Zabur given to Dawud (AS), and the Injil given to Isa (AS). The Quran was revealed to Muhammad (PBUH) and is the final book. Muslims believe the earlier scriptures were true when revealed, but that they were altered by people over time so that their present forms are no longer wholly reliable. The Quran alone has been preserved exactly as revealed, because Allah has promised to protect it. The Quran therefore confirms what was true in the earlier books, corrects what was changed, and supersedes them as the final and complete guidance for all mankind until the Day of Judgement.",
+      "mark_scheme": "Level 1 (1-2): Names one or two books only. Level 2 (3-4): Names the books and their prophets with basic explanation. Level 3 (5-6): Full explanation including belief in all books, the alteration of earlier scriptures, and the preserved and final status of the Quran.",
+      "marks": 6
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 4,
+      "topic_title": "The Foundation of Islamic Faith",
+      "question": "Why is the Holy Quran considered superior to all other revealed books? [4]",
+      "model_answer": "The Quran is the final revelation and no book will come after it, so it completes the guidance sent to mankind. It has been preserved exactly as it was revealed, both in memory and in writing, while the earlier scriptures were altered by people over time. It was revealed for the whole of mankind and for all time, whereas earlier books were sent to particular nations for particular periods. It is a complete code of life covering belief, worship, law, morality and social dealings, and it confirms and corrects what came before it. It is also a standing miracle in its language and eloquence, which no one has been able to match.",
+      "marks": 4
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 4,
+      "topic_title": "The Foundation of Islamic Faith",
+      "question": "Explain the meaning and importance of Tawheed in Islam. [6]",
+      "model_answer": "Tawheed means the absolute oneness and uniqueness of Allah, and it is the first and most important article of faith. It means that Allah is one in His being, one in His attributes, and one in His right to be worshipped; He has no partner, no equal, no child and no parent. Surah Al-Ikhlas states this belief in its purest form. Tawheed is important because it is the foundation on which all other beliefs and practices rest; without it no act of worship is accepted. Its opposite, shirk or associating partners with Allah, is described in the Quran as the one sin Allah will not forgive if a person dies upon it. Tawheed also shapes how a Muslim lives: it frees a person from fear of any created thing, since only Allah can benefit or harm; it creates equality, because all people stand equal before one Creator; and it gives life a single purpose, which is to worship and obey Allah alone.",
+      "mark_scheme": "Level 1 (1-2): States that Allah is one. Level 2 (3-4): Defines Tawheed and mentions shirk as its opposite. Level 3 (5-6): Full definition covering oneness in being, attributes and worship, supported by reference to Surah Al-Ikhlas, and explains the practical effects on a Muslim's life.",
+      "marks": 6
+    }
+  ]
+}

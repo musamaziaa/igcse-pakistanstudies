@@ -69,6 +69,70 @@ class ExamSetup(BaseModel):
     inc_c: bool = True
     mode: str = "Mixed (MCQ + Extended)"
     n_questions: int = 10
+    # "full"  -> build a paper matching the real LRN structure (see PAPER_BLUEPRINTS)
+    # "quick" -> the old behaviour: n_questions drawn at random from the pool
+    paper_mode: str = "full"
+
+
+# ── Real paper structures ────────────────────────────────────────────────────
+# Each subject's actual LRN paper: total marks, timing, and how those marks are
+# split across sections. `types` lists the question types a section may draw
+# from; `marks` is that section's mark budget, which the builder fills from the
+# question bank. Taken from the papers in backend/data/{subject}/source_docs/.
+# A subject with no blueprint falls back to random selection.
+PAPER_BLUEPRINTS: Dict[str, Dict[str, Any]] = {
+    "islamiyat": {
+        "paper": "Islamiyat (2141)", "total_marks": 70, "duration_minutes": 150,
+        "sections": [
+            {"key": "A", "title": "Section A: Multiple Choice", "marks": 20, "types": ["mcq"]},
+            {"key": "B", "title": "Section B: The Quran, Hadith and Belief", "marks": 25,
+             "types": ["short_answer", "extended", "essay"]},
+            {"key": "C", "title": "Section C: Life in Madinah, Hadith and Society", "marks": 25,
+             "types": ["short_answer", "extended", "essay"]},
+        ],
+    },
+    "pak_studies": {
+        "paper": "Pakistan Studies (2107)", "total_marks": 50, "duration_minutes": 150,
+        "sections": [
+            {"key": "A", "title": "Section A: Multiple Choice", "marks": 15, "types": ["mcq"]},
+            {"key": "B", "title": "Section B: Short Answer", "marks": 20, "types": ["short_answer"]},
+            {"key": "C", "title": "Section C: Extended Response", "marks": 15,
+             "types": ["extended", "essay"]},
+        ],
+    },
+    "hospitality": {
+        "paper": "Hospitality (7146) Paper 1", "total_marks": 50, "duration_minutes": 60,
+        "sections": [
+            {"key": "A", "title": "Section A: Multiple Choice", "marks": 10, "types": ["mcq"]},
+            {"key": "B", "title": "Section B: Short Answer", "marks": 25, "types": ["short_answer"]},
+            {"key": "C", "title": "Section C: Extended Response", "marks": 15,
+             "types": ["extended", "essay"]},
+        ],
+    },
+    "cs": {
+        "paper": "Computer Science (7925) Paper 1", "total_marks": 75, "duration_minutes": 105,
+        "sections": [
+            {"key": "Paper 1: Theory", "title": "Paper 1: Theory", "marks": 75,
+             "types": ["short_answer", "structured"]},
+        ],
+    },
+    "ict": {
+        "paper": "ICT (7927) Paper 1", "total_marks": 80, "duration_minutes": 90,
+        "sections": [
+            {"key": "Paper 1: Theory", "title": "Paper 1: Theory", "marks": 80,
+             "types": ["short_answer", "structured"]},
+        ],
+    },
+    "ai": {
+        "paper": "Artificial Intelligence (7923) Paper 1", "total_marks": 100, "duration_minutes": 105,
+        "sections": [
+            {"key": "A", "title": "Section A: Knowledge and Understanding", "marks": 60,
+             "types": ["mcq", "short_answer", "structured", "extended"]},
+            {"key": "B", "title": "Section B: Analysis and Evaluation", "marks": 40,
+             "types": ["case_study", "evaluation", "logical_reasoning"]},
+        ],
+    },
+}
 
 class MemorizeAttempt(BaseModel):
     groups_selected: List[str]
@@ -176,6 +240,13 @@ async def get_project_guide(subject: str):
     if data: return data
     raise HTTPException(status_code=404, detail="No project guide for this subject")
 
+@app.get("/api/{subject}/memorize_stories")
+async def get_memorize_stories(subject: str):
+    path = os.path.join(DATA_DIR, subject, "memorize_stories.json")
+    data = load_json(path)
+    if data: return data
+    raise HTTPException(status_code=404, detail="No story-based memorize content for this subject")
+
 @app.get("/api/{subject}/prep_sessions")
 async def get_prep_sessions(subject: str):
     path = os.path.join(DATA_DIR, subject, "prep_sessions.json")
@@ -188,6 +259,77 @@ async def get_student_progress(student_name: str, subject: str):
     path = os.path.join(get_student_path(student_name, subject), "progress_log.json")
     data = load_json(path)
     return data if data else []
+
+def _fill_section(candidates: List[Dict[str, Any]], budget: int) -> List[Dict[str, Any]]:
+    """Draw questions at random until the section's mark budget is used up.
+
+    Big questions are offered first so a 25-mark section gets an 8-mark essay
+    rather than twenty-five 1-mark items, then smaller ones close the gap. If
+    marks remain at the end, one final pass looks for a question worth exactly
+    the remainder so the section lands on its real total where the bank allows.
+    """
+    remaining = budget
+    available = list(candidates)
+    chosen: List[Dict[str, Any]] = []
+
+    while remaining > 0 and available:
+        fits = [q for q in available if q.get("marks", 1) <= remaining]
+        if not fits:
+            break
+        # Weighted random: a question's chance is proportional to its marks, so
+        # heavy questions usually land early (a 25-mark section gets essays, not
+        # 25 one-markers) while the paper still differs between attempts.
+        weights = [q.get("marks", 1) for q in fits]
+        pick = random.choices(fits, weights=weights, k=1)[0]
+        chosen.append(pick)
+        available.remove(pick)
+        remaining -= pick.get("marks", 1)
+
+    if remaining > 0:
+        exact = [q for q in available if q.get("marks", 1) == remaining]
+        if exact:
+            chosen.append(random.choice(exact))
+
+    random.shuffle(chosen)
+    return chosen
+
+
+def build_paper(pool: List[Dict[str, Any]], blueprint: Dict[str, Any]) -> tuple:
+    """Assemble a paper matching the subject's real structure.
+
+    Returns (questions, section summaries). Returns ([], []) when the bank
+    cannot fill even half of the paper's marks, so the caller can fall back.
+    """
+    by_key: Dict[str, List[Dict[str, Any]]] = {}
+    for q in pool:
+        key = str(q.get("section") or q.get("paper") or "")
+        by_key.setdefault(key, []).append(q)
+
+    questions, summaries = [], []
+    for spec in blueprint["sections"]:
+        allowed = {t.lower() for t in spec["types"]}
+        candidates = [
+            q for q in by_key.get(spec["key"], [])
+            if str(q.get("type", "")).lower() in allowed
+        ]
+        picked = _fill_section(candidates, spec["marks"])
+        for q in picked:
+            q = dict(q)
+            q.setdefault("section", spec["key"])
+            q["section_title"] = spec["title"]
+            questions.append(q)
+        summaries.append({
+            "key": spec["key"], "title": spec["title"],
+            "target_marks": spec["marks"],
+            "marks": sum(q.get("marks", 1) for q in picked),
+            "count": len(picked),
+        })
+
+    got = sum(s["marks"] for s in summaries)
+    if got < blueprint["total_marks"] / 2:
+        return [], []
+    return questions, summaries
+
 
 @app.post("/api/{subject}/exam/generate")
 async def generate_exam(subject: str, setup: ExamSetup):
@@ -220,13 +362,34 @@ async def generate_exam(subject: str, setup: ExamSetup):
         logger.warning("Zero questions found matching criteria")
         raise HTTPException(status_code=400, detail="No questions match criteria in the bank.")
 
+    blueprint = PAPER_BLUEPRINTS.get(subject)
+    if setup.paper_mode == "full" and blueprint:
+        selected, sections = build_paper(pool, blueprint)
+        if selected:
+            return {
+                "questions": selected,
+                "total_available": len(pool),
+                "count": len(selected),
+                "paper_mode": "full",
+                "paper": blueprint["paper"],
+                "target_marks": blueprint["total_marks"],
+                "total_marks": sum(q.get("marks", 1) for q in selected),
+                "duration_minutes": blueprint["duration_minutes"],
+                "sections": sections,
+            }
+        # Bank too thin to assemble a paper — fall through to random selection
+        # rather than failing the request.
+        logger.warning("Could not assemble a full paper for %s; serving random questions", subject)
+
     random.shuffle(pool)
     selected = pool[:setup.n_questions]
-    
+
     return {
         "questions": selected,
         "total_available": len(pool),
-        "count": len(selected)
+        "count": len(selected),
+        "paper_mode": "quick",
+        "total_marks": sum(q.get("marks", 1) for q in selected),
     }
 
 async def grade_submission(subject: str, submission: ExamSubmission) -> Dict[str, Any]:

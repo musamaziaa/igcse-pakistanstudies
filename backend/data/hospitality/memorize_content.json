@@ -84,7 +84,7 @@
       "group_label": "Customer Service Skills",
       "title": "Internal, External Customers & Their Needs",
       "arabic": "",
-      "tier_label": "Tier 2: Most Important",
+      "tier_label": "Tier 1: Critical",
       "lines": [
         "An internal customer is a colleague from another department, such as a commis chef.",
         "An external customer is someone outside the business, such as a paying guest.",
@@ -92,6 +92,45 @@
         "Be attentive to customer needs during service and offer assistance when required.",
         "Customer feedback can be gathered through surveys, comment cards, and reviews."
       ]
+    },
+    {
+      "id": "hosp_nutrition",
+      "section": "Unit 5",
+      "category": "topic",
+      "display_category": "nutrition",
+      "group_id": "nutrition_exercise",
+      "group_label": "Food, Nutrition & Exercise",
+      "title": "Food Groups, Nutrition and Exercise",
+      "arabic": "",
+      "tier_label": "Tier 1: Critical",
+      "lines": [
+        "The main food commodities are meat, vegetables, poultry, fish, and shellfish.",
+        "A balanced diet incorporates different food groups to supply nutrients, minerals, and vitamins.",
+        "Foods can be preserved by being dried, frozen, vacuum-packed, cured, or canned.",
+        "Preserving food can reduce some of its nutritional value.",
+        "Regular exercise benefits both the human body and the human mind."
+      ]
+    },
+    {
+      "id": "hosp_scan",
+      "section": "B",
+      "category": "topic",
+      "display_category": "hospitality",
+      "group_id": "exam_technique",
+      "group_label": "Paper 2-A Technique",
+      "title": "Paper 2-A and the SCAN Scaffold",
+      "arabic": "",
+      "lines": [
+        "Paper 2-A is 50 marks in 1 hour, all scenario-based written answers, no multiple choice.",
+        "Every scenario answer makes four moves: Spot, Cite, Apply, Name the outcome (SCAN).",
+        "Spot: name the problem or need that is actually in the scenario.",
+        "Cite: state the theory behind it, the rule, the term or the number.",
+        "Apply: connect that theory to the real people in the scenario, using their names.",
+        "Name the outcome: the consequence if it is ignored, or the benefit if it is done right.",
+        "Paper 2-A also marks the document format asked for, so if it says two slides, produce two slides.",
+        "Paper 1 rule: a 4-mark explain question splits 2+2, two marks to identify and two to explain why."
+      ],
+      "tier_label": "Tier 1: Critical"
     },
     {
       "id": "hosp_allergens",
@@ -112,24 +151,6 @@
       ]
     },
     {
-      "id": "hosp_nutrition",
-      "section": "Unit 5",
-      "category": "topic",
-      "display_category": "nutrition",
-      "group_id": "nutrition_exercise",
-      "group_label": "Food, Nutrition & Exercise",
-      "title": "Food Groups, Nutrition and Exercise",
-      "arabic": "",
-      "tier_label": "Tier 2: Most Important",
-      "lines": [
-        "The main food commodities are meat, vegetables, poultry, fish, and shellfish.",
-        "A balanced diet incorporates different food groups to supply nutrients, minerals, and vitamins.",
-        "Foods can be preserved by being dried, frozen, vacuum-packed, cured, or canned.",
-        "Preserving food can reduce some of its nutritional value.",
-        "Regular exercise benefits both the human body and the human mind."
-      ]
-    },
-    {
       "id": "hosp_teamwork",
       "section": "Unit 3",
       "category": "topic",
@@ -138,7 +159,7 @@
       "group_label": "Effective Team Working",
       "title": "Teamwork, Dynamics and Conflict",
       "arabic": "",
-      "tier_label": "Tier 3: Nice to Learn",
+      "tier_label": "Tier 2: Most Important",
       "lines": [
         "Working well in a team maximises the success of the team and the business overall.",
         "Positive relationships are encouraged through trust building and getting to know you sessions.",
@@ -146,6 +167,67 @@
         "Conflict can emerge from disagreements between staff members during service.",
         "Conflict can be managed through mediation, mentoring, and regular team meetings."
       ]
+    },
+    {
+      "id": "hosp_economy",
+      "section": "B",
+      "category": "topic",
+      "display_category": "hospitality",
+      "group_id": "industry_economy",
+      "group_label": "Hospitality and the Economy",
+      "title": "Hospitality's Contribution to the Economy",
+      "arabic": "",
+      "lines": [
+        "Hospitality is one of the largest employers in the economy and a major contributor to GDP.",
+        "It employs a wide range of skill levels, so it absorbs both school leavers and trained professionals.",
+        "It supports tourism, since visitors need somewhere to eat and sleep before they will travel.",
+        "It creates indirect employment through its supply chain: farming, food processing, laundry and transport.",
+        "Money spent in a hotel circulates onward to local suppliers, which is called the multiplier effect.",
+        "It earns foreign currency when overseas visitors spend in the country.",
+        "It is vulnerable to recession and to events such as pandemics, because eating out is easy to cut."
+      ],
+      "tier_label": "Tier 2: Most Important"
+    },
+    {
+      "id": "hosp_feedback",
+      "section": "B",
+      "category": "topic",
+      "display_category": "hospitality",
+      "group_id": "service_standards",
+      "group_label": "Feedback and Consistent Standards",
+      "title": "Customer Feedback and Keeping Standards Consistent",
+      "arabic": "",
+      "lines": [
+        "Feedback methods: comment cards, online reviews, email surveys, mystery shoppers and talking to guests.",
+        "Feedback is a free improvement plan; complaints tell you what to fix before more customers leave.",
+        "Never delete or ignore a bad review; reply professionally and say what will change.",
+        "Consistency means every guest gets the same standard on every visit, whoever is on shift.",
+        "Standard Operating Procedures (SOPs) set out exactly how each task is done.",
+        "Pre-service briefings cover menu changes, allergy alerts, VIPs and bookings for that shift.",
+        "Training and induction bring casual and new staff up to the same standard as permanent staff.",
+        "Monitoring: check reviews, repeat-booking rates and complaint numbers to see if standards hold."
+      ],
+      "tier_label": "Tier 2: Most Important"
+    },
+    {
+      "id": "hosp_positive_teams",
+      "section": "B",
+      "category": "topic",
+      "display_category": "hospitality",
+      "group_id": "teamwork_positive",
+      "group_label": "Positive Working Relationships",
+      "title": "Benefits of Positive Working Relationships",
+      "arabic": "",
+      "lines": [
+        "Communication improves, so orders, allergies and special requests are passed on accurately.",
+        "Morale rises, staff enjoy the work and are willing to help each other during a rush.",
+        "Staff turnover falls, which saves the cost of recruiting and training replacements.",
+        "Service is faster and smoother because the team anticipates what each other needs.",
+        "The kitchen is safer, because people warn each other about hot pans, spills and sharp knives.",
+        "Customers notice a happy team, which shows in reviews and repeat bookings.",
+        "New staff learn faster when experienced colleagues are willing to teach them."
+      ],
+      "tier_label": "Tier 2: Most Important"
     },
     {
       "id": "hosp_assessment",
@@ -164,6 +246,47 @@
         "Paper 2-B is a portfolio assessment that includes a practical assessment task.",
         "The guided learning hours are 130, and results are reported on a grade scale of 9 to 1."
       ]
+    },
+    {
+      "id": "hosp_negative_teams",
+      "section": "B",
+      "category": "topic",
+      "display_category": "hospitality",
+      "group_id": "teamwork_negative",
+      "group_label": "Negative Relationships and Team Dynamics",
+      "title": "Negative Relationships and Their Effects",
+      "arabic": "",
+      "lines": [
+        "Gossip and whispering behind colleagues' backs destroys trust across the whole team.",
+        "Cliques exclude people, so information stops being shared with those left out.",
+        "A blame culture makes staff hide mistakes instead of reporting them, which is dangerous with food safety.",
+        "Poor communication causes wrong orders, missed allergies and double bookings.",
+        "Bullying and shouting cause stress, sickness absence and resignations.",
+        "The customer sees the result as slow service, mistakes and staff arguing in front of them.",
+        "The business pays through bad reviews, lost custom and constant recruitment costs."
+      ],
+      "tier_label": "Tier 3: Nice to Learn"
+    },
+    {
+      "id": "hosp_conflict",
+      "section": "B",
+      "category": "topic",
+      "display_category": "hospitality",
+      "group_id": "teamwork_conflict",
+      "group_label": "Recognising and Resolving Conflict",
+      "title": "Recognising and Resolving Conflict",
+      "arabic": "",
+      "lines": [
+        "Common causes: rota and shift disputes, unequal workload, pay differences, personality clashes.",
+        "Early signs: short answers, avoiding a colleague, complaints to others rather than to the person.",
+        "Deal with it early, because small resentments grow into open arguments during service.",
+        "Speak to each person privately and listen to both sides before judging.",
+        "Stay neutral and focus on the behaviour and the facts, never on the personality.",
+        "Agree a practical solution and a date to review whether it has worked.",
+        "Use mediation if the two cannot agree, and the formal grievance procedure if it is serious.",
+        "Grievance is raised BY a worker; disciplinary action is taken AGAINST a worker. Do not confuse them."
+      ],
+      "tier_label": "Tier 3: Nice to Learn"
     }
   ]
 }

@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Explain the contributions of Sir Syed Ahmad Khan to the Muslims of India. [5]",
+      "model_answer": "Sir Syed's central contribution was educational. He founded the Muhammadan Anglo-Oriental College at Aligarh in 1875, which later became Aligarh Muslim University, and he urged Muslims to learn English and modern sciences so that they could compete for government posts. He founded the Scientific Society to translate Western works into Urdu, and published journals to spread new ideas. Politically he advised Muslims to stay out of the Indian National Congress, arguing that in a democracy based purely on numbers the Muslim minority would always be outvoted. He defended Muslims against the charge that they alone were responsible for the events of 1857, and he worked to improve relations with the British. Most importantly, he first articulated the idea that Hindus and Muslims were two distinct nations, which became the foundation of the Two-Nation Theory and eventually of the demand for Pakistan.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Describe the causes and outcomes of the Khilafat Movement. [5]",
+      "model_answer": "The movement arose after the First World War when the defeated Ottoman Empire was broken up and the position of the Ottoman Caliph, whom Indian Muslims regarded as the spiritual head of the Muslim world, was threatened. Indian Muslims feared for the holy places and for the survival of the Caliphate, and were angered by the harsh Treaty of Sevres. Led by the Ali brothers, Maulana Muhammad Ali and Maulana Shaukat Ali, the movement allied with Gandhi's Non-Cooperation Movement, so Hindus and Muslims campaigned together. The outcomes were largely negative. The Hijrat Movement encouraged thousands to migrate to Afghanistan, where many suffered badly. Gandhi called off non-cooperation after the Chauri Chaura violence, which Muslims felt was a betrayal. Finally Mustafa Kemal abolished the Caliphate himself in 1924, removing the movement's purpose entirely. Its lasting effect was to politicise ordinary Muslims and, when Hindu-Muslim unity collapsed afterwards, to convince many that a permanent alliance with Congress was impossible.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "What were the main features of Jinnah's Fourteen Points (1929)? [5]",
+      "model_answer": "Jinnah presented the Fourteen Points in response to the Nehru Report, which had rejected Muslim demands. The main features were: a federal constitution with residuary powers held by the provinces rather than the centre; uniform provincial autonomy for all provinces; adequate and effective Muslim representation in every legislature without reducing a Muslim majority to a minority in any province; separate electorates to be retained; at least one third of seats in the central legislature for Muslims; and at least one third of Muslims in every cabinet. Other points guaranteed full religious liberty, protection of Muslim culture, language, education and personal law, the separation of Sindh from Bombay, reforms in the North-West Frontier Province and Balochistan, and a provision that no constitutional change could be made without the consent of the provinces. Together they set out the minimum safeguards Muslims required within a united India, and their rejection pushed Muslim opinion towards a separate state.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Describe the initial problems faced by Pakistan immediately after independence in 1947. [5]",
+      "model_answer": "Pakistan faced an exceptional set of problems at once. Communal violence during Partition killed enormous numbers and drove millions of refugees across the new border, and they had to be housed, fed and resettled with almost no resources. The country had no capital infrastructure, no established civil service, and very few trained officials, since most administrative centres had remained in India. India delayed the transfer of Pakistan's agreed share of financial assets and military equipment. The two wings of the country were separated by about a thousand miles of Indian territory, which made defence and administration extremely difficult. The Radcliffe Award gave disputed areas such as Gurdaspur to India, and the accession of Kashmir led to war in 1948. There was almost no industry, because the cotton and jute growing areas went to Pakistan while the mills stayed in India. Finally, the death of Jinnah in 1948 and the assassination of Liaquat Ali Khan in 1951 removed the leadership at the moment it was most needed.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 4,
+      "topic_title": "Constitution of Pakistan",
+      "question": "Explain the main features of the 1973 Constitution of Pakistan. [5]",
+      "model_answer": "The 1973 Constitution declared Pakistan an Islamic Republic and made Islam the state religion, requiring that no law be repugnant to the Quran and Sunnah. It established a federal parliamentary system in which the Prime Minister is the head of government and holds real executive power, while the President is head of state with largely ceremonial functions. The legislature is bicameral, consisting of the National Assembly elected on population and the Senate giving equal representation to the provinces, which protects the smaller provinces. It guarantees fundamental rights, including equality before the law, freedom of speech, religion, movement and association, and these rights are enforceable through the courts. It provides for an independent judiciary headed by the Supreme Court. Powers are divided between the federation and the provinces through legislative lists, and the Council of Common Interests resolves disputes between them. It was framed with unusually broad agreement among the political parties and remains in force today.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 4,
+      "topic_title": "Constitution of Pakistan",
+      "question": "Describe the fundamental rights guaranteed by the Constitution of Pakistan. [5]",
+      "model_answer": "The Constitution guarantees the security of person, so no one may be deprived of life or liberty except in accordance with law, and it forbids arbitrary arrest and detention. It guarantees equality of all citizens before the law and equal protection of the law, and forbids discrimination on grounds of race, religion, caste, sex or place of birth. It protects freedom of movement, assembly, association, trade and profession, and freedom of speech subject to reasonable restrictions. It guarantees freedom of religion, allowing every citizen to profess, practise and propagate their religion, and protects the rights of religious minorities to their own institutions. It protects property rights and forbids the taking of property except by law and with compensation. Slavery, forced labour and the employment of children in hazardous work are prohibited, and every citizen has the right to education. These rights are enforceable, because a citizen may approach the High Court or the Supreme Court directly if a fundamental right is violated.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Explain the importance of forests in Pakistan and the causes of deforestation. [5]",
+      "model_answer": "Forests supply timber for construction and furniture, firewood for rural households, and raw material for paper and matches, and they provide employment and income. They protect the environment by holding soil together on steep slopes, which reduces erosion and prevents silt from filling the reservoirs at Tarbela and Mangla. They slow rainwater run-off and so reduce the severity of floods, they help maintain rainfall and absorb carbon dioxide, and they provide habitat for wildlife. Mangrove forests in the Indus delta protect the coast and act as breeding grounds for fish and shrimp. Pakistan's forest cover is very low and is falling. Deforestation is caused by cutting for fuelwood because many rural households have no gas or electricity, clearing land for farming and settlement as the population grows, commercial and illegal logging, overgrazing by livestock which prevents new growth, and the construction of roads and dams. Reduced river flow and pollution are also killing the mangroves.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Discuss the advantages and disadvantages of renewable energy sources for Pakistan. [5]",
+      "model_answer": "The advantages are considerable. Renewable sources such as hydel, solar and wind do not run out, so they offer long-term energy security, and once built they have low running costs because there is no fuel to buy. They reduce the very large import bill for oil and gas, which drains foreign exchange. They produce little or no air pollution or greenhouse gas, and Pakistan is well suited to them, with strong sunshine across most of the country, wind corridors in Sindh, and rivers with high hydel potential. The disadvantages are that construction costs are high and require capital Pakistan struggles to raise. Large dams displace people, drown farmland and silt up over time, and they cause disputes between the provinces over water shares. Solar and wind are intermittent, generating only when the sun shines or the wind blows, so they need storage or a conventional backup. Hydel output falls in the dry season when demand for irrigation is also high. On balance the potential is large but realising it needs sustained investment.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "Explain the causes and effects of unemployment in Pakistan. [5]",
+      "model_answer": "The main cause is that the population, and therefore the labour force, grows faster than the economy can create jobs. Education is often not matched to what employers need, so graduates lack the technical and vocational skills required and there is a mismatch between qualifications and vacancies. Industry is narrow and concentrated in textiles, so it cannot absorb large numbers, and energy shortages and low investment have slowed industrial growth. Mechanisation in agriculture has reduced the demand for farm labour, pushing workers into cities where jobs are scarce. Seasonal work in farming leaves many underemployed for part of the year. The effects are serious: poverty and lower living standards, since households have no reliable income; increased crime and social unrest; a brain drain as skilled young people emigrate; greater strain on families and on government welfare; and a loss to the economy itself, because the productive capacity of a large part of the population is wasted. Unemployment among educated young people is a particular source of frustration and instability.",
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "topic_number": 5,
+      "topic_title": "Foreign Policy",
+      "question": "Explain the importance of China in Pakistan's foreign policy. [5]",
+      "model_answer": "China has been Pakistan's most consistent ally since diplomatic relations began in 1951, and the relationship has survived changes of government in both countries. Militarily, China is a major supplier of defence equipment and a partner in joint production, which reduces Pakistan's dependence on Western suppliers whose support has fluctuated. Diplomatically, China supports Pakistan at the United Nations Security Council, where it holds a veto, and this strengthens Pakistan's position on regional issues. Economically the relationship is now central: the China-Pakistan Economic Corridor connects Kashgar with Gwadar and has brought large investment in roads, railways, power stations and the port, addressing exactly the energy and infrastructure weaknesses that hold the economy back. Strategically, both countries share concerns about India, which gives them a common interest. The relationship also carries risks, including a growing debt burden and concern that the benefits are unevenly distributed between the provinces, so it must be managed carefully.",
+      "marks": 5
+    }
+  ]
+}

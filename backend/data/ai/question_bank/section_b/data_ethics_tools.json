@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "case_study",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 2,
+      "topic_title": "Machine Learning and Data Science",
+      "question": "Case study: A student is building an image classifier to sort recycling into paper, plastic and metal. She collects 300 photographs, but 240 of them are of plastic bottles and only 30 are of metal. Several photographs are blurred, and some are saved with the label 'Plastik'. (i) Identify three problems with this dataset. (ii) Explain what she should do to correct each problem. [8]",
+      "model_answer": "(i) The dataset is unbalanced: with 240 plastic images against 30 metal, the model will learn to predict plastic far too often and will score high accuracy simply by guessing the majority class. The blurred photographs are poor-quality data that either teach the model nothing useful or teach it the wrong features. The inconsistent label 'Plastik' will be treated as a fourth category, splitting the plastic class in two so that neither part has enough examples.\n\n(ii) To correct the imbalance she should collect more metal and paper images until the three classes are of a similar size; if that is not possible she should reduce the plastic set, or note the imbalance when reporting results and use a measure other than plain accuracy. The blurred images should be reviewed and either removed or retaken, since a smaller clean dataset is better than a larger dirty one. The labels should be standardised so that every plastic image carries exactly the same label, and she should check the whole set for other spelling variations. She should record each of these changes so that the preparation can be repeated and explained.",
+      "marks": 8
+    },
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "evaluation",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 5,
+      "topic_title": "Ethics, Society and Philosophy of AI",
+      "question": "A social media platform uses AI to choose which posts each user sees, based on what they have engaged with before. Evaluate the effects of this on the individual user and on society. [8]",
+      "model_answer": "For the individual there are real benefits. The user sees content that matches their interests, which saves time and makes the service more enjoyable and useful. Recommendations can introduce people to material they would not have found by searching.\n\nThere are also serious costs. Because the system shows more of what a user already agrees with, it can create a filter bubble in which opposing views rarely appear. The user may come to believe their opinion is more widely shared than it is, and lose the ability to evaluate other arguments. Systems optimised for engagement tend to favour content that provokes strong emotion, so users may be shown material that is outrageous or extreme rather than accurate. This can affect mental health, particularly for young users, and can consume far more time than the user intended.\n\nFor society the effects are broader. Filter bubbles contribute to polarisation, because different groups receive different versions of events and no longer share a common set of facts. This makes public debate and compromise harder. Misinformation spreads quickly when the system rewards engagement over accuracy, which can affect elections and public health. The influence is also largely invisible, since users do not see the algorithm and cannot easily tell why they were shown something.\n\nIn judgement, the technology is not harmful in itself, and personalisation has genuine value. The problem lies in optimising purely for engagement. Reasonable responses include showing users why a post was recommended, offering a chronological alternative, giving users control over their own settings, and independent auditing of recommendation systems. The benefits can largely be kept if the objective the system is optimising is changed.",
+      "marks": 8
+    },
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "evaluation",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 6,
+      "topic_title": "Building and Deploying AI Systems",
+      "question": "Compare the use of a no-code tool such as Teachable Machine with writing your own code in Python for building a simple image classifier. Evaluate which is more suitable for a school AI project. [8]",
+      "model_answer": "A no-code tool such as Teachable Machine has clear advantages for a school project. It requires no programming knowledge, so the student can begin immediately and spend time on the AI problem rather than on debugging syntax. Training is fast because the tool uses transfer learning from an existing model, and results can be tested live through a webcam, which makes the effect of adding or removing training data immediately visible. The finished model can be exported and used in other software. The disadvantages are limited control: the student cannot change the model architecture, choose the optimiser or inspect what the network is doing, and the range of tasks is restricted to what the tool supports.\n\nWriting Python code, for example in Google Colab with TensorFlow, gives full control. The student can choose the model, adjust parameters, use their own data pipeline, and measure performance in detail with metrics such as precision, recall and loss curves. It also teaches transferable programming skills. The disadvantages are the steep learning curve, the time lost to installation and error messages, and the risk that a weaker student never reaches a working model at all.\n\nIn judgement, for most school projects the no-code tool is more suitable, because the assessment rewards understanding the AI process, defining the problem, collecting and cleaning data, training, testing and evaluating, rather than programming skill. A strong candidate can gain more, however, by building with code, since the report can then discuss parameter choices and detailed metrics that a no-code tool hides. The best approach for a project is often to build first with the no-code tool to establish a working baseline, then rebuild in code and compare the two, which itself provides good evaluation material.",
+      "marks": 8
+    },
+    {
+      "section": "B",
+      "section_title": "Analysis and Evaluation",
+      "type": "logical_reasoning",
+      "source_type": "Artificial Intelligence",
+      "paper": "Paper 1: Written Examination",
+      "topic_number": 1,
+      "topic_title": "Foundations of Artificial Intelligence",
+      "question": "An AI system searches a list of 1000 sensor readings to find the first value above a safety threshold. (i) Describe how a linear search would do this. (ii) State the best case and the worst case number of comparisons. (iii) Explain one situation in which a linear search is the correct choice even though it is slow. [6]",
+      "model_answer": "(i) A linear search starts at the first item in the list and compares it with the threshold. If the value is not above the threshold it moves to the next item and repeats. It continues in order until it finds a value above the threshold, at which point it stops and reports the position, or until it reaches the end of the list, at which point it reports that no such value exists.\n\n(ii) The best case is 1 comparison, when the very first reading is above the threshold. The worst case is 1000 comparisons, when the matching value is the last item or when no value matches at all.\n\n(iii) A linear search is the correct choice when the data is unsorted, because a faster method such as binary search requires the list to be in order, and sorting 1000 items first would cost more than simply scanning them once. It is also correct when the data arrives as a live stream and must be checked as it comes in, when the list is short enough that the difference does not matter, or when every matching item is needed rather than just one.",
+      "marks": 6
+    }
+  ]
+}

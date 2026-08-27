@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The Aligarh Movement was founded by:",
+      "options": {
+        "A": "Allama Iqbal",
+        "B": "Sir Syed Ahmad Khan",
+        "C": "Muhammad Ali Jinnah",
+        "D": "Nawab Salimullah"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The All-India Muslim League was founded in the city of:",
+      "options": {
+        "A": "Lahore",
+        "B": "Delhi",
+        "C": "Dhaka",
+        "D": "Aligarh"
+      },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The Partition of Bengal was reversed in the year:",
+      "options": {
+        "A": "1909",
+        "B": "1911",
+        "C": "1916",
+        "D": "1919"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Allama Iqbal delivered his famous address proposing a separate Muslim state at:",
+      "options": {
+        "A": "Lahore in 1940",
+        "B": "Allahabad in 1930",
+        "C": "Dhaka in 1906",
+        "D": "Delhi in 1928"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The name 'Pakistan' was first proposed by:",
+      "options": {
+        "A": "Allama Iqbal",
+        "B": "Chaudhry Rehmat Ali",
+        "C": "Liaquat Ali Khan",
+        "D": "Sir Aga Khan"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "Pakistan gained independence on:",
+      "options": {
+        "A": "23 March 1940",
+        "B": "3 June 1947",
+        "C": "14 August 1947",
+        "D": "26 January 1950"
+      },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 1,
+      "topic_title": "History of Pakistan",
+      "question": "The first Governor-General of Pakistan was:",
+      "options": {
+        "A": "Liaquat Ali Khan",
+        "B": "Muhammad Ali Jinnah",
+        "C": "Khawaja Nazimuddin",
+        "D": "Iskander Mirza"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 4,
+      "topic_title": "Constitution of Pakistan",
+      "question": "The Objectives Resolution was passed in the year:",
+      "options": {
+        "A": "1947",
+        "B": "1949",
+        "C": "1956",
+        "D": "1962"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 4,
+      "topic_title": "Constitution of Pakistan",
+      "question": "Under which constitution was Pakistan first declared an Islamic Republic?",
+      "options": {
+        "A": "1956",
+        "B": "1962",
+        "C": "1973",
+        "D": "1985"
+      },
+      "model_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 4,
+      "topic_title": "Constitution of Pakistan",
+      "question": "The Basic Democracies system of election was introduced by the constitution of:",
+      "options": {
+        "A": "1956",
+        "B": "1962",
+        "C": "1973",
+        "D": "1949"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "The highest mountain peak in Pakistan is:",
+      "options": {
+        "A": "Nanga Parbat",
+        "B": "K2",
+        "C": "Tirich Mir",
+        "D": "Rakaposhi"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Under the Indus Water Treaty, the three eastern rivers were given to India. These are:",
+      "options": {
+        "A": "Indus, Jhelum and Chenab",
+        "B": "Ravi, Beas and Sutlej",
+        "C": "Kabul, Swat and Chitral",
+        "D": "Jhelum, Ravi and Indus"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Tarbela Dam is built on the river:",
+      "options": {
+        "A": "Jhelum",
+        "B": "Chenab",
+        "C": "Indus",
+        "D": "Ravi"
+      },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Most of Pakistan's rainfall is brought by:",
+      "options": {
+        "A": "Western depressions",
+        "B": "The summer monsoon",
+        "C": "Cyclones from the Arabian Sea",
+        "D": "Convectional rainfall"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 2,
+      "topic_title": "Geography of Pakistan",
+      "question": "Waterlogging and salinity in Pakistan are mainly caused by:",
+      "options": {
+        "A": "Excessive rainfall",
+        "B": "Over-irrigation with inadequate drainage",
+        "C": "Deforestation in the north",
+        "D": "Industrial pollution"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 5,
+      "topic_title": "Foreign Policy",
+      "question": "The China-Pakistan Economic Corridor (CPEC) connects Kashgar with the port of:",
+      "options": {
+        "A": "Karachi",
+        "B": "Port Qasim",
+        "C": "Gwadar",
+        "D": "Pasni"
+      },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 5,
+      "topic_title": "Foreign Policy",
+      "question": "Pakistan conducted its nuclear tests at Chagai in the year:",
+      "options": {
+        "A": "1974",
+        "B": "1987",
+        "C": "1998",
+        "D": "2002"
+      },
+      "model_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 5,
+      "topic_title": "Foreign Policy",
+      "question": "Pakistan became a member of the United Nations in:",
+      "options": {
+        "A": "1947",
+        "B": "1950",
+        "C": "1955",
+        "D": "1960"
+      },
+      "model_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "Pakistan's largest export earner is:",
+      "options": {
+        "A": "Cement",
+        "B": "Textiles and garments",
+        "C": "Leather goods",
+        "D": "Surgical instruments"
+      },
+      "model_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "topic_number": 3,
+      "topic_title": "Economics of Pakistan",
+      "question": "When a country's imports are worth more than its exports, this is called a:",
+      "options": {
+        "A": "Trade surplus",
+        "B": "Trade deficit",
+        "C": "Budget surplus",
+        "D": "Balanced budget"
+      },
+      "model_answer": "B",
+      "marks": 1
+    }
+  ]
+}

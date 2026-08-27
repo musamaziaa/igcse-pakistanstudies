@@ -1,0 +1,190 @@
+{
+  "questions": [
+    {
+      "section": "A",
+      "type": "MCQ",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "The temperature range known as the danger zone, in which bacteria multiply fastest, is:",
+      "options": {
+        "A": "0 C to 5 C",
+        "B": "5 C to 63 C",
+        "C": "63 C to 75 C",
+        "D": "75 C to 100 C"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "Hot food being held on a buffet must be kept at a temperature of:",
+      "options": {
+        "A": "5 C or below",
+        "B": "40 C or above",
+        "C": "63 C or above",
+        "D": "100 C or above"
+      },
+      "correct_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "A deep freezer should operate at a temperature of:",
+      "options": {
+        "A": "0 C",
+        "B": "-5 C",
+        "C": "-18 C or below",
+        "D": "-40 C"
+      },
+      "correct_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "Which cooking method uses hot dry air in an oven with added fat, at about 170 C to 185 C?",
+      "options": {
+        "A": "Poaching",
+        "B": "Steaming",
+        "C": "Roasting",
+        "D": "Boiling"
+      },
+      "correct_answer": "C",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Introduction to the Hospitality Industry",
+      "question": "Which type of business ownership carries unlimited liability for one owner?",
+      "options": {
+        "A": "Sole trader",
+        "B": "Limited liability partnership",
+        "C": "Private limited company",
+        "D": "Franchise"
+      },
+      "correct_answer": "A",
+      "marks": 1
+    },
+    {
+      "section": "A",
+      "type": "MCQ",
+      "paper": "Paper 1: Theory",
+      "topic_number": 5,
+      "topic_title": "Food, Nutrition and Exercise",
+      "question": "Which nutrient is the body's main source of energy?",
+      "options": {
+        "A": "Protein",
+        "B": "Carbohydrate",
+        "C": "Vitamins",
+        "D": "Water"
+      },
+      "correct_answer": "B",
+      "marks": 1
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "State the correct temperature for a fridge and for a deep freezer. [2]",
+      "model_answer": "Fridge 0 C to 5 C (1 mark). Deep freezer minus 18 C or below (1 mark).",
+      "marks": 2
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "Explain two ways in which a kitchen can prevent cross-contamination. [4]",
+      "model_answer": "Use separate colour-coded chopping boards and knives for raw meat and for ready-to-eat food (1), because bacteria from raw meat transferred onto salad or cooked food will not be killed by any further cooking (1). Store raw meat on the bottom shelf of the fridge, below cooked and ready-to-eat food (1), so that blood or juices cannot drip onto food that will be eaten without further cooking (1). Other acceptable answers include washing hands between handling raw and cooked food, using separate storage and preparation areas, and cleaning and sanitising surfaces between tasks. Each answer must identify the control and then explain why it works, because the marks split 2 plus 2.",
+      "marks": 4
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "Explain why reheating food that has been left in the danger zone does not make it safe to serve. [4]",
+      "model_answer": "Reheating to 75 C will kill most live bacteria (1), but some bacteria produce toxins as they multiply, and those toxins are heat-stable and are not destroyed by reheating (1). Food left between 5 C and 63 C allows bacteria such as Bacillus cereus and Clostridium perfringens to multiply and produce these toxins (1), so the food can still cause illness even though the bacteria themselves are dead. The only safe control is to prevent the growth in the first place by keeping food out of the danger zone, cooling within 90 minutes and storing at 0 C to 5 C (1). The rule is: if in doubt, throw it out.",
+      "marks": 4
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "paper": "Paper 1: Theory",
+      "topic_number": 4,
+      "topic_title": "Food Preparation and Cooking",
+      "question": "Describe the correct procedure for cooling and storing food left over after service. [6]",
+      "model_answer": "Cool the food as quickly as possible, within 90 minutes, because slow cooling leaves it drifting through the danger zone of 5 C to 63 C where bacteria multiply. Speed can be increased by dividing the food into smaller shallow containers, or by using a blast chiller where one is available, which drops the temperature below 5 C without warming the fridge. Cover the food to prevent contamination. Label it clearly with the contents and the date it was made, so that stock rotation works and nobody has to guess its age. Store it in a fridge at 0 C to 5 C, placed above raw foods so that nothing can drip onto it. Use it within two to three days. Reheat once only, to a core temperature of 75 C or above, and never reheat a second time. If there is any doubt about its history or temperature, discard it.",
+      "marks": 6
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "paper": "Paper 1: Theory",
+      "topic_number": 2,
+      "topic_title": "Customer Service Skills",
+      "question": "Explain two benefits to a hospitality business of collecting customer feedback. [4]",
+      "model_answer": "Feedback identifies problems the management cannot see for itself (1), so faults such as slow weekend service or a cold dish can be corrected before more customers are lost (1). Feedback also shows customers that their opinion is valued (1), which builds loyalty and makes them more likely to return and to recommend the business to others (1). Other acceptable answers: it provides evidence for staff training needs; it highlights what the business does well so those strengths can be maintained and marketed; and responding publicly to an online review shows future customers that complaints are taken seriously.",
+      "marks": 4
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Effective Team Working",
+      "question": "Explain the difference between a grievance procedure and a disciplinary procedure. [4]",
+      "model_answer": "A grievance procedure is used when a worker raises a complaint (1), for example about unfair treatment, workload or the behaviour of a colleague or manager; the complaint is made by the employee and the employer must investigate it (1). A disciplinary procedure is used when the employer takes action against a worker (1), for example for lateness, poor conduct or breaking food safety rules, and it normally follows stages such as verbal warning, written warning and dismissal (1). The simple test is direction: grievance is raised BY the worker, disciplinary is action taken AGAINST the worker.",
+      "marks": 4
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "paper": "Paper 1: Theory",
+      "topic_number": 3,
+      "topic_title": "Effective Team Working",
+      "question": "Describe three benefits to a hospitality business of positive working relationships between staff. [6]",
+      "model_answer": "Communication improves, so orders, allergy information and special requests are passed on accurately and fewer mistakes reach the customer. Morale rises, so staff are willing to help each other during a busy service instead of protecting their own section, which makes the whole operation faster. Staff turnover falls, which saves the considerable cost of recruiting and training replacements and means the team keeps its experience. Credit also for: a safer kitchen, because colleagues warn each other about hot pans, spills and knives; better training of new staff, because experienced colleagues are willing to teach; and better reviews, because customers notice a team that works well together and book again.",
+      "marks": 6
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "paper": "Paper 1: Theory",
+      "topic_number": 5,
+      "topic_title": "Food, Nutrition and Exercise",
+      "question": "Explain why a balanced diet is important, referring to at least three nutrient groups. [6]",
+      "model_answer": "A balanced diet supplies the body with all the nutrients it needs in the right proportions, because no single food contains everything. Carbohydrates are the body's main source of energy and should form the largest part of the diet; without enough, a person becomes tired and unable to work or concentrate. Protein is needed for growth and for the repair of cells and tissue, which matters particularly for children and for anyone recovering from injury or illness. Fats provide concentrated energy, carry the fat-soluble vitamins and insulate the body, but too much, especially saturated fat, leads to obesity and heart disease. Vitamins and minerals are needed in small amounts for specific functions, such as iron for healthy blood and calcium for bones and teeth. Fibre keeps the digestive system working and prevents constipation, and water is needed for almost every body process. An unbalanced diet causes deficiency diseases at one extreme and obesity, diabetes and heart disease at the other.",
+      "marks": 6
+    },
+    {
+      "section": "B",
+      "type": "short_answer",
+      "paper": "Paper 1: Theory",
+      "topic_number": 1,
+      "topic_title": "Introduction to the Hospitality Industry",
+      "question": "Compare the advantages and disadvantages of running a hospitality business as a franchise. [6]",
+      "model_answer": "The advantages for the franchisee are that the brand is already known, so customers arrive from the first day without the cost of building a reputation. The franchisor supplies a proven business model, training, marketing and often bulk-purchasing power, which reduces the risk of failure compared with starting alone. Suppliers and banks are more willing to deal with a recognised brand. The disadvantages are that the franchisee must pay an initial fee and ongoing royalties from turnover, which reduces profit. There is little freedom: the menu, prices, decor and procedures are set by the franchisor, so the owner cannot respond to local tastes. The franchisee's reputation is tied to the whole chain, so a scandal at another branch damages their business through no fault of their own. The agreement may also be terminated or not renewed, leaving the franchisee with premises but no brand.",
+      "marks": 6
+    }
+  ]
+}
